@@ -1,0 +1,23 @@
+# 대회 데이터 / 비공개 자료 (저작권·용량으로 깃 제외)
+data/
+계획/
+코드_공유/
+
+# 파이썬 가상환경 / 캐시 (재생성 가능)
+.venv/
+__pycache__/
+*.pyc
+
+# 파이프라인 산출물 (코드로 재생성 가능)
+cache/
+submissions/
+
+# 노트북/시각화 부산물
+*.png
+.ipynb_checkpoints/
+
+# 개인 열람용 메모
+test_readme.md
+
+# OS
+.DS_Store
