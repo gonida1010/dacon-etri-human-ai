@@ -51,6 +51,38 @@ def _merge_daily(labels: pd.DataFrame, daily: pd.DataFrame) -> pd.DataFrame:
     return pd.concat(blocks, axis=1)
 
 
+def _derived_features(subj: pd.Series, sensor: pd.DataFrame, slp: pd.DataFrame) -> pd.DataFrame:
+    """③④ 파생 피처: 수면 규칙성(개인 중앙값 대비 편차) + 취침 전 각성/회복 동역학.
+
+    - 규칙성: 입면·기상·총수면시간이 그 사람 평소(중앙값)와 얼마나 다른가(불규칙=수면질↓, 스트레스↑)
+    - HR 동역학: 저녁 평균심박 - 야간 최저심박(취침 전후 이완 정도), 야간 심박변동(뒤척임)
+    - 취침 전 부하: 저녁 화면사용/활동(각성·스트레스 프록시)
+    """
+    out = pd.DataFrame(index=slp.index)
+    g = pd.Series(subj.values, index=slp.index)
+
+    for col in ["slp_onset_h", "slp_wake_h", "slp_tst_h"]:
+        if col in slp.columns:
+            med = slp[col].groupby(g.values).transform("median")
+            out[f"{col}_dev"] = slp[col] - med            # 부호 있는 편차
+            out[f"{col}_absdev"] = (slp[col] - med).abs()  # 불규칙성 크기
+
+    # 취침 전(저녁) 심박 - 야간 최저심박: 이완 정도
+    eve_hr = "L_wHr_eve_mean"
+    if eve_hr in sensor.columns and "slp_hr_min" in slp.columns:
+        out["hr_relax_drop"] = sensor[eve_hr].values - slp["slp_hr_min"].values
+    if "slp_hr_std" in slp.columns:
+        out["hr_night_restless"] = slp["slp_hr_std"].values
+
+    # 취침 전 화면/활동 부하(각성)
+    for src, name in [("L_mScreenStatus_eve_m_screen_use_mean", "prebed_screen"),
+                      ("L_mActivity_eve_move_frac", "prebed_move"),
+                      ("L_mUsage_eve_use_total_sum", "prebed_app_time")]:
+        if src in sensor.columns:
+            out[name] = sensor[src].values
+    return out
+
+
 def _subject_zscore(df: pd.DataFrame, feat_cols: list[str], subj: pd.Series) -> pd.DataFrame:
     """피험자별 평균/표준편차로 z-score (라벨 미사용, train+test 전체 통계 = transductive)."""
     g = df[feat_cols].groupby(subj.values)
@@ -80,13 +112,16 @@ def build_dataset(use_cache: bool = True):
     slp_cols = [c for c in sleep.columns if c not in ("subject_id", "sleep_date")]
     slp = slp[slp_cols].reset_index(drop=True)
 
+    # 파생 피처(③④): 수면 규칙성(개인 중앙값 대비 편차) + HR 동역학(취침 전 각성)
+    derived = _derived_features(both["subject_id"], sensor, slp)
+
     # 피험자별 z-score 는 'count' 류를 제외한 연속 피처에만 적용 (센서+수면구간)
     feats_for_z = pd.concat([sensor, slp], axis=1)
     z_src = [c for c in feats_for_z.columns
              if not c.endswith("_count") and not c.endswith("_act_count")]
     zsubj = _subject_zscore(feats_for_z, z_src, both["subject_id"])
 
-    X = pd.concat([sensor, slp, cal, zsubj], axis=1)
+    X = pd.concat([sensor, slp, derived, cal, zsubj], axis=1)
     X["subject_num"] = both["subject_id"].str.extract(r"(\d+)").astype("float").values
     X["subject_id"] = both["subject_id"].astype("category").values
 

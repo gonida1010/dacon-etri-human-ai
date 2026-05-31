@@ -54,9 +54,12 @@ Public 점수는 테스트의 44% 표본, Private 점수는 100%로 산정된다
    피험자별 타깃 평균(prior)만으로도 강한 베이스라인이 된다. 모델은 이 기준선에서 출발해
    센서 신호로 그날의 편차를 보정해야 한다. 본 코드는 누수 없는 OOF prior를 피처로 주입하고,
    모델 예측과 prior를 타깃별 최적 가중으로 블렌드한다.
-2. **검증은 subject-out이 아니라 subject-stratified로 한다.** 테스트에 같은 피험자가 있으므로,
-   각 피험자의 날들을 폴드에 분산시켜 "같은 사람의 다른 날"을 모사한다. (처음 보는 피험자를
-   가정한 subject-out CV는 실제 과제와 어긋나 Local-LB 괴리를 만든다.)
+2. **검증은 '시간'을 존중해야 한다.** test 는 각 피험자의 뒤쪽(나중) 날짜 블록에 몰려 있어
+   부분적으로 미래 예측이다. 따라서 날짜를 무작위로 섞는 CV는 인접일 누수로 OOF를 낙관적으로
+   만든다(실측: 무작위 OOF 0.58인데 실제 LB 0.61). 본 코드는 **피험자별로 날짜를 연속 시간
+   블록으로 나누는 CV**(`subject_time_blocked_folds`)를 쓰고, 그중 **마지막 블록(가장 나중 날들,
+   과거만으로 학습)** 의 점수를 test 와 동일 regime의 정직한 헤드라인으로 삼는다.
+   (처음 보는 피험자를 가정한 subject-out CV 또한 실제 과제와 어긋난다.)
 
 ### 4.2 피처
 - **일일 윈도우 통계**(`sensor_features.py`): 각 센서를 하루의 시각 윈도우
@@ -65,14 +68,19 @@ Public 점수는 테스트의 44% 표본, Private 점수는 100%로 산정된다
   야간 수면 블록을 추정 → 입면시각·기상시각·총수면시간·수면효율·각성 프록시(S1~S4 직격).
 - **중첩 센서**(`nested_features.py`): 오디오 장면 확률(조용함/대화/음악),
   앱 사용시간·앱 개수, 주변 WiFi/BLE 수, GPS 속도/고도.
+- **시간 동역학**(`sleep_features.py` 내 `_add_temporal`): 전날(lag)·최근 평균(rolling 3/7일,
+  현재일 제외)·최근평균 대비 편차. 수면빚·수면 모멘텀·규칙성을 포착(센서는 전 기간 존재).
+- **파생/약한 타깃**(`build_dataset.py` 내 `_derived_features`): 수면 규칙성(개인 중앙값 대비
+  입면/기상/총수면 편차), 취침 전 각성(저녁심박-야간최저), 야간 심박변동, 취침 전 화면/앱 부하.
 - **피험자 z-score**: 각 연속 피처를 피험자별 평균/표준편차로 표준화(개인 대비 편차).
 - **캘린더**: 요일·주말·월·순환(sin/cos) 특성.
 
 ### 4.3 모델
-- 타깃별 LightGBM(이진), 작은 데이터에 맞춘 강한 정규화(num_leaves=15, min_child_samples=25,
-  feature_fraction=0.6, L1/L2), 폴드 검증 Log-Loss로 early stopping.
-- 폴드 시드 3종 × 5-fold 멀티시드 배깅으로 OOF·테스트 예측을 안정화.
-- 타깃별 (모델 vs prior) OOF 블렌드 가중을 그리드 탐색.
+- 타깃별 **LightGBM + XGBoost + CatBoost** 평균 앙상블. 작은 데이터에 맞춘 강한 정규화
+  (얕은 트리·높은 min_child·낮은 컬럼 샘플링·L1/L2), 폴드 검증 Log-Loss로 early stopping.
+- **확률 캘리브레이션**: 타깃별 isotonic을 적용하되, '마지막 블록' 정직검증에서 개선될 때만
+  채택(게이팅)하여 과적합을 막는다.
+- 타깃별 (앙상블 vs prior) 블렌드 가중을 시간블록 OOF에서 coarse 그리드로 선택.
 
 ## 5. 코드 구조
 
@@ -80,31 +88,37 @@ Public 점수는 테스트의 44% 표본, Private 점수는 100%로 산정된다
 src/
   config.py           # 경로(로컬/Colab 자동해석)·타깃·센서·윈도우 정의
   sensor_features.py  # parquet → (subject,date)×윈도우 통계  → cache/daily_features.parquet
-  sleep_features.py   # 야간 수면구간 탐지                    → cache/sleep_features.parquet
+  sleep_features.py   # 야간 수면구간 탐지 + 시간 동역학       → cache/sleep_features.parquet
   nested_features.py  # 중첩 센서(오디오/앱/WiFi/BLE/GPS)     → cache/nested_features.parquet
-  build_dataset.py    # 라벨 행에 피처 결합 + z-score + 캘린더
-  cv.py               # subject-stratified KFold
-  train.py            # 정식 파이프라인(멀티시드 배깅+블렌드) → submissions/*.csv
-  train_v2.py         # 단일 시드 실험본
-  train_baseline.py   # 최소 베이스라인(prior 없음)
+  build_dataset.py    # 라벨 행에 피처 결합 + 파생 + z-score + 캘린더
+  cv.py               # subject_time_blocked_folds(정직) / subject_stratified_folds(참고)
+  models.py           # LGBM/XGBoost/CatBoost 단일 폴드 적합기
+  train_ensemble.py   # ★ 정식 파이프라인(3모델 앙상블+캘리브+블렌드) → submissions/*.csv
+  diagnose.py         # 무작위 CV vs 시간블록 CV 비교(낙관 편향 진단)
+  train.py            # (구) 멀티시드 단일 LGBM 실험본
+  train_v2.py / train_baseline.py  # 초기 실험본
 ```
 
 실행 방법과 점검 방법은 `test_readme.md`(개인 열람용)를 참고한다.
 
-## 6. 결과(검증 OOF 평균 Log-Loss)
+## 6. 결과(검증 평균 Log-Loss)
 
-| 단계 | OOF | 비고 |
-|------|-----|------|
-| 단순 LGBM | 0.6095 | prior·수면·중첩 미사용 |
-| + 피험자 prior 주입·블렌드 | 0.6008 | |
-| + 수면구간 탐지 피처 | 0.5958 | S1·Q1 개선 |
-| + 중첩 센서 피처 | 0.5887 | Q1 큰 개선 |
-| + 멀티시드 배깅 | **0.5817** | 현재 |
+**중요**: 초기엔 무작위 CV로 OOF 0.5817까지 낮췄으나 실제 LB는 0.608이었다. 원인은 무작위 CV의
+시간 누수(낙관 편향)였다. 이후 **시간블록 CV의 '마지막 블록'(test와 동일 regime)** 을 정직한
+기준으로 채택했고, 그 값이 실제 LB와 일치한다.
 
-참고 기준선: 누수 없는 피험자 prior 단독 ≈ 0.615.
+| 구성(정식 파이프라인) | full OOF | last-block(정직) |
+|------|------|------|
+| 피험자 prior 단독 | 0.6267 | 0.6421 |
+| LGBM / XGB / Cat 단일 | ~0.598 | ~0.605 |
+| 3모델 앙상블 | 0.5939 | 0.6018 |
+| + 캘리브레이션 + 시간 동역학 피처 | **0.5892** | **0.5991** |
+
+last-block 값이 test 와 같은 '과거→미래' 외삽을 측정하므로, 개선 여부는 항상 이 열로 판단한다.
 
 ## 7. 환경
 
-- Python 3.14, 로컬 가상환경 `.venv`. 주요 패키지: pandas, pyarrow, numpy, scikit-learn, lightgbm 4.6.
+- Python 3.14, 로컬 가상환경 `.venv`. 주요 패키지: pandas, pyarrow, numpy, scikit-learn,
+  lightgbm 4.6, xgboost 3.2, catboost 1.2.
 - macOS에서 lightgbm 실행에 `brew install libomp` 필요.
 - 학습은 GPU 불필요(수십 초~수 분, CPU). 무거운 부분은 센서 parquet 집계뿐이며 캐시로 재사용한다.

@@ -50,6 +50,30 @@ def _longest_off_block(g: pd.DataFrame) -> pd.Series:
     return pd.Series({"onset": onset, "wake": wake, "tst": wake - onset})
 
 
+TEMPORAL_COLS = ["slp_tst_h", "slp_onset_h", "slp_wake_h", "slp_eff_proxy",
+                 "slp_hr_min", "slp_hr_mean", "slp_step_sum", "slp_waso_screen_events"]
+
+
+def _add_temporal(sleep: pd.DataFrame) -> pd.DataFrame:
+    """시간 동역학 피처: 전날 값(lag) + 최근 평균(rolling, 현재일 제외) + 최근평균 대비 편차.
+
+    수면빚·수면 모멘텀·규칙성을 포착. 센서는 모든 날 존재하므로 라벨 유무와 무관하게 계산 가능.
+    """
+    sleep = sleep.sort_values(["subject_id", "sleep_date"]).reset_index(drop=True)
+    g = sleep.groupby("subject_id")
+    new = {}
+    for c in TEMPORAL_COLS:
+        if c not in sleep.columns:
+            continue
+        new[f"{c}_lag1"] = g[c].shift(1)
+        roll7 = g[c].transform(lambda s: s.rolling(7, min_periods=2).mean().shift(1))
+        roll3 = g[c].transform(lambda s: s.rolling(3, min_periods=1).mean().shift(1))
+        new[f"{c}_roll7"] = roll7
+        new[f"{c}_roll3"] = roll3
+        new[f"{c}_vs_roll7"] = sleep[c] - roll7   # 최근 평소 대비 오늘
+    return pd.concat([sleep, pd.DataFrame(new, index=sleep.index)], axis=1)
+
+
 def build_sleep_features(use_cache: bool = True) -> pd.DataFrame:
     cache = C.CACHE_DIR / "sleep_features.parquet"
     if use_cache and cache.exists():
@@ -103,6 +127,8 @@ def build_sleep_features(use_cache: bool = True) -> pd.DataFrame:
     # 파생: 수면효율 프록시 = 1 - 화면사용비율 ; 입면지연 프록시 = onset(클수록 늦게 잠)
     sleep["slp_eff_proxy"] = 1 - sleep["slp_screen_on_ratio"]
     sleep = sleep.reset_index().rename(columns={"night": "sleep_date"})
+
+    sleep = _add_temporal(sleep)
     sleep.to_parquet(cache, index=False)
     print(f"  saved {cache}  shape={sleep.shape}")
     return sleep
