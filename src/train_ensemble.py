@@ -24,9 +24,9 @@ from .build_dataset import build_dataset
 from .cv import subject_time_blocked_folds
 from .models import fit_fold
 
-CLIP = 1e-6
+CLIP = C.PROB_CLIP
 N_SPLITS = 5
-SMOOTH = 8.0
+SMOOTH = C.PRIOR_SMOOTH
 MODELS = ["lgb", "xgb", "cat"]
 SEED = 42
 WGRID = np.linspace(0, 1, 11)  # coarse: 0,0.1,...,1.0
