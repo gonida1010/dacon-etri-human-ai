@@ -48,6 +48,17 @@ def _cat(Xtr, ytr, Xva, yva, Xte, seed):
     return m.predict_proba(Xva)[:, 1], m.predict_proba(Xte)[:, 1]
 
 
+def select_topk(Xtr, ytr, k, seed=1):
+    """폴드 train 만으로 LGBM 중요도(gain) 상위 K 피처 선택(누수 없음). subject_id 는 항상 포함."""
+    ds = lgb.Dataset(Xtr, label=ytr, categorical_feature=[CAT], free_raw_data=False)
+    s1 = lgb.train({**LGB_PARAMS, "seed": seed}, ds, num_boost_round=300)
+    imp = pd.Series(s1.feature_importance("gain"), index=Xtr.columns).sort_values(ascending=False)
+    cols = imp.head(k).index.tolist()
+    if CAT not in cols:
+        cols.append(CAT)
+    return cols
+
+
 FITTERS = {"lgb": _lgb, "xgb": _xgb, "cat": _cat}
 
 

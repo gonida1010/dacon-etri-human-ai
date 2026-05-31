@@ -22,7 +22,7 @@ from sklearn.isotonic import IsotonicRegression
 from . import config as C
 from .build_dataset import build_dataset
 from .cv import subject_time_blocked_folds
-from .models import fit_fold
+from .models import fit_fold, select_topk
 
 CLIP = C.PROB_CLIP
 N_SPLITS = 5
@@ -72,8 +72,11 @@ def train():
             c = oof_prior.columns.get_loc(t)
             oof_prior.iloc[va, c] = prior_tr[va]
             test_prior[t] += prior_te / N_SPLITS
+            cols = (select_topk(Xtr_f.iloc[tr], y[tr], C.TOP_K_FEATURES)
+                    if C.TOP_K_FEATURES else list(Xtr_f.columns))
             for m in MODELS:
-                va_p, te_p = fit_fold(m, Xtr_f.iloc[tr], y[tr], Xtr_f.iloc[va], y[va], Xte_f, SEED)
+                va_p, te_p = fit_fold(m, Xtr_f.iloc[tr][cols], y[tr], Xtr_f.iloc[va][cols],
+                                      y[va], Xte_f[cols], SEED)
                 oof[m].iloc[va, c] = va_p
                 test[m][t] += te_p / N_SPLITS
         print(f"  done target {t}", flush=True)

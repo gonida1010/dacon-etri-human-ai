@@ -94,6 +94,40 @@ def aggregate_hr() -> pd.DataFrame:
     return pd.concat(parts, axis=1) if parts else pd.DataFrame()
 
 
+# 행동 시간동역학을 적용할 일일 피처(누적 활동량·각성·사회부하·수면환경)
+TEMPORAL_DAILY = [
+    "wPedo_day_step_sum", "wPedo_day_distance_sum",   # 낮 신체 활동(피로 누적)
+    "wHr_eve_mean", "wHr_day_mean",                    # 각성/심박 부하
+    "mActivity_day_move_frac",                          # 낮 이동 비율
+    "mUsage_eve_use_total_sum", "mUsage_full_use_total_sum",  # 스마트폰/앱 사용(정신부하)
+    "mScreenStatus_full_m_screen_use_mean",            # 화면 사용
+    "amb_conversation_eve_mean", "amb_speech_full_mean",  # 사회적 상호작용(스트레스)
+    "mGps_day_gps_speed_mean_mean",                    # 이동성
+    "mLight_day_m_light_mean",                          # 빛 노출
+]
+
+
+def add_daily_temporal(daily: pd.DataFrame, cols: list[str] | None = None) -> pd.DataFrame:
+    """일일 행동 피처에 시간동역학 추가: 전날(lag1)·최근평균(roll3/7, 현재 제외)·최근 대비 편차.
+
+    피로/스트레스(Q2·Q3)는 누적 활동·각성·수면빚의 함수 → 단일 날보다 추세가 중요.
+    daily 는 (subject_id, date) 키. 결과는 동일 키에 컬럼 추가.
+    """
+    cols = cols or TEMPORAL_DAILY
+    cols = [c for c in cols if c in daily.columns]
+    daily = daily.sort_values(["subject_id", "date"]).reset_index(drop=True)
+    g = daily.groupby("subject_id")
+    new = {}
+    for c in cols:
+        new[f"{c}_lag1"] = g[c].shift(1)
+        r7 = g[c].transform(lambda s: s.rolling(7, min_periods=2).mean().shift(1))
+        r3 = g[c].transform(lambda s: s.rolling(3, min_periods=1).mean().shift(1))
+        new[f"{c}_roll7"] = r7
+        new[f"{c}_vs_roll7"] = daily[c] - r7
+        new[f"{c}_roll3"] = r3
+    return pd.concat([daily, pd.DataFrame(new, index=daily.index)], axis=1)
+
+
 def build_daily_features(use_cache: bool = True) -> pd.DataFrame:
     cache = C.CACHE_DIR / "daily_features.parquet"
     if use_cache and cache.exists():

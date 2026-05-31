@@ -50,8 +50,20 @@ def _longest_off_block(g: pd.DataFrame) -> pd.Series:
     return pd.Series({"onset": onset, "wake": wake, "tst": wake - onset})
 
 
-TEMPORAL_COLS = ["slp_tst_h", "slp_onset_h", "slp_wake_h", "slp_eff_proxy",
-                 "slp_hr_min", "slp_hr_mean", "slp_step_sum", "slp_waso_screen_events"]
+def _block_from_active(active_axis: np.ndarray) -> pd.Series:
+    """'활동(깨어있음)' 이벤트 시각 배열로 최장 비활동(수면) 블록을 찾는다."""
+    on = np.sort(active_axis)
+    bounds = np.concatenate([[-6.0], on, [12.0]])
+    gaps = np.diff(bounds)
+    if len(gaps) == 0:
+        return pd.Series({"onset": np.nan, "wake": np.nan, "tst": np.nan})
+    k = int(np.argmax(gaps))
+    return pd.Series({"onset": bounds[k], "wake": bounds[k + 1], "tst": bounds[k + 1] - bounds[k]})
+
+
+TEMPORAL_COLS = ["slp_tst_consensus", "slp_onset_consensus", "slp_wake_consensus",
+                 "slp_tst_hr", "slp_eff_proxy", "slp_hr_min", "slp_hr_mean",
+                 "slp_step_sum", "slp_waso_screen_events", "slp_waso_hr"]
 
 
 def _add_temporal(sleep: pd.DataFrame) -> pd.DataFrame:
@@ -103,13 +115,19 @@ def build_sleep_features(use_cache: bool = True) -> pd.DataFrame:
     parts.append(act.groupby(["subject_id", "night"]).agg(
         slp_still_ratio=("still", "mean"), slp_act_count=("still", "size")))
 
-    # 걸음: 야간 총 걸음(움직임), 걸음 발생 시점 수
+    # 걸음: 야간 총 걸음 + 워치기반 수면블록(걸음>0 = 깨어있음)
     pedo = _load_night("wPedo", ["step"])
     pedo["active"] = (pedo["step"] > 0).astype(float)
     parts.append(pedo.groupby(["subject_id", "night"]).agg(
         slp_step_sum=("step", "sum"), slp_step_active=("active", "sum")))
+    step_block = pedo[pedo["step"] > 0].groupby(["subject_id", "night"])["axis"] \
+        .apply(lambda s: _block_from_active(s.values))
+    if not step_block.empty:
+        step_block = step_block.unstack().rename(
+            columns={"onset": "slp_onset_steps", "wake": "slp_wake_steps", "tst": "slp_tst_steps"})
+        parts.append(step_block)
 
-    # 심박: 야간 최저(안정심박)·평균·변동(뒤척임 프록시)
+    # 심박: 안정심박·평균·변동 + 심박기반 수면블록(안정심박+10 이상 = 깨어있음)
     hr = _load_night("wHr", ["heart_rate"])
     arr = hr["heart_rate"].apply(lambda a: np.asarray(a, dtype=float))
     hr["hr_mean"] = arr.apply(lambda a: a.mean() if a.size else np.nan)
@@ -117,6 +135,18 @@ def build_sleep_features(use_cache: bool = True) -> pd.DataFrame:
     parts.append(hr.groupby(["subject_id", "night"]).agg(
         slp_hr_min=("hr_min", "min"), slp_hr_mean=("hr_mean", "mean"),
         slp_hr_std=("hr_mean", "std")))
+
+    def _hr_block(g):
+        thr = np.nanmin(g["hr_min"].values) + 10.0   # 그 밤의 안정심박 + 10bpm
+        awake = g.loc[g["hr_mean"] >= thr, "axis"].values
+        b = _block_from_active(awake)
+        b["waso_hr"] = int(((g["axis"] >= b["onset"]) & (g["axis"] <= b["wake"])
+                            & (g["hr_mean"] >= thr)).sum()) if np.isfinite(b["onset"]) else 0
+        return b
+    hr_block = hr.groupby(["subject_id", "night"]).apply(_hr_block, include_groups=False)
+    hr_block = hr_block.rename(columns={"onset": "slp_onset_hr", "wake": "slp_wake_hr",
+                                        "tst": "slp_tst_hr", "waso_hr": "slp_waso_hr"})
+    parts.append(hr_block)
 
     # 조도: 야간 어둠(폰+워치)
     for nm, col, out in [("mLight", "m_light", "slp_mlight_mean"), ("wLight", "w_light", "slp_wlight_mean")]:
@@ -126,6 +156,14 @@ def build_sleep_features(use_cache: bool = True) -> pd.DataFrame:
     sleep = pd.concat(parts, axis=1)
     # 파생: 수면효율 프록시 = 1 - 화면사용비율 ; 입면지연 프록시 = onset(클수록 늦게 잠)
     sleep["slp_eff_proxy"] = 1 - sleep["slp_screen_on_ratio"]
+    # 합의(consensus): 화면/걸음/심박 3종 수면블록의 중앙값 → 더 견고한 TST/onset/wake
+    for base in ["tst", "onset", "wake"]:
+        srcs = [f"slp_{base}_h", f"slp_{base}_steps", f"slp_{base}_hr"]
+        srcs = [c for c in srcs if c in sleep.columns]
+        sleep[f"slp_{base}_consensus"] = sleep[srcs].median(axis=1)
+    # 센서간 불일치(추정 신뢰도 프록시): 화면 vs 심박 TST 차이
+    if {"slp_tst_h", "slp_tst_hr"}.issubset(sleep.columns):
+        sleep["slp_tst_disagree"] = (sleep["slp_tst_h"] - sleep["slp_tst_hr"]).abs()
     sleep = sleep.reset_index().rename(columns={"night": "sleep_date"})
 
     sleep = _add_temporal(sleep)

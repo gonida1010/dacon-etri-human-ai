@@ -17,6 +17,7 @@ from sklearn.metrics import log_loss
 from . import config as C
 from .build_dataset import build_dataset
 from .cv import subject_time_blocked_folds
+from .models import select_topk
 
 CLIP = C.PROB_CLIP
 N_SPLITS = 5
@@ -56,12 +57,14 @@ def evaluate():
             pmap = smoothed_mean(y, tr, subj, gm)
             prior = np.array([pmap.get(s, gm) for s in subj])
             Xf = Xtr.copy(); Xf["subj_prior"] = prior
-            dtr = lgb.Dataset(Xf.iloc[tr], label=y[tr], categorical_feature=["subject_id"], free_raw_data=False)
-            dva = lgb.Dataset(Xf.iloc[va], label=y[va], categorical_feature=["subject_id"], free_raw_data=False)
+            cols = (select_topk(Xf.iloc[tr], y[tr], C.TOP_K_FEATURES)
+                    if C.TOP_K_FEATURES else list(Xf.columns))
+            dtr = lgb.Dataset(Xf.iloc[tr][cols], label=y[tr], categorical_feature=["subject_id"], free_raw_data=False)
+            dva = lgb.Dataset(Xf.iloc[va][cols], label=y[va], categorical_feature=["subject_id"], free_raw_data=False)
             m = lgb.train(PARAMS, dtr, num_boost_round=3000, valid_sets=[dva],
                           callbacks=[lgb.early_stopping(80, verbose=False)])
             c = oof_m.columns.get_loc(t)
-            oof_m.iloc[va, c] = m.predict(Xf.iloc[va]); oof_p.iloc[va, c] = prior[va]
+            oof_m.iloc[va, c] = m.predict(Xf.iloc[va][cols]); oof_p.iloc[va, c] = prior[va]
 
     print(f"\n{'tgt':4s} | {'prior':>6s} {'model':>6s} {'blend':>6s} (full) | "
           f"{'prior':>6s} {'model':>6s} {'blend':>6s} (last) | w*  판정")

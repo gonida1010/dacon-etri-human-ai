@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 
 from . import config as C
-from .sensor_features import build_daily_features
+from .sensor_features import build_daily_features, add_daily_temporal
 from .sleep_features import build_sleep_features
 from .nested_features import build_nested_features
 
@@ -61,7 +61,8 @@ def _derived_features(subj: pd.Series, sensor: pd.DataFrame, slp: pd.DataFrame) 
     out = pd.DataFrame(index=slp.index)
     g = pd.Series(subj.values, index=slp.index)
 
-    for col in ["slp_onset_h", "slp_wake_h", "slp_tst_h"]:
+    for col in ["slp_onset_consensus", "slp_wake_consensus", "slp_tst_consensus",
+                "slp_tst_hr"]:
         if col in slp.columns:
             med = slp[col].groupby(g.values).transform("median")
             out[f"{col}_dev"] = slp[col] - med            # 부호 있는 편차
@@ -98,6 +99,7 @@ def build_dataset(use_cache: bool = True):
     daily = build_daily_features(use_cache=use_cache)
     nested = build_nested_features(use_cache=use_cache)
     daily = daily.merge(nested, on=["subject_id", "date"], how="outer")
+    daily = add_daily_temporal(daily)   # 행동 시간동역학(피로/스트레스 추세)
     sleep = build_sleep_features(use_cache=use_cache)
     train, test = load_labels()
 
