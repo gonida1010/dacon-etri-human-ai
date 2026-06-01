@@ -20,7 +20,7 @@ from .cv import subject_time_blocked_folds
 from .models import select_topk
 
 CLIP = C.PROB_CLIP
-N_SPLITS = 5
+N_SPLITS = C.N_SPLITS
 SMOOTH = C.PRIOR_SMOOTH
 WGRID = np.linspace(0, 1, 11)
 PARAMS = dict(objective="binary", learning_rate=0.02, num_leaves=15, min_child_samples=25,

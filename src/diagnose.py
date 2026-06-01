@@ -15,9 +15,9 @@ from . import config as C
 from .build_dataset import build_dataset
 from . import cv as CV
 
-CLIP = 1e-6
-N_SPLITS = 5
-SMOOTH = 8.0
+CLIP = C.PROB_CLIP
+N_SPLITS = C.N_SPLITS
+SMOOTH = C.PRIOR_SMOOTH
 PARAMS = dict(objective="binary", learning_rate=0.02, num_leaves=15, min_child_samples=25,
               feature_fraction=0.6, bagging_fraction=0.8, bagging_freq=1,
               lambda_l1=1.0, lambda_l2=1.0, verbosity=-1, seed=42)

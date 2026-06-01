@@ -81,6 +81,8 @@ def _derived_features(subj: pd.Series, sensor: pd.DataFrame, slp: pd.DataFrame) 
                       ("L_mUsage_eve_use_total_sum", "prebed_app_time")]:
         if src in sensor.columns:
             out[name] = sensor[src].values
+    # 참고: WiFi '집/평소 잠자리' 파생(지표/편차)을 시도했으나 정직검증에서 오히려 악화
+    # (모델이 이미 원본 mWifi_night 피처에서 동일 신호를 추출 → 중복 노이즈). 제거함.
     return out
 
 

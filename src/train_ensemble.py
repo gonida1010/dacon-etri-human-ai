@@ -25,10 +25,10 @@ from .cv import subject_time_blocked_folds
 from .models import fit_fold, select_topk
 
 CLIP = C.PROB_CLIP
-N_SPLITS = 5
+N_SPLITS = C.N_SPLITS
 SMOOTH = C.PRIOR_SMOOTH
 MODELS = ["lgb", "xgb", "cat"]
-SEED = 42
+SEED = C.SEEDS[0]
 WGRID = np.linspace(0, 1, 11)  # coarse: 0,0.1,...,1.0
 
 
@@ -99,7 +99,9 @@ def train():
             calib_on[t] = True
             iso_full = IsotonicRegression(out_of_bounds="clip").fit(oof_ens[t].values, ytr[t].values)
             oof_cal[t] = iso_full.predict(oof_ens[t].values)
-            test_cal[t] = iso_full.predict(test_ens[t].values)
+            # 헤드라인 정직성: last-block 행은 last를 보지 않은 보정기(iso)로 예측
+            oof_cal.loc[last_block, t] = iso.predict(oof_ens[t].values[last_block])
+            test_cal[t] = iso_full.predict(test_ens[t].values)  # test는 진짜 미지 → 전체 적합 사용
         else:
             calib_on[t] = False
 

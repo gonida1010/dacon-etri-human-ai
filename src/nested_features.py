@@ -69,6 +69,29 @@ def aggregate_ble() -> pd.DataFrame:
     return _window_agg(df, ["ble_n"], "mBle")
 
 
+def _gps_location_agg(df: pd.DataFrame) -> pd.DataFrame:
+    """위치 축(새 신호): 이동반경(rog)·방문장소수·엔트로피·주거점 체류비율. 윈도우별."""
+    parts = []
+    for win, (h0, h1) in C.WINDOWS.items():
+        sub = df[(df["hour"] >= h0) & (df["hour"] < h1)]
+        if sub.empty:
+            continue
+
+        def agg(gp):
+            n = len(gp)
+            loc = gp.groupby(["latr", "lonr"]).size()
+            p = loc / n
+            return pd.Series({
+                f"mGps_{win}_rog": np.sqrt(gp["lat"].var() + gp["lon"].var()) if n > 2 else np.nan,
+                f"mGps_{win}_ndistinct": float(loc.size),
+                f"mGps_{win}_entropy": float(-(p * np.log(p + 1e-9)).sum()),
+                f"mGps_{win}_homefrac": float(loc.max() / n) if n else np.nan,
+            })
+
+        parts.append(sub.groupby(["subject_id", "date"]).apply(agg, include_groups=False))
+    return pd.concat(parts, axis=1) if parts else pd.DataFrame()
+
+
 def aggregate_gps() -> pd.DataFrame:
     df = pd.read_parquet(C.sensor_path("mGps"), columns=["subject_id", "timestamp", "m_gps"])
     spd = df["m_gps"].apply(lambda a: np.array([p["speed"] for p in a], dtype=float))
@@ -76,8 +99,15 @@ def aggregate_gps() -> pd.DataFrame:
     df["gps_speed_mean"] = spd.apply(lambda a: a.mean() if a.size else np.nan)
     df["gps_speed_max"] = spd.apply(lambda a: a.max() if a.size else np.nan)
     df["gps_alt_std"] = alt.apply(lambda a: a.std() if a.size else np.nan)
+    # 위치 좌표(마스킹된 정규화값이지만 장소 식별엔 일관됨)
+    df["lat"] = df["m_gps"].apply(lambda a: np.mean([p["latitude"] for p in a]) if len(a) else np.nan)
+    df["lon"] = df["m_gps"].apply(lambda a: np.mean([p["longitude"] for p in a]) if len(a) else np.nan)
+    df["latr"] = (df["lat"] * 1000).round()
+    df["lonr"] = (df["lon"] * 1000).round()
     df = _add_date_hour(df)
-    return _window_agg(df, ["gps_speed_mean", "gps_speed_max", "gps_alt_std"], "mGps")
+    speed_part = _window_agg(df, ["gps_speed_mean", "gps_speed_max", "gps_alt_std"], "mGps")
+    loc_part = _gps_location_agg(df[df["lat"].notna()])
+    return pd.concat([speed_part, loc_part], axis=1)
 
 
 def build_nested_features(use_cache: bool = True) -> pd.DataFrame:

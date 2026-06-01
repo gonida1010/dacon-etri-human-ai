@@ -11,6 +11,7 @@ __pycache__/
 # 파이프라인 산출물 (코드로 재생성 가능)
 cache/
 submissions/
+eda/
 
 # 노트북/시각화 부산물
 *.png

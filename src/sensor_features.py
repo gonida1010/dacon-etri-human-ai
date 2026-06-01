@@ -74,6 +74,9 @@ def aggregate_hr() -> pd.DataFrame:
     df["hr_min"] = arr.apply(lambda a: a.min() if a.size else np.nan)
     df["hr_max"] = arr.apply(lambda a: a.max() if a.size else np.nan)
     df["hr_std"] = arr.apply(lambda a: a.std() if a.size else np.nan)
+    # HRV(심박변이): 박동 간 변동(RMSSD)·표본 표준편차(SDNN). 수면질·스트레스의 표준 지표(새 축).
+    df["hr_rmssd"] = arr.apply(lambda a: np.sqrt(np.mean(np.diff(a) ** 2)) if a.size >= 3 else np.nan)
+    df["hr_sdnn"] = arr.apply(lambda a: a.std() if a.size >= 3 else np.nan)
     df = _add_date_hour(df)
     parts = []
     for win, (h0, h1) in C.WINDOWS.items():
@@ -87,6 +90,8 @@ def aggregate_hr() -> pd.DataFrame:
                 f"wHr_{win}_max": ("hr_max", "max"),
                 f"wHr_{win}_std": ("hr_mean", "std"),
                 f"wHr_{win}_restmin": ("hr_min", "mean"),
+                f"wHr_{win}_rmssd": ("hr_rmssd", "mean"),
+                f"wHr_{win}_sdnn": ("hr_sdnn", "mean"),
                 f"wHr_{win}_count": ("hr_mean", "size"),
             }
         )
