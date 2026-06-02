@@ -84,6 +84,7 @@ def fit_lgbm_oof_test(
     oof_prior = pd.DataFrame(0.0, index=Xtr.index, columns=C.TARGET_COLS)
     test_model = pd.DataFrame(0.0, index=Xte.index, columns=C.TARGET_COLS)
 
+    n_seed = len(C.SEEDS)
     for target in C.TARGET_COLS:
         y = ytr[target].values
         gmean = float(y.mean())
@@ -100,28 +101,16 @@ def fit_lgbm_oof_test(
             Xtr_f["subj_prior"] = prior_tr
             Xte_f["subj_prior"] = prior_te
 
-            dtr = lgb.Dataset(
-                Xtr_f.iloc[tr_idx],
-                label=y[tr_idx],
-                categorical_feature=["subject_id"],
-                free_raw_data=False,
-            )
-            dva = lgb.Dataset(
-                Xtr_f.iloc[va_idx],
-                label=y[va_idx],
-                categorical_feature=["subject_id"],
-                free_raw_data=False,
-            )
-            model = lgb.train(
-                LGB_PARAMS,
-                dtr,
-                num_boost_round=3000,
-                valid_sets=[dva],
-                callbacks=[lgb.early_stopping(80, verbose=False)],
-            )
-            oof_model.loc[va_idx, target] = model.predict(Xtr_f.iloc[va_idx])
+            dtr = lgb.Dataset(Xtr_f.iloc[tr_idx], label=y[tr_idx],
+                              categorical_feature=["subject_id"], free_raw_data=False)
+            dva = lgb.Dataset(Xtr_f.iloc[va_idx], label=y[va_idx],
+                              categorical_feature=["subject_id"], free_raw_data=False)
             oof_prior.loc[va_idx, target] = prior_tr[va_idx]
-            test_model[target] += model.predict(Xte_f) / C.N_SPLITS
+            for seed in C.SEEDS:   # 멀티시드 배깅(단일시드 노이즈 제거 → Q1/S1 안정화)
+                model = lgb.train({**LGB_PARAMS, "seed": seed}, dtr, num_boost_round=3000,
+                                  valid_sets=[dva], callbacks=[lgb.early_stopping(80, verbose=False)])
+                oof_model.loc[va_idx, target] += model.predict(Xtr_f.iloc[va_idx]) / n_seed
+                test_model[target] += model.predict(Xte_f) / (C.N_SPLITS * n_seed)
 
     return oof_model, oof_prior, test_model
 
