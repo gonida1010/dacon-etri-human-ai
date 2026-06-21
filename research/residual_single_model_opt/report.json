@@ -1,0 +1,106 @@
+{
+  "purpose": "Optimize one single model as residual correction over the temporal anchor.",
+  "model": "extra_trees",
+  "top_k_grid": [
+    80,
+    160
+  ],
+  "shrink_grid": [
+    0.0,
+    0.03,
+    0.05,
+    0.08,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.45,
+    0.65,
+    1.0
+  ],
+  "weight_profiles": [
+    "uniform",
+    "subject_class",
+    "recent_class",
+    "recent_resid"
+  ],
+  "param_profiles": [
+    "smooth",
+    "mid",
+    "wide"
+  ],
+  "anchor": {
+    "full_logloss": 0.595829751093375,
+    "last_logloss": 0.5932822067983344
+  },
+  "candidate_scores": [
+    {
+      "candidate": "extra_trees_residual_composite",
+      "full_logloss": 0.5974290376780036,
+      "fold0_logloss": 0.5940508496803455,
+      "fold1_logloss": 0.5845171537334422,
+      "fold2_logloss": 0.625176979189742,
+      "fold3_logloss": 0.5953735933676833,
+      "fold4_logloss": 0.5885012244772831,
+      "last_logloss": 0.5885012244772831,
+      "tail3_mean": 0.6030172656782361,
+      "tail3_worst": 0.625176979189742,
+      "fold_std": 0.014366369115561366,
+      "notes": "extra_trees residual correction selected by composite",
+      "full_delta_vs_anchor": 0.0015992865846286008,
+      "last_delta_vs_anchor": -0.004780982321051286,
+      "rank_score": 0.5942925607765186
+    },
+    {
+      "candidate": "anchor",
+      "full_logloss": 0.595829751093375,
+      "fold0_logloss": 0.5926653685309619,
+      "fold1_logloss": 0.5822111636648557,
+      "fold2_logloss": 0.6224215044455317,
+      "fold3_logloss": 0.5894162870220908,
+      "fold4_logloss": 0.5932822067983344,
+      "last_logloss": 0.5932822067983344,
+      "tail3_mean": 0.6017066660886523,
+      "tail3_worst": 0.6224215044455317,
+      "fold_std": 0.01378462437451174,
+      "notes": "temporal anchor",
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0,
+      "rank_score": 0.5974251744697103
+    },
+    {
+      "candidate": "extra_trees_residual_last",
+      "full_logloss": 0.602733982302177,
+      "fold0_logloss": 0.5979977424098466,
+      "fold1_logloss": 0.5914060073555409,
+      "fold2_logloss": 0.6342889255675687,
+      "fold3_logloss": 0.6031110908539677,
+      "fold4_logloss": 0.5870826484709752,
+      "last_logloss": 0.5870826484709752,
+      "tail3_mean": 0.6081608882975039,
+      "tail3_worst": 0.6342889255675687,
+      "fold_std": 0.016682724693672935,
+      "notes": "extra_trees residual correction selected by last",
+      "full_delta_vs_anchor": 0.006904231208802014,
+      "last_delta_vs_anchor": -0.006199558327359189,
+      "rank_score": 0.5981768524524699
+    },
+    {
+      "candidate": "extra_trees_residual_full",
+      "full_logloss": 0.5954307421856557,
+      "fold0_logloss": 0.5914669583094417,
+      "fold1_logloss": 0.5822597560317825,
+      "fold2_logloss": 0.6221389026748613,
+      "fold3_logloss": 0.5878416363691015,
+      "fold4_logloss": 0.5944355623562344,
+      "last_logloss": 0.5944355623562344,
+      "tail3_mean": 0.6014720338000656,
+      "tail3_worst": 0.6221389026748613,
+      "fold_std": 0.013862911237698113,
+      "notes": "extra_trees residual correction selected by full",
+      "full_delta_vs_anchor": -0.0003990089077192671,
+      "last_delta_vs_anchor": 0.001153355557899971,
+      "rank_score": 0.5985689361311936
+    }
+  ]
+}

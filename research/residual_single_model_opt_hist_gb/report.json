@@ -1,0 +1,106 @@
+{
+  "purpose": "Optimize one single model as residual correction over the temporal anchor.",
+  "model": "hist_gb",
+  "top_k_grid": [
+    80,
+    160
+  ],
+  "shrink_grid": [
+    0.0,
+    0.03,
+    0.05,
+    0.08,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.45,
+    0.65,
+    1.0
+  ],
+  "weight_profiles": [
+    "uniform",
+    "subject_class",
+    "recent_class",
+    "recent_resid"
+  ],
+  "param_profiles": [
+    "smooth",
+    "mid",
+    "tiny"
+  ],
+  "anchor": {
+    "full_logloss": 0.595829751093375,
+    "last_logloss": 0.5932822067983344
+  },
+  "candidate_scores": [
+    {
+      "candidate": "hist_gb_residual_composite",
+      "full_logloss": 0.5971528194395407,
+      "fold0_logloss": 0.5973930210432307,
+      "fold1_logloss": 0.5818038367586915,
+      "fold2_logloss": 0.6229599471036915,
+      "fold3_logloss": 0.5969048688029028,
+      "fold4_logloss": 0.5868642846759577,
+      "last_logloss": 0.5868642846759577,
+      "tail3_mean": 0.6022430335275174,
+      "tail3_worst": 0.6229599471036915,
+      "fold_std": 0.014195541495216792,
+      "notes": "hist_gb residual correction selected by composite",
+      "full_delta_vs_anchor": 0.00132306834616569,
+      "last_delta_vs_anchor": -0.006417922122376685,
+      "rank_score": 0.5921322754854335
+    },
+    {
+      "candidate": "hist_gb_residual_full",
+      "full_logloss": 0.5949995983605376,
+      "fold0_logloss": 0.5915273588368921,
+      "fold1_logloss": 0.5814818931915419,
+      "fold2_logloss": 0.6213886600492683,
+      "fold3_logloss": 0.5892695663544693,
+      "fold4_logloss": 0.5921662972907598,
+      "last_logloss": 0.5921662972907598,
+      "tail3_mean": 0.6009415078981658,
+      "tail3_worst": 0.6213886600492683,
+      "fold_std": 0.013652022062298305,
+      "notes": "hist_gb residual correction selected by full",
+      "full_delta_vs_anchor": -0.0008301527328373748,
+      "last_delta_vs_anchor": -0.001115909507574675,
+      "rank_score": 0.5962557277209802
+    },
+    {
+      "candidate": "anchor",
+      "full_logloss": 0.595829751093375,
+      "fold0_logloss": 0.5926653685309619,
+      "fold1_logloss": 0.5822111636648557,
+      "fold2_logloss": 0.6224215044455317,
+      "fold3_logloss": 0.5894162870220908,
+      "fold4_logloss": 0.5932822067983344,
+      "last_logloss": 0.5932822067983344,
+      "tail3_mean": 0.6017066660886523,
+      "tail3_worst": 0.6224215044455317,
+      "fold_std": 0.01378462437451174,
+      "notes": "temporal anchor",
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0,
+      "rank_score": 0.5974251744697103
+    },
+    {
+      "candidate": "hist_gb_residual_last",
+      "full_logloss": 0.6112069982320614,
+      "fold0_logloss": 0.6114353927393211,
+      "fold1_logloss": 0.5883229109527182,
+      "fold2_logloss": 0.6466946359073013,
+      "fold3_logloss": 0.6245662354022917,
+      "fold4_logloss": 0.5844087837181611,
+      "last_logloss": 0.5844087837181611,
+      "tail3_mean": 0.618556551675918,
+      "tail3_worst": 0.6466946359073013,
+      "fold_std": 0.02315014411901301,
+      "notes": "hist_gb residual correction selected by last",
+      "full_delta_vs_anchor": 0.015377247138686378,
+      "last_delta_vs_anchor": -0.00887342308017336,
+      "rank_score": 0.6031070606323211
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[22:11:23] Loading dataset and anchor bank
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+[22:11:23] anchor full=0.595830 last=0.593282
+[22:11:24] Optimizing extra_trees residual target=Q1 anchor_full=0.590425 anchor_last=0.618506
+[22:11:50] Q1 best rank=0.623398 full=0.590425 last=0.618506 cfg=extra_trees|smooth|uniform|top80 shrink=0.0
+[22:11:50] Optimizing extra_trees residual target=Q2 anchor_full=0.692880 anchor_last=0.638084
+[22:12:17] Q2 best rank=0.656265 full=0.692880 last=0.638084 cfg=extra_trees|smooth|uniform|top80 shrink=0.0
+[22:12:17] Optimizing extra_trees residual target=Q3 anchor_full=0.662681 anchor_last=0.634692
+[22:12:44] Q3 best rank=0.643707 full=0.663230 last=0.633154 cfg=extra_trees|mid|uniform|top160 shrink=0.15
+[22:12:44] Optimizing extra_trees residual target=S1 anchor_full=0.492352 anchor_last=0.449544
+[22:13:11] S1 best rank=0.455062 full=0.492352 last=0.449544 cfg=extra_trees|smooth|uniform|top80 shrink=0.0
+[22:13:11] Optimizing extra_trees residual target=S2 anchor_full=0.560120 anchor_last=0.622815
+[22:13:38] S2 best rank=0.604709 full=0.570765 last=0.590887 cfg=extra_trees|mid|subject_class|top80 shrink=0.65
+[22:13:38] Optimizing extra_trees residual target=S3 anchor_full=0.541551 anchor_last=0.600679
+[22:14:05] S3 best rank=0.608877 full=0.541551 last=0.600679 cfg=extra_trees|smooth|uniform|top80 shrink=0.0
+[22:14:05] Optimizing extra_trees residual target=S4 anchor_full=0.630799 anchor_last=0.588654
+[22:14:32] S4 best rank=0.594168 full=0.630799 last=0.588654 cfg=extra_trees|smooth|uniform|top80 shrink=0.0
+
+=== Residual single-model candidates ===
+                     candidate  rank_score  full_logloss  last_logloss  tail3_worst  fold_std                                                 notes
+extra_trees_residual_composite    0.594293      0.597429      0.588501     0.625177  0.014366 extra_trees residual correction selected by composite
+                        anchor    0.597425      0.595830      0.593282     0.622422  0.013785                                       temporal anchor
+     extra_trees_residual_last    0.598177      0.602734      0.587083     0.634289  0.016683      extra_trees residual correction selected by last
+     extra_trees_residual_full    0.598569      0.595431      0.594436     0.622139  0.013863      extra_trees residual correction selected by full
+
+=== Target choices (composite) ===
+target param_profile weight_profile  top_k  shrink  full_logloss  last_logloss  rank_score
+    Q1        smooth        uniform     80    0.00      0.590425      0.618506    0.623398
+    Q2        smooth        uniform     80    0.00      0.692880      0.638084    0.656265
+    Q3           mid        uniform    160    0.15      0.663230      0.633154    0.643707
+    S1        smooth        uniform     80    0.00      0.492352      0.449544    0.455062
+    S2           mid  subject_class     80    0.65      0.570765      0.590887    0.604709
+    S3        smooth        uniform     80    0.00      0.541551      0.600679    0.608877
+    S4        smooth        uniform     80    0.00      0.630799      0.588654    0.594168

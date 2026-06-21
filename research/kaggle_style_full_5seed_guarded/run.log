@@ -1,0 +1,2999 @@
+[20:12:16] Loading data and base features
+[20:12:16] Building existing temporal-prior anchor OOF/test
+[20:13:48] anchor full=0.595830 last=0.593282
+[20:13:48] Training model bank: lgbm
+[20:13:48] lgbm target=Q1 fold=1/5 seed=42 features=268 train=355 valid=95
+[250]	train's binary_logloss: 0.327061	valid's binary_logloss: 0.514765
+[500]	train's binary_logloss: 0.202565	valid's binary_logloss: 0.496848
+[20:13:50] lgbm target=Q1 fold=1 seed=42 best_iter=576 valid_logloss=0.492440 train_logloss=0.179519
+[20:13:50] lgbm target=Q1 fold=1/5 seed=7 features=268 train=355 valid=95
+[250]	train's binary_logloss: 0.324023	valid's binary_logloss: 0.509807
+[500]	train's binary_logloss: 0.201273	valid's binary_logloss: 0.48598
+[20:13:51] lgbm target=Q1 fold=1 seed=7 best_iter=521 valid_logloss=0.484473 train_logloss=0.194469
+[20:13:51] lgbm target=Q1 fold=1/5 seed=2024 features=268 train=355 valid=95
+[250]	train's binary_logloss: 0.322048	valid's binary_logloss: 0.514792
+[500]	train's binary_logloss: 0.199853	valid's binary_logloss: 0.497288
+[20:13:53] lgbm target=Q1 fold=1 seed=2024 best_iter=503 valid_logloss=0.496740 train_logloss=0.198770
+[20:13:53] lgbm target=Q1 fold=1/5 seed=1234 features=268 train=355 valid=95
+[250]	train's binary_logloss: 0.326211	valid's binary_logloss: 0.512951
+[500]	train's binary_logloss: 0.202398	valid's binary_logloss: 0.495917
+[20:13:54] lgbm target=Q1 fold=1 seed=1234 best_iter=627 valid_logloss=0.492857 train_logloss=0.165852
+[20:13:54] lgbm target=Q1 fold=1/5 seed=9999 features=268 train=355 valid=95
+[250]	train's binary_logloss: 0.32607	valid's binary_logloss: 0.518342
+[500]	train's binary_logloss: 0.201217	valid's binary_logloss: 0.50178
+[20:13:56] lgbm target=Q1 fold=1 seed=9999 best_iter=549 valid_logloss=0.500269 train_logloss=0.185746
+[20:13:56] lgbm target=Q1 fold=2/5 seed=42 features=268 train=358 valid=92
+[250]	train's binary_logloss: 0.299218	valid's binary_logloss: 0.599514
+[20:13:57] lgbm target=Q1 fold=2 seed=42 best_iter=194 valid_logloss=0.597025 train_logloss=0.346878
+[20:13:57] lgbm target=Q1 fold=2/5 seed=7 features=268 train=358 valid=92
+[250]	train's binary_logloss: 0.299735	valid's binary_logloss: 0.600598
+[20:13:58] lgbm target=Q1 fold=2 seed=7 best_iter=301 valid_logloss=0.599200 train_logloss=0.267215
+[20:13:58] lgbm target=Q1 fold=2/5 seed=2024 features=268 train=358 valid=92
+[250]	train's binary_logloss: 0.297836	valid's binary_logloss: 0.598742
+[20:13:59] lgbm target=Q1 fold=2 seed=2024 best_iter=261 valid_logloss=0.595028 train_logloss=0.290508
+[20:13:59] lgbm target=Q1 fold=2/5 seed=1234 features=268 train=358 valid=92
+[250]	train's binary_logloss: 0.300069	valid's binary_logloss: 0.600792
+[20:13:59] lgbm target=Q1 fold=2 seed=1234 best_iter=181 valid_logloss=0.596189 train_logloss=0.359862
+[20:13:59] lgbm target=Q1 fold=2/5 seed=9999 features=268 train=358 valid=92
+[250]	train's binary_logloss: 0.300736	valid's binary_logloss: 0.592944
+[20:14:00] lgbm target=Q1 fold=2 seed=9999 best_iter=280 valid_logloss=0.588233 train_logloss=0.280347
+[20:14:00] lgbm target=Q1 fold=3/5 seed=42 features=268 train=359 valid=91
+[250]	train's binary_logloss: 0.307765	valid's binary_logloss: 0.608354
+[20:14:01] lgbm target=Q1 fold=3 seed=42 best_iter=169 valid_logloss=0.603190 train_logloss=0.379277
+[20:14:01] lgbm target=Q1 fold=3/5 seed=7 features=268 train=359 valid=91
+[250]	train's binary_logloss: 0.304341	valid's binary_logloss: 0.615082
+[20:14:02] lgbm target=Q1 fold=3 seed=7 best_iter=194 valid_logloss=0.605194 train_logloss=0.351009
+[20:14:02] lgbm target=Q1 fold=3/5 seed=2024 features=268 train=359 valid=91
+[20:14:02] lgbm target=Q1 fold=3 seed=2024 best_iter=94 valid_logloss=0.611358 train_logloss=0.469273
+[20:14:02] lgbm target=Q1 fold=3/5 seed=1234 features=268 train=359 valid=91
+[20:14:03] lgbm target=Q1 fold=3 seed=1234 best_iter=114 valid_logloss=0.600093 train_logloss=0.441030
+[20:14:03] lgbm target=Q1 fold=3/5 seed=9999 features=268 train=359 valid=91
+[250]	train's binary_logloss: 0.30718	valid's binary_logloss: 0.611542
+[20:14:03] lgbm target=Q1 fold=3 seed=9999 best_iter=142 valid_logloss=0.602134 train_logloss=0.405759
+[20:14:04] lgbm target=Q1 fold=4/5 seed=42 features=268 train=363 valid=87
+[20:14:04] lgbm target=Q1 fold=4 seed=42 best_iter=58 valid_logloss=0.674032 train_logloss=0.520883
+[20:14:04] lgbm target=Q1 fold=4/5 seed=7 features=268 train=363 valid=87
+[20:14:04] lgbm target=Q1 fold=4 seed=7 best_iter=41 valid_logloss=0.670814 train_logloss=0.557616
+[20:14:04] lgbm target=Q1 fold=4/5 seed=2024 features=268 train=363 valid=87
+[20:14:05] lgbm target=Q1 fold=4 seed=2024 best_iter=51 valid_logloss=0.674674 train_logloss=0.538285
+[20:14:05] lgbm target=Q1 fold=4/5 seed=1234 features=268 train=363 valid=87
+[20:14:05] lgbm target=Q1 fold=4 seed=1234 best_iter=54 valid_logloss=0.673842 train_logloss=0.528693
+[20:14:05] lgbm target=Q1 fold=4/5 seed=9999 features=268 train=363 valid=87
+[20:14:05] lgbm target=Q1 fold=4 seed=9999 best_iter=47 valid_logloss=0.674902 train_logloss=0.541279
+[20:14:06] lgbm target=Q1 fold=5/5 seed=42 features=268 train=365 valid=85
+[250]	train's binary_logloss: 0.29693	valid's binary_logloss: 0.675926
+[20:14:06] lgbm target=Q1 fold=5 seed=42 best_iter=171 valid_logloss=0.664434 train_logloss=0.367648
+[20:14:06] lgbm target=Q1 fold=5/5 seed=7 features=268 train=365 valid=85
+[20:14:07] lgbm target=Q1 fold=5 seed=7 best_iter=104 valid_logloss=0.660982 train_logloss=0.446233
+[20:14:07] lgbm target=Q1 fold=5/5 seed=2024 features=268 train=365 valid=85
+[20:14:07] lgbm target=Q1 fold=5 seed=2024 best_iter=84 valid_logloss=0.662476 train_logloss=0.480622
+[20:14:07] lgbm target=Q1 fold=5/5 seed=1234 features=268 train=365 valid=85
+[20:14:08] lgbm target=Q1 fold=5 seed=1234 best_iter=99 valid_logloss=0.669741 train_logloss=0.454114
+[20:14:08] lgbm target=Q1 fold=5/5 seed=9999 features=268 train=365 valid=85
+[250]	train's binary_logloss: 0.294734	valid's binary_logloss: 0.671462
+[20:14:08] lgbm target=Q1 fold=5 seed=9999 best_iter=201 valid_logloss=0.664490 train_logloss=0.334519
+[20:14:09] lgbm target=Q2 fold=1/5 seed=42 features=275 train=355 valid=95
+[20:14:09] lgbm target=Q2 fold=1 seed=42 best_iter=16 valid_logloss=0.680256 train_logloss=0.635247
+[20:14:09] lgbm target=Q2 fold=1/5 seed=7 features=275 train=355 valid=95
+[20:14:09] lgbm target=Q2 fold=1 seed=7 best_iter=38 valid_logloss=0.674415 train_logloss=0.576671
+[20:14:09] lgbm target=Q2 fold=1/5 seed=2024 features=275 train=355 valid=95
+[20:14:10] lgbm target=Q2 fold=1 seed=2024 best_iter=42 valid_logloss=0.675689 train_logloss=0.569057
+[20:14:10] lgbm target=Q2 fold=1/5 seed=1234 features=275 train=355 valid=95
+[20:14:10] lgbm target=Q2 fold=1 seed=1234 best_iter=31 valid_logloss=0.671430 train_logloss=0.596242
+[20:14:10] lgbm target=Q2 fold=1/5 seed=9999 features=275 train=355 valid=95
+[20:14:10] lgbm target=Q2 fold=1 seed=9999 best_iter=49 valid_logloss=0.680553 train_logloss=0.553429
+[20:14:11] lgbm target=Q2 fold=2/5 seed=42 features=277 train=358 valid=92
+[20:14:11] lgbm target=Q2 fold=2 seed=42 best_iter=103 valid_logloss=0.679216 train_logloss=0.474319
+[20:14:11] lgbm target=Q2 fold=2/5 seed=7 features=277 train=358 valid=92
+[20:14:12] lgbm target=Q2 fold=2 seed=7 best_iter=114 valid_logloss=0.673571 train_logloss=0.454911
+[20:14:12] lgbm target=Q2 fold=2/5 seed=2024 features=277 train=358 valid=92
+[250]	train's binary_logloss: 0.32275	valid's binary_logloss: 0.681481
+[20:14:12] lgbm target=Q2 fold=2 seed=2024 best_iter=138 valid_logloss=0.672404 train_logloss=0.427841
+[20:14:12] lgbm target=Q2 fold=2/5 seed=1234 features=277 train=358 valid=92
+[20:14:13] lgbm target=Q2 fold=2 seed=1234 best_iter=60 valid_logloss=0.682748 train_logloss=0.540318
+[20:14:13] lgbm target=Q2 fold=2/5 seed=9999 features=277 train=358 valid=92
+[20:14:13] lgbm target=Q2 fold=2 seed=9999 best_iter=97 valid_logloss=0.674347 train_logloss=0.476731
+[20:14:13] lgbm target=Q2 fold=3/5 seed=42 features=277 train=359 valid=91
+[20:14:14] lgbm target=Q2 fold=3 seed=42 best_iter=13 valid_logloss=0.693276 train_logloss=0.641972
+[20:14:14] lgbm target=Q2 fold=3/5 seed=7 features=277 train=359 valid=91
+[20:14:14] lgbm target=Q2 fold=3 seed=7 best_iter=16 valid_logloss=0.690222 train_logloss=0.634436
+[20:14:14] lgbm target=Q2 fold=3/5 seed=2024 features=277 train=359 valid=91
+[20:14:14] lgbm target=Q2 fold=3 seed=2024 best_iter=6 valid_logloss=0.694505 train_logloss=0.663358
+[20:14:14] lgbm target=Q2 fold=3/5 seed=1234 features=277 train=359 valid=91
+[20:14:15] lgbm target=Q2 fold=3 seed=1234 best_iter=15 valid_logloss=0.690141 train_logloss=0.634677
+[20:14:15] lgbm target=Q2 fold=3/5 seed=9999 features=277 train=359 valid=91
+[20:14:15] lgbm target=Q2 fold=3 seed=9999 best_iter=1 valid_logloss=0.695207 train_logloss=0.679687
+[20:14:15] lgbm target=Q2 fold=4/5 seed=42 features=277 train=363 valid=87
+[250]	train's binary_logloss: 0.314889	valid's binary_logloss: 0.654526
+[20:14:16] lgbm target=Q2 fold=4 seed=42 best_iter=141 valid_logloss=0.642784 train_logloss=0.420468
+[20:14:16] lgbm target=Q2 fold=4/5 seed=7 features=277 train=363 valid=87
+[20:14:16] lgbm target=Q2 fold=4 seed=7 best_iter=116 valid_logloss=0.646608 train_logloss=0.451001
+[20:14:16] lgbm target=Q2 fold=4/5 seed=2024 features=277 train=363 valid=87
+[250]	train's binary_logloss: 0.314079	valid's binary_logloss: 0.669219
+[20:14:17] lgbm target=Q2 fold=4 seed=2024 best_iter=150 valid_logloss=0.652704 train_logloss=0.408216
+[20:14:17] lgbm target=Q2 fold=4/5 seed=1234 features=277 train=363 valid=87
+[20:14:17] lgbm target=Q2 fold=4 seed=1234 best_iter=80 valid_logloss=0.644272 train_logloss=0.505107
+[20:14:17] lgbm target=Q2 fold=4/5 seed=9999 features=277 train=363 valid=87
+[20:14:18] lgbm target=Q2 fold=4 seed=9999 best_iter=127 valid_logloss=0.649677 train_logloss=0.437090
+[20:14:18] lgbm target=Q2 fold=5/5 seed=42 features=274 train=365 valid=85
+[20:14:18] lgbm target=Q2 fold=5 seed=42 best_iter=5 valid_logloss=0.671459 train_logloss=0.673435
+[20:14:18] lgbm target=Q2 fold=5/5 seed=7 features=274 train=365 valid=85
+[20:14:19] lgbm target=Q2 fold=5 seed=7 best_iter=2 valid_logloss=0.669683 train_logloss=0.683534
+[20:14:19] lgbm target=Q2 fold=5/5 seed=2024 features=274 train=365 valid=85
+[20:14:19] lgbm target=Q2 fold=5 seed=2024 best_iter=3 valid_logloss=0.670196 train_logloss=0.680025
+[20:14:19] lgbm target=Q2 fold=5/5 seed=1234 features=274 train=365 valid=85
+[20:14:19] lgbm target=Q2 fold=5 seed=1234 best_iter=2 valid_logloss=0.670121 train_logloss=0.682861
+[20:14:19] lgbm target=Q2 fold=5/5 seed=9999 features=274 train=365 valid=85
+[20:14:19] lgbm target=Q2 fold=5 seed=9999 best_iter=1 valid_logloss=0.672213 train_logloss=0.686275
+[20:14:20] lgbm target=Q3 fold=1/5 seed=42 features=272 train=355 valid=95
+[20:14:20] lgbm target=Q3 fold=1 seed=42 best_iter=76 valid_logloss=0.689710 train_logloss=0.488219
+[20:14:20] lgbm target=Q3 fold=1/5 seed=7 features=272 train=355 valid=95
+[20:14:21] lgbm target=Q3 fold=1 seed=7 best_iter=89 valid_logloss=0.691346 train_logloss=0.468235
+[20:14:21] lgbm target=Q3 fold=1/5 seed=2024 features=272 train=355 valid=95
+[20:14:21] lgbm target=Q3 fold=1 seed=2024 best_iter=109 valid_logloss=0.694280 train_logloss=0.439838
+[20:14:21] lgbm target=Q3 fold=1/5 seed=1234 features=272 train=355 valid=95
+[20:14:22] lgbm target=Q3 fold=1 seed=1234 best_iter=112 valid_logloss=0.685916 train_logloss=0.437058
+[20:14:22] lgbm target=Q3 fold=1/5 seed=9999 features=272 train=355 valid=95
+[20:14:22] lgbm target=Q3 fold=1 seed=9999 best_iter=69 valid_logloss=0.687073 train_logloss=0.499564
+[20:14:22] lgbm target=Q3 fold=2/5 seed=42 features=276 train=358 valid=92
+[20:14:23] lgbm target=Q3 fold=2 seed=42 best_iter=106 valid_logloss=0.631382 train_logloss=0.452254
+[20:14:23] lgbm target=Q3 fold=2/5 seed=7 features=276 train=358 valid=92
+[20:14:23] lgbm target=Q3 fold=2 seed=7 best_iter=100 valid_logloss=0.638168 train_logloss=0.459221
+[20:14:23] lgbm target=Q3 fold=2/5 seed=2024 features=276 train=358 valid=92
+[20:14:24] lgbm target=Q3 fold=2 seed=2024 best_iter=108 valid_logloss=0.634682 train_logloss=0.448386
+[20:14:24] lgbm target=Q3 fold=2/5 seed=1234 features=276 train=358 valid=92
+[20:14:24] lgbm target=Q3 fold=2 seed=1234 best_iter=79 valid_logloss=0.636743 train_logloss=0.491050
+[20:14:24] lgbm target=Q3 fold=2/5 seed=9999 features=276 train=358 valid=92
+[250]	train's binary_logloss: 0.304047	valid's binary_logloss: 0.634483
+[20:14:25] lgbm target=Q3 fold=2 seed=9999 best_iter=196 valid_logloss=0.630106 train_logloss=0.348826
+[20:14:25] lgbm target=Q3 fold=3/5 seed=42 features=272 train=359 valid=91
+[20:14:26] lgbm target=Q3 fold=3 seed=42 best_iter=122 valid_logloss=0.610788 train_logloss=0.440364
+[20:14:26] lgbm target=Q3 fold=3/5 seed=7 features=272 train=359 valid=91
+[20:14:26] lgbm target=Q3 fold=3 seed=7 best_iter=105 valid_logloss=0.610469 train_logloss=0.463815
+[20:14:26] lgbm target=Q3 fold=3/5 seed=2024 features=272 train=359 valid=91
+[20:14:27] lgbm target=Q3 fold=3 seed=2024 best_iter=117 valid_logloss=0.614552 train_logloss=0.446838
+[20:14:27] lgbm target=Q3 fold=3/5 seed=1234 features=272 train=359 valid=91
+[20:14:27] lgbm target=Q3 fold=3 seed=1234 best_iter=79 valid_logloss=0.612360 train_logloss=0.503156
+[20:14:27] lgbm target=Q3 fold=3/5 seed=9999 features=272 train=359 valid=91
+[20:14:28] lgbm target=Q3 fold=3 seed=9999 best_iter=80 valid_logloss=0.609777 train_logloss=0.500996
+[20:14:28] lgbm target=Q3 fold=4/5 seed=42 features=272 train=363 valid=87
+[20:14:28] lgbm target=Q3 fold=4 seed=42 best_iter=59 valid_logloss=0.666170 train_logloss=0.527442
+[20:14:28] lgbm target=Q3 fold=4/5 seed=7 features=272 train=363 valid=87
+[20:14:29] lgbm target=Q3 fold=4 seed=7 best_iter=46 valid_logloss=0.661729 train_logloss=0.552610
+[20:14:29] lgbm target=Q3 fold=4/5 seed=2024 features=272 train=363 valid=87
+[20:14:29] lgbm target=Q3 fold=4 seed=2024 best_iter=21 valid_logloss=0.665983 train_logloss=0.609932
+[20:14:29] lgbm target=Q3 fold=4/5 seed=1234 features=272 train=363 valid=87
+[20:14:29] lgbm target=Q3 fold=4 seed=1234 best_iter=34 valid_logloss=0.669424 train_logloss=0.576635
+[20:14:29] lgbm target=Q3 fold=4/5 seed=9999 features=272 train=363 valid=87
+[20:14:30] lgbm target=Q3 fold=4 seed=9999 best_iter=69 valid_logloss=0.668693 train_logloss=0.506471
+[20:14:30] lgbm target=Q3 fold=5/5 seed=42 features=270 train=365 valid=85
+[20:14:30] lgbm target=Q3 fold=5 seed=42 best_iter=42 valid_logloss=0.663098 train_logloss=0.557360
+[20:14:30] lgbm target=Q3 fold=5/5 seed=7 features=270 train=365 valid=85
+[20:14:31] lgbm target=Q3 fold=5 seed=7 best_iter=18 valid_logloss=0.668960 train_logloss=0.614647
+[20:14:31] lgbm target=Q3 fold=5/5 seed=2024 features=270 train=365 valid=85
+[20:14:31] lgbm target=Q3 fold=5 seed=2024 best_iter=5 valid_logloss=0.670911 train_logloss=0.656789
+[20:14:31] lgbm target=Q3 fold=5/5 seed=1234 features=270 train=365 valid=85
+[20:14:31] lgbm target=Q3 fold=5 seed=1234 best_iter=41 valid_logloss=0.663526 train_logloss=0.558515
+[20:14:31] lgbm target=Q3 fold=5/5 seed=9999 features=270 train=365 valid=85
+[20:14:32] lgbm target=Q3 fold=5 seed=9999 best_iter=43 valid_logloss=0.665049 train_logloss=0.553936
+[20:14:32] lgbm target=S1 fold=1/5 seed=42 features=267 train=355 valid=95
+[250]	train's binary_logloss: 0.250447	valid's binary_logloss: 0.538077
+[20:14:32] lgbm target=S1 fold=1 seed=42 best_iter=172 valid_logloss=0.534010 train_logloss=0.308080
+[20:14:32] lgbm target=S1 fold=1/5 seed=7 features=267 train=355 valid=95
+[250]	train's binary_logloss: 0.249305	valid's binary_logloss: 0.536631
+[20:14:33] lgbm target=S1 fold=1 seed=7 best_iter=196 valid_logloss=0.528843 train_logloss=0.285802
+[20:14:33] lgbm target=S1 fold=1/5 seed=2024 features=267 train=355 valid=95
+[250]	train's binary_logloss: 0.248632	valid's binary_logloss: 0.536271
+[20:14:34] lgbm target=S1 fold=1 seed=2024 best_iter=180 valid_logloss=0.533064 train_logloss=0.298498
+[20:14:34] lgbm target=S1 fold=1/5 seed=1234 features=267 train=355 valid=95
+[250]	train's binary_logloss: 0.24801	valid's binary_logloss: 0.541272
+[20:14:34] lgbm target=S1 fold=1 seed=1234 best_iter=219 valid_logloss=0.536270 train_logloss=0.268293
+[20:14:34] lgbm target=S1 fold=1/5 seed=9999 features=267 train=355 valid=95
+[250]	train's binary_logloss: 0.250928	valid's binary_logloss: 0.535901
+[20:14:35] lgbm target=S1 fold=1 seed=9999 best_iter=187 valid_logloss=0.532420 train_logloss=0.294636
+[20:14:35] lgbm target=S1 fold=2/5 seed=42 features=267 train=358 valid=92
+[250]	train's binary_logloss: 0.250266	valid's binary_logloss: 0.493131
+[20:14:36] lgbm target=S1 fold=2 seed=42 best_iter=132 valid_logloss=0.478878 train_logloss=0.352594
+[20:14:36] lgbm target=S1 fold=2/5 seed=7 features=267 train=358 valid=92
+[20:14:36] lgbm target=S1 fold=2 seed=7 best_iter=128 valid_logloss=0.484831 train_logloss=0.356392
+[20:14:36] lgbm target=S1 fold=2/5 seed=2024 features=267 train=358 valid=92
+[250]	train's binary_logloss: 0.250355	valid's binary_logloss: 0.499734
+[20:14:37] lgbm target=S1 fold=2 seed=2024 best_iter=131 valid_logloss=0.485572 train_logloss=0.355288
+[20:14:37] lgbm target=S1 fold=2/5 seed=1234 features=267 train=358 valid=92
+[250]	train's binary_logloss: 0.249303	valid's binary_logloss: 0.498029
+[20:14:38] lgbm target=S1 fold=2 seed=1234 best_iter=178 valid_logloss=0.483680 train_logloss=0.305370
+[20:14:38] lgbm target=S1 fold=2/5 seed=9999 features=267 train=358 valid=92
+[250]	train's binary_logloss: 0.248403	valid's binary_logloss: 0.49444
+[20:14:38] lgbm target=S1 fold=2 seed=9999 best_iter=157 valid_logloss=0.478024 train_logloss=0.326339
+[20:14:38] lgbm target=S1 fold=3/5 seed=42 features=267 train=359 valid=91
+[250]	train's binary_logloss: 0.239418	valid's binary_logloss: 0.542174
+[20:14:39] lgbm target=S1 fold=3 seed=42 best_iter=169 valid_logloss=0.534241 train_logloss=0.302691
+[20:14:39] lgbm target=S1 fold=3/5 seed=7 features=267 train=359 valid=91
+[250]	train's binary_logloss: 0.242077	valid's binary_logloss: 0.543373
+[20:14:40] lgbm target=S1 fold=3 seed=7 best_iter=152 valid_logloss=0.535720 train_logloss=0.320666
+[20:14:40] lgbm target=S1 fold=3/5 seed=2024 features=267 train=359 valid=91
+[250]	train's binary_logloss: 0.24181	valid's binary_logloss: 0.547681
+[20:14:40] lgbm target=S1 fold=3 seed=2024 best_iter=156 valid_logloss=0.535243 train_logloss=0.317475
+[20:14:40] lgbm target=S1 fold=3/5 seed=1234 features=267 train=359 valid=91
+[250]	train's binary_logloss: 0.243658	valid's binary_logloss: 0.547035
+[20:14:41] lgbm target=S1 fold=3 seed=1234 best_iter=162 valid_logloss=0.530702 train_logloss=0.311993
+[20:14:41] lgbm target=S1 fold=3/5 seed=9999 features=267 train=359 valid=91
+[250]	train's binary_logloss: 0.24225	valid's binary_logloss: 0.538336
+[20:14:41] lgbm target=S1 fold=3 seed=9999 best_iter=160 valid_logloss=0.534391 train_logloss=0.312023
+[20:14:42] lgbm target=S1 fold=4/5 seed=42 features=267 train=363 valid=87
+[250]	train's binary_logloss: 0.249817	valid's binary_logloss: 0.447779
+[20:14:42] lgbm target=S1 fold=4 seed=42 best_iter=234 valid_logloss=0.446029 train_logloss=0.260980
+[20:14:42] lgbm target=S1 fold=4/5 seed=7 features=267 train=363 valid=87
+[250]	train's binary_logloss: 0.250581	valid's binary_logloss: 0.45597
+[20:14:43] lgbm target=S1 fold=4 seed=7 best_iter=180 valid_logloss=0.450653 train_logloss=0.305667
+[20:14:43] lgbm target=S1 fold=4/5 seed=2024 features=267 train=363 valid=87
+[250]	train's binary_logloss: 0.251392	valid's binary_logloss: 0.454962
+[20:14:44] lgbm target=S1 fold=4 seed=2024 best_iter=160 valid_logloss=0.448333 train_logloss=0.327678
+[20:14:44] lgbm target=S1 fold=4/5 seed=1234 features=267 train=363 valid=87
+[250]	train's binary_logloss: 0.252272	valid's binary_logloss: 0.452968
+[20:14:44] lgbm target=S1 fold=4 seed=1234 best_iter=212 valid_logloss=0.449356 train_logloss=0.279063
+[20:14:44] lgbm target=S1 fold=4/5 seed=9999 features=267 train=363 valid=87
+[250]	train's binary_logloss: 0.25155	valid's binary_logloss: 0.455162
+[20:14:45] lgbm target=S1 fold=4 seed=9999 best_iter=223 valid_logloss=0.452221 train_logloss=0.269848
+[20:14:45] lgbm target=S1 fold=5/5 seed=42 features=267 train=365 valid=85
+[20:14:46] lgbm target=S1 fold=5 seed=42 best_iter=127 valid_logloss=0.534802 train_logloss=0.348710
+[20:14:46] lgbm target=S1 fold=5/5 seed=7 features=267 train=365 valid=85
+[20:14:46] lgbm target=S1 fold=5 seed=7 best_iter=98 valid_logloss=0.537713 train_logloss=0.386980
+[20:14:46] lgbm target=S1 fold=5/5 seed=2024 features=267 train=365 valid=85
+[250]	train's binary_logloss: 0.241895	valid's binary_logloss: 0.558102
+[20:14:47] lgbm target=S1 fold=5 seed=2024 best_iter=140 valid_logloss=0.536966 train_logloss=0.336148
+[20:14:47] lgbm target=S1 fold=5/5 seed=1234 features=267 train=365 valid=85
+[20:14:47] lgbm target=S1 fold=5 seed=1234 best_iter=104 valid_logloss=0.540902 train_logloss=0.378216
+[20:14:47] lgbm target=S1 fold=5/5 seed=9999 features=267 train=365 valid=85
+[20:14:48] lgbm target=S1 fold=5 seed=9999 best_iter=95 valid_logloss=0.547700 train_logloss=0.389532
+[20:14:48] lgbm target=S2 fold=1/5 seed=42 features=268 train=355 valid=95
+[20:14:49] lgbm target=S2 fold=1 seed=42 best_iter=90 valid_logloss=0.603620 train_logloss=0.426948
+[20:14:49] lgbm target=S2 fold=1/5 seed=7 features=268 train=355 valid=95
+[20:14:49] lgbm target=S2 fold=1 seed=7 best_iter=57 valid_logloss=0.613238 train_logloss=0.480602
+[20:14:49] lgbm target=S2 fold=1/5 seed=2024 features=268 train=355 valid=95
+[20:14:49] lgbm target=S2 fold=1 seed=2024 best_iter=58 valid_logloss=0.608251 train_logloss=0.479277
+[20:14:49] lgbm target=S2 fold=1/5 seed=1234 features=268 train=355 valid=95
+[20:14:50] lgbm target=S2 fold=1 seed=1234 best_iter=66 valid_logloss=0.611297 train_logloss=0.464882
+[20:14:50] lgbm target=S2 fold=1/5 seed=9999 features=268 train=355 valid=95
+[20:14:50] lgbm target=S2 fold=1 seed=9999 best_iter=91 valid_logloss=0.605767 train_logloss=0.425001
+[20:14:50] lgbm target=S2 fold=2/5 seed=42 features=268 train=358 valid=92
+[250]	train's binary_logloss: 0.280109	valid's binary_logloss: 0.549283
+[20:14:51] lgbm target=S2 fold=2 seed=42 best_iter=131 valid_logloss=0.538149 train_logloss=0.389029
+[20:14:51] lgbm target=S2 fold=2/5 seed=7 features=268 train=358 valid=92
+[250]	train's binary_logloss: 0.27675	valid's binary_logloss: 0.542787
+[20:14:52] lgbm target=S2 fold=2 seed=7 best_iter=158 valid_logloss=0.538072 train_logloss=0.355772
+[20:14:52] lgbm target=S2 fold=2/5 seed=2024 features=268 train=358 valid=92
+[250]	train's binary_logloss: 0.278844	valid's binary_logloss: 0.537276
+[20:14:52] lgbm target=S2 fold=2 seed=2024 best_iter=148 valid_logloss=0.528292 train_logloss=0.367149
+[20:14:52] lgbm target=S2 fold=2/5 seed=1234 features=268 train=358 valid=92
+[250]	train's binary_logloss: 0.279639	valid's binary_logloss: 0.542041
+[20:14:53] lgbm target=S2 fold=2 seed=1234 best_iter=150 valid_logloss=0.533928 train_logloss=0.367110
+[20:14:53] lgbm target=S2 fold=2/5 seed=9999 features=268 train=358 valid=92
+[20:14:53] lgbm target=S2 fold=2 seed=9999 best_iter=124 valid_logloss=0.530624 train_logloss=0.398319
+[20:14:53] lgbm target=S2 fold=3/5 seed=42 features=268 train=359 valid=91
+[20:14:54] lgbm target=S2 fold=3 seed=42 best_iter=96 valid_logloss=0.563423 train_logloss=0.430884
+[20:14:54] lgbm target=S2 fold=3/5 seed=7 features=268 train=359 valid=91
+[20:14:54] lgbm target=S2 fold=3 seed=7 best_iter=75 valid_logloss=0.578013 train_logloss=0.463078
+[20:14:54] lgbm target=S2 fold=3/5 seed=2024 features=268 train=359 valid=91
+[20:14:55] lgbm target=S2 fold=3 seed=2024 best_iter=51 valid_logloss=0.573973 train_logloss=0.506345
+[20:14:55] lgbm target=S2 fold=3/5 seed=1234 features=268 train=359 valid=91
+[20:14:55] lgbm target=S2 fold=3 seed=1234 best_iter=57 valid_logloss=0.572440 train_logloss=0.493447
+[20:14:55] lgbm target=S2 fold=3/5 seed=9999 features=268 train=359 valid=91
+[20:14:56] lgbm target=S2 fold=3 seed=9999 best_iter=67 valid_logloss=0.574141 train_logloss=0.474089
+[20:14:56] lgbm target=S2 fold=4/5 seed=42 features=268 train=363 valid=87
+[250]	train's binary_logloss: 0.276035	valid's binary_logloss: 0.568234
+[20:14:57] lgbm target=S2 fold=4 seed=42 best_iter=271 valid_logloss=0.566339 train_logloss=0.261579
+[20:14:57] lgbm target=S2 fold=4/5 seed=7 features=268 train=363 valid=87
+[250]	train's binary_logloss: 0.275239	valid's binary_logloss: 0.579184
+[20:14:57] lgbm target=S2 fold=4 seed=7 best_iter=179 valid_logloss=0.570743 train_logloss=0.331521
+[20:14:57] lgbm target=S2 fold=4/5 seed=2024 features=268 train=363 valid=87
+[20:14:58] lgbm target=S2 fold=4 seed=2024 best_iter=121 valid_logloss=0.565588 train_logloss=0.395369
+[20:14:58] lgbm target=S2 fold=4/5 seed=1234 features=268 train=363 valid=87
+[250]	train's binary_logloss: 0.275131	valid's binary_logloss: 0.584154
+[20:14:58] lgbm target=S2 fold=4 seed=1234 best_iter=176 valid_logloss=0.572076 train_logloss=0.337322
+[20:14:58] lgbm target=S2 fold=4/5 seed=9999 features=268 train=363 valid=87
+[250]	train's binary_logloss: 0.273715	valid's binary_logloss: 0.587641
+[20:14:59] lgbm target=S2 fold=4 seed=9999 best_iter=149 valid_logloss=0.572924 train_logloss=0.361201
+[20:14:59] lgbm target=S2 fold=5/5 seed=42 features=268 train=365 valid=85
+[20:15:00] lgbm target=S2 fold=5 seed=42 best_iter=86 valid_logloss=0.574856 train_logloss=0.437438
+[20:15:00] lgbm target=S2 fold=5/5 seed=7 features=268 train=365 valid=85
+[20:15:00] lgbm target=S2 fold=5 seed=7 best_iter=93 valid_logloss=0.580408 train_logloss=0.429644
+[20:15:00] lgbm target=S2 fold=5/5 seed=2024 features=268 train=365 valid=85
+[20:15:01] lgbm target=S2 fold=5 seed=2024 best_iter=86 valid_logloss=0.576526 train_logloss=0.437526
+[20:15:01] lgbm target=S2 fold=5/5 seed=1234 features=268 train=365 valid=85
+[20:15:01] lgbm target=S2 fold=5 seed=1234 best_iter=73 valid_logloss=0.577082 train_logloss=0.454766
+[20:15:01] lgbm target=S2 fold=5/5 seed=9999 features=268 train=365 valid=85
+[20:15:02] lgbm target=S2 fold=5 seed=9999 best_iter=74 valid_logloss=0.577256 train_logloss=0.456054
+[20:15:02] lgbm target=S3 fold=1/5 seed=42 features=266 train=355 valid=95
+[20:15:02] lgbm target=S3 fold=1 seed=42 best_iter=62 valid_logloss=0.596324 train_logloss=0.464959
+[20:15:02] lgbm target=S3 fold=1/5 seed=7 features=266 train=355 valid=95
+[20:15:03] lgbm target=S3 fold=1 seed=7 best_iter=76 valid_logloss=0.596247 train_logloss=0.442765
+[20:15:03] lgbm target=S3 fold=1/5 seed=2024 features=266 train=355 valid=95
+[20:15:03] lgbm target=S3 fold=1 seed=2024 best_iter=101 valid_logloss=0.598852 train_logloss=0.403765
+[20:15:03] lgbm target=S3 fold=1/5 seed=1234 features=266 train=355 valid=95
+[20:15:04] lgbm target=S3 fold=1 seed=1234 best_iter=91 valid_logloss=0.588498 train_logloss=0.416332
+[20:15:04] lgbm target=S3 fold=1/5 seed=9999 features=266 train=355 valid=95
+[20:15:04] lgbm target=S3 fold=1 seed=9999 best_iter=90 valid_logloss=0.596354 train_logloss=0.420815
+[20:15:04] lgbm target=S3 fold=2/5 seed=42 features=267 train=358 valid=92
+[250]	train's binary_logloss: 0.272337	valid's binary_logloss: 0.492336
+[20:15:05] lgbm target=S3 fold=2 seed=42 best_iter=181 valid_logloss=0.487951 train_logloss=0.328689
+[20:15:05] lgbm target=S3 fold=2/5 seed=7 features=267 train=358 valid=92
+[250]	train's binary_logloss: 0.27035	valid's binary_logloss: 0.499008
+[20:15:05] lgbm target=S3 fold=2 seed=7 best_iter=139 valid_logloss=0.482104 train_logloss=0.370628
+[20:15:05] lgbm target=S3 fold=2/5 seed=2024 features=267 train=358 valid=92
+[20:15:06] lgbm target=S3 fold=2 seed=2024 best_iter=121 valid_logloss=0.485526 train_logloss=0.395219
+[20:15:06] lgbm target=S3 fold=2/5 seed=1234 features=267 train=358 valid=92
+[250]	train's binary_logloss: 0.269126	valid's binary_logloss: 0.493116
+[20:15:07] lgbm target=S3 fold=2 seed=1234 best_iter=179 valid_logloss=0.484065 train_logloss=0.329390
+[20:15:07] lgbm target=S3 fold=2/5 seed=9999 features=267 train=358 valid=92
+[250]	train's binary_logloss: 0.272064	valid's binary_logloss: 0.486211
+[20:15:07] lgbm target=S3 fold=2 seed=9999 best_iter=145 valid_logloss=0.478346 train_logloss=0.365329
+[20:15:07] lgbm target=S3 fold=3/5 seed=42 features=265 train=359 valid=91
+[250]	train's binary_logloss: 0.268928	valid's binary_logloss: 0.547823
+[20:15:08] lgbm target=S3 fold=3 seed=42 best_iter=141 valid_logloss=0.545271 train_logloss=0.364527
+[20:15:08] lgbm target=S3 fold=3/5 seed=7 features=265 train=359 valid=91
+[250]	train's binary_logloss: 0.266392	valid's binary_logloss: 0.539525
+[20:15:09] lgbm target=S3 fold=3 seed=7 best_iter=169 valid_logloss=0.535408 train_logloss=0.331785
+[20:15:09] lgbm target=S3 fold=3/5 seed=2024 features=265 train=359 valid=91
+[250]	train's binary_logloss: 0.267821	valid's binary_logloss: 0.529413
+[20:15:09] lgbm target=S3 fold=3 seed=2024 best_iter=228 valid_logloss=0.526837 train_logloss=0.284088
+[20:15:09] lgbm target=S3 fold=3/5 seed=1234 features=265 train=359 valid=91
+[250]	train's binary_logloss: 0.267583	valid's binary_logloss: 0.543305
+[20:15:10] lgbm target=S3 fold=3 seed=1234 best_iter=202 valid_logloss=0.539622 train_logloss=0.303732
+[20:15:10] lgbm target=S3 fold=3/5 seed=9999 features=265 train=359 valid=91
+[250]	train's binary_logloss: 0.267784	valid's binary_logloss: 0.536661
+[20:15:11] lgbm target=S3 fold=3 seed=9999 best_iter=279 valid_logloss=0.534859 train_logloss=0.249414
+[20:15:11] lgbm target=S3 fold=4/5 seed=42 features=265 train=363 valid=87
+[250]	train's binary_logloss: 0.26043	valid's binary_logloss: 0.581123
+[20:15:12] lgbm target=S3 fold=4 seed=42 best_iter=142 valid_logloss=0.570441 train_logloss=0.353524
+[20:15:12] lgbm target=S3 fold=4/5 seed=7 features=265 train=363 valid=87
+[20:15:12] lgbm target=S3 fold=4 seed=7 best_iter=118 valid_logloss=0.569167 train_logloss=0.380991
+[20:15:12] lgbm target=S3 fold=4/5 seed=2024 features=265 train=363 valid=87
+[20:15:13] lgbm target=S3 fold=4 seed=2024 best_iter=117 valid_logloss=0.576397 train_logloss=0.383669
+[20:15:13] lgbm target=S3 fold=4/5 seed=1234 features=265 train=363 valid=87
+[250]	train's binary_logloss: 0.258097	valid's binary_logloss: 0.575967
+[20:15:13] lgbm target=S3 fold=4 seed=1234 best_iter=143 valid_logloss=0.564194 train_logloss=0.349207
+[20:15:13] lgbm target=S3 fold=4/5 seed=9999 features=265 train=363 valid=87
+[250]	train's binary_logloss: 0.261159	valid's binary_logloss: 0.585739
+[20:15:14] lgbm target=S3 fold=4 seed=9999 best_iter=136 valid_logloss=0.573302 train_logloss=0.360629
+[20:15:14] lgbm target=S3 fold=5/5 seed=42 features=267 train=365 valid=85
+[20:15:15] lgbm target=S3 fold=5 seed=42 best_iter=111 valid_logloss=0.588712 train_logloss=0.389037
+[20:15:15] lgbm target=S3 fold=5/5 seed=7 features=267 train=365 valid=85
+[20:15:15] lgbm target=S3 fold=5 seed=7 best_iter=111 valid_logloss=0.592172 train_logloss=0.389196
+[20:15:15] lgbm target=S3 fold=5/5 seed=2024 features=267 train=365 valid=85
+[20:15:16] lgbm target=S3 fold=5 seed=2024 best_iter=111 valid_logloss=0.584358 train_logloss=0.388954
+[20:15:16] lgbm target=S3 fold=5/5 seed=1234 features=267 train=365 valid=85
+[20:15:16] lgbm target=S3 fold=5 seed=1234 best_iter=96 valid_logloss=0.593494 train_logloss=0.410946
+[20:15:16] lgbm target=S3 fold=5/5 seed=9999 features=267 train=365 valid=85
+[20:15:17] lgbm target=S3 fold=5 seed=9999 best_iter=113 valid_logloss=0.587670 train_logloss=0.385581
+[20:15:17] lgbm target=S4 fold=1/5 seed=42 features=269 train=355 valid=95
+[20:15:17] lgbm target=S4 fold=1 seed=42 best_iter=33 valid_logloss=0.670573 train_logloss=0.586565
+[20:15:17] lgbm target=S4 fold=1/5 seed=7 features=269 train=355 valid=95
+[20:15:18] lgbm target=S4 fold=1 seed=7 best_iter=24 valid_logloss=0.670490 train_logloss=0.608009
+[20:15:18] lgbm target=S4 fold=1/5 seed=2024 features=269 train=355 valid=95
+[20:15:18] lgbm target=S4 fold=1 seed=2024 best_iter=40 valid_logloss=0.663127 train_logloss=0.569742
+[20:15:18] lgbm target=S4 fold=1/5 seed=1234 features=269 train=355 valid=95
+[20:15:18] lgbm target=S4 fold=1 seed=1234 best_iter=29 valid_logloss=0.671512 train_logloss=0.596973
+[20:15:18] lgbm target=S4 fold=1/5 seed=9999 features=269 train=355 valid=95
+[20:15:19] lgbm target=S4 fold=1 seed=9999 best_iter=39 valid_logloss=0.669611 train_logloss=0.572774
+[20:15:19] lgbm target=S4 fold=2/5 seed=42 features=270 train=358 valid=92
+[20:15:19] lgbm target=S4 fold=2 seed=42 best_iter=51 valid_logloss=0.656479 train_logloss=0.544927
+[20:15:19] lgbm target=S4 fold=2/5 seed=7 features=270 train=358 valid=92
+[20:15:20] lgbm target=S4 fold=2 seed=7 best_iter=31 valid_logloss=0.659970 train_logloss=0.591548
+[20:15:20] lgbm target=S4 fold=2/5 seed=2024 features=270 train=358 valid=92
+[20:15:20] lgbm target=S4 fold=2 seed=2024 best_iter=29 valid_logloss=0.664491 train_logloss=0.596560
+[20:15:20] lgbm target=S4 fold=2/5 seed=1234 features=270 train=358 valid=92
+[20:15:20] lgbm target=S4 fold=2 seed=1234 best_iter=46 valid_logloss=0.659916 train_logloss=0.556878
+[20:15:20] lgbm target=S4 fold=2/5 seed=9999 features=270 train=358 valid=92
+[20:15:21] lgbm target=S4 fold=2 seed=9999 best_iter=38 valid_logloss=0.661524 train_logloss=0.574902
+[20:15:21] lgbm target=S4 fold=3/5 seed=42 features=270 train=359 valid=91
+[250]	train's binary_logloss: 0.3176	valid's binary_logloss: 0.635712
+[20:15:22] lgbm target=S4 fold=3 seed=42 best_iter=192 valid_logloss=0.629287 train_logloss=0.364692
+[20:15:22] lgbm target=S4 fold=3/5 seed=7 features=270 train=359 valid=91
+[250]	train's binary_logloss: 0.315794	valid's binary_logloss: 0.638308
+[20:15:22] lgbm target=S4 fold=3 seed=7 best_iter=155 valid_logloss=0.625237 train_logloss=0.401164
+[20:15:22] lgbm target=S4 fold=3/5 seed=2024 features=270 train=359 valid=91
+[250]	train's binary_logloss: 0.318244	valid's binary_logloss: 0.642309
+[20:15:23] lgbm target=S4 fold=3 seed=2024 best_iter=181 valid_logloss=0.633148 train_logloss=0.377120
+[20:15:23] lgbm target=S4 fold=3/5 seed=1234 features=270 train=359 valid=91
+[250]	train's binary_logloss: 0.316664	valid's binary_logloss: 0.63427
+[20:15:23] lgbm target=S4 fold=3 seed=1234 best_iter=135 valid_logloss=0.628369 train_logloss=0.425596
+[20:15:23] lgbm target=S4 fold=3/5 seed=9999 features=270 train=359 valid=91
+[250]	train's binary_logloss: 0.316257	valid's binary_logloss: 0.629715
+[20:15:24] lgbm target=S4 fold=3 seed=9999 best_iter=146 valid_logloss=0.620764 train_logloss=0.411372
+[20:15:24] lgbm target=S4 fold=4/5 seed=42 features=269 train=363 valid=87
+[250]	train's binary_logloss: 0.325509	valid's binary_logloss: 0.565541
+[500]	train's binary_logloss: 0.198191	valid's binary_logloss: 0.557756
+[20:15:26] lgbm target=S4 fold=4 seed=42 best_iter=485 valid_logloss=0.554403 train_logloss=0.203749
+[20:15:26] lgbm target=S4 fold=4/5 seed=7 features=269 train=363 valid=87
+[250]	train's binary_logloss: 0.326519	valid's binary_logloss: 0.568146
+[20:15:27] lgbm target=S4 fold=4 seed=7 best_iter=294 valid_logloss=0.564873 train_logloss=0.295280
+[20:15:27] lgbm target=S4 fold=4/5 seed=2024 features=269 train=363 valid=87
+[250]	train's binary_logloss: 0.328468	valid's binary_logloss: 0.566859
+[500]	train's binary_logloss: 0.19971	valid's binary_logloss: 0.559224
+[20:15:28] lgbm target=S4 fold=4 seed=2024 best_iter=534 valid_logloss=0.557057 train_logloss=0.188092
+[20:15:28] lgbm target=S4 fold=4/5 seed=1234 features=269 train=363 valid=87
+[250]	train's binary_logloss: 0.326214	valid's binary_logloss: 0.563786
+[20:15:29] lgbm target=S4 fold=4 seed=1234 best_iter=367 valid_logloss=0.559735 train_logloss=0.255016
+[20:15:29] lgbm target=S4 fold=4/5 seed=9999 features=269 train=363 valid=87
+[250]	train's binary_logloss: 0.327075	valid's binary_logloss: 0.56189
+[500]	train's binary_logloss: 0.199554	valid's binary_logloss: 0.56037
+[20:15:30] lgbm target=S4 fold=4 seed=9999 best_iter=466 valid_logloss=0.558320 train_logloss=0.211745
+[20:15:31] lgbm target=S4 fold=5/5 seed=42 features=269 train=365 valid=85
+[20:15:31] lgbm target=S4 fold=5 seed=42 best_iter=64 valid_logloss=0.659565 train_logloss=0.523069
+[20:15:31] lgbm target=S4 fold=5/5 seed=7 features=269 train=365 valid=85
+[20:15:32] lgbm target=S4 fold=5 seed=7 best_iter=87 valid_logloss=0.661859 train_logloss=0.484567
+[20:15:32] lgbm target=S4 fold=5/5 seed=2024 features=269 train=365 valid=85
+[20:15:32] lgbm target=S4 fold=5 seed=2024 best_iter=58 valid_logloss=0.669506 train_logloss=0.536882
+[20:15:32] lgbm target=S4 fold=5/5 seed=1234 features=269 train=365 valid=85
+[20:15:32] lgbm target=S4 fold=5 seed=1234 best_iter=56 valid_logloss=0.659229 train_logloss=0.538718
+[20:15:32] lgbm target=S4 fold=5/5 seed=9999 features=269 train=365 valid=85
+[20:15:33] lgbm target=S4 fold=5 seed=9999 best_iter=48 valid_logloss=0.664349 train_logloss=0.557605
+[20:15:33] lgbm full=0.599078 last=0.603714
+[20:15:33] Training model bank: xgb
+[20:15:33] xgb target=Q1 fold=1/5 seed=42 features=268 train=355 valid=95
+[0]	validation_0-logloss:0.68963	validation_1-logloss:0.69541
+[250]	validation_0-logloss:0.39407	validation_1-logloss:0.52786
+[500]	validation_0-logloss:0.29798	validation_1-logloss:0.51109
+[641]	validation_0-logloss:0.26374	validation_1-logloss:0.51056
+[20:15:34] xgb target=Q1 fold=1 seed=42 best_iter=521 valid_logloss=0.508912 train_logloss=0.292293
+[20:15:34] xgb target=Q1 fold=1/5 seed=7 features=268 train=355 valid=95
+[0]	validation_0-logloss:0.68962	validation_1-logloss:0.69542
+[250]	validation_0-logloss:0.39771	validation_1-logloss:0.52507
+[500]	validation_0-logloss:0.29783	validation_1-logloss:0.51367
+[551]	validation_0-logloss:0.28416	validation_1-logloss:0.51309
+[20:15:36] xgb target=Q1 fold=1 seed=7 best_iter=431 valid_logloss=0.512424 train_logloss=0.318722
+[20:15:36] xgb target=Q1 fold=1/5 seed=2024 features=268 train=355 valid=95
+[0]	validation_0-logloss:0.68975	validation_1-logloss:0.69534
+[250]	validation_0-logloss:0.39439	validation_1-logloss:0.52487
+[500]	validation_0-logloss:0.29687	validation_1-logloss:0.50769
+[606]	validation_0-logloss:0.27069	validation_1-logloss:0.50771
+[20:15:37] xgb target=Q1 fold=1 seed=2024 best_iter=486 valid_logloss=0.506770 train_logloss=0.301064
+[20:15:37] xgb target=Q1 fold=1/5 seed=1234 features=268 train=355 valid=95
+[0]	validation_0-logloss:0.68970	validation_1-logloss:0.69538
+[250]	validation_0-logloss:0.39455	validation_1-logloss:0.52694
+[500]	validation_0-logloss:0.29679	validation_1-logloss:0.51277
+[750]	validation_0-logloss:0.24204	validation_1-logloss:0.51109
+[875]	validation_0-logloss:0.22257	validation_1-logloss:0.51166
+[20:15:39] xgb target=Q1 fold=1 seed=1234 best_iter=755 valid_logloss=0.510340 train_logloss=0.241310
+[20:15:39] xgb target=Q1 fold=1/5 seed=9999 features=268 train=355 valid=95
+[0]	validation_0-logloss:0.68952	validation_1-logloss:0.69703
+[250]	validation_0-logloss:0.39578	validation_1-logloss:0.52310
+[500]	validation_0-logloss:0.29737	validation_1-logloss:0.51476
+[606]	validation_0-logloss:0.27002	validation_1-logloss:0.51614
+[20:15:40] xgb target=Q1 fold=1 seed=9999 best_iter=486 valid_logloss=0.513612 train_logloss=0.301322
+[20:15:40] xgb target=Q1 fold=2/5 seed=42 features=268 train=358 valid=92
+[0]	validation_0-logloss:0.68978	validation_1-logloss:0.69243
+[250]	validation_0-logloss:0.36821	validation_1-logloss:0.59504
+[399]	validation_0-logloss:0.30407	validation_1-logloss:0.59339
+[20:15:41] xgb target=Q1 fold=2 seed=42 best_iter=279 valid_logloss=0.592151 train_logloss=0.353213
+[20:15:41] xgb target=Q1 fold=2/5 seed=7 features=268 train=358 valid=92
+[0]	validation_0-logloss:0.68945	validation_1-logloss:0.69049
+[250]	validation_0-logloss:0.36867	validation_1-logloss:0.58953
+[362]	validation_0-logloss:0.31601	validation_1-logloss:0.59134
+[20:15:42] xgb target=Q1 fold=2 seed=7 best_iter=242 valid_logloss=0.587834 train_logloss=0.374077
+[20:15:42] xgb target=Q1 fold=2/5 seed=2024 features=268 train=358 valid=92
+[0]	validation_0-logloss:0.68935	validation_1-logloss:0.69076
+[250]	validation_0-logloss:0.36739	validation_1-logloss:0.58989
+[500]	validation_0-logloss:0.27298	validation_1-logloss:0.58552
+[555]	validation_0-logloss:0.26025	validation_1-logloss:0.58655
+[20:15:43] xgb target=Q1 fold=2 seed=2024 best_iter=435 valid_logloss=0.581972 train_logloss=0.291018
+[20:15:43] xgb target=Q1 fold=2/5 seed=1234 features=268 train=358 valid=92
+[0]	validation_0-logloss:0.68966	validation_1-logloss:0.69123
+[250]	validation_0-logloss:0.36647	validation_1-logloss:0.58934
+[368]	validation_0-logloss:0.31239	validation_1-logloss:0.59453
+[20:15:44] xgb target=Q1 fold=2 seed=1234 best_iter=248 valid_logloss=0.588474 train_logloss=0.367524
+[20:15:44] xgb target=Q1 fold=2/5 seed=9999 features=268 train=358 valid=92
+[0]	validation_0-logloss:0.68962	validation_1-logloss:0.69003
+[250]	validation_0-logloss:0.36761	validation_1-logloss:0.58500
+[414]	validation_0-logloss:0.29748	validation_1-logloss:0.58610
+[20:15:45] xgb target=Q1 fold=2 seed=9999 best_iter=294 valid_logloss=0.582528 train_logloss=0.344158
+[20:15:45] xgb target=Q1 fold=3/5 seed=42 features=268 train=359 valid=91
+[0]	validation_0-logloss:0.68971	validation_1-logloss:0.69054
+[250]	validation_0-logloss:0.37433	validation_1-logloss:0.60625
+[271]	validation_0-logloss:0.36349	validation_1-logloss:0.60595
+[20:15:46] xgb target=Q1 fold=3 seed=42 best_iter=151 valid_logloss=0.602857 train_logloss=0.443136
+[20:15:46] xgb target=Q1 fold=3/5 seed=7 features=268 train=359 valid=91
+[0]	validation_0-logloss:0.68990	validation_1-logloss:0.69093
+[250]	validation_0-logloss:0.37803	validation_1-logloss:0.60574
+[287]	validation_0-logloss:0.35776	validation_1-logloss:0.60722
+[20:15:47] xgb target=Q1 fold=3 seed=7 best_iter=167 valid_logloss=0.598684 train_logloss=0.433971
+[20:15:47] xgb target=Q1 fold=3/5 seed=2024 features=268 train=359 valid=91
+[0]	validation_0-logloss:0.68947	validation_1-logloss:0.69103
+[250]	validation_0-logloss:0.37579	validation_1-logloss:0.60736
+[292]	validation_0-logloss:0.35309	validation_1-logloss:0.60894
+[20:15:47] xgb target=Q1 fold=3 seed=2024 best_iter=172 valid_logloss=0.598679 train_logloss=0.427383
+[20:15:47] xgb target=Q1 fold=3/5 seed=1234 features=268 train=359 valid=91
+[0]	validation_0-logloss:0.68973	validation_1-logloss:0.69140
+[250]	validation_0-logloss:0.37381	validation_1-logloss:0.60819
+[301]	validation_0-logloss:0.34872	validation_1-logloss:0.61003
+[20:15:48] xgb target=Q1 fold=3 seed=1234 best_iter=181 valid_logloss=0.605330 train_logloss=0.418583
+[20:15:48] xgb target=Q1 fold=3/5 seed=9999 features=268 train=359 valid=91
+[0]	validation_0-logloss:0.68957	validation_1-logloss:0.69121
+[250]	validation_0-logloss:0.37407	validation_1-logloss:0.60655
+[268]	validation_0-logloss:0.36424	validation_1-logloss:0.60937
+[20:15:49] xgb target=Q1 fold=3 seed=9999 best_iter=148 valid_logloss=0.600823 train_logloss=0.445934
+[20:15:49] xgb target=Q1 fold=4/5 seed=42 features=268 train=363 valid=87
+[0]	validation_0-logloss:0.68862	validation_1-logloss:0.69785
+[180]	validation_0-logloss:0.39923	validation_1-logloss:0.68915
+[20:15:49] xgb target=Q1 fold=4 seed=42 best_iter=60 valid_logloss=0.670379 train_logloss=0.537943
+[20:15:49] xgb target=Q1 fold=4/5 seed=7 features=268 train=363 valid=87
+[0]	validation_0-logloss:0.68837	validation_1-logloss:0.69843
+[175]	validation_0-logloss:0.40424	validation_1-logloss:0.69105
+[20:15:50] xgb target=Q1 fold=4 seed=7 best_iter=55 valid_logloss=0.667337 train_logloss=0.547048
+[20:15:50] xgb target=Q1 fold=4/5 seed=2024 features=268 train=363 valid=87
+[0]	validation_0-logloss:0.68856	validation_1-logloss:0.69835
+[161]	validation_0-logloss:0.41337	validation_1-logloss:0.69104
+[20:15:50] xgb target=Q1 fold=4 seed=2024 best_iter=41 valid_logloss=0.672841 train_logloss=0.572363
+[20:15:50] xgb target=Q1 fold=4/5 seed=1234 features=268 train=363 valid=87
+[0]	validation_0-logloss:0.68854	validation_1-logloss:0.69779
+[174]	validation_0-logloss:0.40435	validation_1-logloss:0.69535
+[20:15:51] xgb target=Q1 fold=4 seed=1234 best_iter=54 valid_logloss=0.671078 train_logloss=0.547315
+[20:15:51] xgb target=Q1 fold=4/5 seed=9999 features=268 train=363 valid=87
+[0]	validation_0-logloss:0.68864	validation_1-logloss:0.69841
+[166]	validation_0-logloss:0.41200	validation_1-logloss:0.68821
+[20:15:51] xgb target=Q1 fold=4 seed=9999 best_iter=46 valid_logloss=0.671681 train_logloss=0.564359
+[20:15:51] xgb target=Q1 fold=5/5 seed=42 features=268 train=365 valid=85
+[0]	validation_0-logloss:0.68892	validation_1-logloss:0.69535
+[240]	validation_0-logloss:0.36801	validation_1-logloss:0.67195
+[20:15:52] xgb target=Q1 fold=5 seed=42 best_iter=120 valid_logloss=0.664531 train_logloss=0.462937
+[20:15:52] xgb target=Q1 fold=5/5 seed=7 features=268 train=365 valid=85
+[0]	validation_0-logloss:0.68867	validation_1-logloss:0.69519
+[203]	validation_0-logloss:0.39250	validation_1-logloss:0.66722
+[20:15:52] xgb target=Q1 fold=5 seed=7 best_iter=83 valid_logloss=0.663276 train_logloss=0.509360
+[20:15:52] xgb target=Q1 fold=5/5 seed=2024 features=268 train=365 valid=85
+[0]	validation_0-logloss:0.68889	validation_1-logloss:0.69423
+[250]	validation_0-logloss:0.36558	validation_1-logloss:0.66368
+[279]	validation_0-logloss:0.35003	validation_1-logloss:0.66692
+[20:15:53] xgb target=Q1 fold=5 seed=2024 best_iter=159 valid_logloss=0.660514 train_logloss=0.427910
+[20:15:53] xgb target=Q1 fold=5/5 seed=1234 features=268 train=365 valid=85
+[0]	validation_0-logloss:0.68854	validation_1-logloss:0.69535
+[250]	validation_0-logloss:0.36364	validation_1-logloss:0.66597
+[283]	validation_0-logloss:0.34602	validation_1-logloss:0.66814
+[20:15:54] xgb target=Q1 fold=5 seed=1234 best_iter=163 valid_logloss=0.659605 train_logloss=0.424254
+[20:15:54] xgb target=Q1 fold=5/5 seed=9999 features=268 train=365 valid=85
+[0]	validation_0-logloss:0.68912	validation_1-logloss:0.69440
+[222]	validation_0-logloss:0.38363	validation_1-logloss:0.67543
+[20:15:54] xgb target=Q1 fold=5 seed=9999 best_iter=102 valid_logloss=0.668711 train_logloss=0.486923
+[20:15:54] xgb target=Q2 fold=1/5 seed=42 features=275 train=355 valid=95
+[0]	validation_0-logloss:0.68251	validation_1-logloss:0.68610
+[156]	validation_0-logloss:0.45663	validation_1-logloss:0.69912
+[20:15:55] xgb target=Q2 fold=1 seed=42 best_iter=36 valid_logloss=0.677986 train_logloss=0.607504
+[20:15:55] xgb target=Q2 fold=1/5 seed=7 features=275 train=355 valid=95
+[0]	validation_0-logloss:0.68262	validation_1-logloss:0.68592
+[191]	validation_0-logloss:0.42853	validation_1-logloss:0.70435
+[20:15:55] xgb target=Q2 fold=1 seed=7 best_iter=71 valid_logloss=0.679106 train_logloss=0.553281
+[20:15:55] xgb target=Q2 fold=1/5 seed=2024 features=275 train=355 valid=95
+[0]	validation_0-logloss:0.68256	validation_1-logloss:0.68549
+[146]	validation_0-logloss:0.46636	validation_1-logloss:0.69929
+[20:15:56] xgb target=Q2 fold=1 seed=2024 best_iter=26 valid_logloss=0.676567 train_logloss=0.626221
+[20:15:56] xgb target=Q2 fold=1/5 seed=1234 features=275 train=355 valid=95
+[0]	validation_0-logloss:0.68233	validation_1-logloss:0.68693
+[149]	validation_0-logloss:0.46362	validation_1-logloss:0.70072
+[20:15:56] xgb target=Q2 fold=1 seed=1234 best_iter=29 valid_logloss=0.678076 train_logloss=0.619924
+[20:15:56] xgb target=Q2 fold=1/5 seed=9999 features=275 train=355 valid=95
+[0]	validation_0-logloss:0.68294	validation_1-logloss:0.68618
+[157]	validation_0-logloss:0.45676	validation_1-logloss:0.70121
+[20:15:56] xgb target=Q2 fold=1 seed=9999 best_iter=37 valid_logloss=0.678040 train_logloss=0.605675
+[20:15:57] xgb target=Q2 fold=2/5 seed=42 features=277 train=358 valid=92
+[0]	validation_0-logloss:0.67763	validation_1-logloss:0.70942
+[250]	validation_0-logloss:0.39379	validation_1-logloss:0.69496
+[254]	validation_0-logloss:0.39153	validation_1-logloss:0.69535
+[20:15:57] xgb target=Q2 fold=2 seed=42 best_iter=134 valid_logloss=0.687082 train_logloss=0.480048
+[20:15:57] xgb target=Q2 fold=2/5 seed=7 features=277 train=358 valid=92
+[0]	validation_0-logloss:0.67753	validation_1-logloss:0.70900
+[222]	validation_0-logloss:0.40927	validation_1-logloss:0.69502
+[20:15:58] xgb target=Q2 fold=2 seed=7 best_iter=102 valid_logloss=0.688654 train_logloss=0.513775
+[20:15:58] xgb target=Q2 fold=2/5 seed=2024 features=277 train=358 valid=92
+[0]	validation_0-logloss:0.67753	validation_1-logloss:0.70913
+[237]	validation_0-logloss:0.40245	validation_1-logloss:0.69415
+[20:15:58] xgb target=Q2 fold=2 seed=2024 best_iter=117 valid_logloss=0.689310 train_logloss=0.496510
+[20:15:58] xgb target=Q2 fold=2/5 seed=1234 features=277 train=358 valid=92
+[0]	validation_0-logloss:0.67729	validation_1-logloss:0.70934
+[192]	validation_0-logloss:0.43387	validation_1-logloss:0.69653
+[20:15:59] xgb target=Q2 fold=2 seed=1234 best_iter=72 valid_logloss=0.693678 train_logloss=0.551911
+[20:15:59] xgb target=Q2 fold=2/5 seed=9999 features=277 train=358 valid=92
+[0]	validation_0-logloss:0.67743	validation_1-logloss:0.70961
+[250]	validation_0-logloss:0.39540	validation_1-logloss:0.69176
+[293]	validation_0-logloss:0.37082	validation_1-logloss:0.69573
+[20:15:59] xgb target=Q2 fold=2 seed=9999 best_iter=173 valid_logloss=0.689179 train_logloss=0.447838
+[20:16:00] xgb target=Q2 fold=3/5 seed=42 features=277 train=359 valid=91
+[0]	validation_0-logloss:0.68041	validation_1-logloss:0.69645
+[151]	validation_0-logloss:0.45120	validation_1-logloss:0.73396
+[20:16:00] xgb target=Q2 fold=3 seed=42 best_iter=31 valid_logloss=0.691928 train_logloss=0.610217
+[20:16:00] xgb target=Q2 fold=3/5 seed=7 features=277 train=359 valid=91
+[0]	validation_0-logloss:0.68037	validation_1-logloss:0.69576
+[128]	validation_0-logloss:0.47428	validation_1-logloss:0.73945
+[20:16:00] xgb target=Q2 fold=3 seed=7 best_iter=8 valid_logloss=0.695193 train_logloss=0.660197
+[20:16:00] xgb target=Q2 fold=3/5 seed=2024 features=277 train=359 valid=91
+[0]	validation_0-logloss:0.68020	validation_1-logloss:0.69456
+[137]	validation_0-logloss:0.46706	validation_1-logloss:0.72681
+[20:16:01] xgb target=Q2 fold=3 seed=2024 best_iter=17 valid_logloss=0.694371 train_logloss=0.638989
+[20:16:01] xgb target=Q2 fold=3/5 seed=1234 features=277 train=359 valid=91
+[0]	validation_0-logloss:0.68070	validation_1-logloss:0.69569
+[129]	validation_0-logloss:0.47636	validation_1-logloss:0.72615
+[20:16:01] xgb target=Q2 fold=3 seed=1234 best_iter=9 valid_logloss=0.691989 train_logloss=0.657593
+[20:16:01] xgb target=Q2 fold=3/5 seed=9999 features=277 train=359 valid=91
+[0]	validation_0-logloss:0.68026	validation_1-logloss:0.69411
+[135]	validation_0-logloss:0.46763	validation_1-logloss:0.73001
+[20:16:01] xgb target=Q2 fold=3 seed=9999 best_iter=15 valid_logloss=0.691945 train_logloss=0.644434
+[20:16:02] xgb target=Q2 fold=4/5 seed=42 features=277 train=363 valid=87
+[0]	validation_0-logloss:0.68391	validation_1-logloss:0.68233
+[250]	validation_0-logloss:0.39411	validation_1-logloss:0.65681
+[298]	validation_0-logloss:0.36645	validation_1-logloss:0.66006
+[20:16:02] xgb target=Q2 fold=4 seed=42 best_iter=178 valid_logloss=0.652193 train_logloss=0.446014
+[20:16:02] xgb target=Q2 fold=4/5 seed=7 features=277 train=363 valid=87
+[0]	validation_0-logloss:0.68398	validation_1-logloss:0.68257
+[233]	validation_0-logloss:0.40402	validation_1-logloss:0.66194
+[20:16:03] xgb target=Q2 fold=4 seed=7 best_iter=113 valid_logloss=0.656289 train_logloss=0.504529
+[20:16:03] xgb target=Q2 fold=4/5 seed=2024 features=277 train=363 valid=87
+[0]	validation_0-logloss:0.68352	validation_1-logloss:0.68257
+[235]	validation_0-logloss:0.40608	validation_1-logloss:0.65709
+[20:16:03] xgb target=Q2 fold=4 seed=2024 best_iter=115 valid_logloss=0.647895 train_logloss=0.506525
+[20:16:03] xgb target=Q2 fold=4/5 seed=1234 features=277 train=363 valid=87
+[0]	validation_0-logloss:0.68350	validation_1-logloss:0.68095
+[250]	validation_0-logloss:0.39267	validation_1-logloss:0.65335
+[269]	validation_0-logloss:0.38147	validation_1-logloss:0.65888
+[20:16:04] xgb target=Q2 fold=4 seed=1234 best_iter=149 valid_logloss=0.649550 train_logloss=0.467349
+[20:16:04] xgb target=Q2 fold=4/5 seed=9999 features=277 train=363 valid=87
+[0]	validation_0-logloss:0.68343	validation_1-logloss:0.68171
+[235]	validation_0-logloss:0.40459	validation_1-logloss:0.66191
+[20:16:05] xgb target=Q2 fold=4 seed=9999 best_iter=115 valid_logloss=0.654607 train_logloss=0.504840
+[20:16:05] xgb target=Q2 fold=5/5 seed=42 features=274 train=365 valid=85
+[0]	validation_0-logloss:0.68764	validation_1-logloss:0.67101
+[121]	validation_0-logloss:0.49179	validation_1-logloss:0.69207
+[20:16:05] xgb target=Q2 fold=5 seed=42 best_iter=1 valid_logloss=0.670268 train_logloss=0.684921
+[20:16:05] xgb target=Q2 fold=5/5 seed=7 features=274 train=365 valid=85
+[0]	validation_0-logloss:0.68755	validation_1-logloss:0.67192
+[120]	validation_0-logloss:0.49294	validation_1-logloss:0.70485
+[20:16:05] xgb target=Q2 fold=5 seed=7 best_iter=0 valid_logloss=0.671922 train_logloss=0.687549
+[20:16:05] xgb target=Q2 fold=5/5 seed=2024 features=274 train=365 valid=85
+[0]	validation_0-logloss:0.68815	validation_1-logloss:0.67082
+[129]	validation_0-logloss:0.48442	validation_1-logloss:0.70848
+[20:16:06] xgb target=Q2 fold=5 seed=2024 best_iter=9 valid_logloss=0.669316 train_logloss=0.665747
+[20:16:06] xgb target=Q2 fold=5/5 seed=1234 features=274 train=365 valid=85
+[0]	validation_0-logloss:0.68774	validation_1-logloss:0.67015
+[120]	validation_0-logloss:0.49356	validation_1-logloss:0.70608
+[20:16:06] xgb target=Q2 fold=5 seed=1234 best_iter=0 valid_logloss=0.670155 train_logloss=0.687737
+[20:16:06] xgb target=Q2 fold=5/5 seed=9999 features=274 train=365 valid=85
+[0]	validation_0-logloss:0.68763	validation_1-logloss:0.67121
+[121]	validation_0-logloss:0.49353	validation_1-logloss:0.70411
+[20:16:06] xgb target=Q2 fold=5 seed=9999 best_iter=1 valid_logloss=0.670985 train_logloss=0.684983
+[20:16:07] xgb target=Q3 fold=1/5 seed=42 features=272 train=355 valid=95
+[0]	validation_0-logloss:0.66134	validation_1-logloss:0.70873
+[238]	validation_0-logloss:0.37477	validation_1-logloss:0.68186
+[20:16:07] xgb target=Q3 fold=1 seed=42 best_iter=118 valid_logloss=0.675125 train_logloss=0.470714
+[20:16:07] xgb target=Q3 fold=1/5 seed=7 features=272 train=355 valid=95
+[0]	validation_0-logloss:0.66140	validation_1-logloss:0.70917
+[230]	validation_0-logloss:0.37985	validation_1-logloss:0.70034
+[20:16:08] xgb target=Q3 fold=1 seed=7 best_iter=110 valid_logloss=0.687866 train_logloss=0.478513
+[20:16:08] xgb target=Q3 fold=1/5 seed=2024 features=272 train=355 valid=95
+[0]	validation_0-logloss:0.66140	validation_1-logloss:0.70934
+[248]	validation_0-logloss:0.36968	validation_1-logloss:0.68831
+[20:16:08] xgb target=Q3 fold=1 seed=2024 best_iter=128 valid_logloss=0.675227 train_logloss=0.461701
+[20:16:08] xgb target=Q3 fold=1/5 seed=1234 features=272 train=355 valid=95
+[0]	validation_0-logloss:0.66128	validation_1-logloss:0.70868
+[211]	validation_0-logloss:0.39417	validation_1-logloss:0.68812
+[20:16:09] xgb target=Q3 fold=1 seed=1234 best_iter=91 valid_logloss=0.681412 train_logloss=0.502419
+[20:16:09] xgb target=Q3 fold=1/5 seed=9999 features=272 train=355 valid=95
+[0]	validation_0-logloss:0.66192	validation_1-logloss:0.71017
+[250]	validation_0-logloss:0.36895	validation_1-logloss:0.69784
+[258]	validation_0-logloss:0.36453	validation_1-logloss:0.69814
+[20:16:09] xgb target=Q3 fold=1 seed=9999 best_iter=138 valid_logloss=0.685840 train_logloss=0.450841
+[20:16:10] xgb target=Q3 fold=2/5 seed=42 features=276 train=358 valid=92
+[0]	validation_0-logloss:0.67354	validation_1-logloss:0.66073
+[250]	validation_0-logloss:0.38107	validation_1-logloss:0.63117
+[310]	validation_0-logloss:0.34680	validation_1-logloss:0.63096
+[20:16:10] xgb target=Q3 fold=2 seed=42 best_iter=190 valid_logloss=0.627673 train_logloss=0.420461
+[20:16:10] xgb target=Q3 fold=2/5 seed=7 features=276 train=358 valid=92
+[0]	validation_0-logloss:0.67301	validation_1-logloss:0.66102
+[250]	validation_0-logloss:0.37980	validation_1-logloss:0.63108
+[20:16:11] xgb target=Q3 fold=2 seed=7 best_iter=130 valid_logloss=0.629043 train_logloss=0.469867
+[20:16:11] xgb target=Q3 fold=2/5 seed=2024 features=276 train=358 valid=92
+[0]	validation_0-logloss:0.67337	validation_1-logloss:0.66100
+[235]	validation_0-logloss:0.38959	validation_1-logloss:0.63001
+[20:16:11] xgb target=Q3 fold=2 seed=2024 best_iter=115 valid_logloss=0.625478 train_logloss=0.485421
+[20:16:11] xgb target=Q3 fold=2/5 seed=1234 features=276 train=358 valid=92
+[0]	validation_0-logloss:0.67305	validation_1-logloss:0.66062
+[225]	validation_0-logloss:0.39540	validation_1-logloss:0.63345
+[20:16:12] xgb target=Q3 fold=2 seed=1234 best_iter=105 valid_logloss=0.628868 train_logloss=0.496646
+[20:16:12] xgb target=Q3 fold=2/5 seed=9999 features=276 train=358 valid=92
+[0]	validation_0-logloss:0.67338	validation_1-logloss:0.66042
+[250]	validation_0-logloss:0.38014	validation_1-logloss:0.63341
+[305]	validation_0-logloss:0.35002	validation_1-logloss:0.63319
+[20:16:13] xgb target=Q3 fold=2 seed=9999 best_iter=185 valid_logloss=0.629894 train_logloss=0.424355
+[20:16:13] xgb target=Q3 fold=3/5 seed=42 features=272 train=359 valid=91
+[0]	validation_0-logloss:0.67660	validation_1-logloss:0.65206
+[201]	validation_0-logloss:0.41323	validation_1-logloss:0.62371
+[20:16:13] xgb target=Q3 fold=3 seed=42 best_iter=81 valid_logloss=0.616055 train_logloss=0.530642
+[20:16:13] xgb target=Q3 fold=3/5 seed=7 features=272 train=359 valid=91
+[0]	validation_0-logloss:0.67619	validation_1-logloss:0.65193
+[250]	validation_0-logloss:0.38511	validation_1-logloss:0.62344
+[281]	validation_0-logloss:0.36777	validation_1-logloss:0.62610
+[20:16:14] xgb target=Q3 fold=3 seed=7 best_iter=161 valid_logloss=0.614682 train_logloss=0.448587
+[20:16:14] xgb target=Q3 fold=3/5 seed=2024 features=272 train=359 valid=91
+[0]	validation_0-logloss:0.67544	validation_1-logloss:0.65321
+[209]	validation_0-logloss:0.40629	validation_1-logloss:0.61511
+[20:16:15] xgb target=Q3 fold=3 seed=2024 best_iter=89 valid_logloss=0.610925 train_logloss=0.520104
+[20:16:15] xgb target=Q3 fold=3/5 seed=1234 features=272 train=359 valid=91
+[0]	validation_0-logloss:0.67621	validation_1-logloss:0.65169
+[206]	validation_0-logloss:0.41213	validation_1-logloss:0.62065
+[20:16:15] xgb target=Q3 fold=3 seed=1234 best_iter=86 valid_logloss=0.614820 train_logloss=0.524160
+[20:16:15] xgb target=Q3 fold=3/5 seed=9999 features=272 train=359 valid=91
+[0]	validation_0-logloss:0.67613	validation_1-logloss:0.65249
+[226]	validation_0-logloss:0.39821	validation_1-logloss:0.62101
+[20:16:16] xgb target=Q3 fold=3 seed=9999 best_iter=106 valid_logloss=0.613052 train_logloss=0.499551
+[20:16:16] xgb target=Q3 fold=4/5 seed=42 features=272 train=363 valid=87
+[0]	validation_0-logloss:0.66924	validation_1-logloss:0.67784
+[171]	validation_0-logloss:0.43154	validation_1-logloss:0.68071
+[20:16:16] xgb target=Q3 fold=4 seed=42 best_iter=51 valid_logloss=0.667767 train_logloss=0.565684
+[20:16:16] xgb target=Q3 fold=4/5 seed=7 features=272 train=363 valid=87
+[0]	validation_0-logloss:0.66843	validation_1-logloss:0.67760
+[203]	validation_0-logloss:0.40600	validation_1-logloss:0.69204
+[20:16:17] xgb target=Q3 fold=4 seed=7 best_iter=83 valid_logloss=0.668029 train_logloss=0.518325
+[20:16:17] xgb target=Q3 fold=4/5 seed=2024 features=272 train=363 valid=87
+[0]	validation_0-logloss:0.66896	validation_1-logloss:0.67809
+[166]	validation_0-logloss:0.43348	validation_1-logloss:0.68322
+[20:16:17] xgb target=Q3 fold=4 seed=2024 best_iter=46 valid_logloss=0.668982 train_logloss=0.572541
+[20:16:17] xgb target=Q3 fold=4/5 seed=1234 features=272 train=363 valid=87
+[0]	validation_0-logloss:0.66897	validation_1-logloss:0.67771
+[165]	validation_0-logloss:0.43727	validation_1-logloss:0.67929
+[20:16:18] xgb target=Q3 fold=4 seed=1234 best_iter=45 valid_logloss=0.667761 train_logloss=0.575161
+[20:16:18] xgb target=Q3 fold=4/5 seed=9999 features=272 train=363 valid=87
+[0]	validation_0-logloss:0.66885	validation_1-logloss:0.67761
+[175]	validation_0-logloss:0.42591	validation_1-logloss:0.67417
+[20:16:18] xgb target=Q3 fold=4 seed=9999 best_iter=55 valid_logloss=0.661619 train_logloss=0.558137
+[20:16:18] xgb target=Q3 fold=5/5 seed=42 features=270 train=365 valid=85
+[0]	validation_0-logloss:0.67010	validation_1-logloss:0.67327
+[154]	validation_0-logloss:0.44360	validation_1-logloss:0.69617
+[20:16:19] xgb target=Q3 fold=5 seed=42 best_iter=34 valid_logloss=0.666396 train_logloss=0.592788
+[20:16:19] xgb target=Q3 fold=5/5 seed=7 features=270 train=365 valid=85
+[0]	validation_0-logloss:0.66998	validation_1-logloss:0.67288
+[147]	validation_0-logloss:0.45066	validation_1-logloss:0.69261
+[20:16:19] xgb target=Q3 fold=5 seed=7 best_iter=27 valid_logloss=0.670080 train_logloss=0.606322
+[20:16:19] xgb target=Q3 fold=5/5 seed=2024 features=270 train=365 valid=85
+[0]	validation_0-logloss:0.67036	validation_1-logloss:0.67303
+[163]	validation_0-logloss:0.43632	validation_1-logloss:0.70376
+[20:16:19] xgb target=Q3 fold=5 seed=2024 best_iter=43 valid_logloss=0.669734 train_logloss=0.574616
+[20:16:19] xgb target=Q3 fold=5/5 seed=1234 features=270 train=365 valid=85
+[0]	validation_0-logloss:0.67018	validation_1-logloss:0.67272
+[134]	validation_0-logloss:0.46327	validation_1-logloss:0.69573
+[20:16:20] xgb target=Q3 fold=5 seed=1234 best_iter=14 valid_logloss=0.670442 train_logloss=0.633955
+[20:16:20] xgb target=Q3 fold=5/5 seed=9999 features=270 train=365 valid=85
+[0]	validation_0-logloss:0.66995	validation_1-logloss:0.67187
+[127]	validation_0-logloss:0.46799	validation_1-logloss:0.69281
+[20:16:20] xgb target=Q3 fold=5 seed=9999 best_iter=7 valid_logloss=0.668526 train_logloss=0.650965
+[20:16:20] xgb target=S1 fold=1/5 seed=42 features=267 train=355 valid=95
+[0]	validation_0-logloss:0.60801	validation_1-logloss:0.67329
+[250]	validation_0-logloss:0.32362	validation_1-logloss:0.52977
+[306]	validation_0-logloss:0.30179	validation_1-logloss:0.53394
+[20:16:21] xgb target=S1 fold=1 seed=42 best_iter=186 valid_logloss=0.526877 train_logloss=0.354748
+[20:16:21] xgb target=S1 fold=1/5 seed=7 features=267 train=355 valid=95
+[0]	validation_0-logloss:0.60783	validation_1-logloss:0.67297
+[250]	validation_0-logloss:0.32450	validation_1-logloss:0.52963
+[314]	validation_0-logloss:0.29957	validation_1-logloss:0.53331
+[20:16:22] xgb target=S1 fold=1 seed=7 best_iter=194 valid_logloss=0.524864 train_logloss=0.351565
+[20:16:22] xgb target=S1 fold=1/5 seed=2024 features=267 train=355 valid=95
+[0]	validation_0-logloss:0.60772	validation_1-logloss:0.67278
+[250]	validation_0-logloss:0.32257	validation_1-logloss:0.52722
+[368]	validation_0-logloss:0.28078	validation_1-logloss:0.53347
+[20:16:22] xgb target=S1 fold=1 seed=2024 best_iter=248 valid_logloss=0.526694 train_logloss=0.323470
+[20:16:22] xgb target=S1 fold=1/5 seed=1234 features=267 train=355 valid=95
+[0]	validation_0-logloss:0.60812	validation_1-logloss:0.67344
+[250]	validation_0-logloss:0.32341	validation_1-logloss:0.54152
+[329]	validation_0-logloss:0.29399	validation_1-logloss:0.54626
+[20:16:23] xgb target=S1 fold=1 seed=1234 best_iter=209 valid_logloss=0.539371 train_logloss=0.342363
+[20:16:23] xgb target=S1 fold=1/5 seed=9999 features=267 train=355 valid=95
+[0]	validation_0-logloss:0.60798	validation_1-logloss:0.67281
+[250]	validation_0-logloss:0.32451	validation_1-logloss:0.53171
+[350]	validation_0-logloss:0.28672	validation_1-logloss:0.53640
+[20:16:24] xgb target=S1 fold=1 seed=9999 best_iter=230 valid_logloss=0.530379 train_logloss=0.333135
+[20:16:24] xgb target=S1 fold=2/5 seed=42 features=267 train=358 valid=92
+[0]	validation_0-logloss:0.62554	validation_1-logloss:0.60336
+[250]	validation_0-logloss:0.32443	validation_1-logloss:0.47575
+[285]	validation_0-logloss:0.30935	validation_1-logloss:0.47576
+[20:16:25] xgb target=S1 fold=2 seed=42 best_iter=165 valid_logloss=0.469664 train_logloss=0.372561
+[20:16:25] xgb target=S1 fold=2/5 seed=7 features=267 train=358 valid=92
+[0]	validation_0-logloss:0.62527	validation_1-logloss:0.60349
+[250]	validation_0-logloss:0.32427	validation_1-logloss:0.47208
+[283]	validation_0-logloss:0.30940	validation_1-logloss:0.47701
+[20:16:25] xgb target=S1 fold=2 seed=7 best_iter=163 valid_logloss=0.468089 train_logloss=0.374185
+[20:16:25] xgb target=S1 fold=2/5 seed=2024 features=267 train=358 valid=92
+[0]	validation_0-logloss:0.62544	validation_1-logloss:0.60391
+[250]	validation_0-logloss:0.32278	validation_1-logloss:0.48911
+[304]	validation_0-logloss:0.29990	validation_1-logloss:0.49696
+[20:16:26] xgb target=S1 fold=2 seed=2024 best_iter=184 valid_logloss=0.479094 train_logloss=0.358129
+[20:16:26] xgb target=S1 fold=2/5 seed=1234 features=267 train=358 valid=92
+[0]	validation_0-logloss:0.62540	validation_1-logloss:0.60383
+[250]	validation_0-logloss:0.32326	validation_1-logloss:0.47961
+[267]	validation_0-logloss:0.31532	validation_1-logloss:0.48346
+[20:16:27] xgb target=S1 fold=2 seed=1234 best_iter=147 valid_logloss=0.474936 train_logloss=0.383921
+[20:16:27] xgb target=S1 fold=2/5 seed=9999 features=267 train=358 valid=92
+[0]	validation_0-logloss:0.62593	validation_1-logloss:0.60423
+[250]	validation_0-logloss:0.32497	validation_1-logloss:0.48912
+[255]	validation_0-logloss:0.32289	validation_1-logloss:0.48913
+[20:16:27] xgb target=S1 fold=2 seed=9999 best_iter=135 valid_logloss=0.476578 train_logloss=0.396535
+[20:16:27] xgb target=S1 fold=3/5 seed=42 features=267 train=359 valid=91
+[0]	validation_0-logloss:0.61387	validation_1-logloss:0.64995
+[250]	validation_0-logloss:0.31560	validation_1-logloss:0.52727
+[329]	validation_0-logloss:0.28500	validation_1-logloss:0.52894
+[20:16:28] xgb target=S1 fold=3 seed=42 best_iter=209 valid_logloss=0.524032 train_logloss=0.335487
+[20:16:28] xgb target=S1 fold=3/5 seed=7 features=267 train=359 valid=91
+[0]	validation_0-logloss:0.61396	validation_1-logloss:0.64983
+[250]	validation_0-logloss:0.31668	validation_1-logloss:0.52502
+[305]	validation_0-logloss:0.29253	validation_1-logloss:0.52779
+[20:16:29] xgb target=S1 fold=3 seed=7 best_iter=185 valid_logloss=0.521465 train_logloss=0.350365
+[20:16:29] xgb target=S1 fold=3/5 seed=2024 features=267 train=359 valid=91
+[0]	validation_0-logloss:0.61415	validation_1-logloss:0.64913
+[250]	validation_0-logloss:0.31475	validation_1-logloss:0.52582
+[313]	validation_0-logloss:0.28860	validation_1-logloss:0.52788
+[20:16:30] xgb target=S1 fold=3 seed=2024 best_iter=193 valid_logloss=0.523951 train_logloss=0.345172
+[20:16:30] xgb target=S1 fold=3/5 seed=1234 features=267 train=359 valid=91
+[0]	validation_0-logloss:0.61434	validation_1-logloss:0.64984
+[250]	validation_0-logloss:0.31533	validation_1-logloss:0.53035
+[327]	validation_0-logloss:0.28530	validation_1-logloss:0.53113
+[20:16:30] xgb target=S1 fold=3 seed=1234 best_iter=207 valid_logloss=0.527774 train_logloss=0.336572
+[20:16:30] xgb target=S1 fold=3/5 seed=9999 features=267 train=359 valid=91
+[0]	validation_0-logloss:0.61437	validation_1-logloss:0.65007
+[250]	validation_0-logloss:0.31589	validation_1-logloss:0.52837
+[305]	validation_0-logloss:0.29303	validation_1-logloss:0.53054
+[20:16:31] xgb target=S1 fold=3 seed=9999 best_iter=185 valid_logloss=0.523659 train_logloss=0.349828
+[20:16:31] xgb target=S1 fold=4/5 seed=42 features=267 train=363 valid=87
+[0]	validation_0-logloss:0.63594	validation_1-logloss:0.56485
+[250]	validation_0-logloss:0.32795	validation_1-logloss:0.45221
+[390]	validation_0-logloss:0.27546	validation_1-logloss:0.45382
+[20:16:32] xgb target=S1 fold=4 seed=42 best_iter=270 valid_logloss=0.449771 train_logloss=0.319245
+[20:16:32] xgb target=S1 fold=4/5 seed=7 features=267 train=363 valid=87
+[0]	validation_0-logloss:0.63577	validation_1-logloss:0.56413
+[250]	validation_0-logloss:0.32677	validation_1-logloss:0.44310
+[343]	validation_0-logloss:0.28856	validation_1-logloss:0.44771
+[20:16:33] xgb target=S1 fold=4 seed=7 best_iter=223 valid_logloss=0.439125 train_logloss=0.339919
+[20:16:33] xgb target=S1 fold=4/5 seed=2024 features=267 train=363 valid=87
+[0]	validation_0-logloss:0.63553	validation_1-logloss:0.56453
+[250]	validation_0-logloss:0.32740	validation_1-logloss:0.44998
+[278]	validation_0-logloss:0.31484	validation_1-logloss:0.45106
+[20:16:33] xgb target=S1 fold=4 seed=2024 best_iter=158 valid_logloss=0.448063 train_logloss=0.380991
+[20:16:33] xgb target=S1 fold=4/5 seed=1234 features=267 train=363 valid=87
+[0]	validation_0-logloss:0.63580	validation_1-logloss:0.56504
+[250]	validation_0-logloss:0.32817	validation_1-logloss:0.44758
+[378]	validation_0-logloss:0.28017	validation_1-logloss:0.45184
+[20:16:34] xgb target=S1 fold=4 seed=1234 best_iter=258 valid_logloss=0.446746 train_logloss=0.324563
+[20:16:34] xgb target=S1 fold=4/5 seed=9999 features=267 train=363 valid=87
+[0]	validation_0-logloss:0.63584	validation_1-logloss:0.56405
+[250]	validation_0-logloss:0.32961	validation_1-logloss:0.44874
+[322]	validation_0-logloss:0.29890	validation_1-logloss:0.44845
+[20:16:35] xgb target=S1 fold=4 seed=9999 best_iter=202 valid_logloss=0.443816 train_logloss=0.354325
+[20:16:35] xgb target=S1 fold=5/5 seed=42 features=267 train=365 valid=85
+[0]	validation_0-logloss:0.61868	validation_1-logloss:0.63141
+[242]	validation_0-logloss:0.32003	validation_1-logloss:0.55400
+[20:16:36] xgb target=S1 fold=5 seed=42 best_iter=122 valid_logloss=0.541396 train_logloss=0.396784
+[20:16:36] xgb target=S1 fold=5/5 seed=7 features=267 train=365 valid=85
+[0]	validation_0-logloss:0.61853	validation_1-logloss:0.63141
+[250]	validation_0-logloss:0.31985	validation_1-logloss:0.54909
+[262]	validation_0-logloss:0.31418	validation_1-logloss:0.55217
+[20:16:36] xgb target=S1 fold=5 seed=7 best_iter=142 valid_logloss=0.537951 train_logloss=0.381615
+[20:16:36] xgb target=S1 fold=5/5 seed=2024 features=267 train=365 valid=85
+[0]	validation_0-logloss:0.61838	validation_1-logloss:0.63189
+[250]	validation_0-logloss:0.31617	validation_1-logloss:0.54436
+[253]	validation_0-logloss:0.31469	validation_1-logloss:0.54500
+[20:16:37] xgb target=S1 fold=5 seed=2024 best_iter=133 valid_logloss=0.537463 train_logloss=0.386105
+[20:16:37] xgb target=S1 fold=5/5 seed=1234 features=267 train=365 valid=85
+[0]	validation_0-logloss:0.61830	validation_1-logloss:0.63144
+[250]	validation_0-logloss:0.31380	validation_1-logloss:0.55727
+[253]	validation_0-logloss:0.31265	validation_1-logloss:0.55867
+[20:16:38] xgb target=S1 fold=5 seed=1234 best_iter=133 valid_logloss=0.536625 train_logloss=0.384502
+[20:16:38] xgb target=S1 fold=5/5 seed=9999 features=267 train=365 valid=85
+[0]	validation_0-logloss:0.61861	validation_1-logloss:0.63152
+[236]	validation_0-logloss:0.32260	validation_1-logloss:0.55390
+[20:16:38] xgb target=S1 fold=5 seed=9999 best_iter=116 valid_logloss=0.537394 train_logloss=0.402171
+[20:16:38] xgb target=S2 fold=1/5 seed=42 features=268 train=355 valid=95
+[0]	validation_0-logloss:0.63849	validation_1-logloss:0.66472
+[199]	validation_0-logloss:0.37186	validation_1-logloss:0.62783
+[20:16:39] xgb target=S2 fold=1 seed=42 best_iter=79 valid_logloss=0.605734 train_logloss=0.472755
+[20:16:39] xgb target=S2 fold=1/5 seed=7 features=268 train=355 valid=95
+[0]	validation_0-logloss:0.63811	validation_1-logloss:0.66467
+[197]	validation_0-logloss:0.37365	validation_1-logloss:0.63668
+[20:16:39] xgb target=S2 fold=1 seed=7 best_iter=77 valid_logloss=0.609435 train_logloss=0.476339
+[20:16:39] xgb target=S2 fold=1/5 seed=2024 features=268 train=355 valid=95
+[0]	validation_0-logloss:0.63788	validation_1-logloss:0.66547
+[195]	validation_0-logloss:0.37152	validation_1-logloss:0.63222
+[20:16:40] xgb target=S2 fold=1 seed=2024 best_iter=75 valid_logloss=0.609326 train_logloss=0.475298
+[20:16:40] xgb target=S2 fold=1/5 seed=1234 features=268 train=355 valid=95
+[0]	validation_0-logloss:0.63769	validation_1-logloss:0.66380
+[201]	validation_0-logloss:0.36971	validation_1-logloss:0.62889
+[20:16:40] xgb target=S2 fold=1 seed=1234 best_iter=81 valid_logloss=0.607612 train_logloss=0.471349
+[20:16:40] xgb target=S2 fold=1/5 seed=9999 features=268 train=355 valid=95
+[0]	validation_0-logloss:0.63778	validation_1-logloss:0.66400
+[201]	validation_0-logloss:0.36867	validation_1-logloss:0.63067
+[20:16:41] xgb target=S2 fold=1 seed=9999 best_iter=81 valid_logloss=0.606326 train_logloss=0.470792
+[20:16:41] xgb target=S2 fold=2/5 seed=42 features=268 train=358 valid=92
+[0]	validation_0-logloss:0.64870	validation_1-logloss:0.62481
+[250]	validation_0-logloss:0.35019	validation_1-logloss:0.54230
+[334]	validation_0-logloss:0.31082	validation_1-logloss:0.54677
+[20:16:42] xgb target=S2 fold=2 seed=42 best_iter=214 valid_logloss=0.539366 train_logloss=0.371188
+[20:16:42] xgb target=S2 fold=2/5 seed=7 features=268 train=358 valid=92
+[0]	validation_0-logloss:0.64814	validation_1-logloss:0.62497
+[250]	validation_0-logloss:0.35139	validation_1-logloss:0.53626
+[312]	validation_0-logloss:0.32143	validation_1-logloss:0.54120
+[20:16:42] xgb target=S2 fold=2 seed=7 best_iter=192 valid_logloss=0.532408 train_logloss=0.387729
+[20:16:42] xgb target=S2 fold=2/5 seed=2024 features=268 train=358 valid=92
+[0]	validation_0-logloss:0.64856	validation_1-logloss:0.62489
+[250]	validation_0-logloss:0.35082	validation_1-logloss:0.53001
+[344]	validation_0-logloss:0.30791	validation_1-logloss:0.53675
+[20:16:43] xgb target=S2 fold=2 seed=2024 best_iter=224 valid_logloss=0.527042 train_logloss=0.366173
+[20:16:43] xgb target=S2 fold=2/5 seed=1234 features=268 train=358 valid=92
+[0]	validation_0-logloss:0.64857	validation_1-logloss:0.62482
+[250]	validation_0-logloss:0.35186	validation_1-logloss:0.53855
+[310]	validation_0-logloss:0.32201	validation_1-logloss:0.54175
+[20:16:44] xgb target=S2 fold=2 seed=1234 best_iter=190 valid_logloss=0.533321 train_logloss=0.388606
+[20:16:44] xgb target=S2 fold=2/5 seed=9999 features=268 train=358 valid=92
+[0]	validation_0-logloss:0.64814	validation_1-logloss:0.62570
+[250]	validation_0-logloss:0.35090	validation_1-logloss:0.53094
+[357]	validation_0-logloss:0.30272	validation_1-logloss:0.53121
+[20:16:45] xgb target=S2 fold=2 seed=9999 best_iter=237 valid_logloss=0.529527 train_logloss=0.358211
+[20:16:45] xgb target=S2 fold=3/5 seed=42 features=268 train=359 valid=91
+[0]	validation_0-logloss:0.64963	validation_1-logloss:0.62143
+[202]	validation_0-logloss:0.37097	validation_1-logloss:0.58771
+[20:16:45] xgb target=S2 fold=3 seed=42 best_iter=82 valid_logloss=0.571166 train_logloss=0.482248
+[20:16:45] xgb target=S2 fold=3/5 seed=7 features=268 train=359 valid=91
+[0]	validation_0-logloss:0.64956	validation_1-logloss:0.62213
+[187]	validation_0-logloss:0.38224	validation_1-logloss:0.58763
+[20:16:46] xgb target=S2 fold=3 seed=7 best_iter=67 valid_logloss=0.571765 train_logloss=0.502620
+[20:16:46] xgb target=S2 fold=3/5 seed=2024 features=268 train=359 valid=91
+[0]	validation_0-logloss:0.64933	validation_1-logloss:0.62111
+[185]	validation_0-logloss:0.38359	validation_1-logloss:0.58413
+[20:16:46] xgb target=S2 fold=3 seed=2024 best_iter=65 valid_logloss=0.569382 train_logloss=0.506659
+[20:16:46] xgb target=S2 fold=3/5 seed=1234 features=268 train=359 valid=91
+[0]	validation_0-logloss:0.64955	validation_1-logloss:0.62134
+[217]	validation_0-logloss:0.36160	validation_1-logloss:0.58842
+[20:16:47] xgb target=S2 fold=3 seed=1234 best_iter=97 valid_logloss=0.565538 train_logloss=0.463149
+[20:16:47] xgb target=S2 fold=3/5 seed=9999 features=268 train=359 valid=91
+[0]	validation_0-logloss:0.64891	validation_1-logloss:0.62150
+[210]	validation_0-logloss:0.36654	validation_1-logloss:0.59323
+[20:16:47] xgb target=S2 fold=3 seed=9999 best_iter=90 valid_logloss=0.573996 train_logloss=0.472664
+[20:16:47] xgb target=S2 fold=4/5 seed=42 features=268 train=363 valid=87
+[0]	validation_0-logloss:0.63719	validation_1-logloss:0.67267
+[250]	validation_0-logloss:0.35186	validation_1-logloss:0.57502
+[278]	validation_0-logloss:0.33747	validation_1-logloss:0.57736
+[20:16:48] xgb target=S2 fold=4 seed=42 best_iter=158 valid_logloss=0.569072 train_logloss=0.410301
+[20:16:48] xgb target=S2 fold=4/5 seed=7 features=268 train=363 valid=87
+[0]	validation_0-logloss:0.63725	validation_1-logloss:0.67230
+[250]	validation_0-logloss:0.35236	validation_1-logloss:0.58619
+[274]	validation_0-logloss:0.34062	validation_1-logloss:0.59009
+[20:16:49] xgb target=S2 fold=4 seed=7 best_iter=154 valid_logloss=0.580382 train_logloss=0.412732
+[20:16:49] xgb target=S2 fold=4/5 seed=2024 features=268 train=363 valid=87
+[0]	validation_0-logloss:0.63666	validation_1-logloss:0.67163
+[250]	validation_0-logloss:0.35313	validation_1-logloss:0.57723
+[281]	validation_0-logloss:0.33820	validation_1-logloss:0.57861
+[20:16:49] xgb target=S2 fold=4 seed=2024 best_iter=161 valid_logloss=0.573755 train_logloss=0.409645
+[20:16:49] xgb target=S2 fold=4/5 seed=1234 features=268 train=363 valid=87
+[0]	validation_0-logloss:0.63712	validation_1-logloss:0.67228
+[250]	validation_0-logloss:0.35284	validation_1-logloss:0.56832
+[351]	validation_0-logloss:0.30726	validation_1-logloss:0.57296
+[20:16:50] xgb target=S2 fold=4 seed=1234 best_iter=231 valid_logloss=0.565497 train_logloss=0.363354
+[20:16:50] xgb target=S2 fold=4/5 seed=9999 features=268 train=363 valid=87
+[0]	validation_0-logloss:0.63693	validation_1-logloss:0.67286
+[250]	validation_0-logloss:0.35517	validation_1-logloss:0.57822
+[362]	validation_0-logloss:0.30510	validation_1-logloss:0.58796
+[20:16:51] xgb target=S2 fold=4 seed=9999 best_iter=242 valid_logloss=0.577072 train_logloss=0.359749
+[20:16:51] xgb target=S2 fold=5/5 seed=42 features=268 train=365 valid=85
+[0]	validation_0-logloss:0.64260	validation_1-logloss:0.64680
+[235]	validation_0-logloss:0.34793	validation_1-logloss:0.58933
+[20:16:52] xgb target=S2 fold=5 seed=42 best_iter=115 valid_logloss=0.574530 train_logloss=0.437735
+[20:16:52] xgb target=S2 fold=5/5 seed=7 features=268 train=365 valid=85
+[0]	validation_0-logloss:0.64272	validation_1-logloss:0.64676
+[225]	validation_0-logloss:0.35549	validation_1-logloss:0.59339
+[20:16:52] xgb target=S2 fold=5 seed=7 best_iter=105 valid_logloss=0.574368 train_logloss=0.449984
+[20:16:52] xgb target=S2 fold=5/5 seed=2024 features=268 train=365 valid=85
+[0]	validation_0-logloss:0.64254	validation_1-logloss:0.64691
+[217]	validation_0-logloss:0.35955	validation_1-logloss:0.58809
+[20:16:53] xgb target=S2 fold=5 seed=2024 best_iter=97 valid_logloss=0.572948 train_logloss=0.458357
+[20:16:53] xgb target=S2 fold=5/5 seed=1234 features=268 train=365 valid=85
+[0]	validation_0-logloss:0.64284	validation_1-logloss:0.64754
+[228]	validation_0-logloss:0.35287	validation_1-logloss:0.60364
+[20:16:53] xgb target=S2 fold=5 seed=1234 best_iter=108 valid_logloss=0.579889 train_logloss=0.446305
+[20:16:53] xgb target=S2 fold=5/5 seed=9999 features=268 train=365 valid=85
+[0]	validation_0-logloss:0.64246	validation_1-logloss:0.64747
+[228]	validation_0-logloss:0.35457	validation_1-logloss:0.59003
+[20:16:54] xgb target=S2 fold=5 seed=9999 best_iter=108 valid_logloss=0.568175 train_logloss=0.448133
+[20:16:54] xgb target=S3 fold=1/5 seed=42 features=266 train=355 valid=95
+[0]	validation_0-logloss:0.63564	validation_1-logloss:0.63698
+[228]	validation_0-logloss:0.34407	validation_1-logloss:0.60733
+[20:16:55] xgb target=S3 fold=1 seed=42 best_iter=108 valid_logloss=0.593399 train_logloss=0.433812
+[20:16:55] xgb target=S3 fold=1/5 seed=7 features=266 train=355 valid=95
+[0]	validation_0-logloss:0.63571	validation_1-logloss:0.63751
+[199]	validation_0-logloss:0.36140	validation_1-logloss:0.60619
+[20:16:55] xgb target=S3 fold=1 seed=7 best_iter=79 valid_logloss=0.597750 train_logloss=0.469410
+[20:16:55] xgb target=S3 fold=1/5 seed=2024 features=266 train=355 valid=95
+[0]	validation_0-logloss:0.63562	validation_1-logloss:0.63725
+[226]	validation_0-logloss:0.34588	validation_1-logloss:0.60832
+[20:16:56] xgb target=S3 fold=1 seed=2024 best_iter=106 valid_logloss=0.598158 train_logloss=0.437308
+[20:16:56] xgb target=S3 fold=1/5 seed=1234 features=266 train=355 valid=95
+[0]	validation_0-logloss:0.63607	validation_1-logloss:0.63698
+[226]	validation_0-logloss:0.34501	validation_1-logloss:0.61332
+[20:16:56] xgb target=S3 fold=1 seed=1234 best_iter=106 valid_logloss=0.593843 train_logloss=0.436789
+[20:16:56] xgb target=S3 fold=1/5 seed=9999 features=266 train=355 valid=95
+[0]	validation_0-logloss:0.63572	validation_1-logloss:0.63706
+[211]	validation_0-logloss:0.35363	validation_1-logloss:0.61517
+[20:16:57] xgb target=S3 fold=1 seed=9999 best_iter=91 valid_logloss=0.594599 train_logloss=0.453371
+[20:16:57] xgb target=S3 fold=2/5 seed=42 features=267 train=358 valid=92
+[0]	validation_0-logloss:0.64409	validation_1-logloss:0.60927
+[250]	validation_0-logloss:0.34416	validation_1-logloss:0.49301
+[314]	validation_0-logloss:0.31234	validation_1-logloss:0.50168
+[20:16:58] xgb target=S3 fold=2 seed=42 best_iter=194 valid_logloss=0.489941 train_logloss=0.379349
+[20:16:58] xgb target=S3 fold=2/5 seed=7 features=267 train=358 valid=92
+[0]	validation_0-logloss:0.64385	validation_1-logloss:0.60900
+[250]	validation_0-logloss:0.34669	validation_1-logloss:0.48819
+[258]	validation_0-logloss:0.34222	validation_1-logloss:0.49015
+[20:16:58] xgb target=S3 fold=2 seed=7 best_iter=138 valid_logloss=0.486724 train_logloss=0.426823
+[20:16:58] xgb target=S3 fold=2/5 seed=2024 features=267 train=358 valid=92
+[0]	validation_0-logloss:0.64370	validation_1-logloss:0.60933
+[250]	validation_0-logloss:0.34316	validation_1-logloss:0.49966
+[298]	validation_0-logloss:0.31825	validation_1-logloss:0.50139
+[20:16:59] xgb target=S3 fold=2 seed=2024 best_iter=178 valid_logloss=0.495462 train_logloss=0.390931
+[20:16:59] xgb target=S3 fold=2/5 seed=1234 features=267 train=358 valid=92
+[0]	validation_0-logloss:0.64404	validation_1-logloss:0.60938
+[250]	validation_0-logloss:0.34495	validation_1-logloss:0.50525
+[300]	validation_0-logloss:0.31799	validation_1-logloss:0.50402
+[20:17:00] xgb target=S3 fold=2 seed=1234 best_iter=180 valid_logloss=0.493573 train_logloss=0.391184
+[20:17:00] xgb target=S3 fold=2/5 seed=9999 features=267 train=358 valid=92
+[0]	validation_0-logloss:0.64363	validation_1-logloss:0.60951
+[250]	validation_0-logloss:0.34601	validation_1-logloss:0.50414
+[297]	validation_0-logloss:0.32129	validation_1-logloss:0.50690
+[20:17:00] xgb target=S3 fold=2 seed=9999 best_iter=177 valid_logloss=0.497605 train_logloss=0.394254
+[20:17:00] xgb target=S3 fold=3/5 seed=42 features=265 train=359 valid=91
+[0]	validation_0-logloss:0.63937	validation_1-logloss:0.62551
+[250]	validation_0-logloss:0.33969	validation_1-logloss:0.53722
+[456]	validation_0-logloss:0.26213	validation_1-logloss:0.54390
+[20:17:01] xgb target=S3 fold=3 seed=42 best_iter=336 valid_logloss=0.535583 train_logloss=0.301544
+[20:17:01] xgb target=S3 fold=3/5 seed=7 features=265 train=359 valid=91
+[0]	validation_0-logloss:0.63911	validation_1-logloss:0.62565
+[231]	validation_0-logloss:0.35336	validation_1-logloss:0.54929
+[20:17:02] xgb target=S3 fold=3 seed=7 best_iter=111 valid_logloss=0.545885 train_logloss=0.440869
+[20:17:02] xgb target=S3 fold=3/5 seed=2024 features=265 train=359 valid=91
+[0]	validation_0-logloss:0.63934	validation_1-logloss:0.62558
+[250]	validation_0-logloss:0.34241	validation_1-logloss:0.53880
+[387]	validation_0-logloss:0.28559	validation_1-logloss:0.54258
+[20:17:03] xgb target=S3 fold=3 seed=2024 best_iter=267 valid_logloss=0.537198 train_logloss=0.333194
+[20:17:03] xgb target=S3 fold=3/5 seed=1234 features=265 train=359 valid=91
+[0]	validation_0-logloss:0.63952	validation_1-logloss:0.62512
+[250]	validation_0-logloss:0.34338	validation_1-logloss:0.54267
+[337]	validation_0-logloss:0.30324	validation_1-logloss:0.54379
+[20:17:04] xgb target=S3 fold=3 seed=1234 best_iter=217 valid_logloss=0.540892 train_logloss=0.360849
+[20:17:04] xgb target=S3 fold=3/5 seed=9999 features=265 train=359 valid=91
+[0]	validation_0-logloss:0.63937	validation_1-logloss:0.62504
+[250]	validation_0-logloss:0.34025	validation_1-logloss:0.54299
+[414]	validation_0-logloss:0.27605	validation_1-logloss:0.54155
+[20:17:05] xgb target=S3 fold=3 seed=9999 best_iter=294 valid_logloss=0.539446 train_logloss=0.320117
+[20:17:05] xgb target=S3 fold=4/5 seed=42 features=265 train=363 valid=87
+[0]	validation_0-logloss:0.63326	validation_1-logloss:0.65062
+[250]	validation_0-logloss:0.33397	validation_1-logloss:0.57325
+[284]	validation_0-logloss:0.31805	validation_1-logloss:0.57626
+[20:17:05] xgb target=S3 fold=4 seed=42 best_iter=164 valid_logloss=0.570083 train_logloss=0.388841
+[20:17:05] xgb target=S3 fold=4/5 seed=7 features=265 train=363 valid=87
+[0]	validation_0-logloss:0.63303	validation_1-logloss:0.65064
+[250]	validation_0-logloss:0.33367	validation_1-logloss:0.56978
+[331]	validation_0-logloss:0.29801	validation_1-logloss:0.57272
+[20:17:06] xgb target=S3 fold=4 seed=7 best_iter=211 valid_logloss=0.566597 train_logloss=0.355498
+[20:17:06] xgb target=S3 fold=4/5 seed=2024 features=265 train=363 valid=87
+[0]	validation_0-logloss:0.63302	validation_1-logloss:0.65054
+[250]	validation_0-logloss:0.33768	validation_1-logloss:0.57378
+[385]	validation_0-logloss:0.28147	validation_1-logloss:0.58256
+[20:17:07] xgb target=S3 fold=4 seed=2024 best_iter=265 valid_logloss=0.571553 train_logloss=0.329908
+[20:17:07] xgb target=S3 fold=4/5 seed=1234 features=265 train=363 valid=87
+[0]	validation_0-logloss:0.63298	validation_1-logloss:0.64969
+[250]	validation_0-logloss:0.33329	validation_1-logloss:0.57796
+[429]	validation_0-logloss:0.26521	validation_1-logloss:0.57708
+[20:17:08] xgb target=S3 fold=4 seed=1234 best_iter=309 valid_logloss=0.574318 train_logloss=0.305509
+[20:17:08] xgb target=S3 fold=4/5 seed=9999 features=265 train=363 valid=87
+[0]	validation_0-logloss:0.63280	validation_1-logloss:0.64974
+[250]	validation_0-logloss:0.33435	validation_1-logloss:0.57921
+[298]	validation_0-logloss:0.31151	validation_1-logloss:0.58091
+[20:17:09] xgb target=S3 fold=4 seed=9999 best_iter=178 valid_logloss=0.573287 train_logloss=0.378295
+[20:17:09] xgb target=S3 fold=5/5 seed=42 features=267 train=365 valid=85
+[0]	validation_0-logloss:0.62771	validation_1-logloss:0.67419
+[233]	validation_0-logloss:0.34347	validation_1-logloss:0.60633
+[20:17:10] xgb target=S3 fold=5 seed=42 best_iter=113 valid_logloss=0.594730 train_logloss=0.434789
+[20:17:10] xgb target=S3 fold=5/5 seed=7 features=267 train=365 valid=85
+[0]	validation_0-logloss:0.62811	validation_1-logloss:0.67412
+[250]	validation_0-logloss:0.33328	validation_1-logloss:0.59768
+[259]	validation_0-logloss:0.32848	validation_1-logloss:0.59875
+[20:17:10] xgb target=S3 fold=5 seed=7 best_iter=139 valid_logloss=0.585292 train_logloss=0.406981
+[20:17:10] xgb target=S3 fold=5/5 seed=2024 features=267 train=365 valid=85
+[0]	validation_0-logloss:0.62807	validation_1-logloss:0.67301
+[250]	validation_0-logloss:0.33517	validation_1-logloss:0.60468
+[251]	validation_0-logloss:0.33471	validation_1-logloss:0.60472
+[20:17:11] xgb target=S3 fold=5 seed=2024 best_iter=131 valid_logloss=0.584882 train_logloss=0.417412
+[20:17:11] xgb target=S3 fold=5/5 seed=1234 features=267 train=365 valid=85
+[0]	validation_0-logloss:0.62821	validation_1-logloss:0.67492
+[230]	validation_0-logloss:0.34685	validation_1-logloss:0.59737
+[20:17:11] xgb target=S3 fold=5 seed=1234 best_iter=110 valid_logloss=0.584963 train_logloss=0.435664
+[20:17:11] xgb target=S3 fold=5/5 seed=9999 features=267 train=365 valid=85
+[0]	validation_0-logloss:0.62750	validation_1-logloss:0.67439
+[229]	validation_0-logloss:0.34553	validation_1-logloss:0.60121
+[20:17:12] xgb target=S3 fold=5 seed=9999 best_iter=109 valid_logloss=0.586793 train_logloss=0.436770
+[20:17:12] xgb target=S4 fold=1/5 seed=42 features=269 train=355 valid=95
+[0]	validation_0-logloss:0.68267	validation_1-logloss:0.68532
+[150]	validation_0-logloss:0.45127	validation_1-logloss:0.70332
+[20:17:12] xgb target=S4 fold=1 seed=42 best_iter=30 valid_logloss=0.675506 train_logloss=0.605780
+[20:17:12] xgb target=S4 fold=1/5 seed=7 features=269 train=355 valid=95
+[0]	validation_0-logloss:0.68261	validation_1-logloss:0.68569
+[160]	validation_0-logloss:0.44425	validation_1-logloss:0.70300
+[20:17:13] xgb target=S4 fold=1 seed=7 best_iter=40 valid_logloss=0.672424 train_logloss=0.588690
+[20:17:13] xgb target=S4 fold=1/5 seed=2024 features=269 train=355 valid=95
+[0]	validation_0-logloss:0.68245	validation_1-logloss:0.68536
+[173]	validation_0-logloss:0.43404	validation_1-logloss:0.70302
+[20:17:13] xgb target=S4 fold=1 seed=2024 best_iter=53 valid_logloss=0.672223 train_logloss=0.565184
+[20:17:13] xgb target=S4 fold=1/5 seed=1234 features=269 train=355 valid=95
+[0]	validation_0-logloss:0.68287	validation_1-logloss:0.68610
+[150]	validation_0-logloss:0.45122	validation_1-logloss:0.69919
+[20:17:14] xgb target=S4 fold=1 seed=1234 best_iter=30 valid_logloss=0.674454 train_logloss=0.607136
+[20:17:14] xgb target=S4 fold=1/5 seed=9999 features=269 train=355 valid=95
+[0]	validation_0-logloss:0.68225	validation_1-logloss:0.68505
+[145]	validation_0-logloss:0.45769	validation_1-logloss:0.69735
+[20:17:14] xgb target=S4 fold=1 seed=9999 best_iter=25 valid_logloss=0.674799 train_logloss=0.616656
+[20:17:14] xgb target=S4 fold=2/5 seed=42 features=270 train=358 valid=92
+[0]	validation_0-logloss:0.68558	validation_1-logloss:0.67493
+[203]	validation_0-logloss:0.39717	validation_1-logloss:0.69152
+[20:17:15] xgb target=S4 fold=2 seed=42 best_iter=83 valid_logloss=0.659842 train_logloss=0.519592
+[20:17:15] xgb target=S4 fold=2/5 seed=7 features=270 train=358 valid=92
+[0]	validation_0-logloss:0.68525	validation_1-logloss:0.67425
+[157]	validation_0-logloss:0.43452	validation_1-logloss:0.68415
+[20:17:15] xgb target=S4 fold=2 seed=7 best_iter=37 valid_logloss=0.663232 train_logloss=0.596734
+[20:17:15] xgb target=S4 fold=2/5 seed=2024 features=270 train=358 valid=92
+[0]	validation_0-logloss:0.68590	validation_1-logloss:0.67479
+[175]	validation_0-logloss:0.42137	validation_1-logloss:0.68484
+[20:17:15] xgb target=S4 fold=2 seed=2024 best_iter=55 valid_logloss=0.659914 train_logloss=0.565089
+[20:17:15] xgb target=S4 fold=2/5 seed=1234 features=270 train=358 valid=92
+[0]	validation_0-logloss:0.68596	validation_1-logloss:0.67472
+[203]	validation_0-logloss:0.39728	validation_1-logloss:0.69847
+[20:17:16] xgb target=S4 fold=2 seed=1234 best_iter=83 valid_logloss=0.661716 train_logloss=0.519038
+[20:17:16] xgb target=S4 fold=2/5 seed=9999 features=270 train=358 valid=92
+[0]	validation_0-logloss:0.68619	validation_1-logloss:0.67512
+[147]	validation_0-logloss:0.44704	validation_1-logloss:0.67950
+[20:17:16] xgb target=S4 fold=2 seed=9999 best_iter=27 valid_logloss=0.663059 train_logloss=0.616544
+[20:17:16] xgb target=S4 fold=3/5 seed=42 features=270 train=359 valid=91
+[0]	validation_0-logloss:0.67952	validation_1-logloss:0.70040
+[250]	validation_0-logloss:0.39511	validation_1-logloss:0.63215
+[325]	validation_0-logloss:0.35487	validation_1-logloss:0.63936
+[20:17:17] xgb target=S4 fold=3 seed=42 best_iter=205 valid_logloss=0.628231 train_logloss=0.423032
+[20:17:17] xgb target=S4 fold=3/5 seed=7 features=270 train=359 valid=91
+[0]	validation_0-logloss:0.67926	validation_1-logloss:0.70037
+[250]	validation_0-logloss:0.39536	validation_1-logloss:0.62724
+[325]	validation_0-logloss:0.35605	validation_1-logloss:0.63271
+[20:17:18] xgb target=S4 fold=3 seed=7 best_iter=205 valid_logloss=0.623038 train_logloss=0.423145
+[20:17:18] xgb target=S4 fold=3/5 seed=2024 features=270 train=359 valid=91
+[0]	validation_0-logloss:0.67919	validation_1-logloss:0.70018
+[250]	validation_0-logloss:0.39605	validation_1-logloss:0.62647
+[306]	validation_0-logloss:0.36451	validation_1-logloss:0.63255
+[20:17:19] xgb target=S4 fold=3 seed=2024 best_iter=186 valid_logloss=0.621936 train_logloss=0.438605
+[20:17:19] xgb target=S4 fold=3/5 seed=1234 features=270 train=359 valid=91
+[0]	validation_0-logloss:0.67930	validation_1-logloss:0.70109
+[250]	validation_0-logloss:0.39339	validation_1-logloss:0.63528
+[306]	validation_0-logloss:0.36344	validation_1-logloss:0.64253
+[20:17:19] xgb target=S4 fold=3 seed=1234 best_iter=186 valid_logloss=0.629906 train_logloss=0.436474
+[20:17:19] xgb target=S4 fold=3/5 seed=9999 features=270 train=359 valid=91
+[0]	validation_0-logloss:0.67961	validation_1-logloss:0.70124
+[250]	validation_0-logloss:0.39687	validation_1-logloss:0.62849
+[289]	validation_0-logloss:0.37494	validation_1-logloss:0.63353
+[20:17:20] xgb target=S4 fold=3 seed=9999 best_iter=169 valid_logloss=0.624826 train_logloss=0.451643
+[20:17:20] xgb target=S4 fold=4/5 seed=42 features=269 train=363 valid=87
+[0]	validation_0-logloss:0.68475	validation_1-logloss:0.67777
+[250]	validation_0-logloss:0.40061	validation_1-logloss:0.57991
+[354]	validation_0-logloss:0.34994	validation_1-logloss:0.58148
+[20:17:21] xgb target=S4 fold=4 seed=42 best_iter=234 valid_logloss=0.578971 train_logloss=0.409893
+[20:17:21] xgb target=S4 fold=4/5 seed=7 features=269 train=363 valid=87
+[0]	validation_0-logloss:0.68486	validation_1-logloss:0.67892
+[250]	validation_0-logloss:0.40189	validation_1-logloss:0.57149
+[500]	validation_0-logloss:0.29820	validation_1-logloss:0.56151
+[657]	validation_0-logloss:0.25872	validation_1-logloss:0.56889
+[20:17:23] xgb target=S4 fold=4 seed=7 best_iter=537 valid_logloss=0.559948 train_logloss=0.288002
+[20:17:23] xgb target=S4 fold=4/5 seed=2024 features=269 train=363 valid=87
+[0]	validation_0-logloss:0.68498	validation_1-logloss:0.67932
+[250]	validation_0-logloss:0.40324	validation_1-logloss:0.57015
+[455]	validation_0-logloss:0.31444	validation_1-logloss:0.57157
+[20:17:24] xgb target=S4 fold=4 seed=2024 best_iter=335 valid_logloss=0.569181 train_logloss=0.360134
+[20:17:24] xgb target=S4 fold=4/5 seed=1234 features=269 train=363 valid=87
+[0]	validation_0-logloss:0.68460	validation_1-logloss:0.67779
+[250]	validation_0-logloss:0.39806	validation_1-logloss:0.56971
+[456]	validation_0-logloss:0.30970	validation_1-logloss:0.57183
+[20:17:25] xgb target=S4 fold=4 seed=1234 best_iter=336 valid_logloss=0.568112 train_logloss=0.354915
+[20:17:25] xgb target=S4 fold=4/5 seed=9999 features=269 train=363 valid=87
+[0]	validation_0-logloss:0.68467	validation_1-logloss:0.67803
+[250]	validation_0-logloss:0.40113	validation_1-logloss:0.56351
+[394]	validation_0-logloss:0.33411	validation_1-logloss:0.56599
+[20:17:26] xgb target=S4 fold=4 seed=9999 best_iter=274 valid_logloss=0.562835 train_logloss=0.387837
+[20:17:26] xgb target=S4 fold=5/5 seed=42 features=269 train=365 valid=85
+[0]	validation_0-logloss:0.68090	validation_1-logloss:0.69166
+[193]	validation_0-logloss:0.41386	validation_1-logloss:0.67744
+[20:17:26] xgb target=S4 fold=5 seed=42 best_iter=73 valid_logloss=0.654419 train_logloss=0.537003
+[20:17:26] xgb target=S4 fold=5/5 seed=7 features=269 train=365 valid=85
+[0]	validation_0-logloss:0.68111	validation_1-logloss:0.69369
+[191]	validation_0-logloss:0.41525	validation_1-logloss:0.67590
+[20:17:27] xgb target=S4 fold=5 seed=7 best_iter=71 valid_logloss=0.656945 train_logloss=0.539502
+[20:17:27] xgb target=S4 fold=5/5 seed=2024 features=269 train=365 valid=85
+[0]	validation_0-logloss:0.68146	validation_1-logloss:0.69406
+[194]	validation_0-logloss:0.41602	validation_1-logloss:0.66520
+[20:17:27] xgb target=S4 fold=5 seed=2024 best_iter=74 valid_logloss=0.651629 train_logloss=0.537024
+[20:17:27] xgb target=S4 fold=5/5 seed=1234 features=269 train=365 valid=85
+[0]	validation_0-logloss:0.68110	validation_1-logloss:0.69206
+[232]	validation_0-logloss:0.39114	validation_1-logloss:0.67141
+[20:17:28] xgb target=S4 fold=5 seed=1234 best_iter=112 valid_logloss=0.639069 train_logloss=0.492434
+[20:17:28] xgb target=S4 fold=5/5 seed=9999 features=269 train=365 valid=85
+[0]	validation_0-logloss:0.68127	validation_1-logloss:0.69272
+[198]	validation_0-logloss:0.40943	validation_1-logloss:0.68965
+[20:17:28] xgb target=S4 fold=5 seed=9999 best_iter=78 valid_logloss=0.659554 train_logloss=0.529672
+[20:17:28] xgb full=0.599191 last=0.604631
+[20:17:28] Training model bank: cat
+[20:17:29] cat target=Q1 fold=1/5 seed=42 features=268 train=355 valid=95
+0:	learn: 0.6897123	test: 0.6897529	best: 0.6897529 (0)	total: 58.3ms	remaining: 3m 6s
+250:	learn: 0.4227813	test: 0.5276258	best: 0.5276258 (250)	total: 311ms	remaining: 3.65s
+500:	learn: 0.2690634	test: 0.5023614	best: 0.5007389 (478)	total: 592ms	remaining: 3.19s
+750:	learn: 0.1643440	test: 0.4965655	best: 0.4941486 (701)	total: 857ms	remaining: 2.79s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4941486171
+bestIteration = 701
+
+Shrink model to first 702 iterations.
+[20:17:30] cat target=Q1 fold=1 seed=42 best_iter=701 valid_logloss=0.494149 train_logloss=0.135535
+[20:17:30] cat target=Q1 fold=1/5 seed=7 features=268 train=355 valid=95
+0:	learn: 0.6902652	test: 0.6907725	best: 0.6907725 (0)	total: 2.15ms	remaining: 6.88s
+250:	learn: 0.4247865	test: 0.5375387	best: 0.5375387 (250)	total: 289ms	remaining: 3.4s
+500:	learn: 0.2607339	test: 0.5106495	best: 0.5092443 (464)	total: 577ms	remaining: 3.11s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5092443304
+bestIteration = 464
+
+Shrink model to first 465 iterations.
+[20:17:30] cat target=Q1 fold=1 seed=7 best_iter=464 valid_logloss=0.509244 train_logloss=0.199784
+[20:17:30] cat target=Q1 fold=1/5 seed=2024 features=268 train=355 valid=95
+0:	learn: 0.6912456	test: 0.6909573	best: 0.6909573 (0)	total: 1.74ms	remaining: 5.57s
+250:	learn: 0.4251099	test: 0.5267672	best: 0.5262937 (246)	total: 247ms	remaining: 2.9s
+500:	learn: 0.2707725	test: 0.5032774	best: 0.5016046 (483)	total: 507ms	remaining: 2.73s
+750:	learn: 0.1637977	test: 0.4976737	best: 0.4963382 (684)	total: 758ms	remaining: 2.47s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4930063106
+bestIteration = 818
+
+Shrink model to first 819 iterations.
+[20:17:31] cat target=Q1 fold=1 seed=2024 best_iter=818 valid_logloss=0.493006 train_logloss=0.111592
+[20:17:31] cat target=Q1 fold=1/5 seed=1234 features=268 train=355 valid=95
+0:	learn: 0.6906695	test: 0.6904098	best: 0.6904098 (0)	total: 1.7ms	remaining: 5.43s
+250:	learn: 0.4264968	test: 0.5333786	best: 0.5333786 (250)	total: 242ms	remaining: 2.85s
+500:	learn: 0.2661425	test: 0.5006355	best: 0.4997685 (495)	total: 505ms	remaining: 2.72s
+750:	learn: 0.1572121	test: 0.4946752	best: 0.4933995 (742)	total: 761ms	remaining: 2.48s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4931362521
+bestIteration = 764
+
+Shrink model to first 765 iterations.
+[20:17:32] cat target=Q1 fold=1 seed=1234 best_iter=764 valid_logloss=0.493136 train_logloss=0.114556
+[20:17:32] cat target=Q1 fold=1/5 seed=9999 features=268 train=355 valid=95
+0:	learn: 0.6909807	test: 0.6919011	best: 0.6919011 (0)	total: 1.69ms	remaining: 5.4s
+250:	learn: 0.4263661	test: 0.5289420	best: 0.5289420 (250)	total: 249ms	remaining: 2.92s
+500:	learn: 0.2671431	test: 0.4921653	best: 0.4912180 (498)	total: 508ms	remaining: 2.74s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4893684772
+bestIteration = 567
+
+Shrink model to first 568 iterations.
+[20:17:33] cat target=Q1 fold=1 seed=9999 best_iter=567 valid_logloss=0.489368 train_logloss=0.168594
+[20:17:33] cat target=Q1 fold=2/5 seed=42 features=268 train=358 valid=92
+0:	learn: 0.6889777	test: 0.6891126	best: 0.6891126 (0)	total: 1.91ms	remaining: 6.1s
+250:	learn: 0.4013704	test: 0.5831923	best: 0.5810036 (188)	total: 279ms	remaining: 3.28s
+500:	learn: 0.2383603	test: 0.5865332	best: 0.5778727 (367)	total: 545ms	remaining: 2.93s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5778726521
+bestIteration = 367
+
+Shrink model to first 368 iterations.
+[20:17:34] cat target=Q1 fold=2 seed=42 best_iter=367 valid_logloss=0.577873 train_logloss=0.223771
+[20:17:34] cat target=Q1 fold=2/5 seed=7 features=268 train=358 valid=92
+0:	learn: 0.6898587	test: 0.6910911	best: 0.6910911 (0)	total: 1.71ms	remaining: 5.47s
+250:	learn: 0.4020002	test: 0.5860071	best: 0.5849521 (215)	total: 271ms	remaining: 3.18s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5849520911
+bestIteration = 215
+
+Shrink model to first 216 iterations.
+[20:17:34] cat target=Q1 fold=2 seed=7 best_iter=215 valid_logloss=0.584952 train_logloss=0.322004
+[20:17:34] cat target=Q1 fold=2/5 seed=2024 features=268 train=358 valid=92
+0:	learn: 0.6885560	test: 0.6908445	best: 0.6908445 (0)	total: 1.71ms	remaining: 5.48s
+250:	learn: 0.3936338	test: 0.5770978	best: 0.5770978 (250)	total: 286ms	remaining: 3.36s
+500:	learn: 0.2348023	test: 0.5843720	best: 0.5739637 (382)	total: 562ms	remaining: 3.03s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.573963732
+bestIteration = 382
+
+Shrink model to first 383 iterations.
+[20:17:35] cat target=Q1 fold=2 seed=2024 best_iter=382 valid_logloss=0.573964 train_logloss=0.213648
+[20:17:35] cat target=Q1 fold=2/5 seed=1234 features=268 train=358 valid=92
+0:	learn: 0.6897972	test: 0.6897760	best: 0.6897760 (0)	total: 2.04ms	remaining: 6.53s
+250:	learn: 0.4008469	test: 0.5836968	best: 0.5812696 (214)	total: 275ms	remaining: 3.23s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5812696053
+bestIteration = 214
+
+Shrink model to first 215 iterations.
+[20:17:35] cat target=Q1 fold=2 seed=1234 best_iter=214 valid_logloss=0.581270 train_logloss=0.320466
+[20:17:35] cat target=Q1 fold=2/5 seed=9999 features=268 train=358 valid=92
+0:	learn: 0.6879676	test: 0.6876972	best: 0.6876972 (0)	total: 2.36ms	remaining: 7.55s
+250:	learn: 0.4019837	test: 0.5760651	best: 0.5754612 (247)	total: 273ms	remaining: 3.21s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5703833131
+bestIteration = 316
+
+Shrink model to first 317 iterations.
+[20:17:36] cat target=Q1 fold=2 seed=9999 best_iter=316 valid_logloss=0.570383 train_logloss=0.253647
+[20:17:36] cat target=Q1 fold=3/5 seed=42 features=268 train=359 valid=91
+0:	learn: 0.6899332	test: 0.6898095	best: 0.6898095 (0)	total: 1.84ms	remaining: 5.88s
+250:	learn: 0.3969646	test: 0.5904795	best: 0.5894044 (174)	total: 271ms	remaining: 3.19s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.58940445
+bestIteration = 174
+
+Shrink model to first 175 iterations.
+[20:17:36] cat target=Q1 fold=3 seed=42 best_iter=174 valid_logloss=0.589404 train_logloss=0.343424
+[20:17:36] cat target=Q1 fold=3/5 seed=7 features=268 train=359 valid=91
+0:	learn: 0.6895277	test: 0.6908885	best: 0.6908885 (0)	total: 1.79ms	remaining: 5.74s
+250:	learn: 0.3975820	test: 0.5974631	best: 0.5957937 (235)	total: 257ms	remaining: 3.02s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5957936979
+bestIteration = 235
+
+Shrink model to first 236 iterations.
+[20:17:37] cat target=Q1 fold=3 seed=7 best_iter=235 valid_logloss=0.595794 train_logloss=0.310019
+[20:17:37] cat target=Q1 fold=3/5 seed=2024 features=268 train=359 valid=91
+0:	learn: 0.6904277	test: 0.6899809	best: 0.6899809 (0)	total: 1.75ms	remaining: 5.6s
+250:	learn: 0.3958265	test: 0.5895607	best: 0.5846688 (206)	total: 264ms	remaining: 3.1s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5846687635
+bestIteration = 206
+
+Shrink model to first 207 iterations.
+[20:17:37] cat target=Q1 fold=3 seed=2024 best_iter=206 valid_logloss=0.584669 train_logloss=0.325138
+[20:17:37] cat target=Q1 fold=3/5 seed=1234 features=268 train=359 valid=91
+0:	learn: 0.6895005	test: 0.6898697	best: 0.6898697 (0)	total: 1.73ms	remaining: 5.52s
+250:	learn: 0.3979979	test: 0.5963204	best: 0.5937137 (194)	total: 263ms	remaining: 3.09s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.593713678
+bestIteration = 194
+
+Shrink model to first 195 iterations.
+[20:17:38] cat target=Q1 fold=3 seed=1234 best_iter=194 valid_logloss=0.593714 train_logloss=0.336610
+[20:17:38] cat target=Q1 fold=3/5 seed=9999 features=268 train=359 valid=91
+0:	learn: 0.6901841	test: 0.6895437	best: 0.6895437 (0)	total: 1.92ms	remaining: 6.16s
+250:	learn: 0.3963246	test: 0.5941068	best: 0.5843319 (159)	total: 265ms	remaining: 3.11s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5843319409
+bestIteration = 159
+
+Shrink model to first 160 iterations.
+[20:17:38] cat target=Q1 fold=3 seed=9999 best_iter=159 valid_logloss=0.584332 train_logloss=0.354842
+[20:17:38] cat target=Q1 fold=4/5 seed=42 features=268 train=363 valid=87
+0:	learn: 0.6886197	test: 0.6911754	best: 0.6911754 (0)	total: 1.99ms	remaining: 6.38s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6650346801
+bestIteration = 58
+
+Shrink model to first 59 iterations.
+[20:17:39] cat target=Q1 fold=4 seed=42 best_iter=58 valid_logloss=0.665035 train_logloss=0.398893
+[20:17:39] cat target=Q1 fold=4/5 seed=7 features=268 train=363 valid=87
+0:	learn: 0.6889751	test: 0.6911089	best: 0.6911089 (0)	total: 1.7ms	remaining: 5.45s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6623966795
+bestIteration = 53
+
+Shrink model to first 54 iterations.
+[20:17:39] cat target=Q1 fold=4 seed=7 best_iter=53 valid_logloss=0.662397 train_logloss=0.401031
+[20:17:39] cat target=Q1 fold=4/5 seed=2024 features=268 train=363 valid=87
+0:	learn: 0.6892998	test: 0.6917819	best: 0.6917819 (0)	total: 1.88ms	remaining: 6s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6649454621
+bestIteration = 55
+
+Shrink model to first 56 iterations.
+[20:17:39] cat target=Q1 fold=4 seed=2024 best_iter=55 valid_logloss=0.664945 train_logloss=0.398474
+[20:17:39] cat target=Q1 fold=4/5 seed=1234 features=268 train=363 valid=87
+0:	learn: 0.6895132	test: 0.6915398	best: 0.6915398 (0)	total: 1.76ms	remaining: 5.63s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6637865674
+bestIteration = 48
+
+Shrink model to first 49 iterations.
+[20:17:39] cat target=Q1 fold=4 seed=1234 best_iter=48 valid_logloss=0.663787 train_logloss=0.402982
+[20:17:39] cat target=Q1 fold=4/5 seed=9999 features=268 train=363 valid=87
+0:	learn: 0.6894648	test: 0.6911735	best: 0.6911735 (0)	total: 1.78ms	remaining: 5.71s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6612440075
+bestIteration = 41
+
+Shrink model to first 42 iterations.
+[20:17:39] cat target=Q1 fold=4 seed=9999 best_iter=41 valid_logloss=0.661244 train_logloss=0.407206
+[20:17:40] cat target=Q1 fold=5/5 seed=42 features=268 train=365 valid=85
+0:	learn: 0.6883424	test: 0.6918076	best: 0.6918076 (0)	total: 1.77ms	remaining: 5.65s
+250:	learn: 0.3908960	test: 0.6429371	best: 0.6316237 (148)	total: 274ms	remaining: 3.21s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6316237219
+bestIteration = 148
+
+Shrink model to first 149 iterations.
+[20:17:40] cat target=Q1 fold=5 seed=42 best_iter=148 valid_logloss=0.631624 train_logloss=0.355183
+[20:17:40] cat target=Q1 fold=5/5 seed=7 features=268 train=365 valid=85
+0:	learn: 0.6885617	test: 0.6916448	best: 0.6916448 (0)	total: 1.8ms	remaining: 5.75s
+250:	learn: 0.3963250	test: 0.6358829	best: 0.6341492 (227)	total: 266ms	remaining: 3.13s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6341492205
+bestIteration = 227
+
+Shrink model to first 228 iterations.
+[20:17:41] cat target=Q1 fold=5 seed=7 best_iter=227 valid_logloss=0.634149 train_logloss=0.310231
+[20:17:41] cat target=Q1 fold=5/5 seed=2024 features=268 train=365 valid=85
+0:	learn: 0.6887741	test: 0.6911915	best: 0.6911915 (0)	total: 1.63ms	remaining: 5.22s
+250:	learn: 0.3982205	test: 0.6537933	best: 0.6497285 (94)	total: 263ms	remaining: 3.08s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6497284984
+bestIteration = 94
+
+Shrink model to first 95 iterations.
+[20:17:41] cat target=Q1 fold=5 seed=2024 best_iter=94 valid_logloss=0.649728 train_logloss=0.396437
+[20:17:41] cat target=Q1 fold=5/5 seed=1234 features=268 train=365 valid=85
+0:	learn: 0.6884225	test: 0.6906476	best: 0.6906476 (0)	total: 1.77ms	remaining: 5.67s
+250:	learn: 0.3923894	test: 0.6518894	best: 0.6451858 (167)	total: 258ms	remaining: 3.03s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6451857911
+bestIteration = 167
+
+Shrink model to first 168 iterations.
+[20:17:41] cat target=Q1 fold=5 seed=1234 best_iter=167 valid_logloss=0.645186 train_logloss=0.342955
+[20:17:41] cat target=Q1 fold=5/5 seed=9999 features=268 train=365 valid=85
+0:	learn: 0.6878616	test: 0.6907747	best: 0.6907747 (0)	total: 1.8ms	remaining: 5.75s
+250:	learn: 0.3903499	test: 0.6324492	best: 0.6274777 (150)	total: 263ms	remaining: 3.09s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6274777355
+bestIteration = 150
+
+Shrink model to first 151 iterations.
+[20:17:41] cat target=Q1 fold=5 seed=9999 best_iter=150 valid_logloss=0.627478 train_logloss=0.355276
+[20:17:42] cat target=Q2 fold=1/5 seed=42 features=275 train=355 valid=95
+0:	learn: 0.6896173	test: 0.6929791	best: 0.6929791 (0)	total: 1.73ms	remaining: 5.54s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6778522691
+bestIteration = 67
+
+Shrink model to first 68 iterations.
+[20:17:42] cat target=Q2 fold=1 seed=42 best_iter=67 valid_logloss=0.677852 train_logloss=0.422962
+[20:17:42] cat target=Q2 fold=1/5 seed=7 features=275 train=355 valid=95
+0:	learn: 0.6901815	test: 0.6918362	best: 0.6918362 (0)	total: 1.77ms	remaining: 5.66s
+250:	learn: 0.4088497	test: 0.6848572	best: 0.6692341 (130)	total: 256ms	remaining: 3.01s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6692340514
+bestIteration = 130
+
+Shrink model to first 131 iterations.
+[20:17:42] cat target=Q2 fold=1 seed=7 best_iter=130 valid_logloss=0.669234 train_logloss=0.379826
+[20:17:42] cat target=Q2 fold=1/5 seed=2024 features=275 train=355 valid=95
+0:	learn: 0.6910618	test: 0.6915538	best: 0.6915538 (0)	total: 2.4ms	remaining: 7.69s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6796533184
+bestIteration = 46
+
+Shrink model to first 47 iterations.
+[20:17:43] cat target=Q2 fold=1 seed=2024 best_iter=46 valid_logloss=0.679653 train_logloss=0.439542
+[20:17:43] cat target=Q2 fold=1/5 seed=1234 features=275 train=355 valid=95
+0:	learn: 0.6901609	test: 0.6915432	best: 0.6915432 (0)	total: 1.56ms	remaining: 5s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6645260027
+bestIteration = 87
+
+Shrink model to first 88 iterations.
+[20:17:43] cat target=Q2 fold=1 seed=1234 best_iter=87 valid_logloss=0.664526 train_logloss=0.406038
+[20:17:43] cat target=Q2 fold=1/5 seed=9999 features=275 train=355 valid=95
+0:	learn: 0.6899816	test: 0.6920150	best: 0.6920150 (0)	total: 1.84ms	remaining: 5.88s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6741271974
+bestIteration = 85
+
+Shrink model to first 86 iterations.
+[20:17:43] cat target=Q2 fold=1 seed=9999 best_iter=85 valid_logloss=0.674127 train_logloss=0.409032
+[20:17:43] cat target=Q2 fold=2/5 seed=42 features=277 train=358 valid=92
+0:	learn: 0.6901026	test: 0.6938275	best: 0.6938275 (0)	total: 1.84ms	remaining: 5.87s
+250:	learn: 0.4298225	test: 0.6743676	best: 0.6721698 (240)	total: 270ms	remaining: 3.17s
+500:	learn: 0.2643844	test: 0.6675745	best: 0.6662933 (423)	total: 533ms	remaining: 2.87s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.664028834
+bestIteration = 520
+
+Shrink model to first 521 iterations.
+[20:17:44] cat target=Q2 fold=2 seed=42 best_iter=520 valid_logloss=0.664029 train_logloss=0.175807
+[20:17:44] cat target=Q2 fold=2/5 seed=7 features=277 train=358 valid=92
+0:	learn: 0.6898267	test: 0.6914208	best: 0.6914208 (0)	total: 2.52ms	remaining: 8.06s
+250:	learn: 0.4352748	test: 0.6727397	best: 0.6719762 (226)	total: 263ms	remaining: 3.09s
+500:	learn: 0.2675582	test: 0.6700547	best: 0.6671406 (427)	total: 525ms	remaining: 2.83s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6662972173
+bestIteration = 543
+
+Shrink model to first 544 iterations.
+[20:17:45] cat target=Q2 fold=2 seed=7 best_iter=543 valid_logloss=0.666297 train_logloss=0.168882
+[20:17:45] cat target=Q2 fold=2/5 seed=2024 features=277 train=358 valid=92
+0:	learn: 0.6908229	test: 0.6925261	best: 0.6925261 (0)	total: 1.66ms	remaining: 5.33s
+250:	learn: 0.4419121	test: 0.6608973	best: 0.6585986 (228)	total: 273ms	remaining: 3.2s
+500:	learn: 0.2652112	test: 0.6547076	best: 0.6525998 (454)	total: 539ms	remaining: 2.9s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6525997879
+bestIteration = 454
+
+Shrink model to first 455 iterations.
+[20:17:45] cat target=Q2 fold=2 seed=2024 best_iter=454 valid_logloss=0.652600 train_logloss=0.202626
+[20:17:45] cat target=Q2 fold=2/5 seed=1234 features=277 train=358 valid=92
+0:	learn: 0.6911890	test: 0.6924808	best: 0.6924808 (0)	total: 1.98ms	remaining: 6.34s
+250:	learn: 0.4356259	test: 0.6690835	best: 0.6672997 (180)	total: 270ms	remaining: 3.17s
+500:	learn: 0.2637187	test: 0.6625092	best: 0.6620761 (419)	total: 529ms	remaining: 2.85s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6598108484
+bestIteration = 527
+
+Shrink model to first 528 iterations.
+[20:17:46] cat target=Q2 fold=2 seed=1234 best_iter=527 valid_logloss=0.659811 train_logloss=0.173194
+[20:17:46] cat target=Q2 fold=2/5 seed=9999 features=277 train=358 valid=92
+0:	learn: 0.6910089	test: 0.6931796	best: 0.6931796 (0)	total: 1.85ms	remaining: 5.93s
+250:	learn: 0.4320945	test: 0.6631593	best: 0.6631593 (250)	total: 264ms	remaining: 3.1s
+500:	learn: 0.2578638	test: 0.6716364	best: 0.6585598 (356)	total: 523ms	remaining: 2.82s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6585598417
+bestIteration = 356
+
+Shrink model to first 357 iterations.
+[20:17:47] cat target=Q2 fold=2 seed=9999 best_iter=356 valid_logloss=0.658560 train_logloss=0.248142
+[20:17:47] cat target=Q2 fold=3/5 seed=42 features=277 train=359 valid=91
+0:	learn: 0.6899746	test: 0.6918926	best: 0.6918926 (0)	total: 1.82ms	remaining: 5.83s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6918926495
+bestIteration = 0
+
+Shrink model to first 1 iterations.
+[20:17:47] cat target=Q2 fold=3 seed=42 best_iter=0 valid_logloss=0.691893 train_logloss=0.471702
+[20:17:47] cat target=Q2 fold=3/5 seed=7 features=277 train=359 valid=91
+0:	learn: 0.6901757	test: 0.6951421	best: 0.6951421 (0)	total: 1.75ms	remaining: 5.59s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6896881386
+bestIteration = 24
+
+Shrink model to first 25 iterations.
+[20:17:47] cat target=Q2 fold=3 seed=7 best_iter=24 valid_logloss=0.689688 train_logloss=0.453580
+[20:17:47] cat target=Q2 fold=3/5 seed=2024 features=277 train=359 valid=91
+0:	learn: 0.6904379	test: 0.6920765	best: 0.6920765 (0)	total: 1.78ms	remaining: 5.7s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6861014359
+bestIteration = 26
+
+Shrink model to first 27 iterations.
+[20:17:48] cat target=Q2 fold=3 seed=2024 best_iter=26 valid_logloss=0.686101 train_logloss=0.458552
+[20:17:48] cat target=Q2 fold=3/5 seed=1234 features=277 train=359 valid=91
+0:	learn: 0.6905038	test: 0.6925054	best: 0.6925054 (0)	total: 1.67ms	remaining: 5.33s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6875751812
+bestIteration = 14
+
+Shrink model to first 15 iterations.
+[20:17:48] cat target=Q2 fold=3 seed=1234 best_iter=14 valid_logloss=0.687575 train_logloss=0.466596
+[20:17:48] cat target=Q2 fold=3/5 seed=9999 features=277 train=359 valid=91
+0:	learn: 0.6906615	test: 0.6938338	best: 0.6938338 (0)	total: 1.84ms	remaining: 5.88s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6869178938
+bestIteration = 36
+
+Shrink model to first 37 iterations.
+[20:17:48] cat target=Q2 fold=3 seed=9999 best_iter=36 valid_logloss=0.686918 train_logloss=0.444881
+[20:17:48] cat target=Q2 fold=4/5 seed=42 features=277 train=363 valid=87
+0:	learn: 0.6911224	test: 0.6920566	best: 0.6920566 (0)	total: 2.79ms	remaining: 8.94s
+250:	learn: 0.4271425	test: 0.6469452	best: 0.6464940 (235)	total: 261ms	remaining: 3.07s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6426121519
+bestIteration = 284
+
+Shrink model to first 285 iterations.
+[20:17:49] cat target=Q2 fold=4 seed=42 best_iter=284 valid_logloss=0.642612 train_logloss=0.288019
+[20:17:49] cat target=Q2 fold=4/5 seed=7 features=277 train=363 valid=87
+0:	learn: 0.6910780	test: 0.6922181	best: 0.6922181 (0)	total: 2.38ms	remaining: 7.61s
+250:	learn: 0.4261572	test: 0.6455701	best: 0.6385800 (132)	total: 260ms	remaining: 3.06s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6385799628
+bestIteration = 132
+
+Shrink model to first 133 iterations.
+[20:17:49] cat target=Q2 fold=4 seed=7 best_iter=132 valid_logloss=0.638580 train_logloss=0.400397
+[20:17:49] cat target=Q2 fold=4/5 seed=2024 features=277 train=363 valid=87
+0:	learn: 0.6899765	test: 0.6928760	best: 0.6928760 (0)	total: 1.95ms	remaining: 6.22s
+250:	learn: 0.4231899	test: 0.6586106	best: 0.6563385 (190)	total: 261ms	remaining: 3.07s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6563384955
+bestIteration = 190
+
+Shrink model to first 191 iterations.
+[20:17:49] cat target=Q2 fold=4 seed=2024 best_iter=190 valid_logloss=0.656338 train_logloss=0.354582
+[20:17:49] cat target=Q2 fold=4/5 seed=1234 features=277 train=363 valid=87
+0:	learn: 0.6905489	test: 0.6919282	best: 0.6919282 (0)	total: 1.68ms	remaining: 5.38s
+250:	learn: 0.4283240	test: 0.6530701	best: 0.6523850 (160)	total: 259ms	remaining: 3.04s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6522665286
+bestIteration = 251
+
+Shrink model to first 252 iterations.
+[20:17:50] cat target=Q2 fold=4 seed=1234 best_iter=251 valid_logloss=0.652267 train_logloss=0.314120
+[20:17:50] cat target=Q2 fold=4/5 seed=9999 features=277 train=363 valid=87
+0:	learn: 0.6919858	test: 0.6922971	best: 0.6922971 (0)	total: 2.48ms	remaining: 7.93s
+250:	learn: 0.4274578	test: 0.6510549	best: 0.6473810 (124)	total: 256ms	remaining: 3s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6473809889
+bestIteration = 124
+
+Shrink model to first 125 iterations.
+[20:17:50] cat target=Q2 fold=4 seed=9999 best_iter=124 valid_logloss=0.647381 train_logloss=0.404322
+[20:17:50] cat target=Q2 fold=5/5 seed=42 features=274 train=365 valid=85
+0:	learn: 0.6904517	test: 0.6919214	best: 0.6919214 (0)	total: 1.85ms	remaining: 5.94s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6793034379
+bestIteration = 27
+
+Shrink model to first 28 iterations.
+[20:17:51] cat target=Q2 fold=5 seed=42 best_iter=27 valid_logloss=0.679303 train_logloss=0.455305
+[20:17:51] cat target=Q2 fold=5/5 seed=7 features=274 train=365 valid=85
+0:	learn: 0.6901341	test: 0.6922126	best: 0.6922126 (0)	total: 1.76ms	remaining: 5.62s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6879758652
+bestIteration = 30
+
+Shrink model to first 31 iterations.
+[20:17:51] cat target=Q2 fold=5 seed=7 best_iter=30 valid_logloss=0.687976 train_logloss=0.452250
+[20:17:51] cat target=Q2 fold=5/5 seed=2024 features=274 train=365 valid=85
+0:	learn: 0.6896250	test: 0.6912472	best: 0.6912472 (0)	total: 2.49ms	remaining: 7.96s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6844159007
+bestIteration = 28
+
+Shrink model to first 29 iterations.
+[20:17:51] cat target=Q2 fold=5 seed=2024 best_iter=28 valid_logloss=0.684416 train_logloss=0.456729
+[20:17:51] cat target=Q2 fold=5/5 seed=1234 features=274 train=365 valid=85
+0:	learn: 0.6903656	test: 0.6939871	best: 0.6939871 (0)	total: 1.86ms	remaining: 5.97s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6847146694
+bestIteration = 28
+
+Shrink model to first 29 iterations.
+[20:17:51] cat target=Q2 fold=5 seed=1234 best_iter=28 valid_logloss=0.684715 train_logloss=0.457640
+[20:17:51] cat target=Q2 fold=5/5 seed=9999 features=274 train=365 valid=85
+0:	learn: 0.6906081	test: 0.6925839	best: 0.6925839 (0)	total: 1.72ms	remaining: 5.52s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6853065212
+bestIteration = 25
+
+Shrink model to first 26 iterations.
+[20:17:52] cat target=Q2 fold=5 seed=9999 best_iter=25 valid_logloss=0.685307 train_logloss=0.459663
+[20:17:52] cat target=Q3 fold=1/5 seed=42 features=272 train=355 valid=95
+0:	learn: 0.6900454	test: 0.6926449	best: 0.6926449 (0)	total: 1.94ms	remaining: 6.2s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6756597918
+bestIteration = 34
+
+Shrink model to first 35 iterations.
+[20:17:52] cat target=Q3 fold=1 seed=42 best_iter=34 valid_logloss=0.675660 train_logloss=0.448433
+[20:17:52] cat target=Q3 fold=1/5 seed=7 features=272 train=355 valid=95
+0:	learn: 0.6901059	test: 0.6921077	best: 0.6921077 (0)	total: 1.73ms	remaining: 5.52s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6832752343
+bestIteration = 38
+
+Shrink model to first 39 iterations.
+[20:17:52] cat target=Q3 fold=1 seed=7 best_iter=38 valid_logloss=0.683275 train_logloss=0.445009
+[20:17:52] cat target=Q3 fold=1/5 seed=2024 features=272 train=355 valid=95
+0:	learn: 0.6902404	test: 0.6918825	best: 0.6918825 (0)	total: 1.79ms	remaining: 5.71s
+250:	learn: 0.4051462	test: 0.6852715	best: 0.6686850 (144)	total: 263ms	remaining: 3.09s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6686850338
+bestIteration = 144
+
+Shrink model to first 145 iterations.
+[20:17:53] cat target=Q3 fold=1 seed=2024 best_iter=144 valid_logloss=0.668685 train_logloss=0.369523
+[20:17:53] cat target=Q3 fold=1/5 seed=1234 features=272 train=355 valid=95
+0:	learn: 0.6907977	test: 0.6918033	best: 0.6918033 (0)	total: 2.39ms	remaining: 7.65s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6768227878
+bestIteration = 41
+
+Shrink model to first 42 iterations.
+[20:17:53] cat target=Q3 fold=1 seed=1234 best_iter=41 valid_logloss=0.676823 train_logloss=0.442977
+[20:17:53] cat target=Q3 fold=1/5 seed=9999 features=272 train=355 valid=95
+0:	learn: 0.6897639	test: 0.6926715	best: 0.6926715 (0)	total: 1.83ms	remaining: 5.86s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6797038801
+bestIteration = 69
+
+Shrink model to first 70 iterations.
+[20:17:53] cat target=Q3 fold=1 seed=9999 best_iter=69 valid_logloss=0.679704 train_logloss=0.415973
+[20:17:53] cat target=Q3 fold=2/5 seed=42 features=276 train=358 valid=92
+0:	learn: 0.6907553	test: 0.6915356	best: 0.6915356 (0)	total: 1.75ms	remaining: 5.58s
+250:	learn: 0.4114153	test: 0.6474974	best: 0.6430100 (125)	total: 259ms	remaining: 3.04s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6430100237
+bestIteration = 125
+
+Shrink model to first 126 iterations.
+[20:17:54] cat target=Q3 fold=2 seed=42 best_iter=125 valid_logloss=0.643010 train_logloss=0.388329
+[20:17:54] cat target=Q3 fold=2/5 seed=7 features=276 train=358 valid=92
+0:	learn: 0.6905490	test: 0.6925974	best: 0.6925974 (0)	total: 1.84ms	remaining: 5.88s
+250:	learn: 0.4202855	test: 0.6321880	best: 0.6296266 (203)	total: 254ms	remaining: 2.98s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.629626611
+bestIteration = 203
+
+Shrink model to first 204 iterations.
+[20:17:54] cat target=Q3 fold=2 seed=7 best_iter=203 valid_logloss=0.629627 train_logloss=0.345446
+[20:17:54] cat target=Q3 fold=2/5 seed=2024 features=276 train=358 valid=92
+0:	learn: 0.6904913	test: 0.6910095	best: 0.6910095 (0)	total: 1.82ms	remaining: 5.82s
+250:	learn: 0.4155531	test: 0.6326260	best: 0.6305911 (129)	total: 264ms	remaining: 3.1s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6305911249
+bestIteration = 129
+
+Shrink model to first 130 iterations.
+[20:17:54] cat target=Q3 fold=2 seed=2024 best_iter=129 valid_logloss=0.630591 train_logloss=0.388709
+[20:17:54] cat target=Q3 fold=2/5 seed=1234 features=276 train=358 valid=92
+0:	learn: 0.6906598	test: 0.6930092	best: 0.6930092 (0)	total: 1.78ms	remaining: 5.7s
+250:	learn: 0.4200228	test: 0.6347621	best: 0.6273630 (193)	total: 258ms	remaining: 3.03s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6273630104
+bestIteration = 193
+
+Shrink model to first 194 iterations.
+[20:17:55] cat target=Q3 fold=2 seed=1234 best_iter=193 valid_logloss=0.627363 train_logloss=0.348456
+[20:17:55] cat target=Q3 fold=2/5 seed=9999 features=276 train=358 valid=92
+0:	learn: 0.6904846	test: 0.6917996	best: 0.6917996 (0)	total: 1.81ms	remaining: 5.78s
+250:	learn: 0.4176337	test: 0.6384194	best: 0.6348779 (220)	total: 260ms	remaining: 3.06s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6348779111
+bestIteration = 220
+
+Shrink model to first 221 iterations.
+[20:17:55] cat target=Q3 fold=2 seed=9999 best_iter=220 valid_logloss=0.634878 train_logloss=0.329599
+[20:17:55] cat target=Q3 fold=3/5 seed=42 features=272 train=359 valid=91
+0:	learn: 0.6911086	test: 0.6907399	best: 0.6907399 (0)	total: 1.77ms	remaining: 5.66s
+250:	learn: 0.4266105	test: 0.6173312	best: 0.6153980 (234)	total: 261ms	remaining: 3.06s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.615398029
+bestIteration = 234
+
+Shrink model to first 235 iterations.
+[20:17:56] cat target=Q3 fold=3 seed=42 best_iter=234 valid_logloss=0.615398 train_logloss=0.324193
+[20:17:56] cat target=Q3 fold=3/5 seed=7 features=272 train=359 valid=91
+0:	learn: 0.6901599	test: 0.6913583	best: 0.6913583 (0)	total: 1.84ms	remaining: 5.88s
+250:	learn: 0.4216609	test: 0.6289094	best: 0.6264914 (186)	total: 264ms	remaining: 3.1s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.624227713
+bestIteration = 319
+
+Shrink model to first 320 iterations.
+[20:17:56] cat target=Q3 fold=3 seed=7 best_iter=319 valid_logloss=0.624228 train_logloss=0.262341
+[20:17:56] cat target=Q3 fold=3/5 seed=2024 features=272 train=359 valid=91
+0:	learn: 0.6903167	test: 0.6915656	best: 0.6915656 (0)	total: 1.85ms	remaining: 5.92s
+250:	learn: 0.4234464	test: 0.6288076	best: 0.6222362 (215)	total: 254ms	remaining: 2.99s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6222362396
+bestIteration = 215
+
+Shrink model to first 216 iterations.
+[20:17:57] cat target=Q3 fold=3 seed=2024 best_iter=215 valid_logloss=0.622236 train_logloss=0.337057
+[20:17:57] cat target=Q3 fold=3/5 seed=1234 features=272 train=359 valid=91
+0:	learn: 0.6906166	test: 0.6914306	best: 0.6914306 (0)	total: 1.9ms	remaining: 6.08s
+250:	learn: 0.4244206	test: 0.6182341	best: 0.6177310 (228)	total: 257ms	remaining: 3.02s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6177309901
+bestIteration = 228
+
+Shrink model to first 229 iterations.
+[20:17:57] cat target=Q3 fold=3 seed=1234 best_iter=228 valid_logloss=0.617731 train_logloss=0.327393
+[20:17:57] cat target=Q3 fold=3/5 seed=9999 features=272 train=359 valid=91
+0:	learn: 0.6914436	test: 0.6916872	best: 0.6916872 (0)	total: 1.7ms	remaining: 5.44s
+250:	learn: 0.4260999	test: 0.6324738	best: 0.6318056 (239)	total: 261ms	remaining: 3.07s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.631366139
+bestIteration = 262
+
+Shrink model to first 263 iterations.
+[20:17:58] cat target=Q3 fold=3 seed=9999 best_iter=262 valid_logloss=0.631366 train_logloss=0.302383
+[20:17:58] cat target=Q3 fold=4/5 seed=42 features=272 train=363 valid=87
+0:	learn: 0.6896833	test: 0.6922545	best: 0.6922545 (0)	total: 1.69ms	remaining: 5.42s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6827087365
+bestIteration = 57
+
+Shrink model to first 58 iterations.
+[20:17:58] cat target=Q3 fold=4 seed=42 best_iter=57 valid_logloss=0.682709 train_logloss=0.430041
+[20:17:58] cat target=Q3 fold=4/5 seed=7 features=272 train=363 valid=87
+0:	learn: 0.6901549	test: 0.6920890	best: 0.6920890 (0)	total: 1.76ms	remaining: 5.63s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6753204921
+bestIteration = 29
+
+Shrink model to first 30 iterations.
+[20:17:58] cat target=Q3 fold=4 seed=7 best_iter=29 valid_logloss=0.675320 train_logloss=0.450389
+[20:17:58] cat target=Q3 fold=4/5 seed=2024 features=272 train=363 valid=87
+0:	learn: 0.6909323	test: 0.6913795	best: 0.6913795 (0)	total: 1.74ms	remaining: 5.55s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6805300531
+bestIteration = 39
+
+Shrink model to first 40 iterations.
+[20:17:58] cat target=Q3 fold=4 seed=2024 best_iter=39 valid_logloss=0.680530 train_logloss=0.452672
+[20:17:58] cat target=Q3 fold=4/5 seed=1234 features=272 train=363 valid=87
+0:	learn: 0.6896899	test: 0.6923705	best: 0.6923705 (0)	total: 1.99ms	remaining: 6.36s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6808207351
+bestIteration = 46
+
+Shrink model to first 47 iterations.
+[20:17:59] cat target=Q3 fold=4 seed=1234 best_iter=46 valid_logloss=0.680821 train_logloss=0.434210
+[20:17:59] cat target=Q3 fold=4/5 seed=9999 features=272 train=363 valid=87
+0:	learn: 0.6899102	test: 0.6919143	best: 0.6919143 (0)	total: 1.67ms	remaining: 5.34s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6852296569
+bestIteration = 41
+
+Shrink model to first 42 iterations.
+[20:17:59] cat target=Q3 fold=4 seed=9999 best_iter=41 valid_logloss=0.685230 train_logloss=0.439217
+[20:17:59] cat target=Q3 fold=5/5 seed=42 features=270 train=365 valid=85
+0:	learn: 0.6893246	test: 0.6916379	best: 0.6916379 (0)	total: 1.84ms	remaining: 5.88s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6733845296
+bestIteration = 39
+
+Shrink model to first 40 iterations.
+[20:17:59] cat target=Q3 fold=5 seed=42 best_iter=39 valid_logloss=0.673385 train_logloss=0.441197
+[20:17:59] cat target=Q3 fold=5/5 seed=7 features=270 train=365 valid=85
+0:	learn: 0.6899631	test: 0.6928103	best: 0.6928103 (0)	total: 1.86ms	remaining: 5.94s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6736361649
+bestIteration = 55
+
+Shrink model to first 56 iterations.
+[20:18:00] cat target=Q3 fold=5 seed=7 best_iter=55 valid_logloss=0.673636 train_logloss=0.432502
+[20:18:00] cat target=Q3 fold=5/5 seed=2024 features=270 train=365 valid=85
+0:	learn: 0.6904065	test: 0.6918613	best: 0.6918613 (0)	total: 1.72ms	remaining: 5.52s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6800338443
+bestIteration = 35
+
+Shrink model to first 36 iterations.
+[20:18:00] cat target=Q3 fold=5 seed=2024 best_iter=35 valid_logloss=0.680034 train_logloss=0.439864
+[20:18:00] cat target=Q3 fold=5/5 seed=1234 features=270 train=365 valid=85
+0:	learn: 0.6900215	test: 0.6922809	best: 0.6922809 (0)	total: 1.85ms	remaining: 5.93s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6771327594
+bestIteration = 47
+
+Shrink model to first 48 iterations.
+[20:18:00] cat target=Q3 fold=5 seed=1234 best_iter=47 valid_logloss=0.677133 train_logloss=0.434835
+[20:18:00] cat target=Q3 fold=5/5 seed=9999 features=270 train=365 valid=85
+0:	learn: 0.6904472	test: 0.6929973	best: 0.6929973 (0)	total: 1.88ms	remaining: 6.03s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6725117501
+bestIteration = 83
+
+Shrink model to first 84 iterations.
+[20:18:00] cat target=Q3 fold=5 seed=9999 best_iter=83 valid_logloss=0.672512 train_logloss=0.415463
+[20:18:01] cat target=S1 fold=1/5 seed=42 features=267 train=355 valid=95
+0:	learn: 0.6834663	test: 0.6865020	best: 0.6865020 (0)	total: 2.58ms	remaining: 8.26s
+250:	learn: 0.3177929	test: 0.5197636	best: 0.5197636 (250)	total: 251ms	remaining: 2.95s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5155210814
+bestIteration = 299
+
+Shrink model to first 300 iterations.
+[20:18:01] cat target=S1 fold=1 seed=42 best_iter=299 valid_logloss=0.515521 train_logloss=0.206321
+[20:18:01] cat target=S1 fold=1/5 seed=7 features=267 train=355 valid=95
+0:	learn: 0.6874052	test: 0.6901787	best: 0.6901787 (0)	total: 2.37ms	remaining: 7.57s
+250:	learn: 0.3164759	test: 0.5125336	best: 0.5124847 (249)	total: 250ms	remaining: 2.94s
+500:	learn: 0.1916303	test: 0.5143798	best: 0.5093953 (375)	total: 491ms	remaining: 2.65s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5093953481
+bestIteration = 375
+
+Shrink model to first 376 iterations.
+[20:18:02] cat target=S1 fold=1 seed=7 best_iter=375 valid_logloss=0.509395 train_logloss=0.178614
+[20:18:02] cat target=S1 fold=1/5 seed=2024 features=267 train=355 valid=95
+0:	learn: 0.6880092	test: 0.6901599	best: 0.6901599 (0)	total: 1.75ms	remaining: 5.58s
+250:	learn: 0.3158287	test: 0.5175752	best: 0.5175752 (250)	total: 246ms	remaining: 2.89s
+500:	learn: 0.2016427	test: 0.5217515	best: 0.5136100 (383)	total: 492ms	remaining: 2.65s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5136100072
+bestIteration = 383
+
+Shrink model to first 384 iterations.
+[20:18:02] cat target=S1 fold=1 seed=2024 best_iter=383 valid_logloss=0.513610 train_logloss=0.184931
+[20:18:02] cat target=S1 fold=1/5 seed=1234 features=267 train=355 valid=95
+0:	learn: 0.6869226	test: 0.6889154	best: 0.6889154 (0)	total: 1.71ms	remaining: 5.48s
+250:	learn: 0.3180497	test: 0.5203668	best: 0.5203668 (250)	total: 243ms	remaining: 2.86s
+500:	learn: 0.1903213	test: 0.5212877	best: 0.5155170 (443)	total: 491ms	remaining: 2.64s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.515517012
+bestIteration = 443
+
+Shrink model to first 444 iterations.
+[20:18:03] cat target=S1 fold=1 seed=1234 best_iter=443 valid_logloss=0.515517 train_logloss=0.150617
+[20:18:03] cat target=S1 fold=1/5 seed=9999 features=267 train=355 valid=95
+0:	learn: 0.6850795	test: 0.6872136	best: 0.6872136 (0)	total: 1.6ms	remaining: 5.13s
+250:	learn: 0.3159844	test: 0.5178694	best: 0.5178694 (250)	total: 248ms	remaining: 2.91s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5122751332
+bestIteration = 308
+
+Shrink model to first 309 iterations.
+[20:18:03] cat target=S1 fold=1 seed=9999 best_iter=308 valid_logloss=0.512275 train_logloss=0.208036
+[20:18:03] cat target=S1 fold=2/5 seed=42 features=267 train=358 valid=92
+0:	learn: 0.6883970	test: 0.6895912	best: 0.6895912 (0)	total: 1.78ms	remaining: 5.69s
+250:	learn: 0.3224080	test: 0.4821289	best: 0.4821289 (250)	total: 250ms	remaining: 2.93s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4817285253
+bestIteration = 271
+
+Shrink model to first 272 iterations.
+[20:18:04] cat target=S1 fold=2 seed=42 best_iter=271 valid_logloss=0.481729 train_logloss=0.231119
+[20:18:04] cat target=S1 fold=2/5 seed=7 features=267 train=358 valid=92
+0:	learn: 0.6850459	test: 0.6848708	best: 0.6848708 (0)	total: 1.8ms	remaining: 5.76s
+250:	learn: 0.3195785	test: 0.4812866	best: 0.4808917 (212)	total: 254ms	remaining: 2.98s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4785357973
+bestIteration = 325
+
+Shrink model to first 326 iterations.
+[20:18:04] cat target=S1 fold=2 seed=7 best_iter=325 valid_logloss=0.478536 train_logloss=0.196777
+[20:18:04] cat target=S1 fold=2/5 seed=2024 features=267 train=358 valid=92
+0:	learn: 0.6876538	test: 0.6883342	best: 0.6883342 (0)	total: 1.68ms	remaining: 5.39s
+250:	learn: 0.3176223	test: 0.4771574	best: 0.4760205 (232)	total: 255ms	remaining: 3s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4760204832
+bestIteration = 232
+
+Shrink model to first 233 iterations.
+[20:18:05] cat target=S1 fold=2 seed=2024 best_iter=232 valid_logloss=0.476020 train_logloss=0.247011
+[20:18:05] cat target=S1 fold=2/5 seed=1234 features=267 train=358 valid=92
+0:	learn: 0.6852246	test: 0.6848206	best: 0.6848206 (0)	total: 2.46ms	remaining: 7.89s
+250:	learn: 0.3236947	test: 0.4858860	best: 0.4856211 (244)	total: 258ms	remaining: 3.03s
+500:	learn: 0.1921090	test: 0.4875862	best: 0.4821196 (346)	total: 501ms	remaining: 2.7s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4821196481
+bestIteration = 346
+
+Shrink model to first 347 iterations.
+[20:18:05] cat target=S1 fold=2 seed=1234 best_iter=346 valid_logloss=0.482120 train_logloss=0.188899
+[20:18:05] cat target=S1 fold=2/5 seed=9999 features=267 train=358 valid=92
+0:	learn: 0.6849445	test: 0.6844477	best: 0.6844477 (0)	total: 1.68ms	remaining: 5.39s
+250:	learn: 0.3222457	test: 0.4851148	best: 0.4806261 (174)	total: 254ms	remaining: 2.99s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4806260551
+bestIteration = 174
+
+Shrink model to first 175 iterations.
+[20:18:06] cat target=S1 fold=2 seed=9999 best_iter=174 valid_logloss=0.480626 train_logloss=0.279726
+[20:18:06] cat target=S1 fold=3/5 seed=42 features=267 train=359 valid=91
+0:	learn: 0.6845697	test: 0.6856131	best: 0.6856131 (0)	total: 2.5ms	remaining: 8.01s
+250:	learn: 0.3012654	test: 0.5296486	best: 0.5203021 (168)	total: 258ms	remaining: 3.03s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5203021286
+bestIteration = 168
+
+Shrink model to first 169 iterations.
+[20:18:06] cat target=S1 fold=3 seed=42 best_iter=168 valid_logloss=0.520302 train_logloss=0.262017
+[20:18:06] cat target=S1 fold=3/5 seed=7 features=267 train=359 valid=91
+0:	learn: 0.6843864	test: 0.6855326	best: 0.6855326 (0)	total: 1.78ms	remaining: 5.69s
+250:	learn: 0.3065412	test: 0.5262816	best: 0.5195973 (169)	total: 249ms	remaining: 2.93s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5195972742
+bestIteration = 169
+
+Shrink model to first 170 iterations.
+[20:18:07] cat target=S1 fold=3 seed=7 best_iter=169 valid_logloss=0.519597 train_logloss=0.268734
+[20:18:07] cat target=S1 fold=3/5 seed=2024 features=267 train=359 valid=91
+0:	learn: 0.6851330	test: 0.6860597	best: 0.6860597 (0)	total: 1.8ms	remaining: 5.77s
+250:	learn: 0.3023420	test: 0.5302697	best: 0.5232165 (109)	total: 259ms	remaining: 3.05s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5232165014
+bestIteration = 109
+
+Shrink model to first 110 iterations.
+[20:18:07] cat target=S1 fold=3 seed=2024 best_iter=109 valid_logloss=0.523217 train_logloss=0.292763
+[20:18:07] cat target=S1 fold=3/5 seed=1234 features=267 train=359 valid=91
+0:	learn: 0.6851849	test: 0.6876771	best: 0.6876771 (0)	total: 1.83ms	remaining: 5.84s
+250:	learn: 0.3002542	test: 0.5230021	best: 0.5183388 (189)	total: 255ms	remaining: 3s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5183388454
+bestIteration = 189
+
+Shrink model to first 190 iterations.
+[20:18:07] cat target=S1 fold=3 seed=1234 best_iter=189 valid_logloss=0.518339 train_logloss=0.251280
+[20:18:07] cat target=S1 fold=3/5 seed=9999 features=267 train=359 valid=91
+0:	learn: 0.6874884	test: 0.6889841	best: 0.6889841 (0)	total: 2.27ms	remaining: 7.25s
+250:	learn: 0.3051680	test: 0.5312201	best: 0.5260061 (209)	total: 255ms	remaining: 3s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5260061143
+bestIteration = 209
+
+Shrink model to first 210 iterations.
+[20:18:08] cat target=S1 fold=3 seed=9999 best_iter=209 valid_logloss=0.526006 train_logloss=0.244916
+[20:18:08] cat target=S1 fold=4/5 seed=42 features=267 train=363 valid=87
+0:	learn: 0.6848049	test: 0.6854699	best: 0.6854699 (0)	total: 1.65ms	remaining: 5.28s
+250:	learn: 0.3266615	test: 0.4525390	best: 0.4525025 (246)	total: 247ms	remaining: 2.9s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4523907714
+bestIteration = 251
+
+Shrink model to first 252 iterations.
+[20:18:08] cat target=S1 fold=4 seed=42 best_iter=251 valid_logloss=0.452391 train_logloss=0.244548
+[20:18:08] cat target=S1 fold=4/5 seed=7 features=267 train=363 valid=87
+0:	learn: 0.6871342	test: 0.6870473	best: 0.6870473 (0)	total: 1.71ms	remaining: 5.46s
+250:	learn: 0.3334831	test: 0.4487769	best: 0.4454389 (192)	total: 253ms	remaining: 2.97s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4454388743
+bestIteration = 192
+
+Shrink model to first 193 iterations.
+[20:18:09] cat target=S1 fold=4 seed=7 best_iter=192 valid_logloss=0.445439 train_logloss=0.283473
+[20:18:09] cat target=S1 fold=4/5 seed=2024 features=267 train=363 valid=87
+0:	learn: 0.6863968	test: 0.6851246	best: 0.6851246 (0)	total: 1.74ms	remaining: 5.58s
+250:	learn: 0.3317030	test: 0.4521337	best: 0.4485779 (194)	total: 248ms	remaining: 2.92s
+500:	learn: 0.2076071	test: 0.4559378	best: 0.4457949 (370)	total: 498ms	remaining: 2.69s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4457949377
+bestIteration = 370
+
+Shrink model to first 371 iterations.
+[20:18:09] cat target=S1 fold=4 seed=2024 best_iter=370 valid_logloss=0.445795 train_logloss=0.193602
+[20:18:09] cat target=S1 fold=4/5 seed=1234 features=267 train=363 valid=87
+0:	learn: 0.6861552	test: 0.6854333	best: 0.6854333 (0)	total: 1.67ms	remaining: 5.34s
+250:	learn: 0.3296796	test: 0.4501895	best: 0.4479640 (182)	total: 250ms	remaining: 2.94s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4479640479
+bestIteration = 182
+
+Shrink model to first 183 iterations.
+[20:18:10] cat target=S1 fold=4 seed=1234 best_iter=182 valid_logloss=0.447964 train_logloss=0.284195
+[20:18:10] cat target=S1 fold=4/5 seed=9999 features=267 train=363 valid=87
+0:	learn: 0.6852823	test: 0.6846697	best: 0.6846697 (0)	total: 1.63ms	remaining: 5.21s
+250:	learn: 0.3322801	test: 0.4498114	best: 0.4463247 (191)	total: 254ms	remaining: 2.98s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.446324651
+bestIteration = 191
+
+Shrink model to first 192 iterations.
+[20:18:10] cat target=S1 fold=4 seed=9999 best_iter=191 valid_logloss=0.446325 train_logloss=0.282899
+[20:18:10] cat target=S1 fold=5/5 seed=42 features=267 train=365 valid=85
+0:	learn: 0.6851686	test: 0.6863941	best: 0.6863941 (0)	total: 1.72ms	remaining: 5.51s
+250:	learn: 0.3161886	test: 0.5310999	best: 0.5295502 (207)	total: 254ms	remaining: 2.98s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5295501943
+bestIteration = 207
+
+Shrink model to first 208 iterations.
+[20:18:11] cat target=S1 fold=5 seed=42 best_iter=207 valid_logloss=0.529550 train_logloss=0.261512
+[20:18:11] cat target=S1 fold=5/5 seed=7 features=267 train=365 valid=85
+0:	learn: 0.6873563	test: 0.6898337	best: 0.6898337 (0)	total: 1.68ms	remaining: 5.37s
+250:	learn: 0.3116862	test: 0.5324703	best: 0.5293234 (234)	total: 242ms	remaining: 2.85s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5293234044
+bestIteration = 234
+
+Shrink model to first 235 iterations.
+[20:18:11] cat target=S1 fold=5 seed=7 best_iter=234 valid_logloss=0.529323 train_logloss=0.240134
+[20:18:11] cat target=S1 fold=5/5 seed=2024 features=267 train=365 valid=85
+0:	learn: 0.6843280	test: 0.6858329	best: 0.6858329 (0)	total: 1.61ms	remaining: 5.17s
+250:	learn: 0.3127307	test: 0.5344822	best: 0.5228627 (163)	total: 247ms	remaining: 2.9s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5228627309
+bestIteration = 163
+
+Shrink model to first 164 iterations.
+[20:18:11] cat target=S1 fold=5 seed=2024 best_iter=163 valid_logloss=0.522863 train_logloss=0.277216
+[20:18:11] cat target=S1 fold=5/5 seed=1234 features=267 train=365 valid=85
+0:	learn: 0.6858915	test: 0.6878323	best: 0.6878323 (0)	total: 1.9ms	remaining: 6.07s
+250:	learn: 0.3122477	test: 0.5467640	best: 0.5387311 (118)	total: 244ms	remaining: 2.87s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5387311377
+bestIteration = 118
+
+Shrink model to first 119 iterations.
+[20:18:12] cat target=S1 fold=5 seed=1234 best_iter=118 valid_logloss=0.538731 train_logloss=0.297604
+[20:18:12] cat target=S1 fold=5/5 seed=9999 features=267 train=365 valid=85
+0:	learn: 0.6846470	test: 0.6867617	best: 0.6867617 (0)	total: 1.89ms	remaining: 6.04s
+250:	learn: 0.3220121	test: 0.5345813	best: 0.5325512 (210)	total: 253ms	remaining: 2.97s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5325512278
+bestIteration = 210
+
+Shrink model to first 211 iterations.
+[20:18:12] cat target=S1 fold=5 seed=9999 best_iter=210 valid_logloss=0.532551 train_logloss=0.260534
+[20:18:12] cat target=S2 fold=1/5 seed=42 features=268 train=355 valid=95
+0:	learn: 0.6862423	test: 0.6891207	best: 0.6891207 (0)	total: 1.8ms	remaining: 5.77s
+250:	learn: 0.3525271	test: 0.6185013	best: 0.6023722 (93)	total: 261ms	remaining: 3.07s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6023722226
+bestIteration = 93
+
+Shrink model to first 94 iterations.
+[20:18:13] cat target=S2 fold=1 seed=42 best_iter=93 valid_logloss=0.602372 train_logloss=0.350312
+[20:18:13] cat target=S2 fold=1/5 seed=7 features=268 train=355 valid=95
+0:	learn: 0.6853208	test: 0.6883795	best: 0.6883795 (0)	total: 1.74ms	remaining: 5.56s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6066898713
+bestIteration = 87
+
+Shrink model to first 88 iterations.
+[20:18:13] cat target=S2 fold=1 seed=7 best_iter=87 valid_logloss=0.606690 train_logloss=0.358792
+[20:18:13] cat target=S2 fold=1/5 seed=2024 features=268 train=355 valid=95
+0:	learn: 0.6886808	test: 0.6903255	best: 0.6903255 (0)	total: 1.73ms	remaining: 5.55s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6113794547
+bestIteration = 89
+
+Shrink model to first 90 iterations.
+[20:18:13] cat target=S2 fold=1 seed=2024 best_iter=89 valid_logloss=0.611379 train_logloss=0.355095
+[20:18:13] cat target=S2 fold=1/5 seed=1234 features=268 train=355 valid=95
+0:	learn: 0.6885053	test: 0.6911208	best: 0.6911208 (0)	total: 1.82ms	remaining: 5.84s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6059520057
+bestIteration = 66
+
+Shrink model to first 67 iterations.
+[20:18:13] cat target=S2 fold=1 seed=1234 best_iter=66 valid_logloss=0.605952 train_logloss=0.367898
+[20:18:13] cat target=S2 fold=1/5 seed=9999 features=268 train=355 valid=95
+0:	learn: 0.6857385	test: 0.6891333	best: 0.6891333 (0)	total: 1.73ms	remaining: 5.53s
+250:	learn: 0.3530399	test: 0.6249228	best: 0.6091343 (125)	total: 257ms	remaining: 3.02s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6091342732
+bestIteration = 125
+
+Shrink model to first 126 iterations.
+[20:18:14] cat target=S2 fold=1 seed=9999 best_iter=125 valid_logloss=0.609134 train_logloss=0.331562
+[20:18:14] cat target=S2 fold=2/5 seed=42 features=268 train=358 valid=92
+0:	learn: 0.6876479	test: 0.6872355	best: 0.6872355 (0)	total: 1.99ms	remaining: 6.35s
+250:	learn: 0.3676990	test: 0.5356785	best: 0.5333403 (181)	total: 261ms	remaining: 3.07s
+500:	learn: 0.2111378	test: 0.5292316	best: 0.5275964 (496)	total: 511ms	remaining: 2.75s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5275963884
+bestIteration = 496
+
+Shrink model to first 497 iterations.
+[20:18:15] cat target=S2 fold=2 seed=42 best_iter=496 valid_logloss=0.527596 train_logloss=0.145620
+[20:18:15] cat target=S2 fold=2/5 seed=7 features=268 train=358 valid=92
+0:	learn: 0.6893759	test: 0.6901027	best: 0.6901027 (0)	total: 2ms	remaining: 6.4s
+250:	learn: 0.3709752	test: 0.5331934	best: 0.5321447 (173)	total: 256ms	remaining: 3.01s
+500:	learn: 0.2204423	test: 0.5272122	best: 0.5243976 (389)	total: 517ms	remaining: 2.78s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5243975665
+bestIteration = 389
+
+Shrink model to first 390 iterations.
+[20:18:15] cat target=S2 fold=2 seed=7 best_iter=389 valid_logloss=0.524398 train_logloss=0.195866
+[20:18:15] cat target=S2 fold=2/5 seed=2024 features=268 train=358 valid=92
+0:	learn: 0.6892112	test: 0.6901201	best: 0.6901201 (0)	total: 2.44ms	remaining: 7.82s
+250:	learn: 0.3626577	test: 0.5355121	best: 0.5330607 (210)	total: 255ms	remaining: 3s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5330607015
+bestIteration = 210
+
+Shrink model to first 211 iterations.
+[20:18:16] cat target=S2 fold=2 seed=2024 best_iter=210 valid_logloss=0.533061 train_logloss=0.287434
+[20:18:16] cat target=S2 fold=2/5 seed=1234 features=268 train=358 valid=92
+0:	learn: 0.6880479	test: 0.6878723	best: 0.6878723 (0)	total: 1.79ms	remaining: 5.74s
+250:	learn: 0.3682251	test: 0.5335455	best: 0.5331858 (249)	total: 255ms	remaining: 3s
+500:	learn: 0.2166492	test: 0.5365677	best: 0.5302054 (415)	total: 503ms	remaining: 2.71s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5302054022
+bestIteration = 415
+
+Shrink model to first 416 iterations.
+[20:18:16] cat target=S2 fold=2 seed=1234 best_iter=415 valid_logloss=0.530205 train_logloss=0.178692
+[20:18:16] cat target=S2 fold=2/5 seed=9999 features=268 train=358 valid=92
+0:	learn: 0.6886335	test: 0.6895732	best: 0.6895732 (0)	total: 1.74ms	remaining: 5.55s
+250:	learn: 0.3726049	test: 0.5320394	best: 0.5317400 (220)	total: 259ms	remaining: 3.05s
+500:	learn: 0.2161595	test: 0.5327665	best: 0.5253438 (407)	total: 514ms	remaining: 2.77s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5253438239
+bestIteration = 407
+
+Shrink model to first 408 iterations.
+[20:18:17] cat target=S2 fold=2 seed=9999 best_iter=407 valid_logloss=0.525344 train_logloss=0.183780
+[20:18:17] cat target=S2 fold=3/5 seed=42 features=268 train=359 valid=91
+0:	learn: 0.6873482	test: 0.6893929	best: 0.6893929 (0)	total: 1.75ms	remaining: 5.58s
+250:	learn: 0.3548781	test: 0.5874866	best: 0.5716305 (118)	total: 255ms	remaining: 3s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5716305206
+bestIteration = 118
+
+Shrink model to first 119 iterations.
+[20:18:17] cat target=S2 fold=3 seed=42 best_iter=118 valid_logloss=0.571631 train_logloss=0.337869
+[20:18:17] cat target=S2 fold=3/5 seed=7 features=268 train=359 valid=91
+0:	learn: 0.6865110	test: 0.6892939	best: 0.6892939 (0)	total: 1.78ms	remaining: 5.71s
+250:	learn: 0.3541746	test: 0.5859514	best: 0.5777644 (145)	total: 255ms	remaining: 2.99s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5777643689
+bestIteration = 145
+
+Shrink model to first 146 iterations.
+[20:18:18] cat target=S2 fold=3 seed=7 best_iter=145 valid_logloss=0.577764 train_logloss=0.321480
+[20:18:18] cat target=S2 fold=3/5 seed=2024 features=268 train=359 valid=91
+0:	learn: 0.6874192	test: 0.6876012	best: 0.6876012 (0)	total: 1.83ms	remaining: 5.86s
+250:	learn: 0.3535430	test: 0.5822047	best: 0.5723579 (114)	total: 257ms	remaining: 3.02s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5723578822
+bestIteration = 114
+
+Shrink model to first 115 iterations.
+[20:18:18] cat target=S2 fold=3 seed=2024 best_iter=114 valid_logloss=0.572358 train_logloss=0.337089
+[20:18:18] cat target=S2 fold=3/5 seed=1234 features=268 train=359 valid=91
+0:	learn: 0.6879245	test: 0.6884024	best: 0.6884024 (0)	total: 2.45ms	remaining: 7.83s
+250:	learn: 0.3555280	test: 0.5808322	best: 0.5688434 (153)	total: 253ms	remaining: 2.97s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5688433901
+bestIteration = 153
+
+Shrink model to first 154 iterations.
+[20:18:18] cat target=S2 fold=3 seed=1234 best_iter=153 valid_logloss=0.568843 train_logloss=0.315574
+[20:18:18] cat target=S2 fold=3/5 seed=9999 features=268 train=359 valid=91
+0:	learn: 0.6870657	test: 0.6893501	best: 0.6893501 (0)	total: 1.88ms	remaining: 6s
+250:	learn: 0.3570270	test: 0.5833240	best: 0.5704544 (119)	total: 258ms	remaining: 3.04s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.570454363
+bestIteration = 119
+
+Shrink model to first 120 iterations.
+[20:18:19] cat target=S2 fold=3 seed=9999 best_iter=119 valid_logloss=0.570454 train_logloss=0.338053
+[20:18:19] cat target=S2 fold=4/5 seed=42 features=268 train=363 valid=87
+0:	learn: 0.6882796	test: 0.6888859	best: 0.6888859 (0)	total: 1.85ms	remaining: 5.92s
+250:	learn: 0.3606050	test: 0.5915580	best: 0.5863841 (219)	total: 262ms	remaining: 3.08s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5863840683
+bestIteration = 219
+
+Shrink model to first 220 iterations.
+[20:18:19] cat target=S2 fold=4 seed=42 best_iter=219 valid_logloss=0.586384 train_logloss=0.284050
+[20:18:19] cat target=S2 fold=4/5 seed=7 features=268 train=363 valid=87
+0:	learn: 0.6872667	test: 0.6876787	best: 0.6876787 (0)	total: 1.79ms	remaining: 5.73s
+250:	learn: 0.3574655	test: 0.5896452	best: 0.5883870 (168)	total: 259ms	remaining: 3.05s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5880468599
+bestIteration = 269
+
+Shrink model to first 270 iterations.
+[20:18:20] cat target=S2 fold=4 seed=7 best_iter=269 valid_logloss=0.588047 train_logloss=0.250852
+[20:18:20] cat target=S2 fold=4/5 seed=2024 features=268 train=363 valid=87
+0:	learn: 0.6878162	test: 0.6889084	best: 0.6889084 (0)	total: 1.77ms	remaining: 5.68s
+250:	learn: 0.3601547	test: 0.5822120	best: 0.5819261 (234)	total: 258ms	remaining: 3.03s
+500:	learn: 0.2074901	test: 0.5939937	best: 0.5781642 (365)	total: 515ms	remaining: 2.77s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.578164194
+bestIteration = 365
+
+Shrink model to first 366 iterations.
+[20:18:20] cat target=S2 fold=4 seed=2024 best_iter=365 valid_logloss=0.578164 train_logloss=0.194630
+[20:18:20] cat target=S2 fold=4/5 seed=1234 features=268 train=363 valid=87
+0:	learn: 0.6889269	test: 0.6908465	best: 0.6908465 (0)	total: 1.85ms	remaining: 5.93s
+250:	learn: 0.3625390	test: 0.5980205	best: 0.5923834 (108)	total: 262ms	remaining: 3.08s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5923833693
+bestIteration = 108
+
+Shrink model to first 109 iterations.
+[20:18:21] cat target=S2 fold=4 seed=1234 best_iter=108 valid_logloss=0.592383 train_logloss=0.352514
+[20:18:21] cat target=S2 fold=4/5 seed=9999 features=268 train=363 valid=87
+0:	learn: 0.6879832	test: 0.6887898	best: 0.6887898 (0)	total: 1.82ms	remaining: 5.81s
+250:	learn: 0.3614742	test: 0.5811274	best: 0.5789896 (211)	total: 256ms	remaining: 3s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5789895939
+bestIteration = 211
+
+Shrink model to first 212 iterations.
+[20:18:21] cat target=S2 fold=4 seed=9999 best_iter=211 valid_logloss=0.578990 train_logloss=0.287217
+[20:18:21] cat target=S2 fold=5/5 seed=42 features=268 train=365 valid=85
+0:	learn: 0.6886495	test: 0.6895031	best: 0.6895031 (0)	total: 2.55ms	remaining: 8.15s
+250:	learn: 0.3566918	test: 0.5640593	best: 0.5554897 (125)	total: 263ms	remaining: 3.1s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5554897043
+bestIteration = 125
+
+Shrink model to first 126 iterations.
+[20:18:21] cat target=S2 fold=5 seed=42 best_iter=125 valid_logloss=0.555490 train_logloss=0.333181
+[20:18:21] cat target=S2 fold=5/5 seed=7 features=268 train=365 valid=85
+0:	learn: 0.6866495	test: 0.6888964	best: 0.6888964 (0)	total: 1.73ms	remaining: 5.54s
+250:	learn: 0.3612619	test: 0.5646167	best: 0.5554120 (167)	total: 261ms	remaining: 3.06s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5554120317
+bestIteration = 167
+
+Shrink model to first 168 iterations.
+[20:18:22] cat target=S2 fold=5 seed=7 best_iter=167 valid_logloss=0.555412 train_logloss=0.312228
+[20:18:22] cat target=S2 fold=5/5 seed=2024 features=268 train=365 valid=85
+0:	learn: 0.6870859	test: 0.6870031	best: 0.6870031 (0)	total: 1.75ms	remaining: 5.59s
+250:	learn: 0.3589038	test: 0.5771342	best: 0.5697507 (121)	total: 268ms	remaining: 3.15s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5697507053
+bestIteration = 121
+
+Shrink model to first 122 iterations.
+[20:18:22] cat target=S2 fold=5 seed=2024 best_iter=121 valid_logloss=0.569751 train_logloss=0.341305
+[20:18:22] cat target=S2 fold=5/5 seed=1234 features=268 train=365 valid=85
+0:	learn: 0.6882521	test: 0.6895667	best: 0.6895667 (0)	total: 1.78ms	remaining: 5.69s
+250:	learn: 0.3604306	test: 0.5711854	best: 0.5639103 (170)	total: 263ms	remaining: 3.09s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5639103017
+bestIteration = 170
+
+Shrink model to first 171 iterations.
+[20:18:23] cat target=S2 fold=5 seed=1234 best_iter=170 valid_logloss=0.563910 train_logloss=0.308871
+[20:18:23] cat target=S2 fold=5/5 seed=9999 features=268 train=365 valid=85
+0:	learn: 0.6884118	test: 0.6889502	best: 0.6889502 (0)	total: 1.89ms	remaining: 6.05s
+250:	learn: 0.3572690	test: 0.5679290	best: 0.5601913 (138)	total: 265ms	remaining: 3.11s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5601912515
+bestIteration = 138
+
+Shrink model to first 139 iterations.
+[20:18:23] cat target=S2 fold=5 seed=9999 best_iter=138 valid_logloss=0.560191 train_logloss=0.328135
+[20:18:23] cat target=S3 fold=1/5 seed=42 features=266 train=355 valid=95
+0:	learn: 0.6871432	test: 0.6883443	best: 0.6883443 (0)	total: 1.97ms	remaining: 6.3s
+250:	learn: 0.3311848	test: 0.5985838	best: 0.5881799 (145)	total: 260ms	remaining: 3.06s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5881798512
+bestIteration = 145
+
+Shrink model to first 146 iterations.
+[20:18:23] cat target=S3 fold=1 seed=42 best_iter=145 valid_logloss=0.588180 train_logloss=0.299081
+[20:18:23] cat target=S3 fold=1/5 seed=7 features=266 train=355 valid=95
+0:	learn: 0.6869172	test: 0.6886891	best: 0.6886891 (0)	total: 1.85ms	remaining: 5.93s
+250:	learn: 0.3297710	test: 0.5991061	best: 0.5799896 (93)	total: 260ms	remaining: 3.05s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5799895906
+bestIteration = 93
+
+Shrink model to first 94 iterations.
+[20:18:24] cat target=S3 fold=1 seed=7 best_iter=93 valid_logloss=0.579990 train_logloss=0.327832
+[20:18:24] cat target=S3 fold=1/5 seed=2024 features=266 train=355 valid=95
+0:	learn: 0.6864498	test: 0.6886547	best: 0.6886547 (0)	total: 1.79ms	remaining: 5.71s
+250:	learn: 0.3280167	test: 0.6035506	best: 0.5878480 (106)	total: 266ms	remaining: 3.12s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5878480165
+bestIteration = 106
+
+Shrink model to first 107 iterations.
+[20:18:24] cat target=S3 fold=1 seed=2024 best_iter=106 valid_logloss=0.587848 train_logloss=0.316026
+[20:18:24] cat target=S3 fold=1/5 seed=1234 features=266 train=355 valid=95
+0:	learn: 0.6863983	test: 0.6878159	best: 0.6878159 (0)	total: 1.9ms	remaining: 6.09s
+250:	learn: 0.3311381	test: 0.5971335	best: 0.5828939 (99)	total: 261ms	remaining: 3.07s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5828939115
+bestIteration = 99
+
+Shrink model to first 100 iterations.
+[20:18:24] cat target=S3 fold=1 seed=1234 best_iter=99 valid_logloss=0.582894 train_logloss=0.325787
+[20:18:24] cat target=S3 fold=1/5 seed=9999 features=266 train=355 valid=95
+0:	learn: 0.6877158	test: 0.6890888	best: 0.6890888 (0)	total: 1.65ms	remaining: 5.28s
+250:	learn: 0.3343134	test: 0.5965228	best: 0.5821301 (118)	total: 264ms	remaining: 3.1s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.582130127
+bestIteration = 118
+
+Shrink model to first 119 iterations.
+[20:18:25] cat target=S3 fold=1 seed=9999 best_iter=118 valid_logloss=0.582130 train_logloss=0.317820
+[20:18:25] cat target=S3 fold=2/5 seed=42 features=267 train=358 valid=92
+0:	learn: 0.6892369	test: 0.6891595	best: 0.6891595 (0)	total: 1.81ms	remaining: 5.78s
+250:	learn: 0.3693958	test: 0.4773549	best: 0.4769639 (247)	total: 263ms	remaining: 3.09s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4717191516
+bestIteration = 313
+
+Shrink model to first 314 iterations.
+[20:18:25] cat target=S3 fold=2 seed=42 best_iter=313 valid_logloss=0.471719 train_logloss=0.228741
+[20:18:25] cat target=S3 fold=2/5 seed=7 features=267 train=358 valid=92
+0:	learn: 0.6876334	test: 0.6883640	best: 0.6883640 (0)	total: 1.7ms	remaining: 5.44s
+250:	learn: 0.3674667	test: 0.4811282	best: 0.4804210 (246)	total: 262ms	remaining: 3.08s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4796673769
+bestIteration = 262
+
+Shrink model to first 263 iterations.
+[20:18:26] cat target=S3 fold=2 seed=7 best_iter=262 valid_logloss=0.479667 train_logloss=0.259398
+[20:18:26] cat target=S3 fold=2/5 seed=2024 features=267 train=358 valid=92
+0:	learn: 0.6894413	test: 0.6900334	best: 0.6900334 (0)	total: 1.77ms	remaining: 5.67s
+250:	learn: 0.3664060	test: 0.4661063	best: 0.4661063 (250)	total: 262ms	remaining: 3.08s
+500:	learn: 0.2121279	test: 0.4605152	best: 0.4591756 (462)	total: 519ms	remaining: 2.8s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4591755582
+bestIteration = 462
+
+Shrink model to first 463 iterations.
+[20:18:26] cat target=S3 fold=2 seed=2024 best_iter=462 valid_logloss=0.459176 train_logloss=0.152128
+[20:18:26] cat target=S3 fold=2/5 seed=1234 features=267 train=358 valid=92
+0:	learn: 0.6890019	test: 0.6893762	best: 0.6893762 (0)	total: 1.78ms	remaining: 5.7s
+250:	learn: 0.3637764	test: 0.4823531	best: 0.4804843 (239)	total: 259ms	remaining: 3.04s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4785626266
+bestIteration = 292
+
+Shrink model to first 293 iterations.
+[20:18:27] cat target=S3 fold=2 seed=1234 best_iter=292 valid_logloss=0.478563 train_logloss=0.240679
+[20:18:27] cat target=S3 fold=2/5 seed=9999 features=267 train=358 valid=92
+0:	learn: 0.6881146	test: 0.6875893	best: 0.6875893 (0)	total: 1.79ms	remaining: 5.73s
+250:	learn: 0.3704548	test: 0.4679639	best: 0.4678381 (248)	total: 259ms	remaining: 3.04s
+500:	learn: 0.2125911	test: 0.4656555	best: 0.4610058 (364)	total: 517ms	remaining: 2.78s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.4610057785
+bestIteration = 364
+
+Shrink model to first 365 iterations.
+[20:18:28] cat target=S3 fold=2 seed=9999 best_iter=364 valid_logloss=0.461006 train_logloss=0.199154
+[20:18:28] cat target=S3 fold=3/5 seed=42 features=265 train=359 valid=91
+0:	learn: 0.6873085	test: 0.6883637	best: 0.6883637 (0)	total: 3.33ms	remaining: 10.7s
+250:	learn: 0.3524349	test: 0.5388948	best: 0.5370788 (180)	total: 270ms	remaining: 3.17s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5368723665
+bestIteration = 319
+
+Shrink model to first 320 iterations.
+[20:18:28] cat target=S3 fold=3 seed=42 best_iter=319 valid_logloss=0.536872 train_logloss=0.220423
+[20:18:28] cat target=S3 fold=3/5 seed=7 features=265 train=359 valid=91
+0:	learn: 0.6877985	test: 0.6897713	best: 0.6897713 (0)	total: 2.49ms	remaining: 7.96s
+250:	learn: 0.3540395	test: 0.5311471	best: 0.5304653 (247)	total: 265ms	remaining: 3.12s
+500:	learn: 0.2050062	test: 0.5366030	best: 0.5277119 (372)	total: 529ms	remaining: 2.85s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5277119062
+bestIteration = 372
+
+Shrink model to first 373 iterations.
+[20:18:29] cat target=S3 fold=3 seed=7 best_iter=372 valid_logloss=0.527712 train_logloss=0.189043
+[20:18:29] cat target=S3 fold=3/5 seed=2024 features=265 train=359 valid=91
+0:	learn: 0.6877459	test: 0.6889560	best: 0.6889560 (0)	total: 1.82ms	remaining: 5.82s
+250:	learn: 0.3515345	test: 0.5466471	best: 0.5454268 (169)	total: 266ms	remaining: 3.12s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5428319335
+bestIteration = 323
+
+Shrink model to first 324 iterations.
+[20:18:29] cat target=S3 fold=3 seed=2024 best_iter=323 valid_logloss=0.542832 train_logloss=0.211954
+[20:18:29] cat target=S3 fold=3/5 seed=1234 features=265 train=359 valid=91
+0:	learn: 0.6865603	test: 0.6875738	best: 0.6875738 (0)	total: 1.72ms	remaining: 5.5s
+250:	learn: 0.3467297	test: 0.5436880	best: 0.5426292 (246)	total: 267ms	remaining: 3.13s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5426291968
+bestIteration = 246
+
+Shrink model to first 247 iterations.
+[20:18:30] cat target=S3 fold=3 seed=1234 best_iter=246 valid_logloss=0.542629 train_logloss=0.255635
+[20:18:30] cat target=S3 fold=3/5 seed=9999 features=265 train=359 valid=91
+0:	learn: 0.6872628	test: 0.6871496	best: 0.6871496 (0)	total: 1.77ms	remaining: 5.65s
+250:	learn: 0.3446831	test: 0.5433942	best: 0.5418766 (241)	total: 273ms	remaining: 3.21s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5418766352
+bestIteration = 241
+
+Shrink model to first 242 iterations.
+[20:18:30] cat target=S3 fold=3 seed=9999 best_iter=241 valid_logloss=0.541877 train_logloss=0.256847
+[20:18:31] cat target=S3 fold=4/5 seed=42 features=265 train=363 valid=87
+0:	learn: 0.6876888	test: 0.6894572	best: 0.6894572 (0)	total: 2.33ms	remaining: 7.45s
+250:	learn: 0.3453179	test: 0.5781766	best: 0.5775603 (169)	total: 257ms	remaining: 3.02s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5757426532
+bestIteration = 288
+
+Shrink model to first 289 iterations.
+[20:18:31] cat target=S3 fold=4 seed=42 best_iter=288 valid_logloss=0.575743 train_logloss=0.232015
+[20:18:31] cat target=S3 fold=4/5 seed=7 features=265 train=363 valid=87
+0:	learn: 0.6871345	test: 0.6872625	best: 0.6872625 (0)	total: 2.06ms	remaining: 6.59s
+250:	learn: 0.3440805	test: 0.5711714	best: 0.5692454 (188)	total: 261ms	remaining: 3.07s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5692453964
+bestIteration = 188
+
+Shrink model to first 189 iterations.
+[20:18:31] cat target=S3 fold=4 seed=7 best_iter=188 valid_logloss=0.569245 train_logloss=0.286927
+[20:18:31] cat target=S3 fold=4/5 seed=2024 features=265 train=363 valid=87
+0:	learn: 0.6880944	test: 0.6894050	best: 0.6894050 (0)	total: 1.76ms	remaining: 5.63s
+250:	learn: 0.3445039	test: 0.5853819	best: 0.5811929 (208)	total: 260ms	remaining: 3.05s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5811929474
+bestIteration = 208
+
+Shrink model to first 209 iterations.
+[20:18:32] cat target=S3 fold=4 seed=2024 best_iter=208 valid_logloss=0.581193 train_logloss=0.278326
+[20:18:32] cat target=S3 fold=4/5 seed=1234 features=265 train=363 valid=87
+0:	learn: 0.6873450	test: 0.6885244	best: 0.6885244 (0)	total: 1.76ms	remaining: 5.64s
+250:	learn: 0.3438229	test: 0.5790931	best: 0.5723554 (145)	total: 256ms	remaining: 3s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5723554105
+bestIteration = 145
+
+Shrink model to first 146 iterations.
+[20:18:32] cat target=S3 fold=4 seed=1234 best_iter=145 valid_logloss=0.572355 train_logloss=0.312304
+[20:18:32] cat target=S3 fold=4/5 seed=9999 features=265 train=363 valid=87
+0:	learn: 0.6865897	test: 0.6871259	best: 0.6871259 (0)	total: 1.74ms	remaining: 5.55s
+250:	learn: 0.3476231	test: 0.5734297	best: 0.5733161 (188)	total: 256ms	remaining: 3s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5733161012
+bestIteration = 188
+
+Shrink model to first 189 iterations.
+[20:18:32] cat target=S3 fold=4 seed=9999 best_iter=188 valid_logloss=0.573316 train_logloss=0.291480
+[20:18:33] cat target=S3 fold=5/5 seed=42 features=267 train=365 valid=85
+0:	learn: 0.6878523	test: 0.6893769	best: 0.6893769 (0)	total: 1.96ms	remaining: 6.28s
+250:	learn: 0.3380552	test: 0.5986875	best: 0.5887986 (165)	total: 265ms	remaining: 3.11s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5887985967
+bestIteration = 165
+
+Shrink model to first 166 iterations.
+[20:18:33] cat target=S3 fold=5 seed=42 best_iter=165 valid_logloss=0.588799 train_logloss=0.292720
+[20:18:33] cat target=S3 fold=5/5 seed=7 features=267 train=365 valid=85
+0:	learn: 0.6877378	test: 0.6912968	best: 0.6912968 (0)	total: 1.72ms	remaining: 5.5s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5926921643
+bestIteration = 80
+
+Shrink model to first 81 iterations.
+[20:18:33] cat target=S3 fold=5 seed=7 best_iter=80 valid_logloss=0.592692 train_logloss=0.352736
+[20:18:33] cat target=S3 fold=5/5 seed=2024 features=267 train=365 valid=85
+0:	learn: 0.6875281	test: 0.6898143	best: 0.6898143 (0)	total: 2.4ms	remaining: 7.69s
+250:	learn: 0.3390283	test: 0.5941746	best: 0.5867854 (104)	total: 261ms	remaining: 3.07s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5867854474
+bestIteration = 104
+
+Shrink model to first 105 iterations.
+[20:18:34] cat target=S3 fold=5 seed=2024 best_iter=104 valid_logloss=0.586785 train_logloss=0.328839
+[20:18:34] cat target=S3 fold=5/5 seed=1234 features=267 train=365 valid=85
+0:	learn: 0.6877057	test: 0.6912832	best: 0.6912832 (0)	total: 1.68ms	remaining: 5.36s
+250:	learn: 0.3412313	test: 0.5964023	best: 0.5907970 (126)	total: 262ms	remaining: 3.08s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5907969759
+bestIteration = 126
+
+Shrink model to first 127 iterations.
+[20:18:34] cat target=S3 fold=5 seed=1234 best_iter=126 valid_logloss=0.590797 train_logloss=0.321652
+[20:18:34] cat target=S3 fold=5/5 seed=9999 features=267 train=365 valid=85
+0:	learn: 0.6873963	test: 0.6896032	best: 0.6896032 (0)	total: 1.79ms	remaining: 5.73s
+250:	learn: 0.3430125	test: 0.6030378	best: 0.5921848 (166)	total: 267ms	remaining: 3.14s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5921848376
+bestIteration = 166
+
+Shrink model to first 167 iterations.
+[20:18:34] cat target=S3 fold=5 seed=9999 best_iter=166 valid_logloss=0.592185 train_logloss=0.296555
+[20:18:35] cat target=S4 fold=1/5 seed=42 features=269 train=355 valid=95
+0:	learn: 0.6890006	test: 0.6928075	best: 0.6928075 (0)	total: 1.8ms	remaining: 5.76s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6631515919
+bestIteration = 54
+
+Shrink model to first 55 iterations.
+[20:18:35] cat target=S4 fold=1 seed=42 best_iter=54 valid_logloss=0.663152 train_logloss=0.434681
+[20:18:35] cat target=S4 fold=1/5 seed=7 features=269 train=355 valid=95
+0:	learn: 0.6896268	test: 0.6917314	best: 0.6917314 (0)	total: 1.64ms	remaining: 5.24s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6655078028
+bestIteration = 42
+
+Shrink model to first 43 iterations.
+[20:18:35] cat target=S4 fold=1 seed=7 best_iter=42 valid_logloss=0.665508 train_logloss=0.440012
+[20:18:35] cat target=S4 fold=1/5 seed=2024 features=269 train=355 valid=95
+0:	learn: 0.6894582	test: 0.6913710	best: 0.6913710 (0)	total: 1.83ms	remaining: 5.86s
+250:	learn: 0.4107231	test: 0.6769392	best: 0.6670755 (186)	total: 256ms	remaining: 3.01s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6670754705
+bestIteration = 186
+
+Shrink model to first 187 iterations.
+[20:18:35] cat target=S4 fold=1 seed=2024 best_iter=186 valid_logloss=0.667075 train_logloss=0.355848
+[20:18:35] cat target=S4 fold=1/5 seed=1234 features=269 train=355 valid=95
+0:	learn: 0.6904696	test: 0.6918639	best: 0.6918639 (0)	total: 1.77ms	remaining: 5.65s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6680739379
+bestIteration = 84
+
+Shrink model to first 85 iterations.
+[20:18:36] cat target=S4 fold=1 seed=1234 best_iter=84 valid_logloss=0.668074 train_logloss=0.415189
+[20:18:36] cat target=S4 fold=1/5 seed=9999 features=269 train=355 valid=95
+0:	learn: 0.6906302	test: 0.6925912	best: 0.6925912 (0)	total: 1.77ms	remaining: 5.67s
+250:	learn: 0.4138446	test: 0.6713910	best: 0.6662171 (96)	total: 255ms	remaining: 3s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6662171287
+bestIteration = 96
+
+Shrink model to first 97 iterations.
+[20:18:36] cat target=S4 fold=1 seed=9999 best_iter=96 valid_logloss=0.666217 train_logloss=0.411168
+[20:18:36] cat target=S4 fold=2/5 seed=42 features=270 train=358 valid=92
+0:	learn: 0.6898341	test: 0.6912794	best: 0.6912794 (0)	total: 1.77ms	remaining: 5.67s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6743580624
+bestIteration = 53
+
+Shrink model to first 54 iterations.
+[20:18:36] cat target=S4 fold=2 seed=42 best_iter=53 valid_logloss=0.674358 train_logloss=0.413473
+[20:18:36] cat target=S4 fold=2/5 seed=7 features=270 train=358 valid=92
+0:	learn: 0.6900419	test: 0.6913033	best: 0.6913033 (0)	total: 1.83ms	remaining: 5.84s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6774881275
+bestIteration = 33
+
+Shrink model to first 34 iterations.
+[20:18:37] cat target=S4 fold=2 seed=7 best_iter=33 valid_logloss=0.677488 train_logloss=0.435287
+[20:18:37] cat target=S4 fold=2/5 seed=2024 features=270 train=358 valid=92
+0:	learn: 0.6894526	test: 0.6923704	best: 0.6923704 (0)	total: 1.68ms	remaining: 5.38s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6778342202
+bestIteration = 35
+
+Shrink model to first 36 iterations.
+[20:18:37] cat target=S4 fold=2 seed=2024 best_iter=35 valid_logloss=0.677834 train_logloss=0.429141
+[20:18:37] cat target=S4 fold=2/5 seed=1234 features=270 train=358 valid=92
+0:	learn: 0.6906692	test: 0.6933099	best: 0.6933099 (0)	total: 1.84ms	remaining: 5.88s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6737445922
+bestIteration = 39
+
+Shrink model to first 40 iterations.
+[20:18:37] cat target=S4 fold=2 seed=1234 best_iter=39 valid_logloss=0.673745 train_logloss=0.425377
+[20:18:37] cat target=S4 fold=2/5 seed=9999 features=270 train=358 valid=92
+0:	learn: 0.6897749	test: 0.6917946	best: 0.6917946 (0)	total: 1.66ms	remaining: 5.31s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6799442028
+bestIteration = 68
+
+Shrink model to first 69 iterations.
+[20:18:37] cat target=S4 fold=2 seed=9999 best_iter=68 valid_logloss=0.679944 train_logloss=0.409776
+[20:18:38] cat target=S4 fold=3/5 seed=42 features=270 train=359 valid=91
+0:	learn: 0.6909081	test: 0.6918094	best: 0.6918094 (0)	total: 1.68ms	remaining: 5.37s
+250:	learn: 0.4224971	test: 0.6278076	best: 0.6273487 (154)	total: 249ms	remaining: 2.93s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6259195266
+bestIteration = 294
+
+Shrink model to first 295 iterations.
+[20:18:38] cat target=S4 fold=3 seed=42 best_iter=294 valid_logloss=0.625920 train_logloss=0.284443
+[20:18:38] cat target=S4 fold=3/5 seed=7 features=270 train=359 valid=91
+0:	learn: 0.6902735	test: 0.6903721	best: 0.6903721 (0)	total: 1.91ms	remaining: 6.12s
+250:	learn: 0.4254145	test: 0.6398541	best: 0.6332638 (181)	total: 253ms	remaining: 2.97s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6332637888
+bestIteration = 181
+
+Shrink model to first 182 iterations.
+[20:18:38] cat target=S4 fold=3 seed=7 best_iter=181 valid_logloss=0.633264 train_logloss=0.365681
+[20:18:38] cat target=S4 fold=3/5 seed=2024 features=270 train=359 valid=91
+0:	learn: 0.6906638	test: 0.6908712	best: 0.6908712 (0)	total: 1.69ms	remaining: 5.42s
+250:	learn: 0.4267698	test: 0.6315182	best: 0.6315182 (250)	total: 253ms	remaining: 2.97s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6315182338
+bestIteration = 250
+
+Shrink model to first 251 iterations.
+[20:18:39] cat target=S4 fold=3 seed=2024 best_iter=250 valid_logloss=0.631518 train_logloss=0.316660
+[20:18:39] cat target=S4 fold=3/5 seed=1234 features=270 train=359 valid=91
+0:	learn: 0.6914273	test: 0.6927211	best: 0.6927211 (0)	total: 1.73ms	remaining: 5.55s
+250:	learn: 0.4269500	test: 0.6343350	best: 0.6341469 (248)	total: 246ms	remaining: 2.89s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6337301706
+bestIteration = 255
+
+Shrink model to first 256 iterations.
+[20:18:39] cat target=S4 fold=3 seed=1234 best_iter=255 valid_logloss=0.633730 train_logloss=0.312803
+[20:18:39] cat target=S4 fold=3/5 seed=9999 features=270 train=359 valid=91
+0:	learn: 0.6908861	test: 0.6931739	best: 0.6931739 (0)	total: 1.8ms	remaining: 5.78s
+250:	learn: 0.4136041	test: 0.6446854	best: 0.6390534 (178)	total: 253ms	remaining: 2.97s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6390534491
+bestIteration = 178
+
+Shrink model to first 179 iterations.
+[20:18:40] cat target=S4 fold=3 seed=9999 best_iter=178 valid_logloss=0.639053 train_logloss=0.356857
+[20:18:40] cat target=S4 fold=4/5 seed=42 features=269 train=363 valid=87
+0:	learn: 0.6907429	test: 0.6903949	best: 0.6903949 (0)	total: 1.78ms	remaining: 5.69s
+250:	learn: 0.4391104	test: 0.5981720	best: 0.5981720 (250)	total: 252ms	remaining: 2.96s
+500:	learn: 0.2689823	test: 0.5901251	best: 0.5857065 (343)	total: 500ms	remaining: 2.69s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5857064867
+bestIteration = 343
+
+Shrink model to first 344 iterations.
+[20:18:40] cat target=S4 fold=4 seed=42 best_iter=343 valid_logloss=0.585706 train_logloss=0.267529
+[20:18:40] cat target=S4 fold=4/5 seed=7 features=269 train=363 valid=87
+0:	learn: 0.6909356	test: 0.6924087	best: 0.6924087 (0)	total: 1.68ms	remaining: 5.39s
+250:	learn: 0.4323262	test: 0.5861611	best: 0.5860968 (234)	total: 256ms	remaining: 3s
+500:	learn: 0.2646303	test: 0.5865088	best: 0.5797446 (426)	total: 501ms	remaining: 2.7s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5797445651
+bestIteration = 426
+
+Shrink model to first 427 iterations.
+[20:18:41] cat target=S4 fold=4 seed=7 best_iter=426 valid_logloss=0.579745 train_logloss=0.218413
+[20:18:41] cat target=S4 fold=4/5 seed=2024 features=269 train=363 valid=87
+0:	learn: 0.6906979	test: 0.6907155	best: 0.6907155 (0)	total: 1.69ms	remaining: 5.41s
+250:	learn: 0.4381217	test: 0.5858230	best: 0.5835212 (191)	total: 247ms	remaining: 2.9s
+500:	learn: 0.2711199	test: 0.5838105	best: 0.5784386 (380)	total: 492ms	remaining: 2.65s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5784386022
+bestIteration = 380
+
+Shrink model to first 381 iterations.
+[20:18:41] cat target=S4 fold=4 seed=2024 best_iter=380 valid_logloss=0.578439 train_logloss=0.248256
+[20:18:41] cat target=S4 fold=4/5 seed=1234 features=269 train=363 valid=87
+0:	learn: 0.6905162	test: 0.6906699	best: 0.6906699 (0)	total: 1.71ms	remaining: 5.48s
+250:	learn: 0.4340829	test: 0.5857396	best: 0.5844387 (246)	total: 253ms	remaining: 2.97s
+500:	learn: 0.2651236	test: 0.5813503	best: 0.5758668 (399)	total: 501ms	remaining: 2.7s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5758667659
+bestIteration = 399
+
+Shrink model to first 400 iterations.
+[20:18:42] cat target=S4 fold=4 seed=1234 best_iter=399 valid_logloss=0.575867 train_logloss=0.231460
+[20:18:42] cat target=S4 fold=4/5 seed=9999 features=269 train=363 valid=87
+0:	learn: 0.6914947	test: 0.6910617	best: 0.6910617 (0)	total: 1.73ms	remaining: 5.54s
+250:	learn: 0.4282423	test: 0.5828762	best: 0.5805586 (206)	total: 246ms	remaining: 2.88s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.5775657727
+bestIteration = 312
+
+Shrink model to first 313 iterations.
+[20:18:43] cat target=S4 fold=4 seed=9999 best_iter=312 valid_logloss=0.577566 train_logloss=0.280042
+[20:18:43] cat target=S4 fold=5/5 seed=42 features=269 train=365 valid=85
+0:	learn: 0.6908476	test: 0.6913232	best: 0.6913232 (0)	total: 1.76ms	remaining: 5.62s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6499055017
+bestIteration = 89
+
+Shrink model to first 90 iterations.
+[20:18:43] cat target=S4 fold=5 seed=42 best_iter=89 valid_logloss=0.649906 train_logloss=0.406172
+[20:18:43] cat target=S4 fold=5/5 seed=7 features=269 train=365 valid=85
+0:	learn: 0.6913134	test: 0.6920817	best: 0.6920817 (0)	total: 1.64ms	remaining: 5.26s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6530422821
+bestIteration = 81
+
+Shrink model to first 82 iterations.
+[20:18:43] cat target=S4 fold=5 seed=7 best_iter=81 valid_logloss=0.653042 train_logloss=0.413957
+[20:18:43] cat target=S4 fold=5/5 seed=2024 features=269 train=365 valid=85
+0:	learn: 0.6903966	test: 0.6922448	best: 0.6922448 (0)	total: 1.79ms	remaining: 5.73s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6558267032
+bestIteration = 77
+
+Shrink model to first 78 iterations.
+[20:18:44] cat target=S4 fold=5 seed=2024 best_iter=77 valid_logloss=0.655827 train_logloss=0.415942
+[20:18:44] cat target=S4 fold=5/5 seed=1234 features=269 train=365 valid=85
+0:	learn: 0.6904795	test: 0.6906817	best: 0.6906817 (0)	total: 2.54ms	remaining: 8.14s
+250:	learn: 0.4068397	test: 0.6870215	best: 0.6637733 (101)	total: 263ms	remaining: 3.09s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6637733361
+bestIteration = 101
+
+Shrink model to first 102 iterations.
+[20:18:44] cat target=S4 fold=5 seed=1234 best_iter=101 valid_logloss=0.663773 train_logloss=0.399612
+[20:18:44] cat target=S4 fold=5/5 seed=9999 features=269 train=365 valid=85
+0:	learn: 0.6905251	test: 0.6931068	best: 0.6931068 (0)	total: 1.8ms	remaining: 5.77s
+250:	learn: 0.4064456	test: 0.6841416	best: 0.6589623 (119)	total: 258ms	remaining: 3.04s
+Stopped by overfitting detector  (160 iterations wait)
+
+bestTest = 0.6589623467
+bestIteration = 119
+
+Shrink model to first 120 iterations.
+[20:18:44] cat target=S4 fold=5 seed=9999 best_iter=119 valid_logloss=0.658962 train_logloss=0.388449
+[20:18:44] cat full=0.595811 last=0.609328
+
+=== Candidate scores ===
+         candidate                                      weights  full_logloss  last_logloss
+targetwise_guarded                                   targetwise      0.592733      0.589493
+ anchor0.8_lgbm0.2 {"anchor": 0.8, "lgbm": 0.19999999999999996}      0.592677      0.592092
+ anchor0.7_lgbm0.3 {"anchor": 0.7, "lgbm": 0.30000000000000004}      0.591842      0.592148
+ anchor0.9_lgbm0.1 {"anchor": 0.9, "lgbm": 0.09999999999999998}      0.593997      0.592461
+  anchor0.8_xgb0.2  {"anchor": 0.8, "xgb": 0.19999999999999996}      0.592968      0.592588
+ anchor0.6_lgbm0.4                 {"anchor": 0.6, "lgbm": 0.4}      0.591476      0.592614
+  anchor0.9_xgb0.1  {"anchor": 0.9, "xgb": 0.09999999999999998}      0.594159      0.592731
+  anchor0.7_xgb0.3  {"anchor": 0.7, "xgb": 0.30000000000000004}      0.592232      0.592830
+            anchor                              {"anchor": 1.0}      0.595830      0.593282
+  anchor0.9_cat0.1  {"anchor": 0.9, "cat": 0.09999999999999998}      0.593901      0.593303
+  anchor0.6_xgb0.4                  {"anchor": 0.6, "xgb": 0.4}      0.591935      0.593444
+ anchor0.5_lgbm0.5                 {"anchor": 0.5, "lgbm": 0.5}      0.591569      0.593478
+  anchor0.8_cat0.2  {"anchor": 0.8, "cat": 0.19999999999999996}      0.592432      0.593712
+  anchor0.5_xgb0.5                  {"anchor": 0.5, "xgb": 0.5}      0.592066      0.594420
+  anchor0.7_cat0.3  {"anchor": 0.7, "cat": 0.30000000000000004}      0.591399      0.594488
+
+=== Target-wise choices ===
+target                chosen                                      weights  full_logloss  last_logloss  anchor_full  anchor_last  full_delta_vs_anchor  last_delta_vs_anchor                                                                  fallback_reason
+    Q1     anchor0.6_lgbm0.4                 {"anchor": 0.6, "lgbm": 0.4}      0.589259      0.616285     0.590425     0.618506             -0.001166             -0.002221   accepted: candidate improved last-block enough and stayed inside full-CV guard
+    Q2     anchor0.5_lgbm0.5                 {"anchor": 0.5, "lgbm": 0.5}      0.673495      0.633457     0.692880     0.638084             -0.019385             -0.004627   accepted: candidate improved last-block enough and stayed inside full-CV guard
+    Q3 anchor_guard_fallback                              {"anchor": 1.0}      0.662681      0.634692     0.662681     0.634692              0.000000              0.000000 fallback_to_anchor: no candidate passed full_guard=0.004 and min_last_gain=5e-05
+    S1 anchor_guard_fallback                              {"anchor": 1.0}      0.492352      0.449544     0.492352     0.449544              0.000000              0.000000 fallback_to_anchor: no candidate passed full_guard=0.004 and min_last_gain=5e-05
+    S2     anchor0.7_lgbm0.3 {"anchor": 0.7, "lgbm": 0.30000000000000004}      0.559231      0.620267     0.560120     0.622815             -0.000889             -0.002548   accepted: candidate improved last-block enough and stayed inside full-CV guard
+    S3      anchor0.9_xgb0.1  {"anchor": 0.9, "xgb": 0.09999999999999998}      0.541550      0.600417     0.541551     0.600679             -0.000002             -0.000262   accepted: candidate improved last-block enough and stayed inside full-CV guard
+    S4     anchor0.2_lgbm0.8                 {"anchor": 0.2, "lgbm": 0.8}      0.630566      0.571790     0.630799     0.588654             -0.000233             -0.016865   accepted: candidate improved last-block enough and stayed inside full-CV guard
+
+=== Saved submissions ===
+submissions/kaggle_style_full_5seed_guarded/01_targetwise_guarded_last0.589493_full0.592733.csv
+submissions/kaggle_style_full_5seed_guarded/02_anchor0p8_lgbm0p2_last0.592092_full0.592677.csv
+submissions/kaggle_style_full_5seed_guarded/03_anchor0p7_lgbm0p3_last0.592148_full0.591842.csv
+submissions/kaggle_style_full_5seed_guarded/04_anchor0p9_lgbm0p1_last0.592461_full0.593997.csv
+submissions/kaggle_style_full_5seed_guarded/05_anchor0p8_xgb0p2_last0.592588_full0.592968.csv
+submissions/kaggle_style_full_5seed_guarded/06_anchor0p6_lgbm0p4_last0.592614_full0.591476.csv
+[20:18:45] Done in 6.5 min

@@ -1,0 +1,87 @@
+{
+  "purpose": "Q target whole-period balance search with subject-time-blocked OOF.",
+  "base_full": 0.595829751093375,
+  "base_last": 0.5932822067983344,
+  "rate_min": 0.3,
+  "rate_max": 0.75,
+  "rate_step": 0.005,
+  "target_best": {
+    "Q1": {
+      "base": {
+        "target": "Q1",
+        "rate": null,
+        "full": 0.5904248838716277,
+        "last": 0.6185058715032128,
+        "kind": "anchor"
+      },
+      "last_best": {
+        "target": "Q1",
+        "rate": null,
+        "full": 0.5904248838716277,
+        "last": 0.6185058715032128,
+        "kind": "anchor"
+      },
+      "guarded": {
+        "target": "Q1",
+        "rate": null,
+        "full": 0.5904248838716277,
+        "last": 0.6185058715032128,
+        "kind": "anchor"
+      }
+    },
+    "Q2": {
+      "base": {
+        "target": "Q2",
+        "rate": null,
+        "full": 0.6928798566239225,
+        "last": 0.6380843693004014,
+        "kind": "anchor"
+      },
+      "last_best": {
+        "target": "Q2",
+        "rate": null,
+        "full": 0.6928798566239225,
+        "last": 0.6380843693004014,
+        "kind": "anchor"
+      },
+      "guarded": {
+        "target": "Q2",
+        "rate": null,
+        "full": 0.6928798566239225,
+        "last": 0.6380843693004014,
+        "kind": "anchor"
+      }
+    },
+    "Q3": {
+      "base": {
+        "target": "Q3",
+        "rate": null,
+        "full": 0.6626805461282007,
+        "last": 0.6346920082407534,
+        "kind": "anchor"
+      },
+      "last_best": {
+        "target": "Q3",
+        "rate": null,
+        "full": 0.6626805461282007,
+        "last": 0.6346920082407534,
+        "kind": "anchor"
+      },
+      "guarded": {
+        "target": "Q3",
+        "rate": null,
+        "full": 0.6626805461282007,
+        "last": 0.6346920082407534,
+        "kind": "anchor"
+      }
+    }
+  },
+  "best_candidate": {
+    "candidate": "anchor",
+    "rates": "{}",
+    "full_logloss": 0.595829751093375,
+    "last_logloss": 0.5932822067983344,
+    "full_delta_vs_anchor": NaN,
+    "last_delta_vs_anchor": NaN
+  }
+}

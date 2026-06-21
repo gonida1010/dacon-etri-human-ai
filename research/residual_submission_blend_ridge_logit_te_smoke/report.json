@@ -1,0 +1,62 @@
+{
+  "anchor": {
+    "full_logloss": 0.595829751093375,
+    "last_logloss": 0.5932822067983344
+  },
+  "sources": [
+    "anchor",
+    "ridge_residual_composite",
+    "ridge_residual_full",
+    "knn_targetwise_guarded"
+  ],
+  "candidate_scores": [
+    {
+      "candidate": "ridge_knn_blend_composite",
+      "full_logloss": 0.5957753241775018,
+      "fold0_logloss": 0.5968292816631954,
+      "fold1_logloss": 0.5795850756487847,
+      "fold2_logloss": 0.621116597551676,
+      "fold3_logloss": 0.5945330140013676,
+      "fold4_logloss": 0.5870247926960112,
+      "last_logloss": 0.5870247926960112,
+      "tail3_mean": 0.6008914680830183,
+      "tail3_worst": 0.621116597551676,
+      "fold_std": 0.014025129197815756,
+      "full_delta_vs_anchor": -5.4426915873206916e-05,
+      "last_delta_vs_anchor": -0.006257414102323278,
+      "rank_score": 0.5910698185897427
+    },
+    {
+      "candidate": "ridge_knn_blend_last",
+      "full_logloss": 0.5975023292142486,
+      "fold0_logloss": 0.5995477852597696,
+      "fold1_logloss": 0.5802398440886182,
+      "fold2_logloss": 0.6232460094806292,
+      "fold3_logloss": 0.597929074587222,
+      "fold4_logloss": 0.5865880954463176,
+      "last_logloss": 0.5865880954463176,
+      "tail3_mean": 0.6025877265047229,
+      "tail3_worst": 0.6232460094806292,
+      "fold_std": 0.014725601246903032,
+      "full_delta_vs_anchor": 0.0016725781208736246,
+      "last_delta_vs_anchor": -0.006694111352016807,
+      "rank_score": 0.5921414434442415
+    },
+    {
+      "candidate": "ridge_knn_blend_full",
+      "full_logloss": 0.5943337491384246,
+      "fold0_logloss": 0.5929582372205008,
+      "fold1_logloss": 0.5792631281251497,
+      "fold2_logloss": 0.6193455329149797,
+      "fold3_logloss": 0.5893904874683831,
+      "fold4_logloss": 0.5914031607154566,
+      "last_logloss": 0.5914031607154566,
+      "tail3_mean": 0.6000463936996064,
+      "tail3_worst": 0.6193455329149797,
+      "fold_std": 0.01332316362756539,
+      "full_delta_vs_anchor": -0.0014960019549503656,
+      "last_delta_vs_anchor": -0.001879046082877811,
+      "rank_score": 0.5952629885585313
+    }
+  ]
+}

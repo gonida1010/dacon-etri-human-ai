@@ -1,0 +1,33 @@
+[22:41:02] Loading dataset and anchor bank
+[22:41:02] anchor full=0.595830 last=0.593282
+[22:41:02] Optimizing ridge residual target=Q1 anchor_full=0.590425 anchor_last=0.618506
+[22:41:16] Q1 best rank=0.623398 full=0.590425 last=0.618506 cfg=ridge|ridge1|uniform|top80 shrink=0.0
+[22:41:16] Optimizing ridge residual target=Q2 anchor_full=0.692880 anchor_last=0.638084
+[22:41:29] Q2 best rank=0.656265 full=0.692880 last=0.638084 cfg=ridge|ridge1|uniform|top80 shrink=0.0
+[22:41:29] Optimizing ridge residual target=Q3 anchor_full=0.662681 anchor_last=0.634692
+[22:41:43] Q3 best rank=0.644204 full=0.662681 last=0.634692 cfg=ridge|ridge1|uniform|top80 shrink=0.0
+[22:41:43] Optimizing ridge residual target=S1 anchor_full=0.492352 anchor_last=0.449544
+[22:41:56] S1 best rank=0.442475 full=0.490309 last=0.435626 cfg=ridge|ridge1|recent_class|top80 shrink=0.03
+[22:41:56] Optimizing ridge residual target=S2 anchor_full=0.560120 anchor_last=0.622815
+[22:42:09] S2 best rank=0.592682 full=0.561632 last=0.586726 cfg=ridge|ridge1|recent_resid|top80 shrink=0.2
+[22:42:09] Optimizing ridge residual target=S3 anchor_full=0.541551 anchor_last=0.600679
+[22:42:23] S3 best rank=0.604692 full=0.538821 last=0.596876 cfg=ridge|ridge1|recent_resid|top80 shrink=0.03
+[22:42:23] Optimizing ridge residual target=S4 anchor_full=0.630799 anchor_last=0.588654
+[22:42:37] S4 best rank=0.594168 full=0.630799 last=0.588654 cfg=ridge|ridge1|uniform|top80 shrink=0.0
+
+=== Residual single-model candidates ===
+               candidate  rank_score  full_logloss  last_logloss  tail3_worst  fold_std                                           notes
+ridge_residual_composite    0.590436      0.595364      0.585595     0.624183  0.014905 ridge residual correction selected by composite
+                  anchor    0.597425      0.595830      0.593282     0.622422  0.013785                                 temporal anchor
+     ridge_residual_full    0.597595      0.592740      0.592791     0.623792  0.016154      ridge residual correction selected by full
+     ridge_residual_last    0.610545      0.616519      0.584758     0.669413  0.030459      ridge residual correction selected by last
+
+=== Target choices (composite) ===
+target param_profile weight_profile  top_k  shrink  full_logloss  last_logloss  rank_score
+    Q1        ridge1        uniform     80    0.00      0.590425      0.618506    0.623398
+    Q2        ridge1        uniform     80    0.00      0.692880      0.638084    0.656265
+    Q3        ridge1        uniform     80    0.00      0.662681      0.634692    0.644204
+    S1        ridge1   recent_class     80    0.03      0.490309      0.435626    0.442475
+    S2        ridge1   recent_resid     80    0.20      0.561632      0.586726    0.592682
+    S3        ridge1   recent_resid     80    0.03      0.538821      0.596876    0.604692
+    S4        ridge1        uniform     80    0.00      0.630799      0.588654    0.594168

@@ -1,0 +1,8 @@
+target,chosen,weights,full_logloss,last_logloss,anchor_full,anchor_last,full_delta_vs_anchor,last_delta_vs_anchor,fallback_reason
+Q1,anchor,"{""anchor"": 1.0}",0.5904248838716277,0.6185058715032128,0.5904248838716277,0.6185058715032128,0.0,0.0,anchor retained: no blend beat the anchor under the active ranking
+Q2,anchor,"{""anchor"": 1.0}",0.6928798566239225,0.6380843693004014,0.6928798566239225,0.6380843693004014,0.0,0.0,anchor retained: no blend beat the anchor under the active ranking
+Q3,anchor,"{""anchor"": 1.0}",0.6626805461282007,0.6346920082407534,0.6626805461282007,0.6346920082407534,0.0,0.0,anchor retained: no blend beat the anchor under the active ranking
+S1,anchor,"{""anchor"": 1.0}",0.492352153213852,0.4495444660169762,0.492352153213852,0.4495444660169762,0.0,0.0,anchor retained: no blend beat the anchor under the active ranking
+S2,anchor,"{""anchor"": 1.0}",0.5601204056897082,0.6228153228954334,0.5601204056897082,0.6228153228954334,0.0,0.0,anchor retained: no blend beat the anchor under the active ranking
+S3,anchor,"{""anchor"": 1.0}",0.5415513745216881,0.6006790249905736,0.5415513745216881,0.6006790249905736,0.0,0.0,anchor retained: no blend beat the anchor under the active ranking
+S4,anchor,"{""anchor"": 1.0}",0.630799037604625,0.5886543846409902,0.630799037604625,0.5886543846409902,0.0,0.0,anchor retained: no blend beat the anchor under the active ranking

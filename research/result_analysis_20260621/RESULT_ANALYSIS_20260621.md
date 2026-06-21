@@ -1,0 +1,107 @@
+# Result Analysis Report, 2026-06-21
+
+Generated: 2026-06-21 23:37:26
+
+Scope: completed OOF/result artifacts only. No model training is performed by this report.
+
+## Executive Findings
+
+- Best stable local candidate remains `ridge_logit_newton / ridge_residual_full`: full `0.587810`, last `0.590089`.
+- `bins_te` did not improve the Ridge residual family. It improves some last-block targets, but worsens full stability.
+- `blend_ridge_knn / ridge_knn_blend_full` remains the best blend-style stable candidate: full `0.592591`, last `0.590445`.
+- `blend_logit_te_full` is weaker than the old no-TE blend on both full and composite stability.
+- OOF source-correlation output shows many exact anchor clones from earlier source banks, so future blend search must deduplicate sources before greedy/stacking.
+
+## Key Candidate Comparison
+
+```
+                run                 candidate full_logloss last_logloss full_delta_vs_anchor last_delta_vs_anchor rank_score fold_std
+ ridge_logit_newton       ridge_residual_full     0.587810     0.590089            -0.008020            -0.003193   0.594322 0.015406
+    blend_ridge_knn      ridge_knn_blend_full     0.592591     0.590445            -0.003239            -0.002837   0.595263 0.015744
+blend_logit_te_full      ridge_knn_blend_full     0.593723     0.591800            -0.002107            -0.001483   0.595653 0.013422
+ridge_logit_te_full       ridge_residual_full     0.593726     0.591578            -0.002104            -0.001704   0.595475 0.013512
+ ridge_logit_newton  ridge_residual_composite     0.594519     0.581374            -0.001311            -0.011909   0.586294 0.016529
+    blend_ridge_knn ridge_knn_blend_composite     0.595536     0.584969            -0.000294            -0.008314   0.589775 0.014847
+             anchor                    anchor     0.595830     0.593282             0.000000             0.000000                    
+blend_logit_te_full ridge_knn_blend_composite     0.596128     0.588013             0.000299            -0.005269   0.592618 0.014256
+ ridge_logit_newton       ridge_residual_last     0.596299     0.580663             0.000469            -0.012619   0.585777 0.016987
+ridge_logit_te_full  ridge_residual_composite     0.597277     0.587759             0.001447            -0.005523   0.593442 0.014529
+```
+
+## Top by Full Logloss
+
+```
+                 run                      candidate full_logloss last_logloss full_delta_vs_anchor last_delta_vs_anchor
+  ridge_logit_newton            ridge_residual_full     0.587810     0.590089            -0.008020            -0.003193
+     blend_ridge_knn           ridge_knn_blend_full     0.592591     0.590445            -0.003239            -0.002837
+          ridge_prob            ridge_residual_full     0.592740     0.592791            -0.003090            -0.000491
+    kaggle_last_mile                meta_extratrees     0.593542     0.605017            -0.002288             0.011735
+ blend_logit_te_full           ridge_knn_blend_full     0.593723     0.591800            -0.002107            -0.001483
+ ridge_logit_te_full            ridge_residual_full     0.593726     0.591578            -0.002104            -0.001704
+blend_logit_te_smoke           ridge_knn_blend_full     0.594334     0.591403            -0.001496            -0.001879
+ridge_logit_te_smoke            ridge_residual_full     0.594343     0.591565            -0.001487            -0.001717
+  ridge_logit_newton       ridge_residual_composite     0.594519     0.581374            -0.001311            -0.011909
+    hist_gb_residual          hist_gb_residual_full     0.595000     0.592166            -0.000830            -0.001116
+    kaggle_last_mile rankpatch_anchor_k3_f0p1_d0p35     0.595360     0.593098            -0.000470            -0.000184
+          ridge_prob       ridge_residual_composite     0.595364     0.585595            -0.000466            -0.007687
+```
+
+## Top by Last Logloss
+
+```
+                 run                             candidate full_logloss last_logloss full_delta_vs_anchor last_delta_vs_anchor
+  ridge_logit_newton                   ridge_residual_last     0.596299     0.580663             0.000469            -0.012619
+  ridge_logit_newton              ridge_residual_composite     0.594519     0.581374            -0.001311            -0.011909
+  anchor_bank_sparse              targetwise_sparse_greedy     0.599491     0.582418             0.003661            -0.010864
+    kaggle_last_mile                     oof_sparse_greedy     0.599491     0.582418             0.003661            -0.010864
+    kaggle_last_mile rankpatch_sparse_greedy_k8_f0p1_d0p35     0.599334     0.582890             0.003505            -0.010392
+    hist_gb_residual                 hist_gb_residual_last     0.611207     0.584409             0.015377            -0.008873
+          ridge_prob                   ridge_residual_last     0.616519     0.584758             0.020690            -0.008525
+ ridge_logit_te_full                   ridge_residual_last     0.607673     0.584839             0.011843            -0.008444
+     blend_ridge_knn             ridge_knn_blend_composite     0.595536     0.584969            -0.000294            -0.008314
+     blend_ridge_knn                  ridge_knn_blend_last     0.595536     0.584969            -0.000294            -0.008314
+          ridge_prob              ridge_residual_composite     0.595364     0.585595            -0.000466            -0.007687
+ridge_logit_te_smoke                   ridge_residual_last     0.601483     0.586033             0.005653            -0.007249
+```
+
+## TE Feature Bank Read
+
+- Smoke `bins_te`: `ridge_residual_full` full `0.594343`, last `0.591565`; worse than no-TE logit Ridge full candidate.
+- Full `bins_te`: `ridge_residual_full` full `0.593726`, last `0.591578`; still worse than no-TE logit Ridge full candidate.
+- Full `bins_te` composite: full `0.597277`, last `0.587759`; last improves but full is worse than anchor.
+- Interpretation: current fold-safe TE/bin bank is too noisy for this 450-row dataset. Keep the implementation, but do not use it globally in the next submit path.
+
+## Blend Read
+
+- Old blend full candidate: full `0.592591`, last `0.590445`.
+- New TE blend full candidate: full `0.593723`, last `0.591800`.
+- New TE blend composite: full `0.596128`, last `0.588013`.
+- Interpretation: TE source is not adding useful diversity; it shifts target choices toward unstable last-block gains.
+
+## Correlation Summary
+
+```
+target  source_count  anchor_clone_count  pairs_corr_ge_0p999  pairs_corr_lt_0p98                                                   best_full_source best_full_logloss                                                       best_last_source best_last_logloss
+    Q1           284                 218                24566               13914 residual_single_model_opt_ridge_logit_te_full__ridge_residual_full          0.587183      residual_single_model_opt_ridge_logit_newton__ridge_residual_last          0.596395
+    Q2           284                 217                24319               15311                                                  model_lgbm_anchor          0.675684     residual_single_model_opt_ridge_logit_te_full__ridge_residual_last          0.632952
+    Q3           284                 220                24987               13506                                                  model_lgbm_anchor          0.651124     residual_single_model_opt_ridge_logit_te_full__ridge_residual_last          0.622764
+    S1           284                 218                24549               13310  residual_single_model_opt_ridge_logit_newton__ridge_residual_full          0.490136 residual_single_model_opt_ridge_logit_newton__ridge_residual_composite          0.443303
+    S2           284                 217                24332               14619  residual_single_model_opt_ridge_logit_newton__ridge_residual_full          0.552330 residual_single_model_opt_ridge_logit_newton__ridge_residual_composite          0.584161
+    S3           284                 218                25211               12386  residual_single_model_opt_ridge_logit_newton__ridge_residual_full          0.507728      residual_single_model_opt_ridge_logit_newton__ridge_residual_last          0.594005
+    S4           284                 217                24349               14814  residual_single_model_opt_ridge_logit_newton__ridge_residual_full          0.622643                                                        seq_S4_1p5_0p45          0.551026
+```
+
+## Figures
+
+- `candidate_frontier.png`: full/last scatter over all loaded candidates.
+- `key_candidate_deltas.png`: full/last delta against anchor for major candidates.
+- `key_fold_curves.png`: fold stability curves.
+- `target_last_delta_heatmap.png`: target-wise last-block gain/loss.
+
+## Next Research Step
+
+1. Freeze `bins_te` as an analysis-only branch for now; do not use it in the next submit candidate.
+2. Promote no-TE `ridge_logit_newton / ridge_residual_full` into blend search as the primary residual source.
+3. Add deduplicated source selection before stacking/blending: remove sources with identical predictions or corr >= 0.999 against anchor/another better source.
+4. Run a ridge-logit no-TE blend that uses `research/residual_single_model_opt_ridge_logit_newton` instead of the old prob residual dir.
+5. If that blend does not beat full `0.587810`, next implementation target is target-specific Ridge residual constraints, especially Q1 and S2, not more TE.

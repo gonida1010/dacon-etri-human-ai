@@ -1,0 +1,69 @@
+[21:27:10] Loading dataset
+[21:27:10] Building temporal anchor OOF/test
+[21:28:42] anchor full=0.595830 last=0.593282
+[21:28:42] Building temporal source: mean_sm4
+[21:28:43] Building temporal source: mean_sm8
+[21:28:44] Building temporal source: mean_sm16
+[21:28:45] Building temporal source: mean_sm32
+[21:28:47] Building temporal source: mean_sm64
+[21:28:48] Building temporal source: last2_sm2
+[21:28:49] Building temporal source: last2_sm4
+[21:28:50] Building temporal source: last3_sm4
+[21:28:52] Building temporal source: last5_sm4
+[21:28:53] Building temporal source: last10_sm4
+[21:28:54] Building temporal source: last20_sm4
+[21:28:55] Building temporal source: last30_sm4
+[21:28:57] Building temporal source: ridge0.5
+[21:28:59] Building temporal source: ridge1
+[21:29:02] Building temporal source: ridge3
+[21:29:05] Building temporal source: ridge10
+[21:29:08] Building temporal source: ridge30
+[21:29:11] Building sequence source grid for Q1
+[21:29:13] Building sequence source grid for Q2
+[21:29:15] Building sequence source grid for Q3
+[21:29:17] Building sequence source grid for S1
+[21:29:19] Building sequence source grid for S2
+[21:29:21] Building sequence source grid for S3
+[21:29:23] Building sequence source grid for S4
+[21:29:25] source bank built: 275 sources
+[21:29:26] Selecting target Q1
+[21:29:26] Selecting target Q2
+[21:29:27] Selecting target Q3
+[21:29:28] Selecting target S1
+[21:29:28] Selecting target S2
+[21:29:29] Selecting target S3
+[21:29:30] Selecting target S4
+
+=== Sparse greedy candidate scores ===
+                     candidate  full_logloss  last_logloss                                                notes  full_delta_vs_anchor  last_delta_vs_anchor
+      targetwise_sparse_greedy      0.599491      0.582418                          stagewise blend max_steps=3              0.003661             -0.010864
+targetwise_best_single_guarded      0.597516      0.590326 per-target best single source under full/last guards              0.001686             -0.002956
+                        anchor      0.595830      0.593282                                temporal_prior_anchor              0.000000              0.000000
+
+=== Target-wise best single choices ===
+target           source  full_logloss  last_logloss  full_delta_vs_anchor  last_delta_vs_anchor                 reason
+    Q1           anchor      0.590425      0.618506              0.000000              0.000000        fallback_anchor
+    Q2 anchor_temp_1p08      0.696035      0.636206              0.003155             -0.001879 accepted_single_source
+    Q3 anchor_temp_1p15      0.664722      0.633122              0.002041             -0.001570 accepted_single_source
+    S1 anchor_temp_1p08      0.493441      0.449040              0.001089             -0.000505 accepted_single_source
+    S2 anchor_temp_0p85      0.563385      0.616037              0.003265             -0.006779 accepted_single_source
+    S3 anchor_temp_0p92      0.545142      0.598662              0.003590             -0.002017 accepted_single_source
+    S4 anchor_temp_1p15      0.629460      0.580710             -0.001339             -0.007944 accepted_single_source
+
+=== Target-wise greedy steps ===
+target  step           source  weight_new_source  full_logloss  last_logloss  full_delta_vs_anchor  last_delta_vs_anchor  last_gain_vs_previous
+    Q1     0           anchor               0.00      0.590425      0.618506              0.000000              0.000000               0.000000
+    Q2     1     seq_Q2_0p8_1               0.15      0.698410      0.636068              0.005531             -0.002016               0.002016
+    Q2     2 anchor_temp_1p15               0.50      0.698476      0.635182              0.005596             -0.002902               0.000886
+    Q3     1   seq_Q3_0p5_0p8               0.40      0.668187      0.612872              0.005506             -0.021820               0.021820
+    S1     1        last2_sm2               0.10      0.493687      0.448325              0.001335             -0.001220               0.001220
+    S1     2 anchor_temp_1p15               0.40      0.492666      0.446904              0.000314             -0.002640               0.001420
+    S2     1       last30_sm4               0.40      0.565282      0.617918              0.005162             -0.004898               0.004898
+    S2     2  seq_S2_0p5_0p15               0.20      0.565367      0.615752              0.005246             -0.007063               0.002166
+    S2     3 anchor_temp_0p85               0.40      0.563500      0.615318              0.003380             -0.007498               0.000434
+    S3     1 seq_S3_0p65_0p15               0.50      0.544939      0.584380              0.003387             -0.016299               0.016299
+    S3     2        last3_sm4               0.05      0.546411      0.583753              0.004860             -0.016926               0.000626
+    S4     1     seq_S4_1p5_1               0.30      0.636221      0.564786              0.005422             -0.023868               0.023868
+    S4     2 seq_S4_0p65_0p15               0.05      0.636772      0.564392              0.005973             -0.024262               0.000394
+
+No <= 0.55 local candidate yet. Do not submit from this run.

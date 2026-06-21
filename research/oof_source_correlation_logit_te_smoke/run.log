@@ -1,0 +1,88 @@
+[23:08:37] Loading labels/folds
+[23:08:37] Loading OOF sources
+
+=== Source scores head ===
+target                    source  full_logloss  last_logloss  pred_std  pred_mean
+    Q1  ridge_residual_composite      0.585506      0.612296  0.220475   0.497171
+    Q1       ridge_residual_full      0.585506      0.612296  0.220475   0.497171
+    Q1       ridge_residual_last      0.585506      0.612296  0.220475   0.497171
+    Q1 ridge_knn_blend_composite      0.585506      0.612296  0.220475   0.497171
+    Q1      ridge_knn_blend_full      0.585506      0.612296  0.220475   0.497171
+    Q1      ridge_knn_blend_last      0.585506      0.612296  0.220475   0.497171
+    Q1                    anchor      0.590425      0.618506  0.212696   0.495037
+    Q1         model_lgbm_anchor      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_0p5_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1            seq_Q2_0p5_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_0p5_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1            seq_Q2_0p5_0p6      0.590425      0.618506  0.212696   0.495037
+    Q1            seq_Q2_0p5_0p8      0.590425      0.618506  0.212696   0.495037
+    Q1              seq_Q2_0p5_1      0.590425      0.618506  0.212696   0.495037
+    Q1          seq_Q2_0p65_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_0p65_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1          seq_Q2_0p65_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_0p65_0p6      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_0p65_0p8      0.590425      0.618506  0.212696   0.495037
+    Q1             seq_Q2_0p65_1      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_0p8_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1            seq_Q2_0p8_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_0p8_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1            seq_Q2_0p8_0p6      0.590425      0.618506  0.212696   0.495037
+    Q1            seq_Q2_0p8_0p8      0.590425      0.618506  0.212696   0.495037
+    Q1              seq_Q2_0p8_1      0.590425      0.618506  0.212696   0.495037
+    Q1             seq_Q2_1_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1              seq_Q2_1_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1             seq_Q2_1_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1              seq_Q2_1_0p6      0.590425      0.618506  0.212696   0.495037
+    Q1              seq_Q2_1_0p8      0.590425      0.618506  0.212696   0.495037
+    Q1                seq_Q2_1_1      0.590425      0.618506  0.212696   0.495037
+    Q1          seq_Q2_1p25_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_1p25_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1          seq_Q2_1p25_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_1p25_0p6      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_1p25_0p8      0.590425      0.618506  0.212696   0.495037
+    Q1             seq_Q2_1p25_1      0.590425      0.618506  0.212696   0.495037
+    Q1           seq_Q2_1p5_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1            seq_Q2_1p5_0p3      0.590425      0.618506  0.212696   0.495037
+
+=== Highest source correlations ===
+target source_a          source_b  corr  abs_corr
+    Q1   anchor model_lgbm_anchor   1.0       1.0
+    Q1   anchor   seq_Q2_0p5_0p15   1.0       1.0
+    Q1   anchor    seq_Q2_0p5_0p3   1.0       1.0
+    Q1   anchor   seq_Q2_0p5_0p45   1.0       1.0
+    Q1   anchor    seq_Q2_0p5_0p6   1.0       1.0
+    Q1   anchor    seq_Q2_0p5_0p8   1.0       1.0
+    Q1   anchor      seq_Q2_0p5_1   1.0       1.0
+    Q1   anchor  seq_Q2_0p65_0p15   1.0       1.0
+    Q1   anchor   seq_Q2_0p65_0p3   1.0       1.0
+    Q1   anchor  seq_Q2_0p65_0p45   1.0       1.0
+    Q1   anchor   seq_Q2_0p65_0p6   1.0       1.0
+    Q1   anchor   seq_Q2_0p65_0p8   1.0       1.0
+    Q1   anchor     seq_Q2_0p65_1   1.0       1.0
+    Q1   anchor   seq_Q2_0p8_0p15   1.0       1.0
+    Q1   anchor    seq_Q2_0p8_0p3   1.0       1.0
+    Q1   anchor   seq_Q2_0p8_0p45   1.0       1.0
+    Q1   anchor    seq_Q2_0p8_0p6   1.0       1.0
+    Q1   anchor    seq_Q2_0p8_0p8   1.0       1.0
+    Q1   anchor      seq_Q2_0p8_1   1.0       1.0
+    Q1   anchor     seq_Q2_1_0p15   1.0       1.0
+    Q1   anchor      seq_Q2_1_0p3   1.0       1.0
+    Q1   anchor     seq_Q2_1_0p45   1.0       1.0
+    Q1   anchor      seq_Q2_1_0p6   1.0       1.0
+    Q1   anchor      seq_Q2_1_0p8   1.0       1.0
+    Q1   anchor        seq_Q2_1_1   1.0       1.0
+    Q1   anchor  seq_Q2_1p25_0p15   1.0       1.0
+    Q1   anchor   seq_Q2_1p25_0p3   1.0       1.0
+    Q1   anchor  seq_Q2_1p25_0p45   1.0       1.0
+    Q1   anchor   seq_Q2_1p25_0p6   1.0       1.0
+    Q1   anchor   seq_Q2_1p25_0p8   1.0       1.0
+    Q1   anchor     seq_Q2_1p25_1   1.0       1.0
+    Q1   anchor   seq_Q2_1p5_0p15   1.0       1.0
+    Q1   anchor    seq_Q2_1p5_0p3   1.0       1.0
+    Q1   anchor   seq_Q2_1p5_0p45   1.0       1.0
+    Q1   anchor    seq_Q2_1p5_0p6   1.0       1.0
+    Q1   anchor    seq_Q2_1p5_0p8   1.0       1.0
+    Q1   anchor      seq_Q2_1p5_1   1.0       1.0
+    Q1   anchor   seq_Q3_0p5_0p15   1.0       1.0
+    Q1   anchor    seq_Q3_0p5_0p3   1.0       1.0
+    Q1   anchor   seq_Q3_0p5_0p45   1.0       1.0

@@ -1,0 +1,25 @@
+[20:59:27] Loading dataset
+[20:59:27] Building temporal anchor OOF/test
+[21:00:59] anchor full=0.595830 last=0.593282
+[21:00:59] Searching sequence smoothing for Q1
+[21:01:01] Q1 anchor_last=0.618506 last_best=(None,None) 0.618506 guarded=(None,None) 0.618506
+[21:01:01] Searching sequence smoothing for Q2
+[21:01:04] Q2 anchor_last=0.638084 last_best=(None,None) 0.638084 guarded=(None,None) 0.638084
+[21:01:04] Searching sequence smoothing for Q3
+[21:01:06] Q3 anchor_last=0.634692 last_best=(0.5,1.0) 0.624186 guarded=(None,None) 0.634692
+[21:01:06] Searching sequence smoothing for S1
+[21:01:08] S1 anchor_last=0.449544 last_best=(None,None) 0.449544 guarded=(None,None) 0.449544
+[21:01:08] Searching sequence smoothing for S2
+[21:01:10] S2 anchor_last=0.622815 last_best=(None,None) 0.622815 guarded=(None,None) 0.622815
+[21:01:10] Searching sequence smoothing for S3
+[21:01:12] S3 anchor_last=0.600679 last_best=(None,None) 0.600679 guarded=(None,None) 0.600679
+[21:01:12] Searching sequence smoothing for S4
+[21:01:14] S4 anchor_last=0.588654 last_best=(1.5,0.45) 0.551026 guarded=(None,None) 0.588654
+[21:01:14] candidate targetwise_lastbest full=0.619717 last=0.586406
+
+=== Sequence smoothing candidates ===
+          candidate                                params  full_logloss  last_logloss  full_delta_vs_anchor  last_delta_vs_anchor
+targetwise_lastbest {"Q3": [0.5, 1.0], "S4": [1.5, 0.45]}      0.619717      0.586406              0.023887             -0.006876
+             anchor                                    {}      0.595830      0.593282                   NaN                   NaN
+
+No <= 0.55 local candidate yet. Do not submit from this run.

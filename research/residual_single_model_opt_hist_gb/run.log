@@ -1,0 +1,45 @@
+[22:21:34] Loading dataset and anchor bank
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+[22:21:34] anchor full=0.595830 last=0.593282
+[22:21:34] Optimizing hist_gb residual target=Q1 anchor_full=0.590425 anchor_last=0.618506
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/joblib/externals/loky/backend/context.py:131: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/joblib/externals/loky/backend/context.py", line 249, in _count_physical_cores
+    cpu_count_physical = _count_physical_cores_darwin()
+  File "/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/joblib/externals/loky/backend/context.py", line 318, in _count_physical_cores_darwin
+    return int(cpu_info)
+[22:21:59] Q1 best rank=0.623398 full=0.590425 last=0.618506 cfg=hist_gb|smooth|uniform|top80 shrink=0.0
+[22:21:59] Optimizing hist_gb residual target=Q2 anchor_full=0.692880 anchor_last=0.638084
+[22:22:30] Q2 best rank=0.650813 full=0.701158 last=0.624875 cfg=hist_gb|tiny|uniform|top160 shrink=0.3
+[22:22:30] Optimizing hist_gb residual target=Q3 anchor_full=0.662681 anchor_last=0.634692
+[22:22:56] Q3 best rank=0.644204 full=0.662681 last=0.634692 cfg=hist_gb|smooth|uniform|top80 shrink=0.0
+[22:22:56] Optimizing hist_gb residual target=S1 anchor_full=0.492352 anchor_last=0.449544
+[22:23:18] S1 best rank=0.455062 full=0.492352 last=0.449544 cfg=hist_gb|smooth|uniform|top80 shrink=0.0
+[22:23:18] Optimizing hist_gb residual target=S2 anchor_full=0.560120 anchor_last=0.622815
+[22:23:42] S2 best rank=0.599658 full=0.560575 last=0.594089 cfg=hist_gb|mid|recent_class|top80 shrink=0.45
+[22:23:42] Optimizing hist_gb residual target=S3 anchor_full=0.541551 anchor_last=0.600679
+[22:24:07] S3 best rank=0.606187 full=0.542080 last=0.597689 cfg=hist_gb|mid|recent_resid|top80 shrink=0.2
+[22:24:07] Optimizing hist_gb residual target=S4 anchor_full=0.630799 anchor_last=0.588654
+[22:24:29] S4 best rank=0.594168 full=0.630799 last=0.588654 cfg=hist_gb|smooth|uniform|top80 shrink=0.0
+
+=== Residual single-model candidates ===
+                 candidate  rank_score  full_logloss  last_logloss  tail3_worst  fold_std                                             notes
+hist_gb_residual_composite    0.592132      0.597153      0.586864     0.622960  0.014196 hist_gb residual correction selected by composite
+     hist_gb_residual_full    0.596256      0.595000      0.592166     0.621389  0.013652      hist_gb residual correction selected by full
+                    anchor    0.597425      0.595830      0.593282     0.622422  0.013785                                   temporal anchor
+     hist_gb_residual_last    0.603107      0.611207      0.584409     0.646695  0.023150      hist_gb residual correction selected by last
+
+=== Target choices (composite) ===
+target param_profile weight_profile  top_k  shrink  full_logloss  last_logloss  rank_score
+    Q1        smooth        uniform     80    0.00      0.590425      0.618506    0.623398
+    Q2          tiny        uniform    160    0.30      0.701158      0.624875    0.650813
+    Q3        smooth        uniform     80    0.00      0.662681      0.634692    0.644204
+    S1        smooth        uniform     80    0.00      0.492352      0.449544    0.455062
+    S2           mid   recent_class     80    0.45      0.560575      0.594089    0.599658
+    S3           mid   recent_resid     80    0.20      0.542080      0.597689    0.606187
+    S4        smooth        uniform     80    0.00      0.630799      0.588654    0.594168

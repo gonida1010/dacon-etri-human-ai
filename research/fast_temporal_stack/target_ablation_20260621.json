@@ -1,0 +1,50 @@
+[
+  {
+    "file": "submissions/target_ablation_20260621/01_q3_only.csv",
+    "changed_targets": "Q3",
+    "expected_last": 0.5929810839085216,
+    "expected_full": 0.5958033481490023
+  },
+  {
+    "file": "submissions/target_ablation_20260621/02_s2_only.csv",
+    "changed_targets": "S2",
+    "expected_last": 0.5919020124275418,
+    "expected_full": 0.6007275208537272
+  },
+  {
+    "file": "submissions/target_ablation_20260621/03_q3_s2.csv",
+    "changed_targets": "Q3,S2",
+    "expected_last": 0.5916008895377288,
+    "expected_full": 0.6007011179093545
+  },
+  {
+    "file": "submissions/target_ablation_20260621/04_q3_s1_s4_no_s2.csv",
+    "changed_targets": "Q3,S1,S4",
+    "expected_last": 0.5927376872390118,
+    "expected_full": 0.5960444409945438
+  },
+  {
+    "file": "submissions/target_ablation_20260621/05_s1_s4_only.csv",
+    "changed_targets": "S1,S4",
+    "expected_last": 0.5930388101288245,
+    "expected_full": 0.5960708439389163
+  },
+  {
+    "file": "submissions/target_ablation_20260621/06_q3_s4_only.csv",
+    "changed_targets": "Q3,S4",
+    "expected_last": 0.5929119491992021,
+    "expected_full": 0.5958536804846905
+  },
+  {
+    "file": "submissions/target_ablation_20260621/07_s1_s2_s4_no_q3.csv",
+    "changed_targets": "S1,S2,S4",
+    "expected_last": 0.5916586157580319,
+    "expected_full": 0.6009686136992686
+  },
+  {
+    "file": "submissions/target_ablation_20260621/08_all_guarded_copy.csv",
+    "changed_targets": "Q3,S1,S2,S4",
+    "expected_last": 0.5913574928682189,
+    "expected_full": 0.6009422107548961
+  }
+]

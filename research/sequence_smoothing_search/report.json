@@ -1,0 +1,24 @@
+{
+  "purpose": "Two-state Markov sequence smoothing over temporal-anchor probabilities.",
+  "base_full": 0.595829751093375,
+  "base_last": 0.5932822067983344,
+  "chosen_guarded": {},
+  "chosen_last": {
+    "Q3": [
+      0.5,
+      1.0
+    ],
+    "S4": [
+      1.5,
+      0.45
+    ]
+  },
+  "best_candidate": {
+    "candidate": "targetwise_lastbest",
+    "params": "{\"Q3\": [0.5, 1.0], \"S4\": [1.5, 0.45]}",
+    "full_logloss": 0.6197167345919423,
+    "last_logloss": 0.5864058482177844,
+    "full_delta_vs_anchor": 0.023886983498567327,
+    "last_delta_vs_anchor": -0.006876358580550024
+  }
+}

@@ -1,0 +1,4 @@
+candidate,full_logloss,last_logloss,notes,full_delta_vs_anchor,last_delta_vs_anchor
+targetwise_sparse_greedy,0.5994909456234735,0.5824182856274583,stagewise blend max_steps=3,0.0036611945300984994,-0.01086392117087609
+targetwise_best_single_guarded,0.5975156362449224,0.5903259014092715,per-target best single source under full/last guards,0.0016858851515474393,-0.0029563053890628854
+anchor,0.595829751093375,0.5932822067983344,temporal_prior_anchor,0.0,0.0

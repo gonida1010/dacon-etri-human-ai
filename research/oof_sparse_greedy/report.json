@@ -1,0 +1,350 @@
+{
+  "purpose": "OOF/test prediction bank and guarded target-wise sparse greedy ensemble.",
+  "full_guard": 0.006,
+  "min_last_gain": 0.0002,
+  "max_steps": 3,
+  "weight_grid": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "emission_powers": [
+    0.5,
+    0.65,
+    0.8,
+    1.0,
+    1.25,
+    1.5
+  ],
+  "transition_blends": [
+    0.15,
+    0.3,
+    0.45,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "transition_smooth": 2.0,
+  "calibration_alphas": [
+    0.85,
+    0.92,
+    1.08,
+    1.15
+  ],
+  "source_count": 275,
+  "anchor_full": 0.595829751093375,
+  "anchor_last": 0.5932822067983344,
+  "candidate_scores": [
+    {
+      "candidate": "targetwise_sparse_greedy",
+      "full_logloss": 0.5994909456234735,
+      "last_logloss": 0.5824182856274583,
+      "notes": "stagewise blend max_steps=3",
+      "full_delta_vs_anchor": 0.0036611945300984994,
+      "last_delta_vs_anchor": -0.01086392117087609
+    },
+    {
+      "candidate": "targetwise_best_single_guarded",
+      "full_logloss": 0.5975156362449224,
+      "last_logloss": 0.5903259014092715,
+      "notes": "per-target best single source under full/last guards",
+      "full_delta_vs_anchor": 0.0016858851515474393,
+      "last_delta_vs_anchor": -0.0029563053890628854
+    },
+    {
+      "candidate": "anchor",
+      "full_logloss": 0.595829751093375,
+      "last_logloss": 0.5932822067983344,
+      "notes": "temporal_prior_anchor",
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0
+    }
+  ],
+  "best_source_by_target": [
+    {
+      "source": "anchor",
+      "target": "Q1",
+      "full_logloss": 0.5904248838716277,
+      "last_logloss": 0.6185058715032128,
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0
+    },
+    {
+      "source": "model_lgbm_anchor",
+      "target": "Q1",
+      "full_logloss": 0.5904248838716277,
+      "last_logloss": 0.6185058715032128,
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0
+    },
+    {
+      "source": "anchor_temp_1p08",
+      "target": "Q1",
+      "full_logloss": 0.5905074659780511,
+      "last_logloss": 0.6185673366584358,
+      "full_delta_vs_anchor": 8.258210642342334e-05,
+      "last_delta_vs_anchor": 6.14651552229839e-05
+    },
+    {
+      "source": "anchor_temp_0p92",
+      "target": "Q1",
+      "full_logloss": 0.5913024400804814,
+      "last_logloss": 0.6192119047169299,
+      "full_delta_vs_anchor": 0.0008775562088536581,
+      "last_delta_vs_anchor": 0.0007060332137170944
+    },
+    {
+      "source": "anchor_temp_1p15",
+      "target": "Q1",
+      "full_logloss": 0.5913167696414998,
+      "last_logloss": 0.6192219933368992,
+      "full_delta_vs_anchor": 0.0008918857698720917,
+      "last_delta_vs_anchor": 0.0007161218336864117
+    },
+    {
+      "source": "anchor_temp_1p15",
+      "target": "Q2",
+      "full_logloss": 0.6991387945727339,
+      "last_logloss": 0.6348416181269154,
+      "full_delta_vs_anchor": 0.006258937948811383,
+      "last_delta_vs_anchor": -0.003242751173485936
+    },
+    {
+      "source": "anchor_temp_1p08",
+      "target": "Q2",
+      "full_logloss": 0.6960349029712236,
+      "last_logloss": 0.6362058213770391,
+      "full_delta_vs_anchor": 0.003155046347301127,
+      "last_delta_vs_anchor": -0.0018785479233622837
+    },
+    {
+      "source": "anchor",
+      "target": "Q2",
+      "full_logloss": 0.6928798566239225,
+      "last_logloss": 0.6380843693004014,
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0
+    },
+    {
+      "source": "anchor_temp_0p92",
+      "target": "Q2",
+      "full_logloss": 0.6901551603380691,
+      "last_logloss": 0.6403115517300193,
+      "full_delta_vs_anchor": -0.0027246962858533674,
+      "last_delta_vs_anchor": 0.0022271824296179465
+    },
+    {
+      "source": "last20_sm4",
+      "target": "Q2",
+      "full_logloss": 0.7247261988662764,
+      "last_logloss": 0.6418960288268616,
+      "full_delta_vs_anchor": 0.03184634224235394,
+      "last_delta_vs_anchor": 0.0038116595264602315
+    },
+    {
+      "source": "seq_Q3_0p5_1",
+      "target": "Q3",
+      "full_logloss": 0.7436041944391153,
+      "last_logloss": 0.6241855802150217,
+      "full_delta_vs_anchor": 0.08092364831091459,
+      "last_delta_vs_anchor": -0.010506428025731762
+    },
+    {
+      "source": "seq_Q3_0p5_0p8",
+      "target": "Q3",
+      "full_logloss": 0.7339402744323316,
+      "last_logloss": 0.6262770751390209,
+      "full_delta_vs_anchor": 0.07125972830413085,
+      "last_delta_vs_anchor": -0.00841493310173258
+    },
+    {
+      "source": "seq_Q3_0p65_0p8",
+      "target": "Q3",
+      "full_logloss": 0.741060689231531,
+      "last_logloss": 0.6278209720020629,
+      "full_delta_vs_anchor": 0.0783801431033303,
+      "last_delta_vs_anchor": -0.006871036238690564
+    },
+    {
+      "source": "seq_Q3_0p65_1",
+      "target": "Q3",
+      "full_logloss": 0.7543141972376671,
+      "last_logloss": 0.6289306987411998,
+      "full_delta_vs_anchor": 0.09163365110946642,
+      "last_delta_vs_anchor": -0.0057613094995536684
+    },
+    {
+      "source": "seq_Q3_0p65_0p6",
+      "target": "Q3",
+      "full_logloss": 0.7329056070901513,
+      "last_logloss": 0.6301871079550316,
+      "full_delta_vs_anchor": 0.07022506096195058,
+      "last_delta_vs_anchor": -0.0045049002857218134
+    },
+    {
+      "source": "anchor_temp_1p08",
+      "target": "S1",
+      "full_logloss": 0.49344142107310934,
+      "last_logloss": 0.44903952636731703,
+      "full_delta_vs_anchor": 0.0010892678592573368,
+      "last_delta_vs_anchor": -0.0005049396496591418
+    },
+    {
+      "source": "anchor",
+      "target": "S1",
+      "full_logloss": 0.492352153213852,
+      "last_logloss": 0.4495444660169762,
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0
+    },
+    {
+      "source": "model_lgbm_anchor",
+      "target": "S1",
+      "full_logloss": 0.492352153213852,
+      "last_logloss": 0.4495444660169762,
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0
+    },
+    {
+      "source": "anchor_temp_1p15",
+      "target": "S1",
+      "full_logloss": 0.4956257808421819,
+      "last_logloss": 0.4498668033206665,
+      "full_delta_vs_anchor": 0.0032736276283298893,
+      "last_delta_vs_anchor": 0.000322337303690301
+    },
+    {
+      "source": "anchor_temp_0p92",
+      "target": "S1",
+      "full_logloss": 0.4929341762226353,
+      "last_logloss": 0.4517908332682304,
+      "full_delta_vs_anchor": 0.0005820230087832945,
+      "last_delta_vs_anchor": 0.002246367251254211
+    },
+    {
+      "source": "last30_sm4",
+      "target": "S2",
+      "full_logloss": 0.5944047940121744,
+      "last_logloss": 0.6131539622998848,
+      "full_delta_vs_anchor": 0.034284388322466164,
+      "last_delta_vs_anchor": -0.009661360595548563
+    },
+    {
+      "source": "anchor_temp_0p85",
+      "target": "S2",
+      "full_logloss": 0.5633849964587816,
+      "last_logloss": 0.6160366260823963,
+      "full_delta_vs_anchor": 0.003264590769073372,
+      "last_delta_vs_anchor": -0.006778696813037111
+    },
+    {
+      "source": "anchor_temp_0p92",
+      "target": "S2",
+      "full_logloss": 0.5613136080317191,
+      "last_logloss": 0.61865057912446,
+      "full_delta_vs_anchor": 0.001193202342010924,
+      "last_delta_vs_anchor": -0.0041647437709734225
+    },
+    {
+      "source": "anchor",
+      "target": "S2",
+      "full_logloss": 0.5601204056897082,
+      "last_logloss": 0.6228153228954334,
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0
+    },
+    {
+      "source": "ridge10",
+      "target": "S2",
+      "full_logloss": 0.5694927495465533,
+      "last_logloss": 0.624990386266865,
+      "full_delta_vs_anchor": 0.009372343856845045,
+      "last_delta_vs_anchor": 0.002175063371431585
+    },
+    {
+      "source": "anchor_temp_0p85",
+      "target": "S3",
+      "full_logloss": 0.5492826436479417,
+      "last_logloss": 0.597983818826602,
+      "full_delta_vs_anchor": 0.007731269126253548,
+      "last_delta_vs_anchor": -0.002695206163971564
+    },
+    {
+      "source": "anchor_temp_0p92",
+      "target": "S3",
+      "full_logloss": 0.5451417197113754,
+      "last_logloss": 0.5986616538446945,
+      "full_delta_vs_anchor": 0.0035903451896872607,
+      "last_delta_vs_anchor": -0.0020173711458790766
+    },
+    {
+      "source": "anchor",
+      "target": "S3",
+      "full_logloss": 0.5415513745216881,
+      "last_logloss": 0.6006790249905736,
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0
+    },
+    {
+      "source": "mean_sm16",
+      "target": "S3",
+      "full_logloss": 0.5415513745216881,
+      "last_logloss": 0.6006790249905736,
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0
+    },
+    {
+      "source": "mean_sm32",
+      "target": "S3",
+      "full_logloss": 0.5560694664531781,
+      "last_logloss": 0.6025200253068658,
+      "full_delta_vs_anchor": 0.014518091931490007,
+      "last_delta_vs_anchor": 0.0018410003162921962
+    },
+    {
+      "source": "seq_S4_1p5_0p45",
+      "target": "S4",
+      "full_logloss": 0.7170842737836824,
+      "last_logloss": 0.5510263026028728,
+      "full_delta_vs_anchor": 0.08628523617905748,
+      "last_delta_vs_anchor": -0.037628082038117405
+    },
+    {
+      "source": "seq_S4_1p5_0p6",
+      "target": "S4",
+      "full_logloss": 0.722133138651624,
+      "last_logloss": 0.5511646902817746,
+      "full_delta_vs_anchor": 0.09133410104699902,
+      "last_delta_vs_anchor": -0.037489694359215564
+    },
+    {
+      "source": "seq_S4_1p5_0p3",
+      "target": "S4",
+      "full_logloss": 0.7127710830444386,
+      "last_logloss": 0.5513224674311976,
+      "full_delta_vs_anchor": 0.08197204543981362,
+      "last_delta_vs_anchor": -0.037331917209792564
+    },
+    {
+      "source": "seq_S4_1p5_0p15",
+      "target": "S4",
+      "full_logloss": 0.7091517469702474,
+      "last_logloss": 0.5520429040535438,
+      "full_delta_vs_anchor": 0.07835270936562244,
+      "last_delta_vs_anchor": -0.03661148058744634
+    },
+    {
+      "source": "seq_S4_1p5_0p8",
+      "target": "S4",
+      "full_logloss": 0.730094240799874,
+      "last_logloss": 0.5520471899377555,
+      "full_delta_vs_anchor": 0.09929520319524898,
+      "last_delta_vs_anchor": -0.0366071947032347
+    }
+  ]
+}

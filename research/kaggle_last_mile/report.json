@@ -1,0 +1,88 @@
+{
+  "purpose": "Last-mile Kaggle-style algorithms over existing OOF prediction bank.",
+  "top_sources": 18,
+  "full_guard": 0.006,
+  "min_last_gain": 0.0002,
+  "best_candidates": [
+    {
+      "candidate": "oof_sparse_greedy",
+      "full_logloss": 0.5994909456234735,
+      "last_logloss": 0.5824182856274583,
+      "notes": "existing sparse greedy",
+      "full_delta_vs_anchor": 0.0036611945300984994,
+      "last_delta_vs_anchor": -0.01086392117087609
+    },
+    {
+      "candidate": "rankpatch_sparse_greedy_k8_f0p1_d0p35",
+      "full_logloss": 0.5993343689410445,
+      "last_logloss": 0.5828904220824139,
+      "notes": "Q rank patch over sparse_greedy",
+      "full_delta_vs_anchor": 0.0035046178476695333,
+      "last_delta_vs_anchor": -0.010391784715920505
+    },
+    {
+      "candidate": "rankpatch_best_single_k3_f0p1_d0p35",
+      "full_logloss": 0.5970986609316657,
+      "last_logloss": 0.5902317148492113,
+      "notes": "Q rank patch over best_single",
+      "full_delta_vs_anchor": 0.0012689098382907549,
+      "last_delta_vs_anchor": -0.003050491949123102
+    },
+    {
+      "candidate": "oof_sparse_best_single",
+      "full_logloss": 0.5975156362449224,
+      "last_logloss": 0.5903259014092715,
+      "notes": "existing best single guarded",
+      "full_delta_vs_anchor": 0.0016858851515474393,
+      "last_delta_vs_anchor": -0.0029563053890628854
+    },
+    {
+      "candidate": "knn_targetwise_guarded",
+      "full_logloss": 0.5963441662062456,
+      "last_logloss": 0.5927184475463416,
+      "notes": "target-wise guarded blend of KNN priors",
+      "full_delta_vs_anchor": 0.0005144151128706476,
+      "last_delta_vs_anchor": -0.0005637592519928125
+    },
+    {
+      "candidate": "rankpatch_anchor_k3_f0p1_d0p35",
+      "full_logloss": 0.5953596076004287,
+      "last_logloss": 0.5930977979541033,
+      "notes": "Q rank patch over anchor",
+      "full_delta_vs_anchor": -0.00047014349294627333,
+      "last_delta_vs_anchor": -0.0001844088442310987
+    },
+    {
+      "candidate": "anchor",
+      "full_logloss": 0.595829751093375,
+      "last_logloss": 0.5932822067983344,
+      "notes": "existing anchor",
+      "full_delta_vs_anchor": 0.0,
+      "last_delta_vs_anchor": 0.0
+    },
+    {
+      "candidate": "meta_extratrees",
+      "full_logloss": 0.5935421649974318,
+      "last_logloss": 0.6050169459736384,
+      "notes": "extratrees meta model over bank columns",
+      "full_delta_vs_anchor": -0.0022875860959431504,
+      "last_delta_vs_anchor": 0.011734739175303988
+    },
+    {
+      "candidate": "meta_logreg_c0p3",
+      "full_logloss": 0.6021698679853283,
+      "last_logloss": 0.6051171661399499,
+      "notes": "logistic meta stacker C=0.3",
+      "full_delta_vs_anchor": 0.006340116891953351,
+      "last_delta_vs_anchor": 0.011834959341615492
+    },
+    {
+      "candidate": "meta_logreg_c0p1",
+      "full_logloss": 0.6021740751229036,
+      "last_logloss": 0.6056713917652876,
+      "notes": "logistic meta stacker C=0.1",
+      "full_delta_vs_anchor": 0.0063443240295285586,
+      "last_delta_vs_anchor": 0.012389184966953182
+    }
+  ]
+}

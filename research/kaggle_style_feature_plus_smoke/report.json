@@ -1,0 +1,91 @@
+{
+  "purpose": "Kaggle-style anchor + subject-hole CV + LGBM/XGB/CatBoost blend search.",
+  "models": [
+    "lgbm"
+  ],
+  "seeds": [
+    42
+  ],
+  "fold_limit": 1,
+  "top_k": 100,
+  "subject_hole_chunks": 10,
+  "pair_features": true,
+  "pair_feature_count": 440,
+  "target_history_features": true,
+  "full_guard": 0.004,
+  "min_last_gain": 0.0,
+  "q_balance_rates": [],
+  "anchor_full": 0.595829751093375,
+  "anchor_last": 0.5932822067983344,
+  "best_candidates": [
+    {
+      "candidate": "anchor",
+      "weights": "{\"anchor\": 1.0}",
+      "full_logloss": 0.595829751093375,
+      "last_logloss": 0.5932822067983344
+    },
+    {
+      "candidate": "targetwise_guarded",
+      "weights": "targetwise",
+      "full_logloss": 0.595829751093375,
+      "last_logloss": 0.5932822067983344
+    },
+    {
+      "candidate": "anchor0.9_lgbm0.1",
+      "weights": "{\"anchor\": 0.9, \"lgbm\": 0.09999999999999998}",
+      "full_logloss": 0.6047214505837746,
+      "last_logloss": 0.6096544339856826
+    },
+    {
+      "candidate": "anchor0.8_lgbm0.2",
+      "weights": "{\"anchor\": 0.8, \"lgbm\": 0.19999999999999996}",
+      "full_logloss": 0.626607560169634,
+      "last_logloss": 0.6423421601725074
+    },
+    {
+      "candidate": "anchor0.7_lgbm0.3",
+      "weights": "{\"anchor\": 0.7, \"lgbm\": 0.30000000000000004}",
+      "full_logloss": 0.6606227706860164,
+      "last_logloss": 0.6903636271685504
+    },
+    {
+      "candidate": "anchor0.6_lgbm0.4",
+      "weights": "{\"anchor\": 0.6, \"lgbm\": 0.4}",
+      "full_logloss": 0.7079192481239687,
+      "last_logloss": 0.7552864624873685
+    },
+    {
+      "candidate": "anchor0.5_lgbm0.5",
+      "weights": "{\"anchor\": 0.5, \"lgbm\": 0.5}",
+      "full_logloss": 0.7714144601145819,
+      "last_logloss": 0.8409615865619956
+    },
+    {
+      "candidate": "anchor0.4_lgbm0.6",
+      "weights": "{\"anchor\": 0.4, \"lgbm\": 0.6}",
+      "full_logloss": 0.8567239124156032,
+      "last_logloss": 0.9547446795662476
+    },
+    {
+      "candidate": "anchor0.3_lgbm0.7",
+      "weights": "{\"anchor\": 0.3, \"lgbm\": 0.7}",
+      "full_logloss": 0.9749393026457455,
+      "last_logloss": 1.111119312123111
+    },
+    {
+      "candidate": "anchor0.2_lgbm0.8",
+      "weights": "{\"anchor\": 0.2, \"lgbm\": 0.8}",
+      "full_logloss": 1.1514822227538344,
+      "last_logloss": 1.3432381325077951
+    }
+  ],
+  "saved_submissions": [
+    "submissions/kaggle_style_feature_plus_smoke/01_anchor_last0.593282_full0.595830.csv",
+    "submissions/kaggle_style_feature_plus_smoke/02_targetwise_guarded_last0.593282_full0.595830.csv",
+    "submissions/kaggle_style_feature_plus_smoke/03_anchor0p9_lgbm0p1_last0.609654_full0.604721.csv",
+    "submissions/kaggle_style_feature_plus_smoke/04_anchor0p8_lgbm0p2_last0.642342_full0.626608.csv",
+    "submissions/kaggle_style_feature_plus_smoke/05_anchor0p7_lgbm0p3_last0.690364_full0.660623.csv",
+    "submissions/kaggle_style_feature_plus_smoke/06_anchor0p6_lgbm0p4_last0.755286_full0.707919.csv"
+  ],
+  "elapsed_sec": 112.36
+}

@@ -1,0 +1,72 @@
+{
+  "purpose": "Fast public-oriented temporal source search using last-block as LB proxy.",
+  "scores": [
+    {
+      "candidate": "01_lastbest_targetwise.csv",
+      "full_logloss": 0.6010670443947028,
+      "last_logloss": 0.591330771289167
+    },
+    {
+      "candidate": "02_guarded_targetwise.csv",
+      "full_logloss": 0.6009422107548961,
+      "last_logloss": 0.5913574928682189
+    },
+    {
+      "candidate": "03_baseline_recipe_rebuilt.csv",
+      "full_logloss": 0.595829751093375,
+      "last_logloss": 0.5932822067983344
+    },
+    {
+      "candidate": "04_blend_lastbest25_baseline75.csv",
+      "full_logloss": 0.59606745600028,
+      "last_logloss": 0.5925870480106114
+    },
+    {
+      "candidate": "04_blend_lastbest50_baseline50.csv",
+      "full_logloss": 0.5970472714800581,
+      "last_logloss": 0.5920344616799209
+    },
+    {
+      "candidate": "04_blend_lastbest75_baseline25.csv",
+      "full_logloss": 0.5986891889408426,
+      "last_logloss": 0.5916172944260857
+    }
+  ],
+  "outputs": [
+    {
+      "file": "submissions/fast_temporal_stack/01_lastbest_targetwise.csv",
+      "full_logloss": 0.6010670443947028,
+      "last_logloss": 0.591330771289167
+    },
+    {
+      "file": "submissions/fast_temporal_stack/02_guarded_targetwise.csv",
+      "full_logloss": 0.6009422107548961,
+      "last_logloss": 0.5913574928682189
+    },
+    {
+      "file": "submissions/fast_temporal_stack/03_baseline_recipe_rebuilt.csv",
+      "full_logloss": 0.595829751093375,
+      "last_logloss": 0.5932822067983344
+    },
+    {
+      "file": "submissions/fast_temporal_stack/04_blend_lastbest25_baseline75.csv",
+      "full_logloss": 0.59606745600028,
+      "last_logloss": 0.5925870480106114,
+      "lastbest_weight": 0.25
+    },
+    {
+      "file": "submissions/fast_temporal_stack/04_blend_lastbest50_baseline50.csv",
+      "full_logloss": 0.5970472714800581,
+      "last_logloss": 0.5920344616799209,
+      "lastbest_weight": 0.5
+    },
+    {
+      "file": "submissions/fast_temporal_stack/04_blend_lastbest75_baseline25.csv",
+      "full_logloss": 0.5986891889408426,
+      "last_logloss": 0.5916172944260857,
+      "lastbest_weight": 0.75
+    }
+  ],
+  "target_search": "research/fast_temporal_stack/target_source_search.csv",
+  "candidate_scores": "research/fast_temporal_stack/candidate_scores.csv"
+}

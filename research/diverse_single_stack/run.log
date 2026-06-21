@@ -1,0 +1,364 @@
+[21:55:46] Loading dataset and anchor bank
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+[21:55:46] Training diverse single model: logreg_enet
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:1135: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', and C=np.inf instead of penalty=None.
+  warnings.warn(
+[21:55:55] logreg_enet raw full=0.778217 last=0.759092
+[21:55:55] logreg_enet_anchblend full=0.595947 last=0.592072
+[21:55:55] Training diverse single model: hist_gb
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/joblib/externals/loky/backend/context.py:131: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/joblib/externals/loky/backend/context.py", line 249, in _count_physical_cores
+    cpu_count_physical = _count_physical_cores_darwin()
+  File "/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/joblib/externals/loky/backend/context.py", line 318, in _count_physical_cores_darwin
+    return int(cpu_info)
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+[21:56:07] hist_gb raw full=0.630665 last=0.636647
+[21:56:07] hist_gb_anchblend full=0.595830 last=0.593282
+[21:56:07] Training diverse single model: extra_trees
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+[21:56:18] extra_trees raw full=0.615436 last=0.619195
+[21:56:18] extra_trees_anchblend full=0.595506 last=0.593061
+[21:56:18] Training diverse single model: feature_knn
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+[21:56:26] feature_knn raw full=0.699976 last=0.649399
+[21:56:26] feature_knn_anchblend full=0.596531 last=0.591488
+[21:56:26] Rebuilding public-confirmed KNN guarded source
+[21:56:39] Fold-safe stacking over diverse single models
+[21:56:39] Submission-level blends with KNN guarded
+
+=== Diverse single/stack/blend candidates by rank_score ===
+                                    candidate  rank_score  full_logloss  last_logloss  tail3_worst  fold_std                                         notes
+                        feature_knn_anchblend    0.598818      0.596531      0.591488     0.619911  0.012337              target-wise guarded anchor blend
+                        logreg_enet_anchblend    0.599166      0.595947      0.592072     0.621589  0.013589              target-wise guarded anchor blend
+subblend_logit_feature_knn_anchblend_50_50knn    0.599350      0.596262      0.591857     0.621444  0.013127 submission-level logit blend with KNN guarded
+subblend_arith_feature_knn_anchblend_50_50knn    0.599367      0.596260      0.591877     0.621435  0.013123 submission-level arith blend with KNN guarded
+                        extra_trees_anchblend    0.599528      0.595506      0.593061     0.620030  0.012886              target-wise guarded anchor blend
+subblend_logit_logreg_enet_anchblend_50_50knn    0.599616      0.596000      0.592204     0.622301  0.013770 submission-level logit blend with KNN guarded
+subblend_arith_logreg_enet_anchblend_50_50knn    0.599625      0.596004      0.592218     0.622273  0.013757 submission-level arith blend with KNN guarded
+subblend_logit_extra_trees_anchblend_50_50knn    0.599721      0.595849      0.592763     0.621577  0.013409 submission-level logit blend with KNN guarded
+subblend_logit_feature_knn_anchblend_35_65knn    0.599733      0.596267      0.592064     0.621980  0.013371 submission-level logit blend with KNN guarded
+subblend_arith_extra_trees_anchblend_50_50knn    0.599736      0.595859      0.592762     0.621587  0.013409 submission-level arith blend with KNN guarded
+subblend_arith_feature_knn_anchblend_35_65knn    0.599747      0.596266      0.592082     0.621972  0.013368 submission-level arith blend with KNN guarded
+subblend_logit_logreg_enet_anchblend_35_65knn    0.599938      0.596090      0.592319     0.622584  0.013824 submission-level logit blend with KNN guarded
+subblend_arith_logreg_enet_anchblend_35_65knn    0.599946      0.596093      0.592332     0.622559  0.013813 submission-level arith blend with KNN guarded
+subblend_logit_extra_trees_anchblend_35_65knn    0.600047      0.595999      0.592724     0.622090  0.013570 submission-level logit blend with KNN guarded
+subblend_arith_extra_trees_anchblend_35_65knn    0.600060      0.596007      0.592723     0.622098  0.013570 submission-level arith blend with KNN guarded
+subblend_logit_feature_knn_anchblend_20_80knn    0.600218      0.596312      0.592317     0.622552  0.013619 submission-level logit blend with KNN guarded
+subblend_arith_feature_knn_anchblend_20_80knn    0.600228      0.596311      0.592329     0.622546  0.013616 submission-level arith blend with KNN guarded
+subblend_logit_logreg_enet_anchblend_20_80knn    0.600347      0.596215      0.592468     0.622900  0.013879 submission-level logit blend with KNN guarded
+subblend_arith_logreg_enet_anchblend_20_80knn    0.600352      0.596217      0.592478     0.622881  0.013871 submission-level arith blend with KNN guarded
+subblend_logit_extra_trees_anchblend_20_80knn    0.600429      0.596171      0.592708     0.622624  0.013733 submission-level logit blend with KNN guarded
+subblend_arith_extra_trees_anchblend_20_80knn    0.600438      0.596177      0.592707     0.622630  0.013733 submission-level arith blend with KNN guarded
+                                       anchor    0.600532      0.595830      0.593282     0.622422  0.013785                               baseline anchor
+                            hist_gb_anchblend    0.600532      0.595830      0.593282     0.622422  0.013785              target-wise guarded anchor blend
+    subblend_logit_hist_gb_anchblend_50_50knn    0.600647      0.596085      0.592938     0.622852  0.013864 submission-level logit blend with KNN guarded
+    subblend_arith_hist_gb_anchblend_50_50knn    0.600656      0.596091      0.592937     0.622858  0.013864 submission-level arith blend with KNN guarded
+    subblend_logit_hist_gb_anchblend_35_65knn    0.600733      0.596180      0.592859     0.622999  0.013890 submission-level logit blend with KNN guarded
+    subblend_arith_hist_gb_anchblend_35_65knn    0.600741      0.596185      0.592860     0.623004  0.013890 submission-level arith blend with KNN guarded
+    subblend_logit_hist_gb_anchblend_20_80knn    0.600842      0.596283      0.592793     0.623153  0.013917 submission-level logit blend with KNN guarded
+    subblend_arith_hist_gb_anchblend_20_80knn    0.600849      0.596287      0.592794     0.623157  0.013917 submission-level arith blend with KNN guarded
+                       knn_targetwise_guarded    0.601025      0.596434      0.592723     0.623371  0.013954           public-confirmed KNN guarded family
+
+=== Raw single model diagnostics ===
+  candidate  full_logloss  last_logloss  rank_score
+extra_trees      0.615436      0.619195    0.650523
+    hist_gb      0.630665      0.636647    0.691842
+feature_knn      0.699976      0.649399    0.834139
+logreg_enet      0.778217      0.759092    1.058671
+
+No public submission is automatically recommended; compare against public-confirmed KNN guarded first.

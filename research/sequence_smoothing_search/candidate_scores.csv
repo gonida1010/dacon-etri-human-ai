@@ -1,0 +1,3 @@
+candidate,params,full_logloss,last_logloss,full_delta_vs_anchor,last_delta_vs_anchor
+targetwise_lastbest,"{""Q3"": [0.5, 1.0], ""S4"": [1.5, 0.45]}",0.6197167345919423,0.5864058482177844,0.023886983498567327,-0.006876358580550024
+anchor,{},0.595829751093375,0.5932822067983344,,

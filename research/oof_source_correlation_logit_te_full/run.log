@@ -1,0 +1,92 @@
+[23:37:13] Loading labels/folds
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+[23:37:13] Loading OOF sources
+
+=== Source scores head ===
+target                                                                 source  full_logloss  last_logloss  pred_std  pred_mean
+    Q1     residual_single_model_opt_ridge_logit_te_full__ridge_residual_full      0.587183      0.618971  0.216474   0.496537
+    Q1    residual_submission_blend_ridge_logit_te_full__ridge_knn_blend_full      0.587183      0.618971  0.216474   0.496537
+    Q1      residual_single_model_opt_ridge_logit_newton__ridge_residual_full      0.587968      0.606533  0.218307   0.495391
+    Q1 residual_single_model_opt_ridge_logit_newton__ridge_residual_composite      0.589889      0.598480  0.224434   0.496857
+    Q1                                                                 anchor      0.590425      0.618506  0.212696   0.495037
+    Q1                                                      model_lgbm_anchor      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_0p5_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1                                                         seq_Q2_0p5_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_0p5_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1                                                         seq_Q2_0p5_0p6      0.590425      0.618506  0.212696   0.495037
+    Q1                                                         seq_Q2_0p5_0p8      0.590425      0.618506  0.212696   0.495037
+    Q1                                                           seq_Q2_0p5_1      0.590425      0.618506  0.212696   0.495037
+    Q1                                                       seq_Q2_0p65_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_0p65_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1                                                       seq_Q2_0p65_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_0p65_0p6      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_0p65_0p8      0.590425      0.618506  0.212696   0.495037
+    Q1                                                          seq_Q2_0p65_1      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_0p8_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1                                                         seq_Q2_0p8_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_0p8_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1                                                         seq_Q2_0p8_0p6      0.590425      0.618506  0.212696   0.495037
+    Q1                                                         seq_Q2_0p8_0p8      0.590425      0.618506  0.212696   0.495037
+    Q1                                                           seq_Q2_0p8_1      0.590425      0.618506  0.212696   0.495037
+    Q1                                                          seq_Q2_1_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1                                                           seq_Q2_1_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1                                                          seq_Q2_1_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1                                                           seq_Q2_1_0p6      0.590425      0.618506  0.212696   0.495037
+    Q1                                                           seq_Q2_1_0p8      0.590425      0.618506  0.212696   0.495037
+    Q1                                                             seq_Q2_1_1      0.590425      0.618506  0.212696   0.495037
+    Q1                                                       seq_Q2_1p25_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_1p25_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1                                                       seq_Q2_1p25_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_1p25_0p6      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_1p25_0p8      0.590425      0.618506  0.212696   0.495037
+    Q1                                                          seq_Q2_1p25_1      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_1p5_0p15      0.590425      0.618506  0.212696   0.495037
+    Q1                                                         seq_Q2_1p5_0p3      0.590425      0.618506  0.212696   0.495037
+    Q1                                                        seq_Q2_1p5_0p45      0.590425      0.618506  0.212696   0.495037
+    Q1                                                         seq_Q2_1p5_0p6      0.590425      0.618506  0.212696   0.495037
+
+=== Highest source correlations ===
+target source_a          source_b  corr  abs_corr
+    Q1   anchor model_lgbm_anchor   1.0       1.0
+    Q1   anchor   seq_Q2_0p5_0p15   1.0       1.0
+    Q1   anchor    seq_Q2_0p5_0p3   1.0       1.0
+    Q1   anchor   seq_Q2_0p5_0p45   1.0       1.0
+    Q1   anchor    seq_Q2_0p5_0p6   1.0       1.0
+    Q1   anchor    seq_Q2_0p5_0p8   1.0       1.0
+    Q1   anchor      seq_Q2_0p5_1   1.0       1.0
+    Q1   anchor  seq_Q2_0p65_0p15   1.0       1.0
+    Q1   anchor   seq_Q2_0p65_0p3   1.0       1.0
+    Q1   anchor  seq_Q2_0p65_0p45   1.0       1.0
+    Q1   anchor   seq_Q2_0p65_0p6   1.0       1.0
+    Q1   anchor   seq_Q2_0p65_0p8   1.0       1.0
+    Q1   anchor     seq_Q2_0p65_1   1.0       1.0
+    Q1   anchor   seq_Q2_0p8_0p15   1.0       1.0
+    Q1   anchor    seq_Q2_0p8_0p3   1.0       1.0
+    Q1   anchor   seq_Q2_0p8_0p45   1.0       1.0
+    Q1   anchor    seq_Q2_0p8_0p6   1.0       1.0
+    Q1   anchor    seq_Q2_0p8_0p8   1.0       1.0
+    Q1   anchor      seq_Q2_0p8_1   1.0       1.0
+    Q1   anchor     seq_Q2_1_0p15   1.0       1.0
+    Q1   anchor      seq_Q2_1_0p3   1.0       1.0
+    Q1   anchor     seq_Q2_1_0p45   1.0       1.0
+    Q1   anchor      seq_Q2_1_0p6   1.0       1.0
+    Q1   anchor      seq_Q2_1_0p8   1.0       1.0
+    Q1   anchor        seq_Q2_1_1   1.0       1.0
+    Q1   anchor  seq_Q2_1p25_0p15   1.0       1.0
+    Q1   anchor   seq_Q2_1p25_0p3   1.0       1.0
+    Q1   anchor  seq_Q2_1p25_0p45   1.0       1.0
+    Q1   anchor   seq_Q2_1p25_0p6   1.0       1.0
+    Q1   anchor   seq_Q2_1p25_0p8   1.0       1.0
+    Q1   anchor     seq_Q2_1p25_1   1.0       1.0
+    Q1   anchor   seq_Q2_1p5_0p15   1.0       1.0
+    Q1   anchor    seq_Q2_1p5_0p3   1.0       1.0
+    Q1   anchor   seq_Q2_1p5_0p45   1.0       1.0
+    Q1   anchor    seq_Q2_1p5_0p6   1.0       1.0
+    Q1   anchor    seq_Q2_1p5_0p8   1.0       1.0
+    Q1   anchor      seq_Q2_1p5_1   1.0       1.0
+    Q1   anchor   seq_Q3_0p5_0p15   1.0       1.0
+    Q1   anchor    seq_Q3_0p5_0p3   1.0       1.0
+    Q1   anchor   seq_Q3_0p5_0p45   1.0       1.0

@@ -1,0 +1,93 @@
+{
+  "purpose": "Kaggle-style anchor + subject-hole CV + LGBM/XGB/CatBoost blend search.",
+  "models": [
+    "lgbm",
+    "xgb",
+    "cat"
+  ],
+  "seeds": [
+    42,
+    7,
+    2024,
+    1234,
+    9999
+  ],
+  "fold_limit": 5,
+  "top_k": 260,
+  "subject_hole_chunks": 10,
+  "full_guard": 0.004,
+  "min_last_gain": 5e-05,
+  "anchor_full": 0.595829751093375,
+  "anchor_last": 0.5932822067983344,
+  "best_candidates": [
+    {
+      "candidate": "targetwise_guarded",
+      "weights": "targetwise",
+      "full_logloss": 0.5927334000341568,
+      "last_logloss": 0.5894932191812458
+    },
+    {
+      "candidate": "anchor0.8_lgbm0.2",
+      "weights": "{\"anchor\": 0.8, \"lgbm\": 0.19999999999999996}",
+      "full_logloss": 0.5926769682725289,
+      "last_logloss": 0.5920917925687637
+    },
+    {
+      "candidate": "anchor0.7_lgbm0.3",
+      "weights": "{\"anchor\": 0.7, \"lgbm\": 0.30000000000000004}",
+      "full_logloss": 0.5918423028412897,
+      "last_logloss": 0.592148317038278
+    },
+    {
+      "candidate": "anchor0.9_lgbm0.1",
+      "weights": "{\"anchor\": 0.9, \"lgbm\": 0.09999999999999998}",
+      "full_logloss": 0.5939971649514415,
+      "last_logloss": 0.5924613348988099
+    },
+    {
+      "candidate": "anchor0.8_xgb0.2",
+      "weights": "{\"anchor\": 0.8, \"xgb\": 0.19999999999999996}",
+      "full_logloss": 0.5929679509490696,
+      "last_logloss": 0.5925878199506748
+    },
+    {
+      "candidate": "anchor0.6_lgbm0.4",
+      "weights": "{\"anchor\": 0.6, \"lgbm\": 0.4}",
+      "full_logloss": 0.5914760048937938,
+      "last_logloss": 0.5926138839820977
+    },
+    {
+      "candidate": "anchor0.9_xgb0.1",
+      "weights": "{\"anchor\": 0.9, \"xgb\": 0.09999999999999998}",
+      "full_logloss": 0.5941585627029092,
+      "last_logloss": 0.5927314835838126
+    },
+    {
+      "candidate": "anchor0.7_xgb0.3",
+      "weights": "{\"anchor\": 0.7, \"xgb\": 0.30000000000000004}",
+      "full_logloss": 0.5922324887415708,
+      "last_logloss": 0.5928303727367192
+    },
+    {
+      "candidate": "anchor",
+      "weights": "{\"anchor\": 1.0}",
+      "full_logloss": 0.595829751093375,
+      "last_logloss": 0.5932822067983344
+    },
+    {
+      "candidate": "anchor0.9_cat0.1",
+      "weights": "{\"anchor\": 0.9, \"cat\": 0.09999999999999998}",
+      "full_logloss": 0.5939011933641831,
+      "last_logloss": 0.5933030823546179
+    }
+  ],
+  "saved_submissions": [
+    "submissions/kaggle_style_full_5seed_guarded/01_targetwise_guarded_last0.589493_full0.592733.csv",
+    "submissions/kaggle_style_full_5seed_guarded/02_anchor0p8_lgbm0p2_last0.592092_full0.592677.csv",
+    "submissions/kaggle_style_full_5seed_guarded/03_anchor0p7_lgbm0p3_last0.592148_full0.591842.csv",
+    "submissions/kaggle_style_full_5seed_guarded/04_anchor0p9_lgbm0p1_last0.592461_full0.593997.csv",
+    "submissions/kaggle_style_full_5seed_guarded/05_anchor0p8_xgb0p2_last0.592588_full0.592968.csv",
+    "submissions/kaggle_style_full_5seed_guarded/06_anchor0p6_lgbm0p4_last0.592614_full0.591476.csv"
+  ],
+  "elapsed_sec": 388.67
+}

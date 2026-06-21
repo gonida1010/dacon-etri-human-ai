@@ -1,0 +1,19 @@
+[23:46:08] Loading dataset and residual sources
+[23:46:08] Rebuilding KNN guarded source
+[23:46:20] Searching target-wise source blends
+
+=== Ridge residual + KNN blend candidates ===
+                candidate  rank_score  full_logloss  last_logloss  tail3_worst  fold_std
+     ridge_knn_blend_last    0.586127      0.594384      0.581261     0.624558  0.016395
+ridge_knn_blend_composite    0.586236      0.594314      0.581319     0.624741  0.016412
+     ridge_knn_blend_full    0.593041      0.587732      0.588717     0.616208  0.015432
+
+=== Composite choices ===
+target                                                          source  full_logloss  last_logloss  rank_score
+    Q1                                        ridge_residual_composite      0.589889      0.598480    0.599026
+    Q2                 arith:anchor:0.20+ridge_residual_composite:0.80      0.693512      0.636644    0.654586
+    Q3                 logit:anchor:0.20+ridge_residual_composite:0.80      0.663165      0.633826    0.644026
+    S1                                        ridge_residual_composite      0.492030      0.443303    0.449668
+    S2                                        ridge_residual_composite      0.556684      0.584161    0.589030
+    S3 logit:ridge_residual_composite:0.80+knn_targetwise_guarded:0.20      0.540445      0.593339    0.600168
+    S4                                        ridge_residual_composite      0.624471      0.579477    0.586590
