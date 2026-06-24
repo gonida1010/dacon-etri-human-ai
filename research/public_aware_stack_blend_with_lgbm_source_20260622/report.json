@@ -1,0 +1,36 @@
+{
+  "submitted": "submissions/constrained_target_blend_logit_newton/last_guard_0p008_last0.588383_full0.587743.csv",
+  "submitted_public": 0.5920118473,
+  "best": {
+    "candidate": "target_select_public_balanced",
+    "full_logloss": 0.593490188224851,
+    "last_logloss": 0.5714397958877379,
+    "full_delta_vs_anchor": -0.002339562868523992,
+    "last_delta_vs_anchor": -0.021842410910596577,
+    "fold_std": 0.016709531107988576,
+    "tail3_worst": 0.6209594784537444,
+    "test_abs_delta_mean_vs_anchor": 0.007379484080403035,
+    "public_direction_risk": 0.0007129225406162355,
+    "bad_submission_alignment": 0.00010749433795296396,
+    "selector_score": 0.5766096179440521,
+    "fold0_logloss": 0.5968287781663706,
+    "fold1_logloss": 0.5817092895032917,
+    "fold2_logloss": 0.6209594784537444,
+    "fold3_logloss": 0.5958185568812197,
+    "fold4_logloss": 0.5714397958877379
+  },
+  "saved": [
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_balanced_last0.571440_full0.593490.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_aggressive_last0.571440_full0.593490.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_tight_last0.572477_full0.592636.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_balanced_logit_anchorblend_w0p9_last0.572774_full0.593231.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_aggressive_logit_anchorblend_w0p9_last0.572774_full0.593231.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_tight_logit_anchorblend_w0p9_last0.573721_full0.592477.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_balanced_logit_anchorblend_w0p8_last0.574221_full0.593062.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_aggressive_logit_anchorblend_w0p8_last0.574221_full0.593062.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_tight_logit_anchorblend_w0p8_last0.575074_full0.592406.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_balanced_logit_anchorblend_w0p65_last0.576603_full0.592983.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_aggressive_logit_anchorblend_w0p65_last0.576603_full0.592983.csv",
+    "submissions/public_aware_stack_blend_with_lgbm_source_20260622/target_select_public_tight_logit_anchorblend_w0p65_last0.577310_full0.592467.csv"
+  ]
+}

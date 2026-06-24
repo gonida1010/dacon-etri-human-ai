@@ -1,0 +1,47 @@
+{
+  "base_dirs": [
+    "research/public_aware_stack_blend_20260622",
+    "research/public_aware_stack_blend_with_lgbm_source_20260622"
+  ],
+  "lgbm_dir": "research/target_weighted_single_model_lgbm_20260622",
+  "submitted": "submissions/constrained_target_blend_logit_newton/last_guard_0p008_last0.588383_full0.587743.csv",
+  "best": {
+    "candidate": "base__public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced",
+    "full_logloss": 0.593490188224851,
+    "last_logloss": 0.5714397958877379,
+    "full_delta_vs_anchor": -0.002339562868523992,
+    "last_delta_vs_anchor": -0.021842410910596577,
+    "fold_std": 0.016709531107988576,
+    "tail3_mean": 0.5960726104075672,
+    "tail3_worst": 0.6209594784537444,
+    "test_abs_delta_mean_vs_anchor": 0.007379484080403035,
+    "public_direction_risk": 0.0007129225406162355,
+    "bad_submission_alignment": 0.00010749433795296396,
+    "selector_score": 0.5767296521936055,
+    "fold0_logloss": 0.5968287781663706,
+    "fold1_logloss": 0.5817092895032917,
+    "fold2_logloss": 0.6209594784537444,
+    "fold3_logloss": 0.5958185568812197,
+    "fold4_logloss": 0.5714397958877379,
+    "base": "public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced",
+    "actions": "[]"
+  },
+  "saved": [
+    "submissions/guarded_lgbm_integration_20260623/base__public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced_last0.571440_full0.593490.csv",
+    "submissions/guarded_lgbm_integration_20260623/base__public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_aggressive_last0.571440_full0.593490.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced__tight_Q2_only_0_last0.571076_full0.593129.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced__balanced_Q2_only_0_last0.571076_full0.593129.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced__q2_force_Q2_only_0_last0.571076_full0.593129.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_aggressive__tight_Q2_only_0_last0.571076_full0.593129.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_aggressive__balanced_Q2_only_0_last0.571076_full0.593129.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_aggressive__q2_force_Q2_only_0_last0.571076_full0.593129.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced__tight_Q2_only_4_last0.571089_full0.593102.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced__balanced_Q2_only_4_last0.571089_full0.593102.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced__q2_force_Q2_only_4_last0.571089_full0.593102.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_aggressive__tight_Q2_only_4_last0.571089_full0.593102.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_aggressive__balanced_Q2_only_4_last0.571089_full0.593102.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_aggressive__q2_force_Q2_only_4_last0.571089_full0.593102.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced__tight_Q2_only_1_last0.570869_full0.592919.csv",
+    "submissions/guarded_lgbm_integration_20260623/public_aware_stack_blend_with_lgbm_source_20260622_target_select_public_balanced__tight_Q2_only_2_last0.570869_full0.592919.csv"
+  ]
+}

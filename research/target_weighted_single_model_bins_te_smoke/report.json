@@ -1,0 +1,86 @@
+{
+  "purpose": "Create new optimized single-model OOF/test sources before stacking/blending.",
+  "models": [
+    "lgbm"
+  ],
+  "seeds": [
+    42
+  ],
+  "fold_limit": 1,
+  "param_profiles": [
+    "smooth"
+  ],
+  "weight_profiles": [
+    "target_auto"
+  ],
+  "target_history_features": true,
+  "feature_bank": "bins_te",
+  "te_top_n": 2,
+  "te_bins": [
+    4
+  ],
+  "te_smooth": 12.0,
+  "pair_feature_count": 5,
+  "early_stopping_rounds": 5,
+  "anchor": {
+    "full_logloss": 0.595829751093375,
+    "last_logloss": 0.5932822067983344
+  },
+  "candidate_scores": [
+    {
+      "candidate": "target_weighted_single_composite",
+      "full_logloss": 0.5954331441986335,
+      "last_logloss": 0.5932822067983344,
+      "full_delta_vs_anchor": -0.00039660689474152466,
+      "last_delta_vs_anchor": 0.0,
+      "fold_std": 0.01389553559763899,
+      "tail3_mean": 0.6017066660886523,
+      "tail3_worst": 0.6224215044455317,
+      "rank_score": 0.5970108777025728,
+      "fold0_logloss": 0.5907867042927132,
+      "fold1_logloss": 0.5822111636648557,
+      "fold2_logloss": 0.6224215044455317,
+      "fold3_logloss": 0.5894162870220908,
+      "fold4_logloss": 0.5932822067983344
+    },
+    {
+      "candidate": "target_weighted_single_last",
+      "full_logloss": 0.5954331441986335,
+      "last_logloss": 0.5932822067983344,
+      "full_delta_vs_anchor": -0.00039660689474152466,
+      "last_delta_vs_anchor": 0.0,
+      "fold_std": 0.01389553559763899,
+      "tail3_mean": 0.6017066660886523,
+      "tail3_worst": 0.6224215044455317,
+      "rank_score": 0.5970108777025728,
+      "fold0_logloss": 0.5907867042927132,
+      "fold1_logloss": 0.5822111636648557,
+      "fold2_logloss": 0.6224215044455317,
+      "fold3_logloss": 0.5894162870220908,
+      "fold4_logloss": 0.5932822067983344
+    },
+    {
+      "candidate": "target_weighted_single_full",
+      "full_logloss": 0.5954331441986335,
+      "last_logloss": 0.5932822067983344,
+      "full_delta_vs_anchor": -0.00039660689474152466,
+      "last_delta_vs_anchor": 0.0,
+      "fold_std": 0.01389553559763899,
+      "tail3_mean": 0.6017066660886523,
+      "tail3_worst": 0.6224215044455317,
+      "rank_score": 0.5970108777025728,
+      "fold0_logloss": 0.5907867042927132,
+      "fold1_logloss": 0.5822111636648557,
+      "fold2_logloss": 0.6224215044455317,
+      "fold3_logloss": 0.5894162870220908,
+      "fold4_logloss": 0.5932822067983344
+    }
+  ],
+  "raw_sources_saved": 7,
+  "notes": [
+    "LGBM/XGB/Cat use validation logloss early stopping and best-iteration prediction.",
+    "Fold-safe TE/bin views are fit inside each validation fold only.",
+    "target_auto resolves to different recency/class/anchor-error weights by target.",
+    "Output OOF/test files are meant to feed public_aware_stack_blend/public_score_pseudo_blend later."
+  ]
+}

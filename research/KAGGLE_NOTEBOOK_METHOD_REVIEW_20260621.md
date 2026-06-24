@@ -158,9 +158,26 @@ Implemented in `src/residual_submission_blend.py`:
 - target-wise blend candidates now save `*_test_pred.csv`
 - these files can be passed into `src.oof_source_correlation`
 
+Implemented in `src/target_weighted_single_model.py`:
+
+- new single-model OOF/test source generator before stacking/blending
+- LGBM/XGB/Cat support with shared target-wise weighting interface
+- target-wise sample weights:
+  - subject balance
+  - class balance
+  - recency emphasis
+  - late-fold emphasis
+  - anchor-error emphasis
+- fold-safe numeric bin views and smoothed target encoding
+- optional target-history features from temporal priors
+- validation-logloss early stopping with best-iteration prediction
+- target-wise shrink search back to temporal anchor
+- OOF/test artifacts saved in the `*_oof.csv` and `*_test_pred.csv` convention
+
 ## 5. Notes for Future Runs
 
 - Do not use Kaggle notebook random `StratifiedKFold` for Dacon final scoring. Keep `subject_time_blocked_folds`.
 - Do not use balanced-accuracy bias tuning directly. Dacon optimizes binary logloss.
 - Do not let target encoding use validation labels.
 - Do not submit raw deep tabular/large CatBoost outputs before OOF full/last stability is proven.
+- First run the optimized LGBM source bank, then feed its OOF/test files into the existing public-aware stack/blend scripts.

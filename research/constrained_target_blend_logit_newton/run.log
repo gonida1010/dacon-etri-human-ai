@@ -1,0 +1,35 @@
+[16:25:59] Loading dataset and residual/KNN sources
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:242: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+[16:26:12] Building target candidate table
+
+=== Constrained target blend candidates ===
+                  candidate         selector_mode  selector_last_guard  selector_alpha  rank_score  full_logloss  last_logloss  tail3_worst  fold_std
+                       last                  last                0.000            0.00    0.585334      0.595795      0.580503     0.625660  0.017053
+                  composite             composite                0.000            0.00    0.585889      0.594399      0.581028     0.624606  0.016486
+          tradeoff_cap_a0p5          tradeoff_cap                0.000            0.50    0.588454      0.588696      0.583872     0.617980  0.015569
+         tradeoff_cap_a0p35          tradeoff_cap                0.000            0.35    0.589218      0.588345      0.584695     0.617324  0.015409
+         tradeoff_cap_a0p25          tradeoff_cap                0.000            0.25    0.589465      0.588271      0.584942     0.617307  0.015421
+               last_guard_0            last_guard                0.000            0.00    0.590768      0.588584      0.586274     0.617361  0.015277
+   positive_last_penalty_a1 positive_last_penalty                0.000            1.00    0.590803      0.588583      0.586289     0.617463  0.015323
+         tradeoff_cap_a0p15          tradeoff_cap                0.000            0.15    0.591064      0.587898      0.586630     0.616703  0.015405
+positive_last_penalty_a0p75 positive_last_penalty                0.000            0.75    0.591105      0.588496      0.586676     0.617060  0.015244
+           last_guard_0p002            last_guard                0.002            0.00    0.591427      0.588411      0.586975     0.617124  0.015270
+           last_guard_0p004            last_guard                0.004            0.00    0.591614      0.588346      0.587181     0.617033  0.015281
+ positive_last_penalty_a0p5 positive_last_penalty                0.000            0.50    0.591869      0.587911      0.587499     0.616349  0.015321
+positive_last_penalty_a0p25 positive_last_penalty                0.000            0.25    0.592116      0.587837      0.587745     0.616332  0.015354
+           last_guard_0p006            last_guard                0.006            0.00    0.592470      0.587774      0.588102     0.616309  0.015387
+           last_guard_0p008            last_guard                0.008            0.00    0.592730      0.587743      0.588383     0.616251  0.015408
+                       full                  full                0.000            0.00    0.593041      0.587732      0.588717     0.616208  0.015432
+
+=== Best-full choices ===
+target                                                       source  full_logloss  last_logloss  full_delta_vs_anchor  last_delta_vs_anchor
+    Q1                                          ridge_residual_full      0.587968      0.606533             -0.002457             -0.011973
+    Q2                   arith:anchor:0.20+ridge_residual_full:0.80      0.691009      0.647135             -0.001871              0.009051
+    Q3                                                       anchor      0.662681      0.634692              0.000000              0.000000
+    S1 logit:ridge_residual_composite:0.35+ridge_residual_full:0.65      0.489767      0.450067             -0.002585              0.000523
+    S2                                          ridge_residual_full      0.552330      0.592489             -0.007790             -0.030326
+    S3                                          ridge_residual_full      0.507728      0.606163             -0.033824              0.005484
+    S4                                          ridge_residual_full      0.622643      0.583938             -0.008156             -0.004716

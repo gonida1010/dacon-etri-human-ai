@@ -1,0 +1,4 @@
+constraint,path,public_score,anchor_expected_score,pseudo_expected_score,residual,lambda,ridge,success,cost
+last_guard_0p008_last0.588383_full0.587743,submissions/constrained_target_blend_logit_newton/last_guard_0p008_last0.588383_full0.587743.csv,0.5920118473,0.6015805224026616,0.5910109382850828,-0.0010009090149172284,-0.01777060753400438,0.002,True,4.332093339477209e-05
+target_select_public_tight_last0.572477_full0.592635,submissions/public_aware_stack_blend_20260622/target_select_public_tight_last0.572477_full0.592635.csv,0.5905116492,0.6131032581664798,0.5932056179351107,0.002693968735110741,0.14818009411086108,0.002,True,4.332093339477209e-05
+02_guarded_targetwise,submissions/fast_temporal_stack/02_guarded_targetwise.csv,0.5935970063,0.5998423380696383,0.5916997234258251,-0.0018972828741748993,-0.06406433044261778,0.002,True,4.332093339477209e-05

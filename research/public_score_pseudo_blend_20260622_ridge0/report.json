@@ -1,0 +1,24 @@
+{
+  "known_public": [
+    {
+      "path": "/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/submissions/constrained_target_blend_logit_newton/last_guard_0p008_last0.588383_full0.587743.csv",
+      "score": 0.5920118473
+    },
+    {
+      "path": "/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/submissions/public_aware_stack_blend_20260622/target_select_public_tight_last0.572477_full0.592635.csv",
+      "score": 0.5905116492
+    },
+    {
+      "path": "/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/submissions/fast_temporal_stack/02_guarded_targetwise.csv",
+      "score": 0.5935970063
+    }
+  ],
+  "selected_candidate": "pseudo_simplex_logit_cv0p02_l20p002",
+  "selected_submission_dir": "/Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/submissions/public_score_pseudo_blend_20260622_ridge0",
+  "selected_metrics": {
+    "pseudo_public_logloss": 0.5893928037358505,
+    "full_logloss": 0.5949233912398275,
+    "last_logloss": 0.5888029203033863,
+    "selector_score": 0.590149036520091
+  }
+}

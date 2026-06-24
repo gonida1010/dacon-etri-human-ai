@@ -1,0 +1,36 @@
+{
+  "submitted": "submissions/constrained_target_blend_logit_newton/last_guard_0p008_last0.588383_full0.587743.csv",
+  "submitted_public": 0.5920118473,
+  "best": {
+    "candidate": "target_select_public_balanced",
+    "full_logloss": 0.5934901244991045,
+    "last_logloss": 0.5714394585161389,
+    "full_delta_vs_anchor": -0.0023396265942704497,
+    "last_delta_vs_anchor": -0.021842748282195568,
+    "fold_std": 0.016709619588084486,
+    "tail3_worst": 0.6209594784537444,
+    "test_abs_delta_mean_vs_anchor": 0.007461470641119007,
+    "public_direction_risk": 0.0007539158209742214,
+    "bad_submission_alignment": 0.00011349379737064214,
+    "selector_score": 0.5767633276404139,
+    "fold0_logloss": 0.5968287781663706,
+    "fold1_logloss": 0.5817092895032917,
+    "fold2_logloss": 0.6209594784537444,
+    "fold3_logloss": 0.5958185568812197,
+    "fold4_logloss": 0.5714394585161389
+  },
+  "saved": [
+    "submissions/public_aware_stack_blend_20260622/target_select_public_balanced_last0.571439_full0.593490.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_aggressive_last0.571439_full0.593490.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_tight_last0.572477_full0.592635.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_balanced_logit_anchorblend_w0p9_last0.572774_full0.593230.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_aggressive_logit_anchorblend_w0p9_last0.572774_full0.593230.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_tight_logit_anchorblend_w0p9_last0.573720_full0.592477.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_balanced_logit_anchorblend_w0p8_last0.574218_full0.593061.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_aggressive_logit_anchorblend_w0p8_last0.574218_full0.593061.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_tight_logit_anchorblend_w0p8_last0.575071_full0.592405.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_balanced_logit_anchorblend_w0p65_last0.576593_full0.592981.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_aggressive_logit_anchorblend_w0p65_last0.576593_full0.592981.csv",
+    "submissions/public_aware_stack_blend_20260622/target_select_public_tight_logit_anchorblend_w0p65_last0.577300_full0.592465.csv"
+  ]
+}

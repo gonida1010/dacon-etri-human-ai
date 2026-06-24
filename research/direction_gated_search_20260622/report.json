@@ -1,0 +1,77 @@
+{
+  "source_dirs": [
+    "research/constrained_target_blend_logit_newton",
+    "research/pattern_safe_candidates_20260622",
+    "research/residual_submission_blend_ridge_logit_newton",
+    "research/residual_single_model_opt_ridge_logit_newton",
+    "research/residual_submission_blend",
+    "research/residual_single_model_opt_ridge",
+    "research/residual_single_model_opt_hist_gb",
+    "research/residual_single_model_opt_ridge_logit_te_full",
+    "research/residual_submission_blend_ridge_logit_te_full"
+  ],
+  "thresholds": [
+    0.03,
+    0.05,
+    0.08
+  ],
+  "alphas": [
+    0.5,
+    0.75,
+    1.0
+  ],
+  "candidate_scores": [
+    {
+      "candidate": "precision55_move05",
+      "full_logloss": 0.5953823636068426,
+      "last_logloss": 0.5716608582982871,
+      "fold_std": 0.01729346724687846,
+      "tail3_worst": 0.6227517198251098,
+      "test_abs_delta_mean_vs_anchor": 0.014389429593766464,
+      "fold0_logloss": 0.5990626469773661,
+      "fold1_logloss": 0.5830332311683506,
+      "fold2_logloss": 0.6227517198251098,
+      "fold3_logloss": 0.5995798222411582,
+      "fold4_logloss": 0.5716608582982871
+    },
+    {
+      "candidate": "precision55_move03",
+      "full_logloss": 0.5946003771792013,
+      "last_logloss": 0.5724286713683664,
+      "fold_std": 0.01670593763621461,
+      "tail3_worst": 0.6216474498582393,
+      "test_abs_delta_mean_vs_anchor": 0.010283877943589134,
+      "fold0_logloss": 0.597948504420278,
+      "fold1_logloss": 0.5823441699568525,
+      "fold2_logloss": 0.6216474498582393,
+      "fold3_logloss": 0.5979157108879606,
+      "fold4_logloss": 0.5724286713683664
+    },
+    {
+      "candidate": "precision55_lowrisk",
+      "full_logloss": 0.5911252423666499,
+      "last_logloss": 0.5746944421762812,
+      "fold_std": 0.015293753448948743,
+      "tail3_worst": 0.6189520832995352,
+      "test_abs_delta_mean_vs_anchor": 0.0065169806773336635,
+      "fold0_logloss": 0.5938269088627006,
+      "fold1_logloss": 0.5812432884134002,
+      "fold2_logloss": 0.6189520832995352,
+      "fold3_logloss": 0.5866247534293783,
+      "fold4_logloss": 0.5746944421762812
+    },
+    {
+      "candidate": "precision60_move03",
+      "full_logloss": 0.5946854234820202,
+      "last_logloss": 0.5765350665848726,
+      "fold_std": 0.016150970466548262,
+      "tail3_worst": 0.623009462660432,
+      "test_abs_delta_mean_vs_anchor": 0.010282511858531138,
+      "fold0_logloss": 0.5950363124682484,
+      "fold1_logloss": 0.5817300372496967,
+      "fold2_logloss": 0.623009462660432,
+      "fold3_logloss": 0.5968378474601199,
+      "fold4_logloss": 0.5765350665848726
+    }
+  ]
+}

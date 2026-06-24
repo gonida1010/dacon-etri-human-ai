@@ -1,0 +1,333 @@
+[21:03:28] Loading labels, anchor, and raw timeline features
+[21:03:29] feature matrix train=(450, 1920) test=(250, 1920)
+[21:03:29] anchor full=0.595830 last=0.593282
+[21:03:29] Target Q1: anchor_full=0.590425 anchor_last=0.618506
+[21:03:34] Q1 target|compact|uniform|top60 raw_full=0.639639 raw_last=0.665163
+[21:03:40] Q1 target|compact|uniform|top120 raw_full=0.638509 raw_last=0.671381
+[21:03:47] Q1 target|compact|uniform|top220 raw_full=0.637650 raw_last=0.673807
+[21:03:53] Q1 target|compact|fp_guard|top60 raw_full=0.638522 raw_last=0.670685
+[21:03:59] Q1 target|compact|fp_guard|top120 raw_full=0.638310 raw_last=0.675421
+[21:04:05] Q1 target|compact|fp_guard|top220 raw_full=0.638290 raw_last=0.681402
+[21:04:11] Q1 target|compact|recent_fp_guard|top60 raw_full=0.641929 raw_last=0.674648
+[21:04:17] Q1 target|compact|recent_fp_guard|top120 raw_full=0.640061 raw_last=0.676590
+[21:04:24] Q1 target|compact|recent_fp_guard|top220 raw_full=0.637499 raw_last=0.679083
+[21:04:31] Q1 target|mid|uniform|top60 raw_full=0.645671 raw_last=0.667515
+[21:04:38] Q1 target|mid|uniform|top120 raw_full=0.642397 raw_last=0.667746
+[21:04:46] Q1 target|mid|uniform|top220 raw_full=0.640691 raw_last=0.675124
+[21:04:52] Q1 target|mid|fp_guard|top60 raw_full=0.645430 raw_last=0.670258
+[21:04:59] Q1 target|mid|fp_guard|top120 raw_full=0.642976 raw_last=0.672109
+[21:05:07] Q1 target|mid|fp_guard|top220 raw_full=0.643373 raw_last=0.679687
+[21:05:14] Q1 target|mid|recent_fp_guard|top60 raw_full=0.644623 raw_last=0.675636
+[21:05:21] Q1 target|mid|recent_fp_guard|top120 raw_full=0.642758 raw_last=0.675346
+[21:05:28] Q1 target|mid|recent_fp_guard|top220 raw_full=0.641070 raw_last=0.675847
+[21:05:34] Q1 all|compact|uniform|top60 raw_full=0.641193 raw_last=0.665305
+[21:05:41] Q1 all|compact|uniform|top120 raw_full=0.634820 raw_last=0.663712
+[21:05:48] Q1 all|compact|uniform|top220 raw_full=0.634792 raw_last=0.663928
+[21:05:53] Q1 all|compact|fp_guard|top60 raw_full=0.642439 raw_last=0.672141
+[21:06:00] Q1 all|compact|fp_guard|top120 raw_full=0.633379 raw_last=0.666537
+[21:06:07] Q1 all|compact|fp_guard|top220 raw_full=0.635360 raw_last=0.668058
+[21:06:13] Q1 all|compact|recent_fp_guard|top60 raw_full=0.644028 raw_last=0.677508
+[21:06:20] Q1 all|compact|recent_fp_guard|top120 raw_full=0.641333 raw_last=0.671972
+[21:06:26] Q1 all|compact|recent_fp_guard|top220 raw_full=0.636532 raw_last=0.672921
+[21:06:33] Q1 all|mid|uniform|top60 raw_full=0.645946 raw_last=0.661725
+[21:06:41] Q1 all|mid|uniform|top120 raw_full=0.635567 raw_last=0.660182
+[21:06:49] Q1 all|mid|uniform|top220 raw_full=0.634169 raw_last=0.657109
+[21:06:56] Q1 all|mid|fp_guard|top60 raw_full=0.646516 raw_last=0.668920
+[21:07:04] Q1 all|mid|fp_guard|top120 raw_full=0.634762 raw_last=0.665218
+[21:07:12] Q1 all|mid|fp_guard|top220 raw_full=0.635692 raw_last=0.664326
+[21:07:19] Q1 all|mid|recent_fp_guard|top60 raw_full=0.645374 raw_last=0.674238
+[21:07:26] Q1 all|mid|recent_fp_guard|top120 raw_full=0.642850 raw_last=0.665706
+[21:07:34] Q1 all|mid|recent_fp_guard|top220 raw_full=0.636874 raw_last=0.667099
+[21:07:35] Target Q2: anchor_full=0.692880 anchor_last=0.638084
+[21:07:39] Q2 target|compact|uniform|top60 raw_full=0.676349 raw_last=0.669598
+[21:07:45] Q2 target|compact|uniform|top120 raw_full=0.676452 raw_last=0.669803
+[21:07:51] Q2 target|compact|uniform|top220 raw_full=0.675715 raw_last=0.670427
+[21:07:56] Q2 target|compact|fp_guard|top60 raw_full=0.684675 raw_last=0.724942
+[21:08:02] Q2 target|compact|fp_guard|top120 raw_full=0.683147 raw_last=0.725413
+[21:08:07] Q2 target|compact|fp_guard|top220 raw_full=0.684903 raw_last=0.725970
+[21:08:13] Q2 target|compact|recent_fp_guard|top60 raw_full=0.682902 raw_last=0.724251
+[21:08:18] Q2 target|compact|recent_fp_guard|top120 raw_full=0.686525 raw_last=0.725044
+[21:08:24] Q2 target|compact|recent_fp_guard|top220 raw_full=0.686233 raw_last=0.725976
+[21:08:30] Q2 target|mid|uniform|top60 raw_full=0.673493 raw_last=0.669567
+[21:08:37] Q2 target|mid|uniform|top120 raw_full=0.673782 raw_last=0.669678
+[21:08:44] Q2 target|mid|uniform|top220 raw_full=0.677153 raw_last=0.670217
+[21:08:50] Q2 target|mid|fp_guard|top60 raw_full=0.682620 raw_last=0.725311
+[21:08:57] Q2 target|mid|fp_guard|top120 raw_full=0.682179 raw_last=0.724705
+[21:09:04] Q2 target|mid|fp_guard|top220 raw_full=0.685314 raw_last=0.724626
+[21:09:10] Q2 target|mid|recent_fp_guard|top60 raw_full=0.681559 raw_last=0.725555
+[21:09:17] Q2 target|mid|recent_fp_guard|top120 raw_full=0.683823 raw_last=0.722452
+[21:09:23] Q2 target|mid|recent_fp_guard|top220 raw_full=0.686192 raw_last=0.724515
+[21:09:29] Q2 all|compact|uniform|top60 raw_full=0.677373 raw_last=0.669831
+[21:09:35] Q2 all|compact|uniform|top120 raw_full=0.680212 raw_last=0.669031
+[21:09:40] Q2 all|compact|uniform|top220 raw_full=0.678706 raw_last=0.670164
+[21:09:46] Q2 all|compact|fp_guard|top60 raw_full=0.684878 raw_last=0.724396
+[21:09:52] Q2 all|compact|fp_guard|top120 raw_full=0.688732 raw_last=0.725995
+[21:09:58] Q2 all|compact|fp_guard|top220 raw_full=0.689660 raw_last=0.725714
+[21:10:04] Q2 all|compact|recent_fp_guard|top60 raw_full=0.690629 raw_last=0.726090
+[21:10:09] Q2 all|compact|recent_fp_guard|top120 raw_full=0.687990 raw_last=0.726252
+[21:10:15] Q2 all|compact|recent_fp_guard|top220 raw_full=0.687685 raw_last=0.723016
+[21:10:22] Q2 all|mid|uniform|top60 raw_full=0.676784 raw_last=0.670308
+[21:10:28] Q2 all|mid|uniform|top120 raw_full=0.677211 raw_last=0.669728
+[21:10:35] Q2 all|mid|uniform|top220 raw_full=0.680040 raw_last=0.669085
+[21:10:42] Q2 all|mid|fp_guard|top60 raw_full=0.682758 raw_last=0.725926
+[21:10:48] Q2 all|mid|fp_guard|top120 raw_full=0.685587 raw_last=0.725337
+[21:10:55] Q2 all|mid|fp_guard|top220 raw_full=0.688337 raw_last=0.725306
+[21:11:02] Q2 all|mid|recent_fp_guard|top60 raw_full=0.685056 raw_last=0.724829
+[21:11:09] Q2 all|mid|recent_fp_guard|top120 raw_full=0.687310 raw_last=0.725067
+[21:11:16] Q2 all|mid|recent_fp_guard|top220 raw_full=0.687908 raw_last=0.724421
+[21:11:17] Target Q3: anchor_full=0.662681 anchor_last=0.634692
+[21:11:21] Q3 target|compact|uniform|top60 raw_full=0.662938 raw_last=0.653743
+[21:11:27] Q3 target|compact|uniform|top120 raw_full=0.657792 raw_last=0.656154
+[21:11:33] Q3 target|compact|uniform|top220 raw_full=0.654740 raw_last=0.647698
+[21:11:39] Q3 target|compact|fp_guard|top60 raw_full=0.678412 raw_last=0.702668
+[21:11:44] Q3 target|compact|fp_guard|top120 raw_full=0.670713 raw_last=0.697872
+[21:11:51] Q3 target|compact|fp_guard|top220 raw_full=0.666777 raw_last=0.683069
+[21:11:57] Q3 target|compact|recent_fp_guard|top60 raw_full=0.674121 raw_last=0.699436
+[21:12:02] Q3 target|compact|recent_fp_guard|top120 raw_full=0.669590 raw_last=0.700872
+[21:12:09] Q3 target|compact|recent_fp_guard|top220 raw_full=0.664186 raw_last=0.677777
+[21:12:15] Q3 target|mid|uniform|top60 raw_full=0.662160 raw_last=0.655262
+[21:12:21] Q3 target|mid|uniform|top120 raw_full=0.659123 raw_last=0.656930
+[21:12:28] Q3 target|mid|uniform|top220 raw_full=0.657101 raw_last=0.646199
+[21:12:35] Q3 target|mid|fp_guard|top60 raw_full=0.676945 raw_last=0.703199
+[21:12:42] Q3 target|mid|fp_guard|top120 raw_full=0.670374 raw_last=0.695671
+[21:12:50] Q3 target|mid|fp_guard|top220 raw_full=0.669724 raw_last=0.683799
+[21:12:56] Q3 target|mid|recent_fp_guard|top60 raw_full=0.674242 raw_last=0.699107
+[21:13:03] Q3 target|mid|recent_fp_guard|top120 raw_full=0.670834 raw_last=0.693493
+[21:13:10] Q3 target|mid|recent_fp_guard|top220 raw_full=0.663084 raw_last=0.681844
+[21:13:16] Q3 all|compact|uniform|top60 raw_full=0.658552 raw_last=0.641153
+[21:13:22] Q3 all|compact|uniform|top120 raw_full=0.657277 raw_last=0.647104
+[21:13:29] Q3 all|compact|uniform|top220 raw_full=0.652832 raw_last=0.634271
+[21:13:35] Q3 all|compact|fp_guard|top60 raw_full=0.666475 raw_last=0.674531
+[21:13:42] Q3 all|compact|fp_guard|top120 raw_full=0.663975 raw_last=0.678712
+[21:13:49] Q3 all|compact|fp_guard|top220 raw_full=0.661898 raw_last=0.674566
+[21:13:55] Q3 all|compact|recent_fp_guard|top60 raw_full=0.668252 raw_last=0.684062
+[21:14:01] Q3 all|compact|recent_fp_guard|top120 raw_full=0.663059 raw_last=0.682061
+[21:14:08] Q3 all|compact|recent_fp_guard|top220 raw_full=0.660486 raw_last=0.671267
+[21:14:15] Q3 all|mid|uniform|top60 raw_full=0.656071 raw_last=0.640091
+[21:14:22] Q3 all|mid|uniform|top120 raw_full=0.656301 raw_last=0.648901
+[21:14:30] Q3 all|mid|uniform|top220 raw_full=0.655043 raw_last=0.639444
+[21:14:37] Q3 all|mid|fp_guard|top60 raw_full=0.666212 raw_last=0.676013
+[21:14:45] Q3 all|mid|fp_guard|top120 raw_full=0.665487 raw_last=0.681674
+[21:14:53] Q3 all|mid|fp_guard|top220 raw_full=0.660628 raw_last=0.662362
+[21:15:00] Q3 all|mid|recent_fp_guard|top60 raw_full=0.665928 raw_last=0.679069
+[21:15:08] Q3 all|mid|recent_fp_guard|top120 raw_full=0.660182 raw_last=0.673076
+[21:15:16] Q3 all|mid|recent_fp_guard|top220 raw_full=0.661125 raw_last=0.668721
+[21:15:17] Target S1: anchor_full=0.492352 anchor_last=0.449544
+[21:15:22] S1 target|compact|uniform|top60 raw_full=0.508590 raw_last=0.502941
+[21:15:29] S1 target|compact|uniform|top120 raw_full=0.509098 raw_last=0.495125
+[21:15:35] S1 target|compact|uniform|top220 raw_full=0.513053 raw_last=0.503868
+[21:15:42] S1 target|compact|fp_guard|top60 raw_full=0.513843 raw_last=0.518066
+[21:15:48] S1 target|compact|fp_guard|top120 raw_full=0.513875 raw_last=0.508016
+[21:15:55] S1 target|compact|fp_guard|top220 raw_full=0.513560 raw_last=0.516576
+[21:16:01] S1 target|compact|recent_fp_guard|top60 raw_full=0.514644 raw_last=0.521700
+[21:16:07] S1 target|compact|recent_fp_guard|top120 raw_full=0.512277 raw_last=0.514059
+[21:16:14] S1 target|compact|recent_fp_guard|top220 raw_full=0.514719 raw_last=0.518798
+[21:16:21] S1 target|mid|uniform|top60 raw_full=0.514912 raw_last=0.503178
+[21:16:29] S1 target|mid|uniform|top120 raw_full=0.511462 raw_last=0.494659
+[21:16:37] S1 target|mid|uniform|top220 raw_full=0.513651 raw_last=0.500362
+[21:16:45] S1 target|mid|fp_guard|top60 raw_full=0.516826 raw_last=0.517422
+[21:16:52] S1 target|mid|fp_guard|top120 raw_full=0.513540 raw_last=0.509381
+[21:17:00] S1 target|mid|fp_guard|top220 raw_full=0.514993 raw_last=0.515096
+[21:17:08] S1 target|mid|recent_fp_guard|top60 raw_full=0.515229 raw_last=0.520401
+[21:17:16] S1 target|mid|recent_fp_guard|top120 raw_full=0.514314 raw_last=0.513649
+[21:17:24] S1 target|mid|recent_fp_guard|top220 raw_full=0.512429 raw_last=0.513541
+[21:17:31] S1 all|compact|uniform|top60 raw_full=0.511902 raw_last=0.492156
+[21:17:38] S1 all|compact|uniform|top120 raw_full=0.510127 raw_last=0.489072
+[21:17:46] S1 all|compact|uniform|top220 raw_full=0.509298 raw_last=0.501898
+[21:17:53] S1 all|compact|fp_guard|top60 raw_full=0.516311 raw_last=0.518220
+[21:18:01] S1 all|compact|fp_guard|top120 raw_full=0.513295 raw_last=0.507066
+[21:18:08] S1 all|compact|fp_guard|top220 raw_full=0.512026 raw_last=0.512007
+[21:18:15] S1 all|compact|recent_fp_guard|top60 raw_full=0.515609 raw_last=0.517981
+[21:18:23] S1 all|compact|recent_fp_guard|top120 raw_full=0.514777 raw_last=0.510462
+[21:18:31] S1 all|compact|recent_fp_guard|top220 raw_full=0.509843 raw_last=0.510984
+[21:18:39] S1 all|mid|uniform|top60 raw_full=0.516655 raw_last=0.496963
+[21:18:48] S1 all|mid|uniform|top120 raw_full=0.512813 raw_last=0.491998
+[21:18:57] S1 all|mid|uniform|top220 raw_full=0.511621 raw_last=0.497806
+[21:19:05] S1 all|mid|fp_guard|top60 raw_full=0.521099 raw_last=0.518505
+[21:19:14] S1 all|mid|fp_guard|top120 raw_full=0.512622 raw_last=0.497557
+[21:19:23] S1 all|mid|fp_guard|top220 raw_full=0.512065 raw_last=0.514198
+[21:19:31] S1 all|mid|recent_fp_guard|top60 raw_full=0.518105 raw_last=0.516438
+[21:19:40] S1 all|mid|recent_fp_guard|top120 raw_full=0.512758 raw_last=0.501724
+[21:19:50] S1 all|mid|recent_fp_guard|top220 raw_full=0.509468 raw_last=0.510122
+[21:19:50] Target S2: anchor_full=0.560120 anchor_last=0.622815
+[21:19:57] S2 target|compact|uniform|top60 raw_full=0.550571 raw_last=0.589617
+[21:20:05] S2 target|compact|uniform|top120 raw_full=0.550257 raw_last=0.555666
+[21:20:13] S2 target|compact|uniform|top220 raw_full=0.546323 raw_last=0.557714
+[21:20:21] S2 target|compact|fp_guard|top60 raw_full=0.546939 raw_last=0.568454
+[21:20:29] S2 target|compact|fp_guard|top120 raw_full=0.549444 raw_last=0.548418
+[21:20:37] S2 target|compact|fp_guard|top220 raw_full=0.543583 raw_last=0.542555
+[21:20:45] S2 target|compact|recent_fp_guard|top60 raw_full=0.552900 raw_last=0.577015
+[21:20:53] S2 target|compact|recent_fp_guard|top120 raw_full=0.545560 raw_last=0.543057
+[21:21:01] S2 target|compact|recent_fp_guard|top220 raw_full=0.551529 raw_last=0.560805
+[21:21:09] S2 target|mid|uniform|top60 raw_full=0.557358 raw_last=0.595802
+[21:21:17] S2 target|mid|uniform|top120 raw_full=0.551954 raw_last=0.579804
+[21:21:27] S2 target|mid|uniform|top220 raw_full=0.552365 raw_last=0.585132
+[21:21:35] S2 target|mid|fp_guard|top60 raw_full=0.554285 raw_last=0.584250
+[21:21:44] S2 target|mid|fp_guard|top120 raw_full=0.552677 raw_last=0.570497
+[21:21:54] S2 target|mid|fp_guard|top220 raw_full=0.548929 raw_last=0.563435
+[21:22:03] S2 target|mid|recent_fp_guard|top60 raw_full=0.554757 raw_last=0.579121
+[21:22:12] S2 target|mid|recent_fp_guard|top120 raw_full=0.547736 raw_last=0.565636
+[21:22:22] S2 target|mid|recent_fp_guard|top220 raw_full=0.550902 raw_last=0.576678
+[21:22:30] S2 all|compact|uniform|top60 raw_full=0.551366 raw_last=0.621012
+[21:22:37] S2 all|compact|uniform|top120 raw_full=0.550729 raw_last=0.606129
+[21:22:45] S2 all|compact|uniform|top220 raw_full=0.552318 raw_last=0.616835
+[21:22:53] S2 all|compact|fp_guard|top60 raw_full=0.553996 raw_last=0.608142
+[21:23:01] S2 all|compact|fp_guard|top120 raw_full=0.548780 raw_last=0.591337
+[21:23:10] S2 all|compact|fp_guard|top220 raw_full=0.547765 raw_last=0.595667
+[21:23:18] S2 all|compact|recent_fp_guard|top60 raw_full=0.558211 raw_last=0.608739
+[21:23:26] S2 all|compact|recent_fp_guard|top120 raw_full=0.550132 raw_last=0.592196
+[21:23:35] S2 all|compact|recent_fp_guard|top220 raw_full=0.550541 raw_last=0.597969
+[21:23:43] S2 all|mid|uniform|top60 raw_full=0.557558 raw_last=0.627470
+[21:23:52] S2 all|mid|uniform|top120 raw_full=0.547448 raw_last=0.608587
+[21:24:01] S2 all|mid|uniform|top220 raw_full=0.551128 raw_last=0.611407
+[21:24:11] S2 all|mid|fp_guard|top60 raw_full=0.559385 raw_last=0.616500
+[21:24:20] S2 all|mid|fp_guard|top120 raw_full=0.548229 raw_last=0.591604
+[21:24:29] S2 all|mid|fp_guard|top220 raw_full=0.548879 raw_last=0.599838
+[21:24:39] S2 all|mid|recent_fp_guard|top60 raw_full=0.561581 raw_last=0.616187
+[21:24:48] S2 all|mid|recent_fp_guard|top120 raw_full=0.551369 raw_last=0.593300
+[21:24:57] S2 all|mid|recent_fp_guard|top220 raw_full=0.551611 raw_last=0.602324
+[21:24:58] Target S3: anchor_full=0.541551 anchor_last=0.600679
+[21:25:03] S3 target|compact|uniform|top60 raw_full=0.546206 raw_last=0.616503
+[21:25:09] S3 target|compact|uniform|top120 raw_full=0.550952 raw_last=0.615931
+[21:25:16] S3 target|compact|uniform|top220 raw_full=0.550742 raw_last=0.620844
+[21:25:21] S3 target|compact|fp_guard|top60 raw_full=0.558003 raw_last=0.626771
+[21:25:27] S3 target|compact|fp_guard|top120 raw_full=0.563130 raw_last=0.625726
+[21:25:34] S3 target|compact|fp_guard|top220 raw_full=0.562327 raw_last=0.629314
+[21:25:41] S3 target|compact|recent_fp_guard|top60 raw_full=0.551177 raw_last=0.625632
+[21:25:47] S3 target|compact|recent_fp_guard|top120 raw_full=0.564955 raw_last=0.629638
+[21:25:53] S3 target|compact|recent_fp_guard|top220 raw_full=0.560594 raw_last=0.629342
+[21:26:01] S3 target|mid|uniform|top60 raw_full=0.550345 raw_last=0.619792
+[21:26:08] S3 target|mid|uniform|top120 raw_full=0.554563 raw_last=0.619027
+[21:26:16] S3 target|mid|uniform|top220 raw_full=0.552213 raw_last=0.618719
+[21:26:24] S3 target|mid|fp_guard|top60 raw_full=0.558936 raw_last=0.626065
+[21:26:31] S3 target|mid|fp_guard|top120 raw_full=0.562322 raw_last=0.627660
+[21:26:39] S3 target|mid|fp_guard|top220 raw_full=0.560905 raw_last=0.624458
+[21:26:49] S3 target|mid|recent_fp_guard|top60 raw_full=0.552090 raw_last=0.626325
+[21:26:57] S3 target|mid|recent_fp_guard|top120 raw_full=0.562359 raw_last=0.629548
+[21:27:05] S3 target|mid|recent_fp_guard|top220 raw_full=0.562712 raw_last=0.628284
+[21:27:12] S3 all|compact|uniform|top60 raw_full=0.547709 raw_last=0.613439
+[21:27:18] S3 all|compact|uniform|top120 raw_full=0.546335 raw_last=0.620543
+[21:27:25] S3 all|compact|uniform|top220 raw_full=0.550324 raw_last=0.623908
+[21:27:32] S3 all|compact|fp_guard|top60 raw_full=0.554832 raw_last=0.619955
+[21:27:39] S3 all|compact|fp_guard|top120 raw_full=0.552620 raw_last=0.623146
+[21:27:46] S3 all|compact|fp_guard|top220 raw_full=0.554077 raw_last=0.627099
+[21:27:53] S3 all|compact|recent_fp_guard|top60 raw_full=0.554200 raw_last=0.620716
+[21:28:00] S3 all|compact|recent_fp_guard|top120 raw_full=0.557766 raw_last=0.624339
+[21:28:07] S3 all|compact|recent_fp_guard|top220 raw_full=0.554513 raw_last=0.625222
+[21:28:15] S3 all|mid|uniform|top60 raw_full=0.555534 raw_last=0.616372
+[21:28:23] S3 all|mid|uniform|top120 raw_full=0.550534 raw_last=0.622084
+[21:28:31] S3 all|mid|uniform|top220 raw_full=0.550273 raw_last=0.624708
+[21:28:39] S3 all|mid|fp_guard|top60 raw_full=0.558325 raw_last=0.619789
+[21:28:47] S3 all|mid|fp_guard|top120 raw_full=0.555328 raw_last=0.621506
+[21:28:56] S3 all|mid|fp_guard|top220 raw_full=0.554209 raw_last=0.627489
+[21:29:04] S3 all|mid|recent_fp_guard|top60 raw_full=0.556713 raw_last=0.620756
+[21:29:12] S3 all|mid|recent_fp_guard|top120 raw_full=0.559809 raw_last=0.621849
+[21:29:20] S3 all|mid|recent_fp_guard|top220 raw_full=0.553587 raw_last=0.622204
+[21:29:21] Target S4: anchor_full=0.630799 anchor_last=0.588654
+[21:29:27] S4 target|compact|uniform|top60 raw_full=0.638363 raw_last=0.590071
+[21:29:33] S4 target|compact|uniform|top120 raw_full=0.639668 raw_last=0.607655
+[21:29:39] S4 target|compact|uniform|top220 raw_full=0.640518 raw_last=0.604993
+[21:29:45] S4 target|compact|fp_guard|top60 raw_full=0.641599 raw_last=0.599810
+[21:29:52] S4 target|compact|fp_guard|top120 raw_full=0.643396 raw_last=0.615098
+[21:29:58] S4 target|compact|fp_guard|top220 raw_full=0.645378 raw_last=0.612081
+[21:30:05] S4 target|compact|recent_fp_guard|top60 raw_full=0.642516 raw_last=0.607377
+[21:30:11] S4 target|compact|recent_fp_guard|top120 raw_full=0.645745 raw_last=0.619584
+[21:30:18] S4 target|compact|recent_fp_guard|top220 raw_full=0.643318 raw_last=0.618025
+[21:30:26] S4 target|mid|uniform|top60 raw_full=0.634966 raw_last=0.588167
+[21:30:33] S4 target|mid|uniform|top120 raw_full=0.636579 raw_last=0.591241
+[21:30:41] S4 target|mid|uniform|top220 raw_full=0.639847 raw_last=0.603295
+[21:30:48] S4 target|mid|fp_guard|top60 raw_full=0.639317 raw_last=0.603526
+[21:30:56] S4 target|mid|fp_guard|top120 raw_full=0.640986 raw_last=0.602383
+[21:31:04] S4 target|mid|fp_guard|top220 raw_full=0.640907 raw_last=0.608733
+[21:31:12] S4 target|mid|recent_fp_guard|top60 raw_full=0.639564 raw_last=0.598808
+[21:31:20] S4 target|mid|recent_fp_guard|top120 raw_full=0.640938 raw_last=0.603992
+[21:31:28] S4 target|mid|recent_fp_guard|top220 raw_full=0.641790 raw_last=0.607979
+[21:31:35] S4 all|compact|uniform|top60 raw_full=0.639161 raw_last=0.598293
+[21:31:42] S4 all|compact|uniform|top120 raw_full=0.635472 raw_last=0.590040
+[21:31:48] S4 all|compact|uniform|top220 raw_full=0.643939 raw_last=0.613346
+[21:31:55] S4 all|compact|fp_guard|top60 raw_full=0.643652 raw_last=0.623081
+[21:32:02] S4 all|compact|fp_guard|top120 raw_full=0.642105 raw_last=0.607567
+[21:32:09] S4 all|compact|fp_guard|top220 raw_full=0.647445 raw_last=0.618711
+[21:32:16] S4 all|compact|recent_fp_guard|top60 raw_full=0.642644 raw_last=0.612959
+[21:32:23] S4 all|compact|recent_fp_guard|top120 raw_full=0.642120 raw_last=0.602071
+[21:32:30] S4 all|compact|recent_fp_guard|top220 raw_full=0.646950 raw_last=0.623580
+[21:32:38] S4 all|mid|uniform|top60 raw_full=0.640218 raw_last=0.606704
+[21:32:46] S4 all|mid|uniform|top120 raw_full=0.635462 raw_last=0.597567
+[21:32:54] S4 all|mid|uniform|top220 raw_full=0.644905 raw_last=0.625287
+[21:33:02] S4 all|mid|fp_guard|top60 raw_full=0.640673 raw_last=0.618245
+[21:33:10] S4 all|mid|fp_guard|top120 raw_full=0.644091 raw_last=0.616802
+[21:33:18] S4 all|mid|fp_guard|top220 raw_full=0.648696 raw_last=0.628281
+[21:33:27] S4 all|mid|recent_fp_guard|top60 raw_full=0.639112 raw_last=0.608416
+[21:33:35] S4 all|mid|recent_fp_guard|top120 raw_full=0.641217 raw_last=0.608199
+[21:33:43] S4 all|mid|recent_fp_guard|top220 raw_full=0.651956 raw_last=0.642158
+
+=== Raw timeline candidate scores ===
+             candidate  full_logloss  last_logloss  full_delta_vs_anchor  last_delta_vs_anchor  fold_std  tail3_worst
+     raw_timeline_full      0.584434      0.586415             -0.011396             -0.006868  0.007583     0.597139
+raw_timeline_composite      0.586764      0.590669             -0.009066             -0.002613  0.010546     0.605283
+ raw_timeline_fp_guard      0.586764      0.590669             -0.009066             -0.002613  0.010546     0.605283
+     raw_timeline_last      0.595367      0.572793             -0.000463             -0.020489  0.018730     0.628044
+
+=== FP/FN summary ===
+             candidate target  fp_rate  fn_rate  pred_pos_rate  true_pos_rate    brier
+raw_timeline_composite     Q1 0.160000 0.153333       0.502222       0.495556 0.202586
+raw_timeline_composite     Q2 0.297778 0.193333       0.666667       0.562222 0.242004
+raw_timeline_composite     Q3 0.242222 0.157778       0.684444       0.600000 0.231602
+raw_timeline_composite     S1 0.146667 0.080000       0.748889       0.682222 0.158577
+raw_timeline_composite     S2 0.168889 0.113333       0.706667       0.651111 0.182603
+raw_timeline_composite     S3 0.168889 0.102222       0.728889       0.662222 0.178301
+raw_timeline_composite     S4 0.204444 0.153333       0.611111       0.560000 0.217043
+ raw_timeline_fp_guard     Q1 0.160000 0.153333       0.502222       0.495556 0.202586
+ raw_timeline_fp_guard     Q2 0.297778 0.193333       0.666667       0.562222 0.242004
+ raw_timeline_fp_guard     Q3 0.242222 0.157778       0.684444       0.600000 0.231602
+ raw_timeline_fp_guard     S1 0.146667 0.080000       0.748889       0.682222 0.158577
+ raw_timeline_fp_guard     S2 0.168889 0.113333       0.706667       0.651111 0.182603
+ raw_timeline_fp_guard     S3 0.168889 0.102222       0.728889       0.662222 0.178301
+ raw_timeline_fp_guard     S4 0.204444 0.153333       0.611111       0.560000 0.217043
+     raw_timeline_full     Q1 0.137778 0.166667       0.466667       0.495556 0.202468
+     raw_timeline_full     Q2 0.377778 0.028889       0.911111       0.562222 0.240084
+     raw_timeline_full     Q3 0.300000 0.077778       0.822222       0.600000 0.228466
+     raw_timeline_full     S1 0.155556 0.075556       0.762222       0.682222 0.158719
+     raw_timeline_full     S2 0.191111 0.080000       0.762222       0.651111 0.181588
+     raw_timeline_full     S3 0.208889 0.055556       0.815556       0.662222 0.176919
+     raw_timeline_full     S4 0.217778 0.146667       0.631111       0.560000 0.216692
+     raw_timeline_last     Q1 0.160000 0.153333       0.502222       0.495556 0.202586
+     raw_timeline_last     Q2 0.326667 0.140000       0.748889       0.562222 0.251670
+     raw_timeline_last     Q3 0.322222 0.073333       0.848889       0.600000 0.230241
+     raw_timeline_last     S1 0.204444 0.042222       0.844444       0.682222 0.163071
+     raw_timeline_last     S2 0.142222 0.160000       0.633333       0.651111 0.187989
+     raw_timeline_last     S3 0.244444 0.046667       0.860000       0.662222 0.183568
+     raw_timeline_last     S4 0.246667 0.131111       0.675556       0.560000 0.218850
+
+=== Target choices ===
+             candidate target  scope profile  weight_profile  top_k blend_mode  model_weight  intercept  temperature  full_logloss  last_logloss  fp_rate  fn_rate  pred_pos_rate  rank_score
+raw_timeline_composite     Q1 target compact         uniform     60      logit          0.00       0.06         1.00      0.590762      0.612457 0.160000 0.153333       0.502222    0.597260
+raw_timeline_composite     Q2    all     mid        fp_guard     60      logit          0.70       0.06         1.15      0.675647      0.679731 0.297778 0.193333       0.666667    0.680362
+raw_timeline_composite     Q3    all compact recent_fp_guard    220       prob          0.70      -0.08         0.90      0.654098      0.649363 0.242222 0.157778       0.684444    0.657245
+raw_timeline_composite     S1    all     mid recent_fp_guard    220      logit          0.20      -0.30         0.90      0.486453      0.465496 0.146667 0.080000       0.748889    0.487903
+raw_timeline_composite     S2 target compact        fp_guard    220       prob          0.90      -0.08         0.90      0.542352      0.544437 0.168889 0.113333       0.706667    0.543994
+raw_timeline_composite     S3 target     mid recent_fp_guard     60      logit          0.35      -0.18         0.90      0.534570      0.601279 0.168889 0.102222       0.728889    0.554470
+raw_timeline_composite     S4    all     mid recent_fp_guard     60      logit          0.50       0.06         0.90      0.623463      0.581924 0.204444 0.153333       0.611111    0.624854
+ raw_timeline_fp_guard     Q1 target compact         uniform     60      logit          0.00       0.06         1.00      0.590762      0.612457 0.160000 0.153333       0.502222    0.597260
+ raw_timeline_fp_guard     Q2    all     mid        fp_guard     60      logit          0.70       0.06         1.15      0.675647      0.679731 0.297778 0.193333       0.666667    0.680362
+ raw_timeline_fp_guard     Q3    all compact recent_fp_guard    220       prob          0.70      -0.08         0.90      0.654098      0.649363 0.242222 0.157778       0.684444    0.657245
+ raw_timeline_fp_guard     S1    all     mid recent_fp_guard    220      logit          0.20      -0.30         0.90      0.486453      0.465496 0.146667 0.080000       0.748889    0.487903
+ raw_timeline_fp_guard     S2 target compact        fp_guard    220       prob          0.90      -0.08         0.90      0.542352      0.544437 0.168889 0.113333       0.706667    0.543994
+ raw_timeline_fp_guard     S3 target     mid recent_fp_guard     60      logit          0.35      -0.18         0.90      0.534570      0.601279 0.168889 0.102222       0.728889    0.554470
+ raw_timeline_fp_guard     S4    all     mid recent_fp_guard     60      logit          0.50       0.06         0.90      0.623463      0.581924 0.204444 0.153333       0.611111    0.624854
+     raw_timeline_full     Q1 target compact         uniform     60      logit          0.00       0.00         1.00      0.590425      0.618506 0.137778 0.166667       0.466667    0.598668
+     raw_timeline_full     Q2 target     mid         uniform    120      logit          0.90       0.06         1.35      0.671579      0.662229 0.377778 0.028889       0.911111    0.690304
+     raw_timeline_full     Q3 target compact recent_fp_guard    220       prob          0.50       0.06         0.90      0.648205      0.623302 0.300000 0.077778       0.822222    0.659460
+     raw_timeline_full     S1    all     mid recent_fp_guard    220      logit          0.10      -0.30         0.90      0.485952      0.461001 0.155556 0.075556       0.762222    0.488321
+     raw_timeline_full     S2 target compact        fp_guard    220      logit          0.70       0.00         0.90      0.540559      0.558816 0.191111 0.080000       0.762222    0.548762
+     raw_timeline_full     S3 target     mid recent_fp_guard     60      logit          0.35       0.00         0.90      0.531039      0.601393 0.208889 0.055556       0.815556    0.556983
+     raw_timeline_full     S4    all     mid recent_fp_guard     60      logit          0.35       0.06         0.90      0.623277      0.579654 0.217778 0.146667       0.631111    0.625415
+     raw_timeline_last     Q1 target compact         uniform     60      logit          0.00       0.06         1.00      0.590762      0.612457 0.160000 0.153333       0.502222    0.597260
+     raw_timeline_last     Q2 target compact         uniform     60      logit          0.00       0.06         0.90      0.697596      0.628082 0.326667 0.140000       0.748889    0.711895
+     raw_timeline_last     Q3    all     mid        fp_guard     60      logit          0.35       0.06         0.90      0.651285      0.618076 0.322222 0.073333       0.848889    0.665178
+     raw_timeline_last     S1    all     mid recent_fp_guard    120      logit          0.10       0.06         0.90      0.495185      0.447942 0.204444 0.042222       0.844444    0.504118
+     raw_timeline_last     S2 target compact        fp_guard    220       prob          1.00      -0.30         1.00      0.555612      0.532524 0.142222 0.160000       0.633333    0.557700
+     raw_timeline_last     S3 target compact         uniform     60      logit          0.00      -0.08         1.15      0.549904      0.597138 0.244444 0.046667       0.860000    0.575049
+     raw_timeline_last     S4    all compact         uniform    120      logit          0.50       0.06         0.90      0.627227      0.573335 0.246667 0.131111       0.675556    0.632212
+
+Wrote outputs to /Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/research/raw_timeline_target_model_20260623_full and /Users/parkyeonggon/Projects/dacon/dacon-etri-human-ai/submissions/raw_timeline_target_model_20260623_full

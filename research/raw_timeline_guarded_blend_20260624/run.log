@@ -1,0 +1,18 @@
+[16:20:09] Loading base and raw sources
+[16:20:09] Building action table
+[16:20:11] Scoring and writing candidates
+
+=== Raw timeline guarded blend candidates ===
+                  candidate  full_logloss  last_logloss  full_delta_vs_base  last_delta_vs_base  fold_std  tail3_worst
+         manual_public_tail      0.588923      0.562776           -0.003725           -0.007831  0.017876     0.617031
+global_raw_last_logit_a0p50      0.590916      0.565922           -0.001733           -0.004685  0.018366     0.621326
+           base_public_best      0.592648      0.570607            0.000000            0.000000  0.016101     0.618609
+       selector_public_tail      0.588111      0.571046           -0.004538            0.000439  0.014600     0.614466
+     reference_public_tight      0.591908      0.574343           -0.000741            0.003736  0.015205     0.618728
+global_raw_comp_logit_a0p65      0.584443      0.576208           -0.008205            0.005602  0.011759     0.606542
+global_raw_full_logit_a0p80      0.583519      0.578422           -0.009129            0.007816  0.008809     0.599214
+          selector_balanced      0.585871      0.583791           -0.006778            0.013184  0.010032     0.605045
+       selector_fp_suppress      0.586567      0.584912           -0.006081            0.014305  0.010116     0.605970
+      selector_private_full      0.586346      0.584936           -0.006302            0.014330  0.009959     0.605327
+
+Wrote outputs to research/raw_timeline_guarded_blend_20260624 and submissions/raw_timeline_guarded_blend_20260624

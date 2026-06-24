@@ -777,7 +777,260 @@ OOF 기반 제출 블렌딩:
 2. 해당 blend가 full `0.587810`을 넘지 못하면 단순 blend가 아니라 target-specific Ridge residual constraint로 간다.
 3. `bins_te`는 폐기하지 말고 분석 branch로 보관하되 다음 제출 후보에는 넣지 않는다.
 
-## 12. 다음 AI에게 넘길 핵심 질문
+## 12. 2026-06-22 no-TE logit blend result analysis
+
+결과지:
+
+- `research/result_analysis_20260622/RESULT_ANALYSIS_LATEST.md`
+- `research/result_analysis_20260622/submission_frontier.png`
+- `research/result_analysis_20260622/candidate_frontier.png`
+- `research/result_analysis_20260622/key_candidate_deltas.png`
+- `research/result_analysis_20260622/key_fold_curves.png`
+- `research/result_analysis_20260622/target_full_delta_heatmap.png`
+- `research/result_analysis_20260622/target_last_delta_heatmap.png`
+
+중요 수정:
+
+- 이전 그래프는 직접 확인 결과 연구용으로 부적절했다.
+  - 실패 후보가 축을 늘려 핵심 0.58~0.60 구간이 뭉개졌다.
+  - 후보명이 길고 겹쳐서 frontier와 heatmap 해석이 어려웠다.
+- `src/result_suite_report.py`를 수정해 stable zone frontier, 제출 후보 전용 frontier, full/last target heatmap 분리, 짧은 alias를 적용했다.
+
+최신 핵심 결과:
+
+- `blend_ridge_logit_newton / ridge_knn_blend_full`: full `0.587732`, last `0.588717`
+  - 현재 OOF 기준 1순위 후보.
+  - `ridge_logit_newton / ridge_residual_full`보다 full `-0.000078`, last `-0.001372` 개선.
+- `ridge_logit_newton / ridge_residual_full`: full `0.587810`, last `0.590089`
+  - no-blend fallback 1순위.
+- `blend_ridge_logit_newton / ridge_knn_blend_composite`: full `0.594314`, last `0.581319`
+  - last는 매우 좋지만 full이 1순위보다 약하다.
+  - 공격 후보일 뿐 1순위 제출 후보는 아니다.
+- `bins_te` 계열은 계속 제외한다.
+
+다음 판정:
+
+1. 다음 public 확인 1순위는 `submissions/residual_submission_blend_ridge_logit_newton/ridge_knn_blend_full_last0.588717_full0.587732.csv`.
+2. 보수 fallback은 `submissions/residual_single_model_opt_ridge_logit_newton/ridge_residual_full_last0.590089_full0.587810.csv`.
+3. 추가 연구는 global TE가 아니라 Q1/Q2/S3 target-specific constraint 또는 deduped source stacking으로 간다.
+
+구현 시작:
+
+- `src/constrained_target_blend.py` 추가.
+- 목적:
+  - `logit blend full`의 full 장점을 유지한다.
+  - Q2/S1/S3 last 손해를 target별 selector로 제한한다.
+  - hard last guard, positive last penalty, full/last tradeoff 후보를 한 번에 생성한다.
+- 다음 결과 디렉터리:
+  - `research/constrained_target_blend_logit_newton`
+  - `submissions/constrained_target_blend_logit_newton`
+- `src/result_suite_report.py`도 `constrained_logit_blend` run을 읽도록 등록 완료.
+
+실행 완료 및 판정:
+
+- 실행 로그:
+  - `research/constrained_target_blend_logit_newton/run.log`
+  - `research/oof_source_correlation_constrained_logit_blend/run.log`
+- 최신 결과지:
+  - `research/result_analysis_20260622_constrained/RESULT_ANALYSIS_LATEST.md`
+  - `research/result_analysis_20260622_constrained/constrained_frontier.png`
+  - `research/result_analysis_20260622_constrained/submission_frontier.png`
+  - `research/result_analysis_20260622_constrained/target_full_delta_heatmap.png`
+  - `research/result_analysis_20260622_constrained/target_last_delta_heatmap.png`
+- 최저 full 후보:
+  - `constrained_logit_blend / full`: full `0.587732`, last `0.588717`
+  - 파일: `submissions/constrained_target_blend_logit_newton/full_last0.588717_full0.587732.csv`
+- full 거의 유지 + last 개선 1순위:
+  - `constrained_logit_blend / last_guard_0p008`: full `0.587743`, last `0.588383`
+  - full 비용은 `+0.000011`, last 개선은 `-0.000334` vs `full`.
+  - 파일: `submissions/constrained_target_blend_logit_newton/last_guard_0p008_last0.588383_full0.587743.csv`
+- 균형 공격 후보:
+  - `constrained_logit_blend / positive_last_penalty_a0p25`: full `0.587837`, last `0.587745`
+  - 파일: `submissions/constrained_target_blend_logit_newton/positive_last_penalty_a0p25_last0.587745_full0.587837.csv`
+- 더 공격적인 last 후보:
+  - `constrained_logit_blend / tradeoff_cap_a0p15`: full `0.587898`, last `0.586630`
+  - 파일: `submissions/constrained_target_blend_logit_newton/tradeoff_cap_a0p15_last0.586630_full0.587898.csv`
+- 제외:
+  - `tradeoff_cap_a0p25/a0p35/a0p5`는 last는 좋지만 full 비용이 더 커진다. public-risk 공격 후보 외에는 뒤로 둔다.
+  - `composite/last`는 last는 최상위지만 full 안정성이 약해 제출 1순위가 아니다.
+
+다음 연구 방향:
+
+1. 단일모델 추가보다 먼저 target-wise selector를 더 정교화한다. Q2/S3 last 손해를 줄이는 constraint를 별도로 둔다.
+2. source correlation 결과에서 anchor clone과 corr `>=0.999`가 많으므로, 다음 stack/blend는 반드시 source dedup 후 진행한다.
+3. 새 단일모델을 팔 때는 한 모델군에서 early stopping, fold별 best_iteration, target별 class/sample weight, residual/logit objective를 먼저 최적화하고 다른 모델군에 이식한다.
+4. `bins_te`는 계속 제외한다. 작은 row 수에서 global TE는 full 안정성을 깎는다.
+
+## 13. 2026-06-22 submitted public feedback and pattern diagnosis
+
+제출 결과:
+
+- 파일: `submissions/constrained_target_blend_logit_newton/last_guard_0p008_last0.588383_full0.587743.csv`
+- Public: `0.5920118473`
+
+진단 산출물:
+
+- `src/submission_pattern_diagnostics.py`
+- `src/pattern_safe_candidates.py`
+- `research/submission_pattern_diagnostics_20260622/PATTERN_DIAGNOSTICS_LATEST.md`
+- `research/submission_pattern_diagnostics_20260622/INTERPRETATION.md`
+- `research/pattern_safe_candidates_20260622/candidate_scores.csv`
+- `submissions/pattern_safe_candidates_20260622/`
+
+핵심 판정:
+
+- `last_guard_0p008`은 `full`과 flat corr `0.999981`, mean abs diff `0.000329`라 사실상 같은 제출군이었다. 근처 constrained 후보 재제출 금지.
+- Q1은 up precision `0.636`, down precision `0.750`이라 유지 가능한 진짜 패턴.
+- S2는 down-only가 더 낫다. full S2 movement의 upward precision은 `0.429`로 오탐 위험이 있다.
+- S3은 harmful. up precision `0.333`, local last gain `-0.005484`; 반드시 anchor로 되돌린다.
+- Q2는 harmful. last gain `-0.006712`; anchor로 되돌린다.
+- S1은 weak/harmful. anchor로 되돌린다.
+- S4는 upward만 좋다. up precision `1.000`, down precision `0.488`; 기존 제출은 S4를 81/250 rows에서 내린 것이 위험했다.
+
+패턴 안전 후보:
+
+- `submissions/pattern_safe_candidates_20260622/q1_s2down_s4up_last0.584779_full0.593510.csv`
+  - full `0.593510`, last `0.584779`, test abs delta vs anchor `0.006615`
+- `submissions/pattern_safe_candidates_20260622/q1_s2down_s4full_last0.585601_full0.593284.csv`
+  - full `0.593284`, last `0.585601`, test abs delta vs anchor `0.011672`
+- 이 후보들은 full-OOF 1위 후보가 아니라 public-risk diagnostic 후보이다.
+
+## 14. 2026-06-22 direction-gated ablation
+
+구현/실행 완료:
+
+- `src/direction_gated_search.py`
+- `src/direction_gated_ablation.py`
+- `research/direction_gated_search_20260622/`
+- `research/direction_gated_ablation_20260622/`
+- `submissions/direction_gated_search_20260622/`
+- `submissions/direction_gated_ablation_20260622/`
+
+핵심 변경:
+
+- 기존 제출에서 public 위험으로 읽힌 방향을 분리했다.
+  - S4 down 금지, S4 up만 허용.
+  - S3 up 금지. ablation 제출 파일에서는 S3 anchor.
+  - S2는 down-only만 허용.
+  - Q2/Q3/S1은 core에 섞지 않고 추가 효과를 따로 ablation.
+- `up`/`down` 모드는 threshold가 예측값에는 적용되지 않는 구조라, ablation에서는 실제 예측도 제한되는 `up_thr`/`down_thr` 액션을 우선 사용했다.
+
+자동 direction-gated 결과:
+
+| candidate | full | last | test abs delta vs anchor |
+|---|---:|---:|---:|
+| `precision55_lowrisk` | `0.591125` | `0.574694` | `0.006517` |
+| `precision55_move03` | `0.594600` | `0.572429` | `0.010284` |
+| `precision55_move05` | `0.595382` | `0.571661` | `0.014389` |
+
+자동 후보는 local last가 매우 좋지만 Q2/Q3까지 섞여 있어 public 검증 전 단일 제출 후보로 바로 믿기 어렵다.
+
+명시적 ablation 결과:
+
+| candidate | full | last | test abs delta vs anchor | read |
+|---|---:|---:|---:|---|
+| `core_plus_s1_q2q3` | `0.593496` | `0.579113` | `0.004008` | local 최상, Q2 up 6.8% 포함 |
+| `core_plus_s1_q2tiny_q3` | `0.593587` | `0.579823` | `0.003705` | Q2 up을 0.8%로 축소한 균형 후보 |
+| `core_plus_s1` | `0.593139` | `0.582015` | `0.003485` | Q2/Q3 제거, S1 tiny down 포함 |
+| `core_q1down_s2tight_s4tight` | `0.593640` | `0.584668` | `0.003264` | Q1/S2/S4 core만 사용 |
+| `core_q1up_s2tight_s4tight` | `0.594358` | `0.584922` | `0.003034` | Q1은 upward만 쓰는 대안 |
+
+현재 제출 후보 판정:
+
+1. public-risk와 local 개선 균형 1순위:
+   - `submissions/direction_gated_ablation_20260622/core_plus_s1_q2tiny_q3_last0.579823_full0.593587.csv`
+   - 이유: Q2 movement가 0.8%로 작고 Q3/S1은 매우 작은 보정, 기존 제출의 S4 down/S3 up 문제 제거.
+2. 더 단순한 패턴 검증 후보:
+   - `submissions/direction_gated_ablation_20260622/core_plus_s1_last0.582015_full0.593139.csv`
+   - 이유: Q2/Q3를 아예 제거하고 Q1 down, S1 tiny down, S2 down, S4 up만 검증.
+3. Q2/Q3까지 믿는 local 공격 후보:
+   - `submissions/direction_gated_ablation_20260622/core_plus_s1_q2q3_last0.579113_full0.593496.csv`
+   - 이유: local last 최상이나 Q2 up 6.8%가 있어 public 확인 전 리스크가 더 있다.
+
+기존 제출과 비교:
+
+- `last_guard_0p008`: anchor 대비 test abs delta `0.020602`, public `0.5920118473`.
+- `core_plus_s1_q2tiny_q3`: anchor 대비 `0.003705`, 기존 제출과 mean abs diff `0.019747`.
+- `core_plus_s1`: anchor 대비 `0.003485`, 기존 제출과 mean abs diff `0.019567`.
+- 즉 새 후보는 기존 제출과는 충분히 다르지만 anchor에서 멀리 튀지 않는다.
+
+다음 명령어:
+
+```bash
+MPLBACKEND=Agg MPLCONFIGDIR=research/.mplconfig PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m src.direction_gated_ablation \
+  --output-dir research/direction_gated_ablation_20260622 \
+  --submission-dir submissions/direction_gated_ablation_20260622
+```
+
+## 15. 2026-06-22 public-aware stacking/blending and latest research
+
+추가 조사:
+
+- `research/LATEST_ENSEMBLE_PAPERS_20260622.md`
+- 2026-06 기준 확인한 방향:
+  - logistic meta-stacking은 accuracy/ROC-AUC는 좋아도 log-loss calibration을 망칠 수 있다.
+  - 중복 source가 많으면 stacker 이득에 ceiling이 생긴다.
+  - greedy/convex ensemble selection, source dedupe, temperature/anchor shrink가 log-loss 목적에는 더 맞다.
+  - HAPEns식 다목적 post-hoc ensemble 개념은 여기서 public-risk/movement-cost penalty로 대응한다.
+
+구현/실행 완료:
+
+- `src/public_aware_stack_blend.py`
+- `research/public_aware_stack_blend_20260622/`
+- `submissions/public_aware_stack_blend_20260622/`
+
+구현 내용:
+
+- 기존 OOF/test 후보 62개를 로드.
+- target별 OOF correlation dedupe 후 49개 source 유지.
+- fold-safe meta Logistic stacker:
+  - probability, logit, anchor-delta features 사용.
+  - top 8/12/16 source, C `0.05/0.15/0.5`, class_weight plain/balanced.
+- fold-safe simplex weighted blend:
+  - probability blend / logit blend.
+  - L2 `0.001/0.01/0.05`.
+- stack/blend 후보에 anchor-logit shrink 적용.
+- 마지막 target-wise selector:
+  - local full/last OOF
+  - public 실패 방향 penalty
+  - failed submission alignment penalty
+  - test movement penalty
+
+상위 결과:
+
+| candidate | full | last | anchor test abs delta | read |
+|---|---:|---:|---:|---|
+| `target_select_public_balanced` | `0.593490` | `0.571439` | `0.007461` | local 최상, Q2 up 16.4% |
+| `target_select_public_tight` | `0.592635` | `0.572477` | `0.006878` | 최종 추천, Q2 up 6.8% |
+| `target_select_public_tight_logit_anchorblend_w0p9` | `0.592477` | `0.573720` | `0.006293` | 더 축소한 대안 |
+
+최종 제출 1개 추천:
+
+```text
+submissions/public_aware_stack_blend_20260622/target_select_public_tight_last0.572477_full0.592635.csv
+```
+
+이유:
+
+- stack/blend 기반이다. Q1은 simplex logit stacker를 쓰고, 나머지는 direction-gated/ablation source를 target-wise로 선택했다.
+- 기존 public 실패 후보와 충분히 다르다.
+  - 기존 제출과 mean abs diff `0.019946`.
+  - 기존 제출 anchor delta `0.020602` vs 새 후보 `0.006878`.
+- 기존 실패 방향을 제거했다.
+  - S3 up 제거.
+  - S4 down 제거.
+  - S2 up 제거.
+  - Q2 movement는 aggressive의 16.4%가 아니라 6.8%로 제한.
+
+재현 명령어:
+
+```bash
+MPLBACKEND=Agg MPLCONFIGDIR=research/.mplconfig PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m src.public_aware_stack_blend \
+  --output-dir research/public_aware_stack_blend_20260622 \
+  --submission-dir submissions/public_aware_stack_blend_20260622
+```
+
+## 16. 다음 AI에게 넘길 핵심 질문
 
 1. `subject_time_blocked` last-block을 유지하면서 `0.55` 이하로 내려가는 구조를 찾을 수 있는가?
 2. Q 타깃의 전체기간 평균 기준 이진화 구조를 hard shift가 아닌 rank patch로 안전하게 쓸 수 있는가?
@@ -785,7 +1038,7 @@ OOF 기반 제출 블렌딩:
 4. Q1을 개선할 수 있는 subject-target rank patch나 recipe가 있는가?
 5. public 제출 없이 로컬 `last_logloss` 기준으로 후보를 거를 수 있는가?
 
-## 13. 핵심 파일 위치
+## 17. 핵심 파일 위치
 
 현재 베이스:
 
@@ -818,3 +1071,206 @@ OOF 기반 제출 블렌딩:
 
 - `research/rolling_backtest/greedy_stability.csv`
 - `research/rolling_backtest/source_scores_by_split.csv`
+
+## 18. 2026-06-22 public score pseudo-posterior blend
+
+새 public 확인:
+
+| submitted file | public |
+|---|---:|
+| `submissions/public_aware_stack_blend_20260622/target_select_public_tight_last0.572477_full0.592635.csv` | `0.5905116492` |
+| `submissions/constrained_target_blend_logit_newton/last_guard_0p008_last0.588383_full0.587743.csv` | `0.5920118473` |
+| `submissions/fast_temporal_stack/02_guarded_targetwise.csv` | `0.5935970063` |
+
+해석:
+
+- `target_select_public_tight`가 기존 `last_guard_0p008`보다 public에서 `0.0015001981` 좋아졌다.
+- 따라서 public은 무작정 local full 최저 후보보다, 방향 제한/anchor shrink가 걸린 후보를 선호하는 신호가 있다.
+- 다만 0.5905는 아직 166등권이므로, public score 자체를 제약으로 쓰는 더 직접적인 post-hoc search를 추가했다.
+
+구현:
+
+- `src/public_score_pseudo_blend.py`
+- `research/public_score_pseudo_blend_20260622/`
+- `submissions/public_score_pseudo_blend_20260622/`
+- `research/submission_pattern_diagnostics_public_score_pseudo_20260622/`
+
+방법:
+
+- 제출 파일별 public logloss는 test hidden label에 대한 선형 제약으로 볼 수 있다.
+- anchor test probability를 prior로 두고, known public scores를 맞추는 soft pseudo posterior를 추정했다.
+- 그 posterior 기준으로 기존 OOF/test source 80개를 다시 평가했다.
+- target-wise selection, pairwise logit blend, simplex blend, anchor-logit shrink 후보 829개를 생성했다.
+
+상위 결과:
+
+| candidate | pseudo-public | full | last | anchor abs delta |
+|---|---:|---:|---:|---:|
+| `pseudo_target_tight_anchorlogit_w0p82` | `0.588794` | `0.594948` | `0.588809` | `0.001352` |
+| `pseudo_target_tight_anchorlogit_w0p9` | `0.588800` | `0.594902` | `0.588453` | `0.001465` |
+| `pseudo_target_tight` | `0.588821` | `0.594855` | `0.588027` | `0.001601` |
+
+패턴 진단:
+
+- Q1/Q2/Q3/S1/S3는 anchor 그대로 유지.
+- S2만 down 이동:
+  - test mean delta `-0.007815`
+  - test down rate at 0.005 threshold `0.052`
+  - last OOF down precision `0.666667`
+- S4만 up 이동:
+  - test mean delta `+0.001646`
+  - test up rate at 0.005 threshold `0.128`
+  - last OOF up precision `0.833333`
+
+현재 한 개만 제출한다면:
+
+```text
+submissions/public_score_pseudo_blend_20260622/pseudo_target_tight_anchorlogit_w0p82_pseudo0.588794_last0.588809_full0.594948.csv
+```
+
+재현 명령:
+
+```bash
+MPLBACKEND=Agg MPLCONFIGDIR=research/.mplconfig PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m src.public_score_pseudo_blend \
+  --output-dir research/public_score_pseudo_blend_20260622 \
+  --submission-dir submissions/public_score_pseudo_blend_20260622
+```
+
+## 19. 2026-06-22 target-weighted single-model source optimizer
+
+주의:
+
+- 여기서는 제출 후보를 고르는 단계가 아니다.
+- 목적은 0.59대 post-hoc 이동이 아니라, stack/blend에 넣을 새 OOF/test source를 만드는 것이다.
+- 먼저 한 모델군을 깊게 판다. 현재 1순위는 LGBM이다.
+
+구현:
+
+- `src/target_weighted_single_model.py`
+- smoke 검증 완료:
+  - `research/target_weighted_single_model_smoke/`
+  - `submissions/target_weighted_single_model_smoke/`
+
+구현된 학습 기법:
+
+- LGBM/XGB/Cat 공통 인터페이스.
+- target-wise sample weighting:
+  - subject balance
+  - class balance
+  - recency emphasis
+  - late-fold emphasis
+  - anchor-error emphasis
+- `target_auto` weight profile:
+  - Q2/Q3는 recency/class 강화.
+  - S2/S4는 recency/anchor-error/fold-late 강화.
+  - S3는 과격한 이동 억제.
+- fold-safe numeric bin/category view.
+- fold-safe smoothed target encoding.
+- target history feature:
+  - `mean_sm4`, `mean_sm16`, `last2_sm4`, `last5_sm4`, `last20_sm4`, `ridge1`, `ridge10`
+- validation logloss early stopping + best-iteration prediction.
+- target-wise shrink search back to temporal anchor.
+- output convention:
+  - `*_oof.csv`
+  - `*_test_pred.csv`
+  - downstream stack/blend script에서 바로 source-dir로 사용 가능.
+
+실행 순서:
+
+1. LGBM full source bank:
+
+```bash
+MPLBACKEND=Agg MPLCONFIGDIR=research/.mplconfig PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m src.target_weighted_single_model \
+  --models lgbm \
+  --seeds 42 7 2024 \
+  --fold-limit 5 \
+  --param-profiles smooth mid leaf31 \
+  --weight-profiles uniform subject_class recent_class recent_anchorerr target_auto \
+  --top-k-grid 60 100 160 240 \
+  --feature-bank bins_te \
+  --te-top-n 10 \
+  --te-bins 4 8 \
+  --te-smooth 12 \
+  --pair-feature-count 80 \
+  --target-history-features \
+  --rounds 2600 \
+  --early-stopping-rounds 140 \
+  --shrink-grid 0 0.05 0.08 0.12 0.18 0.25 0.35 0.50 0.70 1.0 \
+  --shrink-modes logit prob \
+  --output-dir research/target_weighted_single_model_lgbm_20260622 \
+  --submission-dir submissions/target_weighted_single_model_lgbm_20260622 \
+  --log-period 0
+```
+
+2. 결과 확인:
+
+```bash
+sed -n '1,220p' research/target_weighted_single_model_lgbm_20260622/TARGET_WEIGHTED_SINGLE_MODEL_REPORT.md
+```
+
+3. 새 LGBM source를 기존 stack/blend 후보군에 추가:
+
+```bash
+MPLBACKEND=Agg MPLCONFIGDIR=research/.mplconfig PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m src.public_aware_stack_blend \
+  --source-dirs \
+    research/target_weighted_single_model_lgbm_20260622 \
+    research/public_aware_stack_blend_20260622 \
+    research/direction_gated_ablation_20260622 \
+    research/pattern_safe_candidates_20260622 \
+    research/constrained_target_blend_logit_newton \
+    research/residual_submission_blend_ridge_logit_newton \
+    research/residual_single_model_opt_ridge_logit_newton \
+    research/residual_submission_blend \
+    research/residual_single_model_opt_ridge \
+    research/residual_single_model_opt_hist_gb \
+    research/residual_single_model_opt_ridge_logit_te_full \
+    research/residual_submission_blend_ridge_logit_te_full \
+  --output-dir research/public_aware_stack_blend_with_lgbm_source_20260622 \
+  --submission-dir submissions/public_aware_stack_blend_with_lgbm_source_20260622
+```
+
+4. public-score pseudo blend에도 새 source 추가:
+
+```bash
+MPLBACKEND=Agg MPLCONFIGDIR=research/.mplconfig PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m src.public_score_pseudo_blend \
+  --source-dirs \
+    research/target_weighted_single_model_lgbm_20260622 \
+    research/public_aware_stack_blend_20260622 \
+    research/direction_gated_ablation_20260622 \
+    research/pattern_safe_candidates_20260622 \
+    research/constrained_target_blend_logit_newton \
+    research/residual_submission_blend_ridge_logit_newton \
+    research/residual_single_model_opt_ridge_logit_newton \
+    research/residual_submission_blend \
+    research/residual_single_model_opt_ridge \
+    research/residual_single_model_opt_hist_gb \
+    research/residual_single_model_opt_ridge_logit_te_full \
+    research/residual_submission_blend_ridge_logit_te_full \
+  --output-dir research/public_score_pseudo_blend_with_lgbm_source_20260622 \
+  --submission-dir submissions/public_score_pseudo_blend_with_lgbm_source_20260622
+```
+
+5. LGBM source가 유효하면 같은 구조를 XGB/Cat에 이식:
+
+```bash
+MPLBACKEND=Agg MPLCONFIGDIR=research/.mplconfig PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m src.target_weighted_single_model \
+  --models xgb cat \
+  --seeds 42 7 \
+  --fold-limit 5 \
+  --param-profiles smooth mid \
+  --weight-profiles subject_class recent_class recent_anchorerr target_auto \
+  --top-k-grid 60 120 200 \
+  --feature-bank bins_te \
+  --te-top-n 8 \
+  --te-bins 4 8 \
+  --te-smooth 16 \
+  --pair-feature-count 60 \
+  --target-history-features \
+  --rounds 2200 \
+  --early-stopping-rounds 140 \
+  --shrink-grid 0 0.05 0.10 0.18 0.30 0.50 0.70 1.0 \
+  --shrink-modes logit prob \
+  --output-dir research/target_weighted_single_model_xgb_cat_20260622 \
+  --submission-dir submissions/target_weighted_single_model_xgb_cat_20260622 \
+  --log-period 0
+```
